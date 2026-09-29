@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gerenciar Notícias - Painel de Administração CDA Digital">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gellix:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Notícias - Painel de Administração CDA</title>
+</head>
+<body class="admin-page">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" id="admin-sidebar">
+        <div class="admin-sidebar-header">
+            <div class="admin-sidebar-logo">
+                <img src="../img/logos/cda-logo-white.svg" alt="CDA Digital">
+                <span class="logo-text">
+                    <span class="logo-title">CDA</span>
+                    <span class="logo-subtitle">Admin</span>
+                </span>
+            </div>
+            <button class="admin-sidebar-toggle" id="sidebar-toggle" aria-label="Recolher sidebar">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9,6 15,12 9,18"/>
+                </svg>
+            </button>
+        </div>
+        
+        <nav class="admin-sidebar-menu">
+            <div class="admin-sidebar-menu-item">
+                <a href="index.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"/>
+                        <rect x="14" y="3" width="7" height="7"/>
+                        <rect x="14" y="14" width="7" height="7"/>
+                        <rect x="3" y="14" width="7" height="7"/>
+                    </svg>
+                    <span class="menu-label">Dashboard</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="noticias.html" class="admin-sidebar-menu-link active">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6 6 18"/>
+                        <path d="m6 6 12 12"/>
+                    </svg>
+                    <span class="menu-label">Notícias</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="documentos.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                    <span class="menu-label">Documentos</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="despachantes.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                    </svg>
+                    <span class="menu-label">Despachantes</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-dropdown">
+                <button class="admin-sidebar-menu-link dropdown-toggle" id="content-dropdown">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                    <span class="menu-label">Conteúdo</span>
+                    <svg class="icon dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"/>
+                    </svg>
+                </button>
+                <div class="admin-sidebar-dropdown-menu">
+                    <div class="admin-sidebar-menu-item">
+                        <a href="presidentes.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <span class="menu-label">Presidentes</span>
+                        </a>
+                    </div>
+                    <div class="admin-sidebar-menu-item">
+                        <a href="timeline.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                            <span class="menu-label">Linha do Tempo</span>
+                        </a>
+                    </div>
+                    <div class="admin-sidebar-menu-item">
+                        <a href="numeros.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 20V10"/>
+                                <path d="M12 20V4"/>
+                                <path d="M6 20v-6"/>
+                            </svg>
+                            <span class="menu-label">CDA em Números</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="galeria.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="3" y1="9" x2="21" y2="9"/>
+                        <line x1="9" y1="21" x2="9" y2="9"/>
+                    </svg>
+                    <span class="menu-label">Galeria</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="users.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                    <span class="menu-label">Utilizadores</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="settings.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V7a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                    </svg>
+                    <span class="menu-label">Configurações</span>
+                </a>
+            </div>
+        </nav>
+        
+        <div class="admin-sidebar-footer">
+            <div class="admin-user">
+                <div class="admin-user-avatar">AD</div>
+                <div class="admin-user-info">
+                    <span class="admin-user-name" id="admin-user-name">Administrador</span>
+                    <span class="admin-user-role">Admin</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="admin-main">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <button class="admin-header-btn mobile-menu-toggle" id="mobile-menu-toggle">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+                <h1 class="admin-header-title">Notícias</h1>
+                <nav class="admin-breadcrumb">
+                    <a href="index.html" class="admin-breadcrumb-link">Início</a>
+                    <span class="admin-breadcrumb-separator">/</span>
+                    <span class="admin-breadcrumb-current">Notícias</span>
+                </nav>
+            </div>
+            <div class="admin-header-right">
+                <div class="admin-header-actions">
+                    <button class="admin-header-btn" onclick="showFilterModal()">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+                        </svg>
+                        <span class="menu-label">Filtros</span>
+                    </button>
+                    <a href="noticias.html?action=new" class="admin-header-btn">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                        <span class="menu-label">Nova Notícia</span>
+                    </a>
+                </div>
+                <div class="admin-header-user">
+                    <div class="admin-header-user-avatar">AD</div>
+                    <span class="admin-header-user-name">Administrador</span>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Content -->
+        <div class="admin-content">
+            <!-- Table Header -->
+            <div class="admin-table-container">
+                <div class="admin-table-header">
+                    <h2 class="admin-table-title">Todas as Notícias</h2>
+                    <div class="admin-table-actions">
+                        <div class="admin-table-search">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                            </svg>
+                            <input type="text" id="noticias-search" placeholder="Pesquisar notícias...">
+                        </div>
+                        <select class="admin-table-filter" id="noticias-category-filter">
+                            <option value="">Todas as Categorias</option>
+                            <option value="assembleia">Assembleia</option>
+                            <option value="reuniao">Reunião</option>
+                            <option value="evento">Evento</option>
+                            <option value="comunicado">Comunicado</option>
+                            <option value="formacao">Formação</option>
+                            <option value="tecnologia">Tecnologia</option>
+                        </select>
+                        <select class="admin-table-filter" id="noticias-status-filter">
+                            <option value="">Todos os Estados</option>
+                            <option value="publicado">Publicado</option>
+                            <option value="rascunho">Rascunho</option>
+                            <option value="arquivado">Arquivado</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Table -->
+                <div class="admin-table-wrapper">
+                    <table class="admin-table" id="noticias-table">
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Categoria</th>
+                                <th>Data</th>
+                                <th>Estado</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="noticias-table-body">
+                            <!-- Notícias serão carregadas via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Empty State -->
+                <div class="admin-table-empty" id="noticias-empty" hidden>
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6 6 18"/>
+                        <path d="m6 6 12 12"/>
+                    </svg>
+                    <h3>Nenhuma notícia encontrada</h3>
+                    <p>Adicione a sua primeira notícia para começar.</p>
+                    <a href="noticias.html?action=new" class="btn btn-primary" style="margin-top: 16px; display: inline-block;">
+                        Adicionar Notícia
+                    </a>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="admin-table-pagination">
+                    <div class="admin-table-pagination-info">
+                        Mostrando <span id="noticias-showing">0</span> de <span id="noticias-total">0</span> notícias
+                    </div>
+                    <div class="admin-table-pagination-controls">
+                        <button class="admin-table-pagination-btn" id="noticias-prev" disabled>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15,18 9,12 15,6"/>
+                            </svg>
+                        </button>
+                        <button class="admin-table-pagination-btn active" id="noticias-page-1">1</button>
+                        <button class="admin-table-pagination-btn" id="noticias-page-2">2</button>
+                        <button class="admin-table-pagination-btn" id="noticias-page-3">3</button>
+                        <span class="admin-table-pagination-btn">...</span>
+                        <button class="admin-table-pagination-btn" id="noticias-page-last">10</button>
+                        <button class="admin-table-pagination-btn" id="noticias-next">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Form Modal -->
+    <div class="admin-modal-overlay" id="noticia-modal" hidden>
+        <div class="admin-modal admin-modal-lg">
+            <button class="admin-modal-close" onclick="closeNoticiaModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title" id="noticia-modal-title">Nova Notícia</h2>
+            </div>
+            <div class="admin-modal-body">
+                <form id="noticia-form" class="admin-form">
+                    <input type="hidden" id="noticia-id" name="id">
+                    <div class="admin-form-grid">
+                        <div class="admin-form-group">
+                            <label for="noticia-titulo">Título *</label>
+                            <input type="text" id="noticia-titulo" name="titulo" class="admin-form-control" placeholder="Título da notícia" required>
+                            <div class="admin-form-error" id="noticia-titulo-error"></div>
+                        </div>
+                        <div class="admin-form-group">
+                            <label for="noticia-categoria">Categoria *</label>
+                            <select id="noticia-categoria" name="categoria" class="admin-form-control admin-form-select" required>
+                                <option value="">Selecione uma categoria</option>
+                                <option value="assembleia">Assembleia Geral</option>
+                                <option value="reuniao">Reunião</option>
+                                <option value="evento">Evento</option>
+                                <option value="comunicado">Comunicado</option>
+                                <option value="formacao">Formação</option>
+                                <option value="tecnologia">Tecnologia</option>
+                            </select>
+                            <div class="admin-form-error" id="noticia-categoria-error"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-grid">
+                        <div class="admin-form-group">
+                            <label for="noticia-data">Data de Publicação *</label>
+                            <input type="date" id="noticia-data" name="data" class="admin-form-control" required>
+                            <div class="admin-form-error" id="noticia-data-error"></div>
+                        </div>
+                        <div class="admin-form-group">
+                            <label for="noticia-local">Local</label>
+                            <input type="text" id="noticia-local" name="local" class="admin-form-control" placeholder="Ex: Maputo">
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="noticia-resumo">Resumo</label>
+                        <textarea id="noticia-resumo" name="resumo" class="admin-form-control admin-form-textarea" placeholder="Resumo da notícia..."></textarea>
+                        <div class="admin-form-hint">Máximo 200 caracteres</div>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="noticia-conteudo">Conteúdo *</label>
+                        <textarea id="noticia-conteudo" name="conteudo" class="admin-form-control admin-form-textarea" placeholder="Conteúdo completo da notícia..." required></textarea>
+                        <div class="admin-form-error" id="noticia-conteudo-error"></div>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="noticia-imagem">Imagem de Destaque</label>
+                        <div class="admin-form-file">
+                            <input type="file" id="noticia-imagem" name="imagem" class="admin-form-file-input" accept="image/*">
+                            <label for="noticia-imagem" class="admin-form-file-label">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                                    <polyline points="21,15 16,10 5,21"/>
+                                </svg>
+                                <span>Escolher imagem</span>
+                            </label>
+                            <span class="admin-form-file-name" id="noticia-imagem-name">Nenhum ficheiro seleccionado</span>
+                        </div>
+                        <div class="admin-form-hint">Recomendado: 1200x600px (16:9)</div>
+                    </div>
+                    
+                    <div class="admin-form-grid">
+                        <div class="admin-form-group">
+                            <label for="noticia-destaque">Destaque</label>
+                            <select id="noticia-destaque" name="destaque" class="admin-form-control admin-form-select">
+                                <option value="false">Não</option>
+                                <option value="true">Sim</option>
+                            </select>
+                        </div>
+                        <div class="admin-form-group">
+                            <label for="noticia-estado">Estado *</label>
+                            <select id="noticia-estado" name="estado" class="admin-form-control admin-form-select" required>
+                                <option value="publicado">Publicado</option>
+                                <option value="rascunho">Rascunho</option>
+                                <option value="arquivado">Arquivado</option>
+                            </select>
+                            <div class="admin-form-error" id="noticia-estado-error"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="noticia-tags">Tags (separadas por vírgula)</label>
+                        <input type="text" id="noticia-tags" name="tags" class="admin-form-control" placeholder="Ex: assembleia, 2026, maputo">
+                        <div class="admin-form-hint">Adicione palavras-chave para facilitar a pesquisa</div>
+                    </div>
+                </form>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeNoticiaModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="saveNoticia()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                    Guardar Notícia
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Delete Confirmation Modal -->
+    <div class="admin-modal-overlay admin-confirm-modal" id="delete-noticia-modal" hidden>
+        <div class="admin-modal">
+            <button class="admin-modal-close" onclick="closeDeleteModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title">Confirmar Eliminar</h2>
+            </div>
+            <div class="admin-modal-body">
+                <div class="admin-confirm-modal">
+                    <div class="admin-modal-icon danger">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="15" y1="9" x2="9" y2="15"/>
+                            <line x1="9" y1="9" x2="15" y2="15"/>
+                        </svg>
+                    </div>
+                    <p class="admin-modal-message">Tem a certeza que deseja eliminar esta notícia? Esta ação não pode ser desfeita.</p>
+                </div>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeDeleteModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-danger" onclick="confirmDeleteNoticia()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="3,6 5,6 21,6"/>
+                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                    </svg>
+                    Eliminar
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Filter Modal -->
+    <div class="admin-modal-overlay" id="filter-modal" hidden>
+        <div class="admin-modal">
+            <button class="admin-modal-close" onclick="closeFilterModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title">Filtros Avançados</h2>
+            </div>
+            <div class="admin-modal-body">
+                <form id="filter-form" class="admin-form">
+                    <div class="admin-form-group">
+                        <label for="filter-titulo">Título</label>
+                        <input type="text" id="filter-titulo" class="admin-form-control" placeholder="Pesquisar por título">
+                    </div>
+                    <div class="admin-form-group">
+                        <label for="filter-categoria">Categoria</label>
+                        <select id="filter-categoria" class="admin-form-control admin-form-select">
+                            <option value="">Todas as Categorias</option>
+                            <option value="assembleia">Assembleia Geral</option>
+                            <option value="reuniao">Reunião</option>
+                            <option value="evento">Evento</option>
+                            <option value="comunicado">Comunicado</option>
+                            <option value="formacao">Formação</option>
+                            <option value="tecnologia">Tecnologia</option>
+                        </select>
+                    </div>
+                    <div class="admin-form-group">
+                        <label for="filter-estado">Estado</label>
+                        <select id="filter-estado" class="admin-form-control admin-form-select">
+                            <option value="">Todos os Estados</option>
+                            <option value="publicado">Publicado</option>
+                            <option value="rascunho">Rascunho</option>
+                            <option value="arquivado">Arquivado</option>
+                        </select>
+                    </div>
+                    <div class="admin-form-group">
+                        <label for="filter-data-inicio">Data Início</label>
+                        <input type="date" id="filter-data-inicio" class="admin-form-control">
+                    </div>
+                    <div class="admin-form-group">
+                        <label for="filter-data-fim">Data Fim</label>
+                        <input type="date" id="filter-data-fim" class="admin-form-control">
+                    </div>
+                </form>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeFilterModal()">
+                    Limpar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="applyFilters()">
+                    Aplicar Filtros
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Notifications -->
+    <div class="admin-notifications" id="notifications"></div>
+    
+    <script src="../js/main.js"></script>
+    <script src="js/admin.js"></script>
+    <script>
+        // Dados de exemplo
+        let noticias = [
+            {
+                id: 1,
+                titulo: "CDA realiza Assembleia Geral Ordinária 2026",
+                resumo: "A Câmara dos Despachantes Aduaneiros realizou a sua Assembleia Geral Ordinária em Maputo.",
+                conteudo: "Conteúdo completo da notícia sobre a Assembleia Geral Ordinária 2026...",
+                data: "2026-09-24",
+                local: "Maputo",
+                categoria: "assembleia",
+                imagem: "",
+                destaque: true,
+                estado: "publicado",
+                tags: ["assembleia", "geral", "2026", "maputo"]
+            },
+            {
+                id: 2,
+                titulo: "CDA participa em reunião com autoridades aduaneiras",
+                resumo: "Representantes da CDA participaram em reunião de trabalho com as autoridades aduaneiras.",
+                conteudo: "Conteúdo completo da notícia sobre a reunião com autoridades aduaneiras...",
+                data: "2026-09-15",
+                local: "Maputo",
+                categoria: "reuniao",
+                imagem: "",
+                destaque: false,
+                estado: "publicado",
+                tags: ["reunião", "autoridades", "aduaneiras"]
+            },
+            {
+                id: 3,
+                titulo: "Novo comunicado sobre procedimentos de importação",
+                resumo: "A CDA emitiu um novo comunicado com orientações sobre os procedimentos de importação.",
+                conteudo: "Conteúdo completo do comunicado sobre procedimentos de importação...",
+                data: "2026-09-10",
+                local: "Maputo",
+                categoria: "comunicado",
+                imagem: "",
+                destaque: false,
+                estado: "rascunho",
+                tags: ["comunicado", "importação", "procedimentos"]
+            },
+            {
+                id: 4,
+                titulo: "Encontro de Despachantes Aduaneiros em Beira",
+                resumo: "Realizou-se em Beira o primeiro encontro regional de despachantes aduaneiros de 2026.",
+                conteudo: "Conteúdo completo sobre o encontro em Beira...",
+                data: "2026-08-28",
+                local: "Beira",
+                categoria: "evento",
+                imagem: "",
+                destaque: false,
+                estado: "publicado",
+                tags: ["encontro", "beira", "regional", "2026"]
+            },
+            {
+                id: 5,
+                titulo: "Formação em Novas Tecnologias Aduaneiras",
+                resumo: "A CDA promoveu uma sessão de formação sobre as novas tecnologias aduaneiras.",
+                conteudo: "Conteúdo completo sobre a formação em novas tecnologias...",
+                data: "2026-08-15",
+                local: "Maputo",
+                categoria: "formacao",
+                imagem: "",
+                destaque: false,
+                estado: "publicado",
+                tags: ["formação", "tecnologias", "aduaneiras"]
+            },
+            {
+                id: 6,
+                titulo: "CDA lança Portal Digital V4",
+                resumo: "Foi oficialmente lançado o novo Portal Digital da CDA, com funcionalidades avançadas.",
+                conteudo: "Conteúdo completo sobre o lançamento do Portal Digital V4...",
+                data: "2026-07-01",
+                local: "Maputo",
+                categoria: "tecnologia",
+                imagem: "",
+                destaque: true,
+                estado: "publicado",
+                tags: ["portal", "digital", "v4", "lançamento"]
+            },
+            {
+                id: 7,
+                titulo: "Visita da CDA às instalações da Alfândega de Maputo",
+                resumo: "Delegação da CDA visitou as instalações da Alfândega de Maputo.",
+                conteudo: "Conteúdo completo sobre a visita à Alfândega de Maputo...",
+                data: "2026-06-20",
+                local: "Maputo",
+                categoria: "evento",
+                imagem: "",
+                destaque: false,
+                estado: "arquivado",
+                tags: ["visita", "alfândega", "maputo"]
+            },
+            {
+                id: 8,
+                titulo: "CDA assina protocolo com Câmaras de Comércio",
+                resumo: "A Câmara dos Despachantes Aduaneiros assinou um protocolo de cooperação.",
+                conteudo: "Conteúdo completo sobre o protocolo com Câmaras de Comércio...",
+                data: "2026-05-10",
+                local: "Maputo",
+                categoria: "evento",
+                imagem: "",
+                destaque: true,
+                estado: "publicado",
+                tags: ["protocolo", "cooperação", "câmaras de comércio"]
+            }
+        ];
+        
+        let currentNoticia = null;
+        let currentPage = 1;
+        const itemsPerPage = 5;
+        
+        // Carregar notícias
+        function loadNoticias() {
+            const tbody = document.getElementById('noticias-table-body');
+            const empty = document.getElementById('noticias-empty');
+            const showing = document.getElementById('noticias-showing');
+            const total = document.getElementById('noticias-total');
+            
+            // Filtrar notícias
+            const search = document.getElementById('noticias-search').value.toLowerCase();
+            const category = document.getElementById('noticias-category-filter').value;
+            const status = document.getElementById('noticias-status-filter').value;
+            
+            let filtered = noticias.filter(n => {
+                const matchSearch = !search || 
+                    n.titulo.toLowerCase().includes(search) ||
+                    n.resumo.toLowerCase().includes(search) ||
+                    n.tags.some(tag => tag.toLowerCase().includes(search));
+                const matchCategory = !category || n.categoria === category;
+                const matchStatus = !status || n.estado === status;
+                return matchSearch && matchCategory && matchStatus;
+            });
+            
+            // Paginação
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageItems = filtered.slice(start, end);
+            
+            total.textContent = filtered.length;
+            showing.textContent = pageItems.length > 0 ? start + 1 : 0;
+            
+            if (pageItems.length === 0) {
+                tbody.innerHTML = '';
+                empty.hidden = false;
+                return;
+            }
+            
+            empty.hidden = true;
+            
+            tbody.innerHTML = pageItems.map(n => `
+                <tr>
+                    <td>
+                        <div class="admin-table-cell-content">
+                            <div class="admin-table-cell-title">${n.titulo}</div>
+                            <div class="admin-table-cell-subtitle">${n.resumo.substring(0, 50)}...</div>
+                        </div>
+                    </td>
+                    <td><span class="admin-table-status">${getCategoriaLabel(n.categoria)}</span></td>
+                    <td>${formatDate(n.data)}</td>
+                    <td><span class="admin-table-status ${n.estado}">${getEstadoLabel(n.estado)}</span></td>
+                    <td>
+                        <div class="admin-table-actions">
+                            <button class="admin-table-action edit" onclick="editNoticia(${n.id})" title="Editar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                                </svg>
+                            </button>
+                            <button class="admin-table-action delete" onclick="deleteNoticia(${n.id})" title="Eliminar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="3,6 5,6 21,6"/>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
+            
+            updatePagination(filtered.length);
+        }
+        
+        function getCategoriaLabel(categoria) {
+            const labels = {
+                'assembleia': 'Assembleia',
+                'reuniao': 'Reunião',
+                'evento': 'Evento',
+                'comunicado': 'Comunicado',
+                'formacao': 'Formação',
+                'tecnologia': 'Tecnologia'
+            };
+            return labels[categoria] || categoria;
+        }
+        
+        function getEstadoLabel(estado) {
+            const labels = {
+                'publicado': 'Publicado',
+                'rascunho': 'Rascunho',
+                'arquivado': 'Arquivado'
+            };
+            return labels[estado] || estado;
+        }
+        
+        function formatDate(date) {
+            const d = new Date(date);
+            return d.toLocaleDateString('pt-PT', { day: '2-digit', month: 'short', year: 'numeric' });
+        }
+        
+        function updatePagination(totalItems) {
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            const prevBtn = document.getElementById('noticias-prev');
+            const nextBtn = document.getElementById('noticias-next');
+            
+            prevBtn.disabled = currentPage === 1;
+            nextBtn.disabled = currentPage >= totalPages;
+            
+            // Atualizar botões de página
+            for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById(`noticias-page-${i}`);
+                if (btn) {
+                    btn.textContent = currentPage === i ? currentPage : i;
+                    btn.classList.toggle('active', currentPage === i);
+                }
+            }
+            
+            // Atualizar botão last
+            const lastBtn = document.getElementById('noticias-page-last');
+            if (lastBtn) {
+                lastBtn.textContent = totalPages;
+                lastBtn.classList.toggle('active', currentPage === totalPages);
+            }
+        }
+        
+        function changePage(page) {
+            const totalItems = noticias.length;
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            
+            if (page < 1 || page > totalPages) return;
+            
+            currentPage = page;
+            loadNoticias();
+        }
+        
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verificar se está logado
+            if (sessionStorage.getItem('cda_admin_logged') !== 'true') {
+                window.location.href = 'login.html';
+                return;
+            }
+            
+            // Carregar notícias
+            loadNoticias();
+            
+            // Pesquisa em tempo real
+            document.getElementById('noticias-search').addEventListener('input', debounce(function() {
+                currentPage = 1;
+                loadNoticias();
+            }, 300));
+            
+            // Filtros
+            document.getElementById('noticias-category-filter').addEventListener('change', function() {
+                currentPage = 1;
+                loadNoticias();
+            });
+            
+            document.getElementById('noticias-status-filter').addEventListener('change', function() {
+                currentPage = 1;
+                loadNoticias();
+            });
+            
+            // Paginação
+            document.getElementById('noticias-prev').addEventListener('click', function() {
+                if (currentPage > 1) {
+                    changePage(currentPage - 1);
+                }
+            });
+            
+            document.getElementById('noticias-next').addEventListener('click', function() {
+                const totalItems = noticias.length;
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                if (currentPage < totalPages) {
+                    changePage(currentPage + 1);
+                }
+            });
+            
+            // Botões de página
+            for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById(`noticias-page-${i}`);
+                if (btn) {
+                    btn.addEventListener('click', function() {
+                        changePage(i);
+                    });
+                }
+            }
+            
+            // Botão last
+            document.getElementById('noticias-page-last').addEventListener('click', function() {
+                const totalItems = noticias.length;
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                changePage(totalPages);
+            });
+            
+            // Nova notícia
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('action') === 'new') {
+                openNoticiaModal();
+            }
+            
+            // Atualizar nome do utilizador
+            const userName = sessionStorage.getItem('cda_admin_user') || 'Administrador';
+            document.getElementById('admin-user-name').textContent = userName;
+        });
+        
+        function openNoticiaModal(noticia = null) {
+            const modal = document.getElementById('noticia-modal');
+            const form = document.getElementById('noticia-form');
+            const title = document.getElementById('noticia-modal-title');
+            
+            currentNoticia = noticia;
+            
+            if (noticia) {
+                // Editar
+                title.textContent = 'Editar Notícia';
+                document.getElementById('noticia-id').value = noticia.id;
+                document.getElementById('noticia-titulo').value = noticia.titulo;
+                document.getElementById('noticia-categoria').value = noticia.categoria;
+                document.getElementById('noticia-data').value = noticia.data;
+                document.getElementById('noticia-local').value = noticia.local || '';
+                document.getElementById('noticia-resumo').value = noticia.resumo || '';
+                document.getElementById('noticia-conteudo').value = noticia.conteudo || '';
+                document.getElementById('noticia-destaque').value = noticia.destaque ? 'true' : 'false';
+                document.getElementById('noticia-estado').value = noticia.estado;
+                document.getElementById('noticia-tags').value = noticia.tags ? noticia.tags.join(', ') : '';
+            } else {
+                // Novo
+                title.textContent = 'Nova Notícia';
+                form.reset();
+                document.getElementById('noticia-data').value = new Date().toISOString().split('T')[0];
+            }
+            
+            modal.hidden = false;
+        }
+        
+        function closeNoticiaModal() {
+            document.getElementById('noticia-modal').hidden = true;
+            currentNoticia = null;
+            // Limpar URL
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+        
+        function saveNoticia() {
+            const form = document.getElementById('noticia-form');
+            const formData = new FormData(form);
+            
+            // Validar
+            let isValid = true;
+            
+            if (!formData.get('titulo')) {
+                showError('noticia-titulo-error', 'O título é obrigatório');
+                isValid = false;
+            } else {
+                hideError('noticia-titulo-error');
+            }
+            
+            if (!formData.get('categoria')) {
+                showError('noticia-categoria-error', 'A categoria é obrigatória');
+                isValid = false;
+            } else {
+                hideError('noticia-categoria-error');
+            }
+            
+            if (!formData.get('data')) {
+                showError('noticia-data-error', 'A data é obrigatória');
+                isValid = false;
+            } else {
+                hideError('noticia-data-error');
+            }
+            
+            if (!formData.get('conteudo')) {
+                showError('noticia-conteudo-error', 'O conteúdo é obrigatório');
+                isValid = false;
+            } else {
+                hideError('noticia-conteudo-error');
+            }
+            
+            if (!formData.get('estado')) {
+                showError('noticia-estado-error', 'O estado é obrigatório');
+                isValid = false;
+            } else {
+                hideError('noticia-estado-error');
+            }
+            
+            if (!isValid) return;
+            
+            // Salvar
+            const noticia = {
+                id: formData.get('id') ? parseInt(formData.get('id')) : Date.now(),
+                titulo: formData.get('titulo'),
+                resumo: formData.get('resumo'),
+                conteudo: formData.get('conteudo'),
+                data: formData.get('data'),
+                local: formData.get('local'),
+                categoria: formData.get('categoria'),
+                imagem: '',
+                destaque: formData.get('destaque') === 'true',
+                estado: formData.get('estado'),
+                tags: formData.get('tags') ? formData.get('tags').split(',').map(t => t.trim()) : []
+            };
+            
+            if (currentNoticia) {
+                // Atualizar
+                const index = noticias.findIndex(n => n.id === currentNoticia.id);
+                if (index !== -1) {
+                    noticias[index] = noticia;
+                    showNotification('Notícia actualizada com sucesso!', 'success');
+                }
+            } else {
+                // Adicionar
+                noticias.push(noticia);
+                showNotification('Notícia adicionada com sucesso!', 'success');
+            }
+            
+            closeNoticiaModal();
+            currentPage = 1;
+            loadNoticias();
+        }
+        
+        function editNoticia(id) {
+            const noticia = noticias.find(n => n.id === id);
+            if (noticia) {
+                openNoticiaModal(noticia);
+            }
+        }
+        
+        function deleteNoticia(id) {
+            currentNoticia = noticias.find(n => n.id === id);
+            document.getElementById('delete-noticia-modal').hidden = false;
+        }
+        
+        function closeDeleteModal() {
+            document.getElementById('delete-noticia-modal').hidden = true;
+            currentNoticia = null;
+        }
+        
+        function confirmDeleteNoticia() {
+            if (!currentNoticia) return;
+            
+            const index = noticias.findIndex(n => n.id === currentNoticia.id);
+            if (index !== -1) {
+                noticias.splice(index, 1);
+                showNotification('Notícia eliminada com sucesso!', 'success');
+            }
+            
+            closeDeleteModal();
+            loadNoticias();
+        }
+        
+        function showFilterModal() {
+            document.getElementById('filter-modal').hidden = false;
+        }
+        
+        function closeFilterModal() {
+            document.getElementById('filter-modal').hidden = true;
+        }
+        
+        function applyFilters() {
+            const category = document.getElementById('filter-categoria').value;
+            const estado = document.getElementById('filter-estado').value;
+            
+            document.getElementById('noticias-category-filter').value = category;
+            document.getElementById('noticias-status-filter').value = estado;
+            
+            closeFilterModal();
+            currentPage = 1;
+            loadNoticias();
+        }
+        
+        function showError(id, message) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.textContent = message;
+                el.classList.add('show');
+            }
+        }
+        
+        function hideError(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.textContent = '';
+                el.classList.remove('show');
+            }
+        }
+        
+        function showNotification(message, type = 'info') {
+            const notifications = document.getElementById('notifications');
+            const notification = document.createElement('div');
+            notification.className = `admin-notification ${type}`;
+            notification.innerHTML = `
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    ${type === 'success' ? '<polyline points="20,6 9,17 4,12"/>' : ''}
+                    ${type === 'error' ? '<circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/>' : ''}
+                    ${type === 'warning' ? '<circle cx="12" cy="12" r="10"/><line x1="12" y1="6" x2="12" y2="12"/><line x1="12" y1="18" x2="12.01" y2="18"/>' : ''}
+                    ${type === 'info' ? '<circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>' : ''}
+                </svg>
+                <span class="admin-notification-message">${message}</span>
+                <button class="admin-notification-close" onclick="this.parentNode.remove()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            `;
+            notifications.appendChild(notification);
+            
+            // Remover após 5 segundos
+            setTimeout(() => {
+                notification.remove();
+            }, 5000);
+        }
+        
+        // Debounce function
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+    </script>
+</body>
+</html>

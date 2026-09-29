@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gerenciar Despachantes - Painel de Administração CDA Digital">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gellix:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Despachantes - Painel de Administração CDA</title>
+</head>
+<body class="admin-page">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" id="admin-sidebar">
+        <div class="admin-sidebar-header">
+            <div class="admin-sidebar-logo">
+                <img src="../img/logos/cda-logo-white.svg" alt="CDA Digital">
+                <span class="logo-text">
+                    <span class="logo-title">CDA</span>
+                    <span class="logo-subtitle">Admin</span>
+                </span>
+            </div>
+            <button class="admin-sidebar-toggle" id="sidebar-toggle" aria-label="Recolher sidebar">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9,6 15,12 9,18"/>
+                </svg>
+            </button>
+        </div>
+        
+        <nav class="admin-sidebar-menu">
+            <div class="admin-sidebar-menu-item">
+                <a href="index.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"/>
+                        <rect x="14" y="3" width="7" height="7"/>
+                        <rect x="14" y="14" width="7" height="7"/>
+                        <rect x="3" y="14" width="7" height="7"/>
+                    </svg>
+                    <span class="menu-label">Dashboard</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="noticias.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6 6 18"/>
+                        <path d="m6 6 12 12"/>
+                    </svg>
+                    <span class="menu-label">Notícias</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="documentos.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                    <span class="menu-label">Documentos</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="despachantes.html" class="admin-sidebar-menu-link active">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                    </svg>
+                    <span class="menu-label">Despachantes</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-dropdown">
+                <button class="admin-sidebar-menu-link dropdown-toggle" id="content-dropdown">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                    <span class="menu-label">Conteúdo</span>
+                    <svg class="icon dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"/>
+                    </svg>
+                </button>
+                <div class="admin-sidebar-dropdown-menu">
+                    <div class="admin-sidebar-menu-item">
+                        <a href="presidentes.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <span class="menu-label">Presidentes</span>
+                        </a>
+                    </div>
+                    <div class="admin-sidebar-menu-item">
+                        <a href="timeline.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                            <span class="menu-label">Linha do Tempo</span>
+                        </a>
+                    </div>
+                    <div class="admin-sidebar-menu-item">
+                        <a href="numeros.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 20V10"/>
+                                <path d="M12 20V4"/>
+                                <path d="M6 20v-6"/>
+                            </svg>
+                            <span class="menu-label">CDA em Números</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="galeria.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="3" y1="9" x2="21" y2="9"/>
+                        <line x1="9" y1="21" x2="9" y2="9"/>
+                    </svg>
+                    <span class="menu-label">Galeria</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="users.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                    <span class="menu-label">Utilizadores</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="settings.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V7a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                    </svg>
+                    <span class="menu-label">Configurações</span>
+                </a>
+            </div>
+        </nav>
+        
+        <div class="admin-sidebar-footer">
+            <div class="admin-user">
+                <div class="admin-user-avatar">AD</div>
+                <div class="admin-user-info">
+                    <span class="admin-user-name" id="admin-user-name">Administrador</span>
+                    <span class="admin-user-role">Admin</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="admin-main">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <button class="admin-header-btn mobile-menu-toggle" id="mobile-menu-toggle">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+                <h1 class="admin-header-title">Despachantes</h1>
+                <nav class="admin-breadcrumb">
+                    <a href="index.html" class="admin-breadcrumb-link">Início</a>
+                    <span class="admin-breadcrumb-separator">/</span>
+                    <span class="admin-breadcrumb-current">Despachantes</span>
+                </nav>
+            </div>
+            <div class="admin-header-right">
+                <div class="admin-header-actions">
+                    <button class="admin-header-btn" onclick="showFilterModal()">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+                        </svg>
+                        <span class="menu-label">Filtros</span>
+                    </button>
+                    <a href="despachantes.html?action=new" class="admin-header-btn">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                        <span class="menu-label">Novo Despachante</span>
+                    </a>
+                    <button class="admin-header-btn" onclick="exportDespachantes()">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7,10 12,15 17,10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        <span class="menu-label">Exportar</span>
+                    </button>
+                </div>
+                <div class="admin-header-user">
+                    <div class="admin-header-user-avatar">AD</div>
+                    <span class="admin-header-user-name">Administrador</span>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Content -->
+        <div class="admin-content">
+            <!-- Stats -->
+            <section class="admin-stats" style="margin-bottom: 24px;">
+                <div class="admin-stat-card">
+                    <div class="admin-stat-header">
+                        <div class="admin-stat-icon blue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="admin-stat-value" id="total-despachantes">221</div>
+                    <div class="admin-stat-label">Despachantes Totais</div>
+                </div>
+                
+                <div class="admin-stat-card">
+                    <div class="admin-stat-header">
+                        <div class="admin-stat-icon green">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22,4 12,14.01 9,11.01"/>
+                            </svg>
+                        </div>
+                        <span class="admin-stat-change positive">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22,11 16,16 10,11 4,6"/>
+                            </svg>
+                            +10
+                        </span>
+                    </div>
+                    <div class="admin-stat-value" id="ativos-despachantes">210</div>
+                    <div class="admin-stat-label">Despachantes Activos</div>
+                </div>
+                
+                <div class="admin-stat-card">
+                    <div class="admin-stat-header">
+                        <div class="admin-stat-icon orange">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="admin-stat-value" id="suspensos-despachantes">11</div>
+                    <div class="admin-stat-label">Despachantes Suspensos</div>
+                </div>
+                
+                <div class="admin-stat-card">
+                    <div class="admin-stat-header">
+                        <div class="admin-stat-icon red">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="admin-stat-value" id="delegacoes-despachantes">3</div>
+                    <div class="admin-stat-label">Delegações</div>
+                </div>
+            </section>
+            
+            <!-- Table Header -->
+            <div class="admin-table-container">
+                <div class="admin-table-header">
+                    <h2 class="admin-table-title">Todos os Despachantes</h2>
+                    <div class="admin-table-actions">
+                        <div class="admin-table-search">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                            </svg>
+                            <input type="text" id="despachantes-search" placeholder="Pesquisar despachantes...">
+                        </div>
+                        <select class="admin-table-filter" id="despachantes-estado-filter">
+                            <option value="">Todos os Estados</option>
+                            <option value="REGISTADO">Registado</option>
+                            <option value="SUSPENSO">Suspenso</option>
+                            <option value="INACTIVO">Inactivo</option>
+                        </select>
+                        <select class="admin-table-filter" id="despachantes-delegacao-filter">
+                            <option value="">Todas as Delegações</option>
+                            <option value="Maputo">Maputo</option>
+                            <option value="Beira">Beira</option>
+                            <option value="Nampula">Nampula</option>
+                            <option value="Xai-Xai">Xai-Xai</option>
+                            <option value="Pemba">Pemba</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Table -->
+                <div class="admin-table-wrapper">
+                    <table class="admin-table" id="despachantes-table">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Nome</th>
+                                <th>Cédula</th>
+                                <th>Delegação</th>
+                                <th>Estado</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="despachantes-table-body">
+                            <!-- Despachantes serão carregados via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Empty State -->
+                <div class="admin-table-empty" id="despachantes-empty" hidden>
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                    </svg>
+                    <h3>Nenhum despachante encontrado</h3>
+                    <p>Adicione o primeiro despachante para começar.</p>
+                    <a href="despachantes.html?action=new" class="btn btn-primary" style="margin-top: 16px; display: inline-block;">
+                        Adicionar Despachante
+                    </a>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="admin-table-pagination">
+                    <div class="admin-table-pagination-info">
+                        Mostrando <span id="despachantes-showing">0</span> de <span id="despachantes-total">0</span> despachantes
+                    </div>
+                    <div class="admin-table-pagination-controls">
+                        <button class="admin-table-pagination-btn" id="despachantes-prev" disabled>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15,18 9,12 15,6"/>
+                            </svg>
+                        </button>
+                        <button class="admin-table-pagination-btn active" id="despachantes-page-1">1</button>
+                        <button class="admin-table-pagination-btn" id="despachantes-page-2">2</button>
+                        <button class="admin-table-pagination-btn" id="despachantes-page-3">3</button>
+                        <span class="admin-table-pagination-btn">...</span>
+                        <button class="admin-table-pagination-btn" id="despachantes-page-last">10</button>
+                        <button class="admin-table-pagination-btn" id="despachantes-next">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Form Modal -->
+    <div class="admin-modal-overlay" id="despachante-modal" hidden>
+        <div class="admin-modal admin-modal-lg">
+            <button class="admin-modal-close" onclick="closeDespachanteModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title" id="despachante-modal-title">Novo Despachante</h2>
+            </div>
+            <div class="admin-modal-body">
+                <form id="despachante-form" class="admin-form">
+                    <input type="hidden" id="despachante-id" name="id">
+                    <div class="admin-form-grid">
+                        <div class="admin-form-group">
+                            <label for="despachante-codigo">Código Profissional *</label>
+                            <input type="text" id="despachante-codigo" name="codigo" class="admin-form-control" placeholder="Ex: 000100010912" required>
+                            <div class="admin-form-error" id="despachante-codigo-error"></div>
+                        </div>
+                        <div class="admin-form-group">
+                            <label for="despachante-cedula">Nº da Cédula *</label>
+                            <input type="text" id="despachante-cedula" name="cedula" class="admin-form-control" placeholder="Ex: DESP / 001 / DGA / 03" required>
+                            <div class="admin-form-error" id="despachante-cedula-error"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="despachante-nome">Nome Completo *</label>
+                        <input type="text" id="despachante-nome" name="nome" class="admin-form-control" placeholder="Nome completo do despachante" required>
+                        <div class="admin-form-error" id="despachante-nome-error"></div>
+                    </div>
+                    
+                    <div class="admin-form-grid">
+                        <div class="admin-form-group">
+                            <label for="despachante-delegacao">Delegação *</label>
+                            <select id="despachante-delegacao" name="delegacao" class="admin-form-control admin-form-select" required>
+                                <option value="">Selecione a delegação</option>
+                                <option value="Maputo">Maputo</option>
+                                <option value="Beira">Beira</option>
+                                <option value="Nampula">Nampula</option>
+                                <option value="Xai-Xai">Xai-Xai</option>
+                                <option value="Pemba">Pemba</option>
+                                <option value="Matola">Matola</option>
+                                <option value="Outra">Outra</option>
+                            </select>
+                            <div class="admin-form-error" id="despachante-delegacao-error"></div>
+                        </div>
+                        <div class="admin-form-group">
+                            <label for="despachante-estado">Estado *</label>
+                            <select id="despachante-estado" name="estado" class="admin-form-control admin-form-select" required>
+                                <option value="REGISTADO">Registado</option>
+                                <option value="SUSPENSO">Suspenso</option>
+                                <option value="INACTIVO">Inactivo</option>
+                            </select>
+                            <div class="admin-form-error" id="despachante-estado-error"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="despachante-email">Email</label>
+                        <input type="email" id="despachante-email" name="email" class="admin-form-control" placeholder="email@exemplo.com">
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="despachante-telefone">Telefone</label>
+                        <input type="tel" id="despachante-telefone" name="telefone" class="admin-form-control" placeholder="+258 82 000 0000">
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="despachante-data-registo">Data de Registo</label>
+                        <input type="date" id="despachante-data-registo" name="dataRegisto" class="admin-form-control">
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="despachante-data-validade">Data de Validade</label>
+                        <input type="date" id="despachante-data-validade" name="dataValidade" class="admin-form-control">
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="despachante-foto">Foto (Opcional)</label>
+                        <div class="admin-form-file">
+                            <input type="file" id="despachante-foto" name="foto" class="admin-form-file-input" accept="image/*">
+                            <label for="despachante-foto" class="admin-form-file-label">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <circle cx="8.5" cy="8.5" r="1.5"/>
+                                    <polyline points="21,15 16,10 5,21"/>
+                                </svg>
+                                <span>Escolher foto</span>
+                            </label>
+                            <span class="admin-form-file-name" id="despachante-foto-name">Nenhum ficheiro seleccionado</span>
+                        </div>
+                        <div class="admin-form-hint">Recomendado: 200x200px (quadrada)</div>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="despachante-notas">Notas Internas</label>
+                        <textarea id="despachante-notas" name="notas" class="admin-form-control admin-form-textarea" placeholder="Notas adicionais sobre o despachante..."></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeDespachanteModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="saveDespachante()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                    Guardar Despachante
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Delete Confirmation Modal -->
+    <div class="admin-modal-overlay admin-confirm-modal" id="delete-despachante-modal" hidden>
+        <div class="admin-modal">
+            <button class="admin-modal-close" onclick="closeDeleteModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title">Confirmar Eliminar</h2>
+            </div>
+            <div class="admin-modal-body">
+                <div class="admin-confirm-modal">
+                    <div class="admin-modal-icon danger">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="15" y1="9" x2="9" y2="15"/>
+                            <line x1="9" y1="9" x2="15" y2="15"/>
+                        </svg>
+                    </div>
+                    <p class="admin-modal-message">Tem a certeza que deseja eliminar este despachante? Esta ação não pode ser desfeita.</p>
+                </div>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeDeleteModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-danger" onclick="confirmDeleteDespachante()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="3,6 5,6 21,6"/>
+                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                    </svg>
+                    Eliminar
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Filter Modal -->
+    <div class="admin-modal-overlay" id="filter-modal" hidden>
+        <div class="admin-modal">
+            <button class="admin-modal-close" onclick="closeFilterModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title">Filtros Avançados</h2>
+            </div>
+            <div class="admin-modal-body">
+                <form id="filter-form" class="admin-form">
+                    <div class="admin-form-group">
+                        <label for="filter-nome">Nome</label>
+                        <input type="text" id="filter-nome" class="admin-form-control" placeholder="Pesquisar por nome">
+                    </div>
+                    <div class="admin-form-group">
+                        <label for="filter-codigo">Código</label>
+                        <input type="text" id="filter-codigo" class="admin-form-control" placeholder="Pesquisar por código">
+                    </div>
+                    <div class="admin-form-group">
+                        <label for="filter-estado">Estado</label>
+                        <select id="filter-estado" class="admin-form-control admin-form-select">
+                            <option value="">Todos os Estados</option>
+                            <option value="REGISTADO">Registado</option>
+                            <option value="SUSPENSO">Suspenso</option>
+                            <option value="INACTIVO">Inactivo</option>
+                        </select>
+                    </div>
+                    <div class="admin-form-group">
+                        <label for="filter-delegacao">Delegação</label>
+                        <select id="filter-delegacao" class="admin-form-control admin-form-select">
+                            <option value="">Todas as Delegações</option>
+                            <option value="Maputo">Maputo</option>
+                            <option value="Beira">Beira</option>
+                            <option value="Nampula">Nampula</option>
+                            <option value="Xai-Xai">Xai-Xai</option>
+                            <option value="Pemba">Pemba</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeFilterModal()">
+                    Limpar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="applyFilters()">
+                    Aplicar Filtros
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Notifications -->
+    <div class="admin-notifications" id="notifications"></div>
+    
+    <script src="../js/main.js"></script>
+    <script src="js/admin.js"></script>
+    <script>
+        // Dados de exemplo
+        let despachantes = [
+            {
+                id: 1,
+                codigo: "000100010912",
+                nome: "Carlos F. Filomeno de Gama Afonso",
+                cedula: "DESP / 001 / DGA / 03",
+                delegacao: "Maputo",
+                estado: "REGISTADO",
+                email: "carlos.gama@exemplo.com",
+                telefone: "+258 82 000 0001",
+                dataRegisto: "2011-09-16",
+                dataValidade: "2026-12-31",
+                foto: "",
+                notas: "Primeiro despachante registado na CDA"
+            },
+            {
+                id: 2,
+                codigo: "000200020913",
+                nome: "Maria da Graça João",
+                cedula: "DESP / 002 / DGA / 04",
+                delegacao: "Maputo",
+                estado: "REGISTADO",
+                email: "maria.graca@exemplo.com",
+                telefone: "+258 82 000 0002",
+                dataRegisto: "2012-05-20",
+                dataValidade: "2026-12-31",
+                foto: "",
+                notas: ""
+            },
+            {
+                id: 3,
+                codigo: "000300030914",
+                nome: "José Manuel da Silva",
+                cedula: "DESP / 003 / DGA / 05",
+                delegacao: "Beira",
+                estado: "REGISTADO",
+                email: "jose.manuel@exemplo.com",
+                telefone: "+258 82 000 0003",
+                dataRegisto: "2013-01-10",
+                dataValidade: "2026-12-31",
+                foto: "",
+                notas: ""
+            },
+            {
+                id: 4,
+                codigo: "000400040915",
+                nome: "Ana Paula Costa",
+                cedula: "DESP / 004 / DGA / 06",
+                delegacao: "Nampula",
+                estado: "SUSPENSO",
+                email: "ana.paula@exemplo.com",
+                telefone: "+258 82 000 0004",
+                dataRegisto: "2014-03-15",
+                dataValidade: "2025-12-31",
+                foto: "",
+                notas: "Suspenso por não pagamento de quotas"
+            },
+            {
+                id: 5,
+                codigo: "000500050916",
+                nome: "Pedro Henriques",
+                cedula: "DESP / 005 / DGA / 07",
+                delegacao: "Maputo",
+                estado: "REGISTADO",
+                email: "pedro.henriques@exemplo.com",
+                telefone: "+258 82 000 0005",
+                dataRegisto: "2015-07-22",
+                dataValidade: "2026-12-31",
+                foto: "",
+                notas: ""
+            },
+            {
+                id: 6,
+                codigo: "000600060917",
+                nome: "Sofia Rafael",
+                cedula: "DESP / 006 / DGA / 08",
+                delegacao: "Matola",
+                estado: "REGISTADO",
+                email: "sofia.rafael@exemplo.com",
+                telefone: "+258 82 000 0006",
+                dataRegisto: "2016-11-05",
+                dataValidade: "2026-12-31",
+                foto: "",
+                notas: ""
+            },
+            {
+                id: 7,
+                codigo: "000700070918",
+                nome: "Ricardo Domingos",
+                cedula: "DESP / 007 / DGA / 09",
+                delegacao: "Maputo",
+                estado: "SUSPENSO",
+                email: "ricardo.domingos@exemplo.com",
+                telefone: "+258 82 000 0007",
+                dataRegisto: "2017-02-14",
+                dataValidade: "2026-12-31",
+                foto: "",
+                notas: "Suspenso por irregularidades"
+            },
+            {
+                id: 8,
+                codigo: "000800080919",
+                nome: "Célia Fernando",
+                cedula: "DESP / 008 / DGA / 10",
+                delegacao: "Xai-Xai",
+                estado: "REGISTADO",
+                email: "celia.fernando@exemplo.com",
+                telefone: "+258 82 000 0008",
+                dataRegisto: "2018-06-30",
+                dataValidade: "2026-12-31",
+                foto: "",
+                notas: ""
+            },
+            {
+                id: 9,
+                codigo: "000900090920",
+                nome: "Mário Alberto",
+                cedula: "DESP / 009 / DGA / 11",
+                delegacao: "Pemba",
+                estado: "REGISTADO",
+                email: "mario.alberto@exemplo.com",
+                telefone: "+258 82 000 0009",
+                dataRegisto: "2019-09-18",
+                dataValidade: "2026-12-31",
+                foto: "",
+                notas: ""
+            },
+            {
+                id: 10,
+                codigo: "001000100921",
+                nome: "Laura Miguel",
+                cedula: "DESP / 010 / DGA / 12",
+                delegacao: "Maputo",
+                estado: "REGISTADO",
+                email: "laura.miguel@exemplo.com",
+                telefone: "+258 82 000 0010",
+                dataRegisto: "2020-04-01",
+                dataValidade: "2026-12-31",
+                foto: "",
+                notas: ""
+            }
+        ];
+        
+        let currentDespachante = null;
+        let currentPage = 1;
+        const itemsPerPage = 5;
+        
+        // Carregar despachantes
+        function loadDespachantes() {
+            const tbody = document.getElementById('despachantes-table-body');
+            const empty = document.getElementById('despachantes-empty');
+            const showing = document.getElementById('despachantes-showing');
+            const total = document.getElementById('despachantes-total');
+            
+            // Filtrar despachantes
+            const search = document.getElementById('despachantes-search').value.toLowerCase();
+            const estado = document.getElementById('despachantes-estado-filter').value;
+            const delegacao = document.getElementById('despachantes-delegacao-filter').value;
+            
+            let filtered = despachantes.filter(d => {
+                const matchSearch = !search || 
+                    d.codigo.toLowerCase().includes(search) ||
+                    d.nome.toLowerCase().includes(search) ||
+                    d.cedula.toLowerCase().includes(search) ||
+                    (d.email && d.email.toLowerCase().includes(search)) ||
+                    (d.telefone && d.telefone.includes(search));
+                const matchEstado = !estado || d.estado === estado;
+                const matchDelegacao = !delegacao || d.delegacao === delegacao;
+                return matchSearch && matchEstado && matchDelegacao;
+            });
+            
+            // Paginação
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageItems = filtered.slice(start, end);
+            
+            total.textContent = filtered.length;
+            showing.textContent = pageItems.length > 0 ? start + 1 : 0;
+            
+            if (pageItems.length === 0) {
+                tbody.innerHTML = '';
+                empty.hidden = false;
+                return;
+            }
+            
+            empty.hidden = true;
+            
+            tbody.innerHTML = pageItems.map(d => `
+                <tr>
+                    <td><code>${d.codigo}</code></td>
+                    <td>
+                        <div class="admin-table-cell-content">
+                            <div class="admin-table-cell-title">${d.nome}</div>
+                            <div class="admin-table-cell-subtitle">${d.email || 'Sem email'}</div>
+                        </div>
+                    </td>
+                    <td><code>${d.cedula}</code></td>
+                    <td><span class="admin-table-status">${d.delegacao}</span></td>
+                    <td><span class="admin-table-status ${d.estado === 'REGISTADO' ? 'active' : d.estado === 'SUSPENSO' ? 'warning' : 'inactive'}">${d.estado}</span></td>
+                    <td>
+                        <div class="admin-table-actions">
+                            <button class="admin-table-action edit" onclick="editDespachante(${d.id})" title="Editar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                                </svg>
+                            </button>
+                            <button class="admin-table-action delete" onclick="deleteDespachante(${d.id})" title="Eliminar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="3,6 5,6 21,6"/>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                                </svg>
+                            </button>
+                            <button class="admin-table-action" onclick="viewDespachante(${d.id})" title="Ver">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
+            
+            updatePagination(filtered.length);
+            updateStats();
+        }
+        
+        function updateStats() {
+            const total = despachantes.length;
+            const ativos = despachantes.filter(d => d.estado === 'REGISTADO').length;
+            const suspensos = despachantes.filter(d => d.estado === 'SUSPENSO').length;
+            const delegacoes = new Set(despachantes.map(d => d.delegacao)).size;
+            
+            document.getElementById('total-despachantes').textContent = total;
+            document.getElementById('ativos-despachantes').textContent = ativos;
+            document.getElementById('suspensos-despachantes').textContent = suspensos;
+            document.getElementById('delegacoes-despachantes').textContent = delegacoes;
+        }
+        
+        function updatePagination(totalItems) {
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            const prevBtn = document.getElementById('despachantes-prev');
+            const nextBtn = document.getElementById('despachantes-next');
+            
+            prevBtn.disabled = currentPage === 1;
+            nextBtn.disabled = currentPage >= totalPages;
+            
+            // Atualizar botões de página
+            for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById(`despachantes-page-${i}`);
+                if (btn) {
+                    btn.textContent = currentPage === i ? currentPage : i;
+                    btn.classList.toggle('active', currentPage === i);
+                }
+            }
+            
+            // Atualizar botão last
+            const lastBtn = document.getElementById('despachantes-page-last');
+            if (lastBtn) {
+                lastBtn.textContent = totalPages;
+                lastBtn.classList.toggle('active', currentPage === totalPages);
+            }
+        }
+        
+        function changePage(page) {
+            const totalItems = despachantes.length;
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            
+            if (page < 1 || page > totalPages) return;
+            
+            currentPage = page;
+            loadDespachantes();
+        }
+        
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verificar se está logado
+            if (sessionStorage.getItem('cda_admin_logged') !== 'true') {
+                window.location.href = 'login.html';
+                return;
+            }
+            
+            // Carregar despachantes
+            loadDespachantes();
+            
+            // Pesquisa em tempo real
+            document.getElementById('despachantes-search').addEventListener('input', debounce(function() {
+                currentPage = 1;
+                loadDespachantes();
+            }, 300));
+            
+            // Filtros
+            document.getElementById('despachantes-estado-filter').addEventListener('change', function() {
+                currentPage = 1;
+                loadDespachantes();
+            });
+            
+            document.getElementById('despachantes-delegacao-filter').addEventListener('change', function() {
+                currentPage = 1;
+                loadDespachantes();
+            });
+            
+            // Paginação
+            document.getElementById('despachantes-prev').addEventListener('click', function() {
+                if (currentPage > 1) {
+                    changePage(currentPage - 1);
+                }
+            });
+            
+            document.getElementById('despachantes-next').addEventListener('click', function() {
+                const totalItems = despachantes.length;
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                if (currentPage < totalPages) {
+                    changePage(currentPage + 1);
+                }
+            });
+            
+            // Botões de página
+            for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById(`despachantes-page-${i}`);
+                if (btn) {
+                    btn.addEventListener('click', function() {
+                        changePage(i);
+                    });
+                }
+            }
+            
+            // Botão last
+            document.getElementById('despachantes-page-last').addEventListener('click', function() {
+                const totalItems = despachantes.length;
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                changePage(totalPages);
+            });
+            
+            // Novo despachante
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('action') === 'new') {
+                openDespachanteModal();
+            }
+            
+            // Atualizar nome do utilizador
+            const userName = sessionStorage.getItem('cda_admin_user') || 'Administrador';
+            document.getElementById('admin-user-name').textContent = userName;
+            
+            // File input change
+            document.getElementById('despachante-foto').addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                const fileName = document.getElementById('despachante-foto-name');
+                if (file) {
+                    fileName.textContent = file.name;
+                } else {
+                    fileName.textContent = 'Nenhum ficheiro seleccionado';
+                }
+            });
+        });
+        
+        function openDespachanteModal(despachante = null) {
+            const modal = document.getElementById('despachante-modal');
+            const form = document.getElementById('despachante-form');
+            const title = document.getElementById('despachante-modal-title');
+            
+            currentDespachante = despachante;
+            
+            if (despachante) {
+                // Editar
+                title.textContent = 'Editar Despachante';
+                document.getElementById('despachante-id').value = despachante.id;
+                document.getElementById('despachante-codigo').value = despachante.codigo;
+                document.getElementById('despachante-cedula').value = despachante.cedula;
+                document.getElementById('despachante-nome').value = despachante.nome;
+                document.getElementById('despachante-delegacao').value = despachante.delegacao;
+                document.getElementById('despachante-estado').value = despachante.estado;
+                document.getElementById('despachante-email').value = despachante.email || '';
+                document.getElementById('despachante-telefone').value = despachante.telefone || '';
+                document.getElementById('despachante-data-registo').value = despachante.dataRegisto || '';
+                document.getElementById('despachante-data-validade').value = despachante.dataValidade || '';
+                document.getElementById('despachante-notas').value = despachante.notas || '';
+                document.getElementById('despachante-foto-name').textContent = despachante.foto ? despachante.foto : 'Nenhum ficheiro seleccionado';
+            } else {
+                // Novo
+                title.textContent = 'Novo Despachante';
+                form.reset();
+                document.getElementById('despachante-foto-name').textContent = 'Nenhum ficheiro seleccionado';
+            }
+            
+            modal.hidden = false;
+        }
+        
+        function closeDespachanteModal() {
+            document.getElementById('despachante-modal').hidden = true;
+            currentDespachante = null;
+            // Limpar URL
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+        
+        function saveDespachante() {
+            const form = document.getElementById('despachante-form');
+            const formData = new FormData(form);
+            
+            // Validar
+            let isValid = true;
+            
+            if (!formData.get('codigo')) {
+                showError('despachante-codigo-error', 'O código é obrigatório');
+                isValid = false;
+            } else {
+                hideError('despachante-codigo-error');
+            }
+            
+            if (!formData.get('cedula')) {
+                showError('despachante-cedula-error', 'A cédula é obrigatória');
+                isValid = false;
+            } else {
+                hideError('despachante-cedula-error');
+            }
+            
+            if (!formData.get('nome')) {
+                showError('despachante-nome-error', 'O nome é obrigatório');
+                isValid = false;
+            } else {
+                hideError('despachante-nome-error');
+            }
+            
+            if (!formData.get('delegacao')) {
+                showError('despachante-delegacao-error', 'A delegação é obrigatória');
+                isValid = false;
+            } else {
+                hideError('despachante-delegacao-error');
+            }
+            
+            if (!formData.get('estado')) {
+                showError('despachante-estado-error', 'O estado é obrigatório');
+                isValid = false;
+            } else {
+                hideError('despachante-estado-error');
+            }
+            
+            if (!isValid) return;
+            
+            // Verificar código duplicado
+            const codigo = formData.get('codigo');
+            const existing = despachantes.find(d => d.codigo === codigo && d.id !== currentDespachante?.id);
+            if (existing) {
+                showError('despachante-codigo-error', 'Este código já está em uso');
+                return;
+            }
+            
+            // Salvar
+            const despachante = {
+                id: formData.get('id') ? parseInt(formData.get('id')) : Date.now(),
+                codigo: formData.get('codigo'),
+                nome: formData.get('nome'),
+                cedula: formData.get('cedula'),
+                delegacao: formData.get('delegacao'),
+                estado: formData.get('estado'),
+                email: formData.get('email'),
+                telefone: formData.get('telefone'),
+                dataRegisto: formData.get('dataRegisto'),
+                dataValidade: formData.get('dataValidade'),
+                foto: currentDespachante ? currentDespachante.foto : '',
+                notas: formData.get('notas')
+            };
+            
+            if (currentDespachante) {
+                // Atualizar
+                const index = despachantes.findIndex(d => d.id === currentDespachante.id);
+                if (index !== -1) {
+                    despachantes[index] = despachante;
+                    showNotification('Despachante actualizado com sucesso!', 'success');
+                }
+            } else {
+                // Adicionar
+                despachantes.push(despachante);
+                showNotification('Despachante adicionado com sucesso!', 'success');
+            }
+            
+            closeDespachanteModal();
+            currentPage = 1;
+            loadDespachantes();
+        }
+        
+        function editDespachante(id) {
+            const despachante = despachantes.find(d => d.id === id);
+            if (despachante) {
+                openDespachanteModal(despachante);
+            }
+        }
+        
+        function viewDespachante(id) {
+            const despachante = despachantes.find(d => d.id === id);
+            if (despachante) {
+                // Poderia abrir um modal de visualização
+                showNotification('Visualizando: ' + despachante.nome, 'info');
+            }
+        }
+        
+        function deleteDespachante(id) {
+            currentDespachante = despachantes.find(d => d.id === id);
+            document.getElementById('delete-despachante-modal').hidden = false;
+        }
+        
+        function closeDeleteModal() {
+            document.getElementById('delete-despachante-modal').hidden = true;
+            currentDespachante = null;
+        }
+        
+        function confirmDeleteDespachante() {
+            if (!currentDespachante) return;
+            
+            const index = despachantes.findIndex(d => d.id === currentDespachante.id);
+            if (index !== -1) {
+                despachantes.splice(index, 1);
+                showNotification('Despachante eliminado com sucesso!', 'success');
+            }
+            
+            closeDeleteModal();
+            loadDespachantes();
+        }
+        
+        function exportDespachantes() {
+            // Simular exportação
+            showNotification('Exportação iniciada. Será baixado automaticamente.', 'success');
+        }
+        
+        function showFilterModal() {
+            document.getElementById('filter-modal').hidden = false;
+        }
+        
+        function closeFilterModal() {
+            document.getElementById('filter-modal').hidden = true;
+        }
+        
+        function applyFilters() {
+            const nome = document.getElementById('filter-nome').value;
+            const codigo = document.getElementById('filter-codigo').value;
+            const estado = document.getElementById('filter-estado').value;
+            const delegacao = document.getElementById('filter-delegacao').value;
+            
+            document.getElementById('despachantes-search').value = nome || codigo;
+            document.getElementById('despachantes-estado-filter').value = estado;
+            document.getElementById('despachantes-delegacao-filter').value = delegacao;
+            
+            closeFilterModal();
+            currentPage = 1;
+            loadDespachantes();
+        }
+        
+        function showError(id, message) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.textContent = message;
+                el.classList.add('show');
+            }
+        }
+        
+        function hideError(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.textContent = '';
+                el.classList.remove('show');
+            }
+        }
+        
+        function showNotification(message, type = 'info') {
+            const notifications = document.getElementById('notifications');
+            const notification = document.createElement('div');
+            notification.className = `admin-notification ${type}`;
+            notification.innerHTML = `
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    ${type === 'success' ? '<polyline points="20,6 9,17 4,12"/>' : ''}
+                    ${type === 'error' ? '<circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/>' : ''}
+                    ${type === 'warning' ? '<circle cx="12" cy="12" r="10"/><line x1="12" y1="6" x2="12" y2="12"/><line x1="12" y1="18" x2="12.01" y2="18"/>' : ''}
+                    ${type === 'info' ? '<circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>' : ''}
+                </svg>
+                <span class="admin-notification-message">${message}</span>
+                <button class="admin-notification-close" onclick="this.parentNode.remove()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            `;
+            notifications.appendChild(notification);
+            
+            // Remover após 5 segundos
+            setTimeout(() => {
+                notification.remove();
+            }, 5000);
+        }
+        
+        // Debounce function
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+    </script>
+</body>
+</html>

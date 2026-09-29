@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gerenciar Presidentes - Painel de Administração CDA Digital">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gellix:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Presidentes - Painel de Administração CDA</title>
+</head>
+<body class="admin-page">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" id="admin-sidebar">
+        <div class="admin-sidebar-header">
+            <div class="admin-sidebar-logo">
+                <img src="../img/logos/cda-logo-white.svg" alt="CDA Digital">
+                <span class="logo-text">
+                    <span class="logo-title">CDA</span>
+                    <span class="logo-subtitle">Admin</span>
+                </span>
+            </div>
+            <button class="admin-sidebar-toggle" id="sidebar-toggle" aria-label="Recolher sidebar">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9,6 15,12 9,18"/>
+                </svg>
+            </button>
+        </div>
+        
+        <nav class="admin-sidebar-menu">
+            <div class="admin-sidebar-menu-item">
+                <a href="index.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"/>
+                        <rect x="14" y="3" width="7" height="7"/>
+                        <rect x="14" y="14" width="7" height="7"/>
+                        <rect x="3" y="14" width="7" height="7"/>
+                    </svg>
+                    <span class="menu-label">Dashboard</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="noticias.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6 6 18"/>
+                        <path d="m6 6 12 12"/>
+                    </svg>
+                    <span class="menu-label">Notícias</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="documentos.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                    <span class="menu-label">Documentos</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="despachantes.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                    </svg>
+                    <span class="menu-label">Despachantes</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-dropdown">
+                <button class="admin-sidebar-menu-link dropdown-toggle active" id="content-dropdown">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                    <span class="menu-label">Conteúdo</span>
+                    <svg class="icon dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"/>
+                    </svg>
+                </button>
+                <div class="admin-sidebar-dropdown-menu">
+                    <div class="admin-sidebar-menu-item">
+                        <a href="presidentes.html" class="admin-sidebar-menu-link active">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <span class="menu-label">Presidentes</span>
+                        </a>
+                    </div>
+                    <div class="admin-sidebar-menu-item">
+                        <a href="timeline.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                            <span class="menu-label">Linha do Tempo</span>
+                        </a>
+                    </div>
+                    <div class="admin-sidebar-menu-item">
+                        <a href="numeros.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 20V10"/>
+                                <path d="M12 20V4"/>
+                                <path d="M6 20v-6"/>
+                            </svg>
+                            <span class="menu-label">CDA em Números</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="galeria.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="3" y1="9" x2="21" y2="9"/>
+                        <line x1="9" y1="21" x2="9" y2="9"/>
+                    </svg>
+                    <span class="menu-label">Galeria</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="users.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                    <span class="menu-label">Utilizadores</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="settings.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V7a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                    </svg>
+                    <span class="menu-label">Configurações</span>
+                </a>
+            </div>
+        </nav>
+        
+        <div class="admin-sidebar-footer">
+            <div class="admin-user">
+                <div class="admin-user-avatar">AD</div>
+                <div class="admin-user-info">
+                    <span class="admin-user-name" id="admin-user-name">Administrador</span>
+                    <span class="admin-user-role">Admin</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="admin-main">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <button class="admin-header-btn mobile-menu-toggle" id="mobile-menu-toggle">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+                <h1 class="admin-header-title">Presidentes</h1>
+                <nav class="admin-breadcrumb">
+                    <a href="index.html" class="admin-breadcrumb-link">Início</a>
+                    <span class="admin-breadcrumb-separator">/</span>
+                    <span class="admin-breadcrumb-current">Presidentes</span>
+                </nav>
+            </div>
+            <div class="admin-header-right">
+                <div class="admin-header-actions">
+                    <a href="presidentes.html?action=new" class="admin-header-btn">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                        <span class="menu-label">Novo Presidente</span>
+                    </a>
+                </div>
+                <div class="admin-header-user">
+                    <div class="admin-header-user-avatar">AD</div>
+                    <span class="admin-header-user-name">Administrador</span>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Content -->
+        <div class="admin-content">
+            <!-- Table Header -->
+            <div class="admin-table-container">
+                <div class="admin-table-header">
+                    <h2 class="admin-table-title">Todos os Presidentes</h2>
+                    <div class="admin-table-actions">
+                        <div class="admin-table-search">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                            </svg>
+                            <input type="text" id="presidentes-search" placeholder="Pesquisar presidentes...">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Table -->
+                <div class="admin-table-wrapper">
+                    <table class="admin-table" id="presidentes-table">
+                        <thead>
+                            <tr>
+                                <th>Foto</th>
+                                <th>Nome</th>
+                                <th>Mandato</th>
+                                <th>Estado</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="presidentes-table-body">
+                            <!-- Presidentes serão carregados via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Empty State -->
+                <div class="admin-table-empty" id="presidentes-empty" hidden>
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                    <h3>Nenhum presidente encontrado</h3>
+                    <p>Adicione o primeiro presidente para começar.</p>
+                    <a href="presidentes.html?action=new" class="btn btn-primary" style="margin-top: 16px; display: inline-block;">
+                        Adicionar Presidente
+                    </a>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="admin-table-pagination">
+                    <div class="admin-table-pagination-info">
+                        Mostrando <span id="presidentes-showing">0</span> de <span id="presidentes-total">0</span> presidentes
+                    </div>
+                    <div class="admin-table-pagination-controls">
+                        <button class="admin-table-pagination-btn" id="presidentes-prev" disabled>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15,18 9,12 15,6"/>
+                            </svg>
+                        </button>
+                        <button class="admin-table-pagination-btn active" id="presidentes-page-1">1</button>
+                        <span class="admin-table-pagination-btn">...</span>
+                        <button class="admin-table-pagination-btn" id="presidentes-page-last">10</button>
+                        <button class="admin-table-pagination-btn" id="presidentes-next">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Form Modal -->
+    <div class="admin-modal-overlay" id="presidente-modal" hidden>
+        <div class="admin-modal admin-modal-lg">
+            <button class="admin-modal-close" onclick="closePresidenteModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title" id="presidente-modal-title">Novo Presidente</h2>
+            </div>
+            <div class="admin-modal-body">
+                <form id="presidente-form" class="admin-form">
+                    <input type="hidden" id="presidente-id" name="id">
+                    <div class="admin-form-section">
+                        <h3 class="admin-form-section-title">Informações Básicas</h3>
+                        <div class="admin-form-grid">
+                            <div class="admin-form-group">
+                                <label for="presidente-nome">Nome Completo *</label>
+                                <input type="text" id="presidente-nome" name="nome" class="admin-form-control" placeholder="Nome completo do presidente" required>
+                                <div class="admin-form-error" id="presidente-nome-error"></div>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="presidente-mandato">Mandato *</label>
+                                <input type="text" id="presidente-mandato" name="mandato" class="admin-form-control" placeholder="Ex: 2011-2014" required>
+                                <div class="admin-form-error" id="presidente-mandato-error"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="admin-form-group">
+                            <label for="presidente-descricao">Descrição</label>
+                            <textarea id="presidente-descricao" name="descricao" class="admin-form-control admin-form-textarea" placeholder="Breve descrição do presidente..."></textarea>
+                        </div>
+                        
+                        <div class="admin-form-group">
+                            <label for="presidente-foto">Foto (Opcional)</label>
+                            <div class="admin-form-file">
+                                <input type="file" id="presidente-foto" name="foto" class="admin-form-file-input" accept="image/*">
+                                <label for="presidente-foto" class="admin-form-file-label">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                                        <polyline points="21,15 16,10 5,21"/>
+                                    </svg>
+                                    <span>Escolher foto</span>
+                                </label>
+                                <span class="admin-form-file-name" id="presidente-foto-name">Nenhum ficheiro seleccionado</span>
+                            </div>
+                            <div class="admin-form-hint">Recomendado: 300x300px (quadrada)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-section">
+                        <h3 class="admin-form-section-title">Feitos e Marcos</h3>
+                        <div class="feitos-list" id="feitos-list">
+                            <div class="feito-item">
+                                <input type="text" class="admin-form-control" placeholder="Adicionar um feito...">
+                                <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="addFeito()">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-section">
+                        <h3 class="admin-form-section-title">Documentos Relacionados</h3>
+                        <div class="documentos-list" id="documentos-list">
+                            <div class="documento-item">
+                                <input type="text" class="admin-form-control" placeholder="Título do documento">
+                                <input type="text" class="admin-form-control" placeholder="URL do documento">
+                                <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="addDocumento()">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-section">
+                        <h3 class="admin-form-section-title">Fotografias</h3>
+                        <div class="fotos-list" id="fotos-list">
+                            <div class="foto-item">
+                                <input type="file" class="admin-form-file-input" accept="image/*" multiple>
+                                <label class="admin-form-file-label">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                                        <polyline points="21,15 16,10 5,21"/>
+                                    </svg>
+                                    <span>Adicionar fotos</span>
+                                </label>
+                                <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="addFotos()">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="presidente-ordenacao">Ordem de Apresentação</label>
+                        <input type="number" id="presidente-ordenacao" name="ordenacao" class="admin-form-control" placeholder="0" min="0">
+                        <div class="admin-form-hint">Número mais baixo aparece primeiro</div>
+                    </div>
+                </form>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closePresidenteModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="savePresidente()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                    Guardar Presidente
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Delete Confirmation Modal -->
+    <div class="admin-modal-overlay admin-confirm-modal" id="delete-presidente-modal" hidden>
+        <div class="admin-modal">
+            <button class="admin-modal-close" onclick="closeDeleteModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title">Confirmar Eliminar</h2>
+            </div>
+            <div class="admin-modal-body">
+                <div class="admin-confirm-modal">
+                    <div class="admin-modal-icon danger">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="15" y1="9" x2="9" y2="15"/>
+                            <line x1="9" y1="9" x2="15" y2="15"/>
+                        </svg>
+                    </div>
+                    <p class="admin-modal-message">Tem a certeza que deseja eliminar este presidente? Esta ação não pode ser desfeita.</p>
+                </div>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeDeleteModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-danger" onclick="confirmDeletePresidente()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="3,6 5,6 21,6"/>
+                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                    </svg>
+                    Eliminar
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Notifications -->
+    <div class="admin-notifications" id="notifications"></div>
+    
+    <script src="../js/main.js"></script>
+    <script src="js/admin.js"></script>
+    <script>
+        // Dados de exemplo
+        let presidentes = [
+            {
+                id: 1,
+                nome: "Gama Afonso",
+                mandato: "2011-2014",
+                foto: "",
+                descricao: "Primeiro Presidente da CDA. Liderou o processo de constituição formal da Câmara dos Despachantes Aduaneiros de Moçambique.",
+                feitos: [
+                    "Constituição formal da CDA",
+                    "Primeiras estruturas administrativas",
+                    "Primeiros órgãos sociais eleitos",
+                    "Estabelecimento dos alicerces institucionais"
+                ],
+                documentos: [
+                    { titulo: "Lei nº 4/2011", url: "#" },
+                    { titulo: "Acta de Constituição", url: "#" },
+                    { titulo: "Relatório de Actividades 2011-2014", url: "#" }
+                ],
+                fotos: [],
+                ordenacao: 1
+            },
+            {
+                id: 2,
+                nome: "Dixon Chongo",
+                mandato: "2014-2023",
+                foto: "",
+                descricao: "Presidente durante o período de consolidação da CDA. Liderou a instituição por quase uma década.",
+                feitos: [
+                    "Consolidação da CDA como instituição",
+                    "Expansão do número de membros",
+                    "Criação de delegações regionais",
+                    "Implementação de códigos de ética e conduta",
+                    "Representação junto das autoridades aduaneiras"
+                ],
+                documentos: [
+                    { titulo: "Regulamento Interno", url: "#" },
+                    { titulo: "Código de Ética e Deontologia", url: "#" },
+                    { titulo: "Relatórios Anuais 2014-2023", url: "#" }
+                ],
+                fotos: [],
+                ordenacao: 2
+            },
+            {
+                id: 3,
+                nome: "Salmate Chuaibo Daud",
+                mandato: "2024-2026",
+                foto: "",
+                descricao: "Presidente actual da CDA. Eleita para o triénio 2024-2026.",
+                feitos: [
+                    "Modernização dos processos internos",
+                    "Lançamento do Portal Digital CDA V4",
+                    "Reforço da transparência e prestação de contas",
+                    "Expansão da cooperação internacional"
+                ],
+                documentos: [
+                    { titulo: "Plano de Actividades 2024-2026", url: "#" },
+                    { titulo: "Relatório de Gestão 2024", url: "#" }
+                ],
+                fotos: [],
+                ordenacao: 3
+            }
+        ];
+        
+        let currentPresidente = null;
+        let currentPage = 1;
+        const itemsPerPage = 10;
+        
+        // Carregar presidentes
+        function loadPresidentes() {
+            const tbody = document.getElementById('presidentes-table-body');
+            const empty = document.getElementById('presidentes-empty');
+            const showing = document.getElementById('presidentes-showing');
+            const total = document.getElementById('presidentes-total');
+            
+            // Filtrar presidentes
+            const search = document.getElementById('presidentes-search').value.toLowerCase();
+            
+            let filtered = presidentes.filter(p => {
+                const matchSearch = !search || 
+                    p.nome.toLowerCase().includes(search) ||
+                    p.mandato.toLowerCase().includes(search) ||
+                    p.feitos.some(f => f.toLowerCase().includes(search));
+                return matchSearch;
+            });
+            
+            // Ordenar por ordenação
+            filtered.sort((a, b) => a.ordenacao - b.ordenacao);
+            
+            // Paginação
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageItems = filtered.slice(start, end);
+            
+            total.textContent = filtered.length;
+            showing.textContent = pageItems.length > 0 ? start + 1 : 0;
+            
+            if (pageItems.length === 0) {
+                tbody.innerHTML = '';
+                empty.hidden = false;
+                return;
+            }
+            
+            empty.hidden = true;
+            
+            tbody.innerHTML = pageItems.map(p => `
+                <tr>
+                    <td>
+                        <div class="admin-presidente-foto">
+                            ${p.foto ? `<img src="${p.foto}" alt="${p.nome}">` : '<div class="admin-presidente-placeholder">' + p.nome.split(' ').map(n => n[0]).join('') + '</div>'}
+                        </div>
+                    </td>
+                    <td>
+                        <div class="admin-table-cell-content">
+                            <div class="admin-table-cell-title">${p.nome}</div>
+                            <div class="admin-table-cell-subtitle">${p.mandato}</div>
+                        </div>
+                    </td>
+                    <td>${p.mandato}</td>
+                    <td><span class="admin-table-status active">Activo</span></td>
+                    <td>
+                        <div class="admin-table-actions">
+                            <button class="admin-table-action edit" onclick="editPresidente(${p.id})" title="Editar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                                </svg>
+                            </button>
+                            <button class="admin-table-action delete" onclick="deletePresidente(${p.id})" title="Eliminar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="3,6 5,6 21,6"/>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                                </svg>
+                            </button>
+                            <button class="admin-table-action" onclick="viewPresidente(${p.id})" title="Ver">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
+            
+            updatePagination(filtered.length);
+        }
+        
+        function updatePagination(totalItems) {
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            const prevBtn = document.getElementById('presidentes-prev');
+            const nextBtn = document.getElementById('presidentes-next');
+            
+            prevBtn.disabled = currentPage === 1;
+            nextBtn.disabled = currentPage >= totalPages;
+            
+            // Atualizar botão last
+            const lastBtn = document.getElementById('presidentes-page-last');
+            if (lastBtn) {
+                lastBtn.textContent = totalPages;
+                lastBtn.classList.toggle('active', currentPage === totalPages);
+            }
+        }
+        
+        function changePage(page) {
+            const totalItems = presidentes.length;
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            
+            if (page < 1 || page > totalPages) return;
+            
+            currentPage = page;
+            loadPresidentes();
+        }
+        
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verificar se está logado
+            if (sessionStorage.getItem('cda_admin_logged') !== 'true') {
+                window.location.href = 'login.html';
+                return;
+            }
+            
+            // Carregar presidentes
+            loadPresidentes();
+            
+            // Pesquisa em tempo real
+            document.getElementById('presidentes-search').addEventListener('input', debounce(function() {
+                currentPage = 1;
+                loadPresidentes();
+            }, 300));
+            
+            // Paginação
+            document.getElementById('presidentes-prev').addEventListener('click', function() {
+                if (currentPage > 1) {
+                    changePage(currentPage - 1);
+                }
+            });
+            
+            document.getElementById('presidentes-next').addEventListener('click', function() {
+                const totalItems = presidentes.length;
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                if (currentPage < totalPages) {
+                    changePage(currentPage + 1);
+                }
+            });
+            
+            // Botão last
+            document.getElementById('presidentes-page-last').addEventListener('click', function() {
+                const totalItems = presidentes.length;
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                changePage(totalPages);
+            });
+            
+            // Novo presidente
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('action') === 'new') {
+                openPresidenteModal();
+            }
+            
+            // Atualizar nome do utilizador
+            const userName = sessionStorage.getItem('cda_admin_user') || 'Administrador';
+            document.getElementById('admin-user-name').textContent = userName;
+            
+            // File input change
+            document.getElementById('presidente-foto').addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                const fileName = document.getElementById('presidente-foto-name');
+                if (file) {
+                    fileName.textContent = file.name;
+                } else {
+                    fileName.textContent = 'Nenhum ficheiro seleccionado';
+                }
+            });
+        });
+        
+        function openPresidenteModal(presidente = null) {
+            const modal = document.getElementById('presidente-modal');
+            const form = document.getElementById('presidente-form');
+            const title = document.getElementById('presidente-modal-title');
+            
+            currentPresidente = presidente;
+            
+            if (presidente) {
+                // Editar
+                title.textContent = 'Editar Presidente';
+                document.getElementById('presidente-id').value = presidente.id;
+                document.getElementById('presidente-nome').value = presidente.nome;
+                document.getElementById('presidente-mandato').value = presidente.mandato;
+                document.getElementById('presidente-descricao').value = presidente.descricao || '';
+                document.getElementById('presidente-ordenacao').value = presidente.ordenacao || '';
+                document.getElementById('presidente-foto-name').textContent = presidente.foto ? presidente.foto : 'Nenhum ficheiro seleccionado';
+                
+                // Carregar feitos
+                loadFeitos(presidente.feitos || []);
+                loadDocumentos(presidente.documentos || []);
+                loadFotos(presidente.fotos || []);
+            } else {
+                // Novo
+                title.textContent = 'Novo Presidente';
+                form.reset();
+                document.getElementById('presidente-foto-name').textContent = 'Nenhum ficheiro seleccionado';
+                loadFeitos([]);
+                loadDocumentos([]);
+                loadFotos([]);
+            }
+            
+            modal.hidden = false;
+        }
+        
+        function closePresidenteModal() {
+            document.getElementById('presidente-modal').hidden = true;
+            currentPresidente = null;
+            // Limpar URL
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+        
+        function loadFeitos(feitos) {
+            const list = document.getElementById('feitos-list');
+            list.innerHTML = feitos.map((feito, index) => `
+                <div class="feito-item">
+                    <input type="text" class="admin-form-control" value="${feito}" data-index="${index}">
+                    <button type="button" class="admin-form-btn admin-form-btn-danger" onclick="removeFeito(${index})">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"/>
+                            <line x1="6" y1="6" x2="18" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+            `).join('') + `
+                <div class="feito-item">
+                    <input type="text" class="admin-form-control" placeholder="Adicionar um feito...">
+                    <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="addFeito()">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                    </button>
+                </div>
+            `;
+        }
+        
+        function addFeito() {
+            const list = document.getElementById('feitos-list');
+            const inputs = list.querySelectorAll('input[data-index]');
+            const newInput = list.querySelector('input:not([data-index])');
+            
+            if (newInput && newInput.value.trim()) {
+                const index = inputs.length;
+                newInput.insertAdjacentHTML('beforebegin', `
+                    <div class="feito-item">
+                        <input type="text" class="admin-form-control" value="${newInput.value}" data-index="${index}">
+                        <button type="button" class="admin-form-btn admin-form-btn-danger" onclick="removeFeito(${index})">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"/>
+                                <line x1="6" y1="6" x2="18" y2="18"/>
+                            </svg>
+                        </button>
+                    </div>
+                `);
+                newInput.value = '';
+            }
+        }
+        
+        function removeFeito(index) {
+            const list = document.getElementById('feitos-list');
+            const item = list.querySelector(`[data-index="${index}"]`);
+            if (item) {
+                item.parentNode.remove();
+                // Renumerar
+                const inputs = list.querySelectorAll('input[data-index]');
+                inputs.forEach((input, i) => {
+                    input.dataset.index = i;
+                    const btn = input.nextElementSibling;
+                    if (btn && btn.onclick) {
+                        btn.onclick = function() { removeFeito(i); };
+                    }
+                });
+            }
+        }
+        
+        function loadDocumentos(documentos) {
+            const list = document.getElementById('documentos-list');
+            list.innerHTML = documentos.map((doc, index) => `
+                <div class="documento-item">
+                    <input type="text" class="admin-form-control" value="${doc.titulo}" placeholder="Título do documento" data-index="${index}">
+                    <input type="text" class="admin-form-control" value="${doc.url}" placeholder="URL do documento" data-index="${index}">
+                    <button type="button" class="admin-form-btn admin-form-btn-danger" onclick="removeDocumento(${index})">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"/>
+                            <line x1="6" y1="6" x2="18" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+            `).join('') + `
+                <div class="documento-item">
+                    <input type="text" class="admin-form-control" placeholder="Título do documento">
+                    <input type="text" class="admin-form-control" placeholder="URL do documento">
+                    <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="addDocumento()">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                    </button>
+                </div>
+            `;
+        }
+        
+        function addDocumento() {
+            const list = document.getElementById('documentos-list');
+            const inputs = list.querySelectorAll('input[data-index]');
+            const newInputs = list.querySelectorAll('input:not([data-index])');
+            
+            if (newInputs.length === 2 && newInputs[0].value.trim() && newInputs[1].value.trim()) {
+                const index = inputs.length / 2;
+                newInputs[0].insertAdjacentHTML('beforebegin', `
+                    <div class="documento-item">
+                        <input type="text" class="admin-form-control" value="${newInputs[0].value}" placeholder="Título do documento" data-index="${index}">
+                        <input type="text" class="admin-form-control" value="${newInputs[1].value}" placeholder="URL do documento" data-index="${index}">
+                        <button type="button" class="admin-form-btn admin-form-btn-danger" onclick="removeDocumento(${index})">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"/>
+                                <line x1="6" y1="6" x2="18" y2="18"/>
+                            </svg>
+                        </button>
+                    </div>
+                `);
+                newInputs[0].value = '';
+                newInputs[1].value = '';
+            }
+        }
+        
+        function removeDocumento(index) {
+            const list = document.getElementById('documentos-list');
+            const items = list.querySelectorAll(`[data-index="${index}"]`);
+            items.forEach(item => item.parentNode.remove());
+            // Renumerar
+            const inputs = list.querySelectorAll('input[data-index]');
+            inputs.forEach((input, i) => {
+                input.dataset.index = Math.floor(i / 2);
+                const btn = input.parentNode.querySelector('button');
+                if (btn && btn.onclick) {
+                    btn.onclick = function() { removeDocumento(Math.floor(i / 2)); };
+                }
+            });
+        }
+        
+        function loadFotos(fotos) {
+            const list = document.getElementById('fotos-list');
+            list.innerHTML = fotos.map((foto, index) => `
+                <div class="foto-item">
+                    <div class="admin-form-file-name">${foto}</div>
+                    <button type="button" class="admin-form-btn admin-form-btn-danger" onclick="removeFoto(${index})">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"/>
+                            <line x1="6" y1="6" x2="18" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+            `).join('') + `
+                <div class="foto-item">
+                    <input type="file" class="admin-form-file-input" accept="image/*" multiple id="new-fotos-input">
+                    <label for="new-fotos-input" class="admin-form-file-label">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <polyline points="21,15 16,10 5,21"/>
+                        </svg>
+                        <span>Adicionar fotos</span>
+                    </label>
+                    <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="addFotos()">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                    </button>
+                </div>
+            `;
+        }
+        
+        function addFotos() {
+            const input = document.getElementById('new-fotos-input');
+            const files = input.files;
+            if (files.length > 0) {
+                const list = document.getElementById('fotos-list');
+                for (let i = 0; i < files.length; i++) {
+                    list.insertAdjacentHTML('beforeend', `
+                        <div class="foto-item">
+                            <div class="admin-form-file-name">${files[i].name}</div>
+                            <button type="button" class="admin-form-btn admin-form-btn-danger" onclick="removeFoto(${document.querySelectorAll('.foto-item').length - 1})">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="18" y1="6" x2="6" y2="18"/>
+                                    <line x1="6" y1="6" x2="18" y2="18"/>
+                                </svg>
+                            </button>
+                        </div>
+                    `);
+                }
+                input.value = '';
+            }
+        }
+        
+        function removeFoto(index) {
+            const list = document.getElementById('fotos-list');
+            const items = list.querySelectorAll('.foto-item');
+            if (items[index + 1]) { // +1 porque o último é o input
+                items[index + 1].remove();
+            }
+        }
+        
+        function savePresidente() {
+            const form = document.getElementById('presidente-form');
+            const formData = new FormData(form);
+            
+            // Validar
+            if (!formData.get('nome')) {
+                showNotification('O nome é obrigatório!', 'error');
+                return;
+            }
+            
+            if (!formData.get('mandato')) {
+                showNotification('O mandato é obrigatório!', 'error');
+                return;
+            }
+            
+            // Obter feitos
+            const feitosInputs = document.querySelectorAll('#feitos-list input[data-index]');
+            const feitos = Array.from(feitosInputs).map(input => input.value);
+            
+            // Obter documentos
+            const docsInputs = document.querySelectorAll('#documentos-list input[data-index]');
+            const documentos = [];
+            for (let i = 0; i < docsInputs.length; i += 2) {
+                documentos.push({
+                    titulo: docsInputs[i].value,
+                    url: docsInputs[i + 1] ? docsInputs[i + 1].value : ''
+                });
+            }
+            
+            // Obter fotos
+            const fotosInputs = document.querySelectorAll('#fotos-list .admin-form-file-name');
+            const fotos = Array.from(fotosInputs).map(input => input.textContent);
+            
+            // Salvar
+            const presidente = {
+                id: formData.get('id') ? parseInt(formData.get('id')) : Date.now(),
+                nome: formData.get('nome'),
+                mandato: formData.get('mandato'),
+                foto: currentPresidente ? currentPresidente.foto : '',
+                descricao: formData.get('descricao'),
+                feitos: feitos,
+                documentos: documentos,
+                fotos: fotos,
+                ordenacao: formData.get('ordenacao') ? parseInt(formData.get('ordenacao')) : presidentes.length + 1
+            };
+            
+            if (currentPresidente) {
+                // Atualizar
+                const index = presidentes.findIndex(p => p.id === currentPresidente.id);
+                if (index !== -1) {
+                    presidentes[index] = presidente;
+                    showNotification('Presidente actualizado com sucesso!', 'success');
+                }
+            } else {
+                // Adicionar
+                presidentes.push(presidente);
+                showNotification('Presidente adicionado com sucesso!', 'success');
+            }
+            
+            closePresidenteModal();
+            currentPage = 1;
+            loadPresidentes();
+        }
+        
+        function editPresidente(id) {
+            const presidente = presidentes.find(p => p.id === id);
+            if (presidente) {
+                openPresidenteModal(presidente);
+            }
+        }
+        
+        function viewPresidente(id) {
+            const presidente = presidentes.find(p => p.id === id);
+            if (presidente) {
+                showNotification('Visualizando: ' + presidente.nome, 'info');
+            }
+        }
+        
+        function deletePresidente(id) {
+            currentPresidente = presidentes.find(p => p.id === id);
+            document.getElementById('delete-presidente-modal').hidden = false;
+        }
+        
+        function closeDeleteModal() {
+            document.getElementById('delete-presidente-modal').hidden = true;
+            currentPresidente = null;
+        }
+        
+        function confirmDeletePresidente() {
+            if (!currentPresidente) return;
+            
+            const index = presidentes.findIndex(p => p.id === currentPresidente.id);
+            if (index !== -1) {
+                presidentes.splice(index, 1);
+                showNotification('Presidente eliminado com sucesso!', 'success');
+            }
+            
+            closeDeleteModal();
+            loadPresidentes();
+        }
+        
+        function showNotification(message, type = 'info') {
+            const notifications = document.getElementById('notifications');
+            const notification = document.createElement('div');
+            notification.className = `admin-notification ${type}`;
+            notification.innerHTML = `
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    ${type === 'success' ? '<polyline points="20,6 9,17 4,12"/>' : ''}
+                    ${type === 'error' ? '<circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/>' : ''}
+                    ${type === 'warning' ? '<circle cx="12" cy="12" r="10"/><line x1="12" y1="6" x2="12" y2="12"/><line x1="12" y1="18" x2="12.01" y2="18"/>' : ''}
+                    ${type === 'info' ? '<circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>' : ''}
+                </svg>
+                <span class="admin-notification-message">${message}</span>
+                <button class="admin-notification-close" onclick="this.parentNode.remove()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            `;
+            notifications.appendChild(notification);
+            
+            // Remover após 5 segundos
+            setTimeout(() => {
+                notification.remove();
+            }, 5000);
+        }
+        
+        // Debounce function
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+    </script>
+    <style>
+        .admin-presidente-foto {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: var(--color-neutral-200);
+        }
+        
+        .admin-presidente-foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .admin-presidente-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            font-weight: var(--font-bold);
+            font-size: var(--text-sm);
+        }
+        
+        .feito-item,
+        .documento-item,
+        .foto-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-sm);
+        }
+        
+        .feito-item input,
+        .documento-item input {
+            flex: 1;
+        }
+        
+        .documento-item input:first-child {
+            flex: 2;
+        }
+        
+        .foto-item .admin-form-file-name {
+            flex: 1;
+        }
+    </style>
+</body>
+</html>

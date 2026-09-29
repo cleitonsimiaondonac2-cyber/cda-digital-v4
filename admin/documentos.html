@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gerenciar Documentos - Painel de Administração CDA Digital">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gellix:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Documentos - Painel de Administração CDA</title>
+</head>
+<body class="admin-page">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" id="admin-sidebar">
+        <div class="admin-sidebar-header">
+            <div class="admin-sidebar-logo">
+                <img src="../img/logos/cda-logo-white.svg" alt="CDA Digital">
+                <span class="logo-text">
+                    <span class="logo-title">CDA</span>
+                    <span class="logo-subtitle">Admin</span>
+                </span>
+            </div>
+            <button class="admin-sidebar-toggle" id="sidebar-toggle" aria-label="Recolher sidebar">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9,6 15,12 9,18"/>
+                </svg>
+            </button>
+        </div>
+        
+        <nav class="admin-sidebar-menu">
+            <div class="admin-sidebar-menu-item">
+                <a href="index.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"/>
+                        <rect x="14" y="3" width="7" height="7"/>
+                        <rect x="14" y="14" width="7" height="7"/>
+                        <rect x="3" y="14" width="7" height="7"/>
+                    </svg>
+                    <span class="menu-label">Dashboard</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="noticias.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6 6 18"/>
+                        <path d="m6 6 12 12"/>
+                    </svg>
+                    <span class="menu-label">Notícias</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="documentos.html" class="admin-sidebar-menu-link active">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                    <span class="menu-label">Documentos</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="despachantes.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                    </svg>
+                    <span class="menu-label">Despachantes</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-dropdown">
+                <button class="admin-sidebar-menu-link dropdown-toggle" id="content-dropdown">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                    <span class="menu-label">Conteúdo</span>
+                    <svg class="icon dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"/>
+                    </svg>
+                </button>
+                <div class="admin-sidebar-dropdown-menu">
+                    <div class="admin-sidebar-menu-item">
+                        <a href="presidentes.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <span class="menu-label">Presidentes</span>
+                        </a>
+                    </div>
+                    <div class="admin-sidebar-menu-item">
+                        <a href="timeline.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                            <span class="menu-label">Linha do Tempo</span>
+                        </a>
+                    </div>
+                    <div class="admin-sidebar-menu-item">
+                        <a href="numeros.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 20V10"/>
+                                <path d="M12 20V4"/>
+                                <path d="M6 20v-6"/>
+                            </svg>
+                            <span class="menu-label">CDA em Números</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="galeria.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="3" y1="9" x2="21" y2="9"/>
+                        <line x1="9" y1="21" x2="9" y2="9"/>
+                    </svg>
+                    <span class="menu-label">Galeria</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="users.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                    <span class="menu-label">Utilizadores</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="settings.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V7a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                    </svg>
+                    <span class="menu-label">Configurações</span>
+                </a>
+            </div>
+        </nav>
+        
+        <div class="admin-sidebar-footer">
+            <div class="admin-user">
+                <div class="admin-user-avatar">AD</div>
+                <div class="admin-user-info">
+                    <span class="admin-user-name" id="admin-user-name">Administrador</span>
+                    <span class="admin-user-role">Admin</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="admin-main">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <button class="admin-header-btn mobile-menu-toggle" id="mobile-menu-toggle">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+                <h1 class="admin-header-title">Documentos</h1>
+                <nav class="admin-breadcrumb">
+                    <a href="index.html" class="admin-breadcrumb-link">Início</a>
+                    <span class="admin-breadcrumb-separator">/</span>
+                    <span class="admin-breadcrumb-current">Documentos</span>
+                </nav>
+            </div>
+            <div class="admin-header-right">
+                <div class="admin-header-actions">
+                    <button class="admin-header-btn" onclick="showFilterModal()">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+                        </svg>
+                        <span class="menu-label">Filtros</span>
+                    </button>
+                    <a href="documentos.html?action=new" class="admin-header-btn">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                        <span class="menu-label">Novo Documento</span>
+                    </a>
+                </div>
+                <div class="admin-header-user">
+                    <div class="admin-header-user-avatar">AD</div>
+                    <span class="admin-header-user-name">Administrador</span>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Content -->
+        <div class="admin-content">
+            <!-- Table Header -->
+            <div class="admin-table-container">
+                <div class="admin-table-header">
+                    <h2 class="admin-table-title">Todos os Documentos</h2>
+                    <div class="admin-table-actions">
+                        <div class="admin-table-search">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                            </svg>
+                            <input type="text" id="documentos-search" placeholder="Pesquisar documentos...">
+                        </div>
+                        <select class="admin-table-filter" id="documentos-categoria-filter">
+                            <option value="">Todas as Categorias</option>
+                            <option value="legislacao">Legislação</option>
+                            <option value="circulares">Circulares</option>
+                            <option value="regulamentos">Regulamentos</option>
+                            <option value="publicacoes">Publicações</option>
+                            <option value="relatorios">Relatórios</option>
+                            <option value="boletins">Boletins</option>
+                        </select>
+                        <select class="admin-table-filter" id="documentos-ano-filter">
+                            <option value="">Todos os Anos</option>
+                            <option value="2026">2026</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Table -->
+                <div class="admin-table-wrapper">
+                    <table class="admin-table" id="documentos-table">
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Categoria</th>
+                                <th>Ano</th>
+                                <th>Tipo</th>
+                                <th>Destaque</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="documentos-table-body">
+                            <!-- Documentos serão carregados via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Empty State -->
+                <div class="admin-table-empty" id="documentos-empty" hidden>
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                    <h3>Nenhum documento encontrado</h3>
+                    <p>Adicione o seu primeiro documento para começar.</p>
+                    <a href="documentos.html?action=new" class="btn btn-primary" style="margin-top: 16px; display: inline-block;">
+                        Adicionar Documento
+                    </a>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="admin-table-pagination">
+                    <div class="admin-table-pagination-info">
+                        Mostrando <span id="documentos-showing">0</span> de <span id="documentos-total">0</span> documentos
+                    </div>
+                    <div class="admin-table-pagination-controls">
+                        <button class="admin-table-pagination-btn" id="documentos-prev" disabled>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15,18 9,12 15,6"/>
+                            </svg>
+                        </button>
+                        <button class="admin-table-pagination-btn active" id="documentos-page-1">1</button>
+                        <button class="admin-table-pagination-btn" id="documentos-page-2">2</button>
+                        <button class="admin-table-pagination-btn" id="documentos-page-3">3</button>
+                        <span class="admin-table-pagination-btn">...</span>
+                        <button class="admin-table-pagination-btn" id="documentos-page-last">10</button>
+                        <button class="admin-table-pagination-btn" id="documentos-next">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Form Modal -->
+    <div class="admin-modal-overlay" id="documento-modal" hidden>
+        <div class="admin-modal admin-modal-lg">
+            <button class="admin-modal-close" onclick="closeDocumentoModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title" id="documento-modal-title">Novo Documento</h2>
+            </div>
+            <div class="admin-modal-body">
+                <form id="documento-form" class="admin-form">
+                    <input type="hidden" id="documento-id" name="id">
+                    <div class="admin-form-grid">
+                        <div class="admin-form-group">
+                            <label for="documento-titulo">Título *</label>
+                            <input type="text" id="documento-titulo" name="titulo" class="admin-form-control" placeholder="Título do documento" required>
+                            <div class="admin-form-error" id="documento-titulo-error"></div>
+                        </div>
+                        <div class="admin-form-group">
+                            <label for="documento-categoria">Categoria *</label>
+                            <select id="documento-categoria" name="categoria" class="admin-form-control admin-form-select" required>
+                                <option value="">Selecione uma categoria</option>
+                                <option value="legislacao">Legislação</option>
+                                <option value="circulares">Circulares</option>
+                                <option value="regulamentos">Regulamentos</option>
+                                <option value="publicacoes">Publicações</option>
+                                <option value="relatorios">Relatórios</option>
+                                <option value="boletins">Boletins</option>
+                            </select>
+                            <div class="admin-form-error" id="documento-categoria-error"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-grid">
+                        <div class="admin-form-group">
+                            <label for="documento-ano">Ano *</label>
+                            <select id="documento-ano" name="ano" class="admin-form-control admin-form-select" required>
+                                <option value="">Selecione o ano</option>
+                                <option value="2026">2026</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                            </select>
+                            <div class="admin-form-error" id="documento-ano-error"></div>
+                        </div>
+                        <div class="admin-form-group">
+                            <label for="documento-tipo">Tipo *</label>
+                            <select id="documento-tipo" name="tipo" class="admin-form-control admin-form-select" required>
+                                <option value="">Selecione o tipo</option>
+                                <option value="PDF">PDF</option>
+                                <option value="DOC">Documento Word</option>
+                                <option value="XLS">Excel</option>
+                                <option value="TXT">Texto</option>
+                            </select>
+                            <div class="admin-form-error" id="documento-tipo-error"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="documento-descricao">Descrição</label>
+                        <textarea id="documento-descricao" name="descricao" class="admin-form-control admin-form-textarea" placeholder="Descrição do documento..."></textarea>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="documento-ficheiro">Ficheiro *</label>
+                        <div class="admin-form-file">
+                            <input type="file" id="documento-ficheiro" name="ficheiro" class="admin-form-file-input" accept=".pdf,.doc,.docx,.xls,.xlsx,.txt" required>
+                            <label for="documento-ficheiro" class="admin-form-file-label">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="17,8 12,3 7,8"/>
+                                    <line x1="12" y1="3" x2="12" y2="15"/>
+                                </svg>
+                                <span>Escolher ficheiro</span>
+                            </label>
+                            <span class="admin-form-file-name" id="documento-ficheiro-name">Nenhum ficheiro seleccionado</span>
+                        </div>
+                        <div class="admin-form-hint">Tamanho máximo: 10MB</div>
+                        <div class="admin-form-error" id="documento-ficheiro-error"></div>
+                    </div>
+                    
+                    <div class="admin-form-grid">
+                        <div class="admin-form-group">
+                            <label for="documento-tamanho">Tamanho</label>
+                            <input type="text" id="documento-tamanho" name="tamanho" class="admin-form-control" placeholder="Ex: 2.4 MB" readonly>
+                        </div>
+                        <div class="admin-form-group">
+                            <label for="documento-destaque">Destaque</label>
+                            <select id="documento-destaque" name="destaque" class="admin-form-control admin-form-select">
+                                <option value="false">Não</option>
+                                <option value="true">Sim</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="documento-tags">Tags (separadas por vírgula)</label>
+                        <input type="text" id="documento-tags" name="tags" class="admin-form-control" placeholder="Ex: lei, cda, 2026">
+                        <div class="admin-form-hint">Adicione palavras-chave para facilitar a pesquisa</div>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="documento-link">Link Externo (opcional)</label>
+                        <input type="url" id="documento-link" name="link" class="admin-form-control" placeholder="https://exemplo.com/documento.pdf">
+                        <div class="admin-form-hint">Se o documento já estiver online, pode apenas adicionar o link</div>
+                    </div>
+                </form>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeDocumentoModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="saveDocumento()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                    Guardar Documento
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Delete Confirmation Modal -->
+    <div class="admin-modal-overlay admin-confirm-modal" id="delete-documento-modal" hidden>
+        <div class="admin-modal">
+            <button class="admin-modal-close" onclick="closeDeleteModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title">Confirmar Eliminar</h2>
+            </div>
+            <div class="admin-modal-body">
+                <div class="admin-confirm-modal">
+                    <div class="admin-modal-icon danger">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="15" y1="9" x2="9" y2="15"/>
+                            <line x1="9" y1="9" x2="15" y2="15"/>
+                        </svg>
+                    </div>
+                    <p class="admin-modal-message">Tem a certeza que deseja eliminar este documento? Esta ação não pode ser desfeita.</p>
+                </div>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeDeleteModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-danger" onclick="confirmDeleteDocumento()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="3,6 5,6 21,6"/>
+                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                    </svg>
+                    Eliminar
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Filter Modal -->
+    <div class="admin-modal-overlay" id="filter-modal" hidden>
+        <div class="admin-modal">
+            <button class="admin-modal-close" onclick="closeFilterModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title">Filtros Avançados</h2>
+            </div>
+            <div class="admin-modal-body">
+                <form id="filter-form" class="admin-form">
+                    <div class="admin-form-group">
+                        <label for="filter-titulo">Título</label>
+                        <input type="text" id="filter-titulo" class="admin-form-control" placeholder="Pesquisar por título">
+                    </div>
+                    <div class="admin-form-group">
+                        <label for="filter-categoria">Categoria</label>
+                        <select id="filter-categoria" class="admin-form-control admin-form-select">
+                            <option value="">Todas as Categorias</option>
+                            <option value="legislacao">Legislação</option>
+                            <option value="circulares">Circulares</option>
+                            <option value="regulamentos">Regulamentos</option>
+                            <option value="publicacoes">Publicações</option>
+                            <option value="relatorios">Relatórios</option>
+                            <option value="boletins">Boletins</option>
+                        </select>
+                    </div>
+                    <div class="admin-form-group">
+                        <label for="filter-ano">Ano</label>
+                        <select id="filter-ano" class="admin-form-control admin-form-select">
+                            <option value="">Todos os Anos</option>
+                            <option value="2026">2026</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                        </select>
+                    </div>
+                    <div class="admin-form-group">
+                        <label for="filter-destaque">Destaque</label>
+                        <select id="filter-destaque" class="admin-form-control admin-form-select">
+                            <option value="">Todos</option>
+                            <option value="true">Sim</option>
+                            <option value="false">Não</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeFilterModal()">
+                    Limpar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="applyFilters()">
+                    Aplicar Filtros
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Notifications -->
+    <div class="admin-notifications" id="notifications"></div>
+    
+    <script src="../js/main.js"></script>
+    <script src="js/admin.js"></script>
+    <script>
+        // Dados de exemplo
+        let documentos = [
+            {
+                id: 1,
+                titulo: "Lei nº 4/2011 - Criação da CDA",
+                descricao: "Lei que cria a Câmara dos Despachantes Aduaneiros de Moçambique e define as suas atribuições.",
+                categoria: "legislacao",
+                ano: "2011",
+                tipo: "PDF",
+                tamanho: "2.4 MB",
+                download: "#",
+                visualizar: "#",
+                destaque: true,
+                tags: ["lei", "criação", "cda", "2011"]
+            },
+            {
+                id: 2,
+                titulo: "Estatutos da CDA",
+                descricao: "Documento fundacional que define a natureza, objectivos, estrutura organizacional e normas de funcionamento da CDA.",
+                categoria: "legislacao",
+                ano: "2011",
+                tipo: "PDF",
+                tamanho: "1.8 MB",
+                download: "#",
+                visualizar: "#",
+                destaque: true,
+                tags: ["estatutos", "fundamental", "cda"]
+            },
+            {
+                id: 3,
+                titulo: "Regulamento Interno da CDA",
+                descricao: "Regulamento que define os procedimentos e normas de funcionamento interno da Câmara.",
+                categoria: "regulamentos",
+                ano: "2012",
+                tipo: "PDF",
+                tamanho: "1.2 MB",
+                download: "#",
+                visualizar: "#",
+                destaque: true,
+                tags: ["regulamento", "interno", "procedimentos"]
+            },
+            {
+                id: 4,
+                titulo: "Código de Ética e Deontologia",
+                descricao: "Código que define os princípios éticos e as normas deontológicas a serem seguidos por todos os despachantes aduaneiros.",
+                categoria: "regulamentos",
+                ano: "2018",
+                tipo: "PDF",
+                tamanho: "980 KB",
+                download: "#",
+                visualizar: "#",
+                destaque: true,
+                tags: ["ética", "deontologia", "conduta"]
+            },
+            {
+                id: 5,
+                titulo: "Circular nº 01/2024 - Procedimentos Aduaneiros",
+                descricao: "Circular sobre os novos procedimentos aduaneiros para 2024.",
+                categoria: "circulares",
+                ano: "2024",
+                tipo: "PDF",
+                tamanho: "560 KB",
+                download: "#",
+                visualizar: "#",
+                destaque: false,
+                tags: ["circular", "procedimentos", "2024"]
+            },
+            {
+                id: 6,
+                titulo: "Circular nº 02/2024 - Taxas e Emolumentos",
+                descricao: "Actualização das taxas e emolumentos aplicáveis aos serviços aduaneiros.",
+                categoria: "circulares",
+                ano: "2024",
+                tipo: "PDF",
+                tamanho: "420 KB",
+                download: "#",
+                visualizar: "#",
+                destaque: false,
+                tags: ["circular", "taxas", "emolumentos"]
+            },
+            {
+                id: 7,
+                titulo: "Relatório de Actividades 2023",
+                descricao: "Relatório anual das actividades desenvolvidas pela CDA em 2023.",
+                categoria: "relatorios",
+                ano: "2023",
+                tipo: "PDF",
+                tamanho: "3.2 MB",
+                download: "#",
+                visualizar: "#",
+                destaque: true,
+                tags: ["relatório", "anual", "2023"]
+            },
+            {
+                id: 8,
+                titulo: "Plano de Actividades 2024-2026",
+                descricao: "Plano estratégico da CDA para o triénio 2024-2026.",
+                categoria: "publicacoes",
+                ano: "2024",
+                tipo: "PDF",
+                tamanho: "1.5 MB",
+                download: "#",
+                visualizar: "#",
+                destaque: true,
+                tags: ["plano", "estratégico", "2024-2026"]
+            },
+            {
+                id: 9,
+                titulo: "Boletim Informativo - Janeiro 2026",
+                descricao: "Boletim mensal com as principais notícias e actualizações do sector aduaneiro.",
+                categoria: "boletins",
+                ano: "2026",
+                tipo: "PDF",
+                tamanho: "890 KB",
+                download: "#",
+                visualizar: "#",
+                destaque: false,
+                tags: ["boletim", "janeiro", "2026"]
+            },
+            {
+                id: 10,
+                titulo: "Guia do Despachante Aduaneiro",
+                descricao: "Guia prático com informações sobre a profissão de despachante aduaneiro.",
+                categoria: "publicacoes",
+                ano: "2023",
+                tipo: "PDF",
+                tamanho: "2.1 MB",
+                download: "#",
+                visualizar: "#",
+                destaque: true,
+                tags: ["guia", "despachante", "profissão"]
+            }
+        ];
+        
+        let currentDocumento = null;
+        let currentPage = 1;
+        const itemsPerPage = 5;
+        
+        // Carregar documentos
+        function loadDocumentos() {
+            const tbody = document.getElementById('documentos-table-body');
+            const empty = document.getElementById('documentos-empty');
+            const showing = document.getElementById('documentos-showing');
+            const total = document.getElementById('documentos-total');
+            
+            // Filtrar documentos
+            const search = document.getElementById('documentos-search').value.toLowerCase();
+            const category = document.getElementById('documentos-categoria-filter').value;
+            const ano = document.getElementById('documentos-ano-filter').value;
+            
+            let filtered = documentos.filter(d => {
+                const matchSearch = !search || 
+                    d.titulo.toLowerCase().includes(search) ||
+                    d.descricao.toLowerCase().includes(search) ||
+                    d.tags.some(tag => tag.toLowerCase().includes(search));
+                const matchCategory = !category || d.categoria === category;
+                const matchAno = !ano || d.ano === ano;
+                return matchSearch && matchCategory && matchAno;
+            });
+            
+            // Paginação
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageItems = filtered.slice(start, end);
+            
+            total.textContent = filtered.length;
+            showing.textContent = pageItems.length > 0 ? start + 1 : 0;
+            
+            if (pageItems.length === 0) {
+                tbody.innerHTML = '';
+                empty.hidden = false;
+                return;
+            }
+            
+            empty.hidden = true;
+            
+            tbody.innerHTML = pageItems.map(d => `
+                <tr>
+                    <td>
+                        <div class="admin-table-cell-content">
+                            <div class="admin-table-cell-title">${d.titulo}</div>
+                            <div class="admin-table-cell-subtitle">${d.descricao.substring(0, 50)}...</div>
+                        </div>
+                    </td>
+                    <td><span class="admin-table-status">${getCategoriaLabel(d.categoria)}</span></td>
+                    <td>${d.ano}</td>
+                    <td><span class="admin-table-status">${d.tipo}</span></td>
+                    <td><span class="admin-table-status ${d.destaque ? 'active' : 'inactive'}">${d.destaque ? 'Sim' : 'Não'}</span></td>
+                    <td>
+                        <div class="admin-table-actions">
+                            <button class="admin-table-action edit" onclick="editDocumento(${d.id})" title="Editar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                                </svg>
+                            </button>
+                            <button class="admin-table-action delete" onclick="deleteDocumento(${d.id})" title="Eliminar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="3,6 5,6 21,6"/>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                                </svg>
+                            </button>
+                            <button class="admin-table-action" onclick="downloadDocumento(${d.id})" title="Baixar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7,10 12,15 17,10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
+            
+            updatePagination(filtered.length);
+        }
+        
+        function getCategoriaLabel(categoria) {
+            const labels = {
+                'legislacao': 'Legislação',
+                'circulares': 'Circulares',
+                'regulamentos': 'Regulamentos',
+                'publicacoes': 'Publicações',
+                'relatorios': 'Relatórios',
+                'boletins': 'Boletins'
+            };
+            return labels[categoria] || categoria;
+        }
+        
+        function updatePagination(totalItems) {
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            const prevBtn = document.getElementById('documentos-prev');
+            const nextBtn = document.getElementById('documentos-next');
+            
+            prevBtn.disabled = currentPage === 1;
+            nextBtn.disabled = currentPage >= totalPages;
+            
+            // Atualizar botões de página
+            for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById(`documentos-page-${i}`);
+                if (btn) {
+                    btn.textContent = currentPage === i ? currentPage : i;
+                    btn.classList.toggle('active', currentPage === i);
+                }
+            }
+            
+            // Atualizar botão last
+            const lastBtn = document.getElementById('documentos-page-last');
+            if (lastBtn) {
+                lastBtn.textContent = totalPages;
+                lastBtn.classList.toggle('active', currentPage === totalPages);
+            }
+        }
+        
+        function changePage(page) {
+            const totalItems = documentos.length;
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            
+            if (page < 1 || page > totalPages) return;
+            
+            currentPage = page;
+            loadDocumentos();
+        }
+        
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verificar se está logado
+            if (sessionStorage.getItem('cda_admin_logged') !== 'true') {
+                window.location.href = 'login.html';
+                return;
+            }
+            
+            // Carregar documentos
+            loadDocumentos();
+            
+            // Pesquisa em tempo real
+            document.getElementById('documentos-search').addEventListener('input', debounce(function() {
+                currentPage = 1;
+                loadDocumentos();
+            }, 300));
+            
+            // Filtros
+            document.getElementById('documentos-categoria-filter').addEventListener('change', function() {
+                currentPage = 1;
+                loadDocumentos();
+            });
+            
+            document.getElementById('documentos-ano-filter').addEventListener('change', function() {
+                currentPage = 1;
+                loadDocumentos();
+            });
+            
+            // Paginação
+            document.getElementById('documentos-prev').addEventListener('click', function() {
+                if (currentPage > 1) {
+                    changePage(currentPage - 1);
+                }
+            });
+            
+            document.getElementById('documentos-next').addEventListener('click', function() {
+                const totalItems = documentos.length;
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                if (currentPage < totalPages) {
+                    changePage(currentPage + 1);
+                }
+            });
+            
+            // Botões de página
+            for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById(`documentos-page-${i}`);
+                if (btn) {
+                    btn.addEventListener('click', function() {
+                        changePage(i);
+                    });
+                }
+            }
+            
+            // Botão last
+            document.getElementById('documentos-page-last').addEventListener('click', function() {
+                const totalItems = documentos.length;
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                changePage(totalPages);
+            });
+            
+            // Novo documento
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('action') === 'new') {
+                openDocumentoModal();
+            }
+            
+            // Atualizar nome do utilizador
+            const userName = sessionStorage.getItem('cda_admin_user') || 'Administrador';
+            document.getElementById('admin-user-name').textContent = userName;
+            
+            // File input change
+            document.getElementById('documento-ficheiro').addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                const fileName = document.getElementById('documento-ficheiro-name');
+                if (file) {
+                    fileName.textContent = file.name;
+                    // Atualizar tamanho
+                    const size = formatFileSize(file.size);
+                    document.getElementById('documento-tamanho').value = size;
+                } else {
+                    fileName.textContent = 'Nenhum ficheiro seleccionado';
+                    document.getElementById('documento-tamanho').value = '';
+                }
+            });
+        });
+        
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+        
+        function openDocumentoModal(documento = null) {
+            const modal = document.getElementById('documento-modal');
+            const form = document.getElementById('documento-form');
+            const title = document.getElementById('documento-modal-title');
+            
+            currentDocumento = documento;
+            
+            if (documento) {
+                // Editar
+                title.textContent = 'Editar Documento';
+                document.getElementById('documento-id').value = documento.id;
+                document.getElementById('documento-titulo').value = documento.titulo;
+                document.getElementById('documento-categoria').value = documento.categoria;
+                document.getElementById('documento-ano').value = documento.ano;
+                document.getElementById('documento-tipo').value = documento.tipo;
+                document.getElementById('documento-descricao').value = documento.descricao || '';
+                document.getElementById('documento-tamanho').value = documento.tamanho || '';
+                document.getElementById('documento-destaque').value = documento.destaque ? 'true' : 'false';
+                document.getElementById('documento-tags').value = documento.tags ? documento.tags.join(', ') : '';
+                document.getElementById('documento-link').value = documento.download || '';
+                document.getElementById('documento-ficheiro-name').textContent = 'Ficheiro actual: ' + (documento.titulo + '.' + documento.tipo.toLowerCase());
+            } else {
+                // Novo
+                title.textContent = 'Novo Documento';
+                form.reset();
+                document.getElementById('documento-ficheiro-name').textContent = 'Nenhum ficheiro seleccionado';
+            }
+            
+            modal.hidden = false;
+        }
+        
+        function closeDocumentoModal() {
+            document.getElementById('documento-modal').hidden = true;
+            currentDocumento = null;
+            // Limpar URL
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+        
+        function saveDocumento() {
+            const form = document.getElementById('documento-form');
+            const formData = new FormData(form);
+            
+            // Validar
+            let isValid = true;
+            
+            if (!formData.get('titulo')) {
+                showError('documento-titulo-error', 'O título é obrigatório');
+                isValid = false;
+            } else {
+                hideError('documento-titulo-error');
+            }
+            
+            if (!formData.get('categoria')) {
+                showError('documento-categoria-error', 'A categoria é obrigatória');
+                isValid = false;
+            } else {
+                hideError('documento-categoria-error');
+            }
+            
+            if (!formData.get('ano')) {
+                showError('documento-ano-error', 'O ano é obrigatório');
+                isValid = false;
+            } else {
+                hideError('documento-ano-error');
+            }
+            
+            if (!formData.get('tipo')) {
+                showError('documento-tipo-error', 'O tipo é obrigatório');
+                isValid = false;
+            } else {
+                hideError('documento-tipo-error');
+            }
+            
+            // Verificar se tem ficheiro ou link
+            if (!formData.get('ficheiro') && !formData.get('link')) {
+                showError('documento-ficheiro-error', 'É necessário adicionar um ficheiro ou um link');
+                isValid = false;
+            } else {
+                hideError('documento-ficheiro-error');
+            }
+            
+            if (!isValid) return;
+            
+            // Salvar
+            const documento = {
+                id: formData.get('id') ? parseInt(formData.get('id')) : Date.now(),
+                titulo: formData.get('titulo'),
+                descricao: formData.get('descricao'),
+                categoria: formData.get('categoria'),
+                ano: formData.get('ano'),
+                tipo: formData.get('tipo'),
+                tamanho: formData.get('tamanho'),
+                download: formData.get('link'),
+                visualizar: formData.get('link'),
+                destaque: formData.get('destaque') === 'true',
+                tags: formData.get('tags') ? formData.get('tags').split(',').map(t => t.trim()) : []
+            };
+            
+            if (currentDocumento) {
+                // Atualizar
+                const index = documentos.findIndex(d => d.id === currentDocumento.id);
+                if (index !== -1) {
+                    documentos[index] = documento;
+                    showNotification('Documento actualizado com sucesso!', 'success');
+                }
+            } else {
+                // Adicionar
+                documentos.push(documento);
+                showNotification('Documento adicionado com sucesso!', 'success');
+            }
+            
+            closeDocumentoModal();
+            currentPage = 1;
+            loadDocumentos();
+        }
+        
+        function editDocumento(id) {
+            const documento = documentos.find(d => d.id === id);
+            if (documento) {
+                openDocumentoModal(documento);
+            }
+        }
+        
+        function deleteDocumento(id) {
+            currentDocumento = documentos.find(d => d.id === id);
+            document.getElementById('delete-documento-modal').hidden = false;
+        }
+        
+        function closeDeleteModal() {
+            document.getElementById('delete-documento-modal').hidden = true;
+            currentDocumento = null;
+        }
+        
+        function confirmDeleteDocumento() {
+            if (!currentDocumento) return;
+            
+            const index = documentos.findIndex(d => d.id === currentDocumento.id);
+            if (index !== -1) {
+                documentos.splice(index, 1);
+                showNotification('Documento eliminado com sucesso!', 'success');
+            }
+            
+            closeDeleteModal();
+            loadDocumentos();
+        }
+        
+        function downloadDocumento(id) {
+            const documento = documentos.find(d => d.id === id);
+            if (documento && documento.download) {
+                showNotification('A abrir o documento: ' + documento.titulo, 'info');
+            } else {
+                showNotification('Documento não disponível para download', 'warning');
+            }
+        }
+        
+        function showFilterModal() {
+            document.getElementById('filter-modal').hidden = false;
+        }
+        
+        function closeFilterModal() {
+            document.getElementById('filter-modal').hidden = true;
+        }
+        
+        function applyFilters() {
+            const categoria = document.getElementById('filter-categoria').value;
+            const ano = document.getElementById('filter-ano').value;
+            const destaque = document.getElementById('filter-destaque').value;
+            
+            document.getElementById('documentos-categoria-filter').value = categoria;
+            document.getElementById('documentos-ano-filter').value = ano;
+            
+            if (destaque) {
+                // Aplicar filtro de destaque
+                const filter = document.createElement('select');
+                filter.className = 'admin-table-filter';
+                filter.id = 'documentos-destaque-filter';
+                filter.innerHTML = `
+                    <option value="">Todos</option>
+                    <option value="true" ${destaque === 'true' ? 'selected' : ''}>Sim</option>
+                    <option value="false" ${destaque === 'false' ? 'selected' : ''}>Não</option>
+                `;
+                filter.addEventListener('change', function() {
+                    currentPage = 1;
+                    loadDocumentos();
+                });
+                
+                const actions = document.querySelector('.admin-table-actions');
+                const existingFilter = document.getElementById('documentos-destaque-filter');
+                if (existingFilter) {
+                    existingFilter.value = destaque;
+                } else {
+                    actions.appendChild(filter);
+                }
+            }
+            
+            closeFilterModal();
+            currentPage = 1;
+            loadDocumentos();
+        }
+        
+        function showError(id, message) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.textContent = message;
+                el.classList.add('show');
+            }
+        }
+        
+        function hideError(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.textContent = '';
+                el.classList.remove('show');
+            }
+        }
+        
+        function showNotification(message, type = 'info') {
+            const notifications = document.getElementById('notifications');
+            const notification = document.createElement('div');
+            notification.className = `admin-notification ${type}`;
+            notification.innerHTML = `
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    ${type === 'success' ? '<polyline points="20,6 9,17 4,12"/>' : ''}
+                    ${type === 'error' ? '<circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/>' : ''}
+                    ${type === 'warning' ? '<circle cx="12" cy="12" r="10"/><line x1="12" y1="6" x2="12" y2="12"/><line x1="12" y1="18" x2="12.01" y2="18"/>' : ''}
+                    ${type === 'info' ? '<circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>' : ''}
+                </svg>
+                <span class="admin-notification-message">${message}</span>
+                <button class="admin-notification-close" onclick="this.parentNode.remove()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            `;
+            notifications.appendChild(notification);
+            
+            // Remover após 5 segundos
+            setTimeout(() => {
+                notification.remove();
+            }, 5000);
+        }
+        
+        // Debounce function
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gerenciar Linha do Tempo - Painel de Administração CDA Digital">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gellix:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Linha do Tempo - Painel de Administração CDA</title>
+</head>
+<body class="admin-page">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" id="admin-sidebar">
+        <div class="admin-sidebar-header">
+            <div class="admin-sidebar-logo">
+                <img src="../img/logos/cda-logo-white.svg" alt="CDA Digital">
+                <span class="logo-text">
+                    <span class="logo-title">CDA</span>
+                    <span class="logo-subtitle">Admin</span>
+                </span>
+            </div>
+            <button class="admin-sidebar-toggle" id="sidebar-toggle" aria-label="Recolher sidebar">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9,6 15,12 9,18"/>
+                </svg>
+            </button>
+        </div>
+        
+        <nav class="admin-sidebar-menu">
+            <div class="admin-sidebar-menu-item">
+                <a href="index.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"/>
+                        <rect x="14" y="3" width="7" height="7"/>
+                        <rect x="14" y="14" width="7" height="7"/>
+                        <rect x="3" y="14" width="7" height="7"/>
+                    </svg>
+                    <span class="menu-label">Dashboard</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="noticias.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6 6 18"/>
+                        <path d="m6 6 12 12"/>
+                    </svg>
+                    <span class="menu-label">Notícias</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="documentos.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                    <span class="menu-label">Documentos</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="despachantes.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                    </svg>
+                    <span class="menu-label">Despachantes</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-dropdown">
+                <button class="admin-sidebar-menu-link dropdown-toggle active" id="content-dropdown">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                    <span class="menu-label">Conteúdo</span>
+                    <svg class="icon dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"/>
+                    </svg>
+                </button>
+                <div class="admin-sidebar-dropdown-menu">
+                    <div class="admin-sidebar-menu-item">
+                        <a href="presidentes.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <span class="menu-label">Presidentes</span>
+                        </a>
+                    </div>
+                    <div class="admin-sidebar-menu-item">
+                        <a href="timeline.html" class="admin-sidebar-menu-link active">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                            <span class="menu-label">Linha do Tempo</span>
+                        </a>
+                    </div>
+                    <div class="admin-sidebar-menu-item">
+                        <a href="numeros.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 20V10"/>
+                                <path d="M12 20V4"/>
+                                <path d="M6 20v-6"/>
+                            </svg>
+                            <span class="menu-label">CDA em Números</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="galeria.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="3" y1="9" x2="21" y2="9"/>
+                        <line x1="9" y1="21" x2="9" y2="9"/>
+                    </svg>
+                    <span class="menu-label">Galeria</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="users.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                    <span class="menu-label">Utilizadores</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="settings.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V7a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                    </svg>
+                    <span class="menu-label">Configurações</span>
+                </a>
+            </div>
+        </nav>
+        
+        <div class="admin-sidebar-footer">
+            <div class="admin-user">
+                <div class="admin-user-avatar">AD</div>
+                <div class="admin-user-info">
+                    <span class="admin-user-name" id="admin-user-name">Administrador</span>
+                    <span class="admin-user-role">Admin</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="admin-main">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <button class="admin-header-btn mobile-menu-toggle" id="mobile-menu-toggle">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+                <h1 class="admin-header-title">Linha do Tempo</h1>
+                <nav class="admin-breadcrumb">
+                    <a href="index.html" class="admin-breadcrumb-link">Início</a>
+                    <span class="admin-breadcrumb-separator">/</span>
+                    <span class="admin-breadcrumb-current">Linha do Tempo</span>
+                </nav>
+            </div>
+            <div class="admin-header-right">
+                <div class="admin-header-actions">
+                    <a href="timeline.html?action=new" class="admin-header-btn">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                        <span class="menu-label">Novo Evento</span>
+                    </a>
+                </div>
+                <div class="admin-header-user">
+                    <div class="admin-header-user-avatar">AD</div>
+                    <span class="admin-header-user-name">Administrador</span>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Content -->
+        <div class="admin-content">
+            <!-- Timeline Preview -->
+            <section class="admin-section" style="margin-bottom: 24px;">
+                <h2 class="admin-section-title">Visualização da Linha do Tempo</h2>
+                <div class="admin-timeline-preview" id="timeline-preview">
+                    <!-- Eventos serão carregados via JavaScript -->
+                </div>
+            </section>
+            
+            <!-- Table -->
+            <div class="admin-table-container">
+                <div class="admin-table-header">
+                    <h2 class="admin-table-title">Todos os Eventos</h2>
+                    <div class="admin-table-actions">
+                        <div class="admin-table-search">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                            </svg>
+                            <input type="text" id="timeline-search" placeholder="Pesquisar eventos...">
+                        </div>
+                        <select class="admin-table-filter" id="timeline-ano-filter">
+                            <option value="">Todos os Anos</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                        </select>
+                        <select class="admin-table-filter" id="timeline-categoria-filter">
+                            <option value="">Todas as Categorias</option>
+                            <option value="Fundação">Fundação</option>
+                            <option value="Crescimento">Crescimento</option>
+                            <option value="Evento">Evento</option>
+                            <option value="Prémio">Prémio</option>
+                            <option value="Parceria">Parceria</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="admin-table-wrapper">
+                    <table class="admin-table" id="timeline-table">
+                        <thead>
+                            <tr>
+                                <th>Ano</th>
+                                <th>Evento</th>
+                                <th>Categoria</th>
+                                <th>Ordem</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="timeline-table-body">
+                            <!-- Eventos serão carregados via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Empty State -->
+                <div class="admin-table-empty" id="timeline-empty" hidden>
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12,6 12,12 16,14"/>
+                    </svg>
+                    <h3>Nenhum evento encontrado</h3>
+                    <p>Adicione o primeiro evento para começar.</p>
+                    <a href="timeline.html?action=new" class="btn btn-primary" style="margin-top: 16px; display: inline-block;">
+                        Adicionar Evento
+                    </a>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="admin-table-pagination">
+                    <div class="admin-table-pagination-info">
+                        Mostrando <span id="timeline-showing">0</span> de <span id="timeline-total">0</span> eventos
+                    </div>
+                    <div class="admin-table-pagination-controls">
+                        <button class="admin-table-pagination-btn" id="timeline-prev" disabled>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15,18 9,12 15,6"/>
+                            </svg>
+                        </button>
+                        <button class="admin-table-pagination-btn active" id="timeline-page-1">1</button>
+                        <button class="admin-table-pagination-btn" id="timeline-page-2">2</button>
+                        <button class="admin-table-pagination-btn" id="timeline-page-3">3</button>
+                        <span class="admin-table-pagination-btn">...</span>
+                        <button class="admin-table-pagination-btn" id="timeline-page-last">10</button>
+                        <button class="admin-table-pagination-btn" id="timeline-next">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Form Modal -->
+    <div class="admin-modal-overlay" id="evento-modal" hidden>
+        <div class="admin-modal admin-modal-lg">
+            <button class="admin-modal-close" onclick="closeEventoModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title" id="evento-modal-title">Novo Evento</h2>
+            </div>
+            <div class="admin-modal-body">
+                <form id="evento-form" class="admin-form">
+                    <input type="hidden" id="evento-id" name="id">
+                    <div class="admin-form-section">
+                        <h3 class="admin-form-section-title">Informações do Evento</h3>
+                        <div class="admin-form-grid">
+                            <div class="admin-form-group">
+                                <label for="evento-ano">Ano *</label>
+                                <input type="number" id="evento-ano" name="ano" class="admin-form-control" placeholder="Ex: 2011" min="1900" max="2100" required>
+                                <div class="admin-form-error" id="evento-ano-error"></div>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="evento-categoria">Categoria *</label>
+                                <select id="evento-categoria" name="categoria" class="admin-form-control admin-form-select" required>
+                                    <option value="">Selecione a categoria</option>
+                                    <option value="Fundação">Fundação</option>
+                                    <option value="Crescimento">Crescimento</option>
+                                    <option value="Evento">Evento</option>
+                                    <option value="Prémio">Prémio</option>
+                                    <option value="Parceria">Parceria</option>
+                                    <option value="Outro">Outro</option>
+                                </select>
+                                <div class="admin-form-error" id="evento-categoria-error"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="admin-form-group">
+                            <label for="evento-titulo">Título *</label>
+                            <input type="text" id="evento-titulo" name="titulo" class="admin-form-control" placeholder="Título do evento" required>
+                            <div class="admin-form-error" id="evento-titulo-error"></div>
+                        </div>
+                        
+                        <div class="admin-form-group">
+                            <label for="evento-descricao">Descrição</label>
+                            <textarea id="evento-descricao" name="descricao" class="admin-form-control admin-form-textarea" placeholder="Descrição detalhada do evento..."></textarea>
+                        </div>
+                        
+                        <div class="admin-form-group">
+                            <label for="evento-ordenacao">Ordem de Apresentação</label>
+                            <input type="number" id="evento-ordenacao" name="ordenacao" class="admin-form-control" placeholder="0" min="0">
+                            <div class="admin-form-hint">Número mais baixo aparece primeiro</div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-section">
+                        <h3 class="admin-form-section-title">Imagem (Opcional)</h3>
+                        <div class="admin-form-group">
+                            <div class="admin-form-file">
+                                <input type="file" id="evento-imagem" name="imagem" class="admin-form-file-input" accept="image/*">
+                                <label for="evento-imagem" class="admin-form-file-label">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                                        <polyline points="21,15 16,10 5,21"/>
+                                    </svg>
+                                    <span>Escolher imagem</span>
+                                </label>
+                                <span class="admin-form-file-name" id="evento-imagem-name">Nenhum ficheiro seleccionado</span>
+                            </div>
+                            <div class="admin-form-hint">Recomendado: 400x300px</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeEventoModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="saveEvento()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                    Guardar Evento
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Delete Confirmation Modal -->
+    <div class="admin-modal-overlay admin-confirm-modal" id="delete-evento-modal" hidden>
+        <div class="admin-modal">
+            <button class="admin-modal-close" onclick="closeDeleteModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title">Confirmar Eliminar</h2>
+            </div>
+            <div class="admin-modal-body">
+                <div class="admin-confirm-modal">
+                    <div class="admin-modal-icon danger">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="15" y1="9" x2="9" y2="15"/>
+                            <line x1="9" y1="9" x2="15" y2="15"/>
+                        </svg>
+                    </div>
+                    <p class="admin-modal-message">Tem a certeza que deseja eliminar este evento? Esta ação não pode ser desfeita.</p>
+                </div>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeDeleteModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-danger" onclick="confirmDeleteEvento()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="3,6 5,6 21,6"/>
+                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                    </svg>
+                    Eliminar
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Notifications -->
+    <div class="admin-notifications" id="notifications"></div>
+    
+    <script src="../js/main.js"></script>
+    <script src="js/admin.js"></script>
+    <script>
+        // Dados de exemplo
+        let eventos = [
+            {
+                id: 1,
+                ano: "2011",
+                titulo: "Constituição da CDA",
+                descricao: "Fundação oficial da Câmara dos Despachantes Aduaneiros de Moçambique. Este marco representou o início formal da associação que viria a defender os interesses dos despachantes aduaneiros no país.",
+                categoria: "Fundação",
+                imagem: "",
+                ordenacao: 1
+            },
+            {
+                id: 2,
+                ano: "2011",
+                titulo: "Eleição do Primeiro Presidente",
+                descricao: "Eleição de Gama Afonso como o primeiro Presidente da CDA, marcando o início das actividades formais da instituição.",
+                categoria: "Fundação",
+                imagem: "",
+                ordenacao: 2
+            },
+            {
+                id: 3,
+                ano: "2011",
+                titulo: "Primeira Assembleia Geral",
+                descricao: "Realização da primeira Assembleia Geral da CDA, onde foram aprovados os estatutos e o regulamento interno da associação.",
+                categoria: "Evento",
+                imagem: "",
+                ordenacao: 3
+            },
+            {
+                id: 4,
+                ano: "2012",
+                titulo: "Reconhecimento Legal",
+                descricao: "A CDA obtém o reconhecimento legal oficial como associação profissional, permitindo a representação formal junto das autoridades aduaneiras.",
+                categoria: "Crescimento",
+                imagem: "",
+                ordenacao: 4
+            },
+            {
+                id: 5,
+                ano: "2014",
+                titulo: "Eleição do Segundo Presidente",
+                descricao: "Eleição de Dixon Chongo para o cargo de Presidente da CDA, iniciando um novo ciclo de liderança.",
+                categoria: "Fundação",
+                imagem: "",
+                ordenacao: 5
+            },
+            {
+                id: 6,
+                ano: "2015",
+                titulo: "Criação de Delegações Regionais",
+                descricao: "Estabelecimento das primeiras delegações regionais da CDA em Beira, Nampula e Xai-Xai, expandindo a presença da associação a nível nacional.",
+                categoria: "Crescimento",
+                imagem: "",
+                ordenacao: 6
+            },
+            {
+                id: 7,
+                ano: "2016",
+                titulo: "Implementação do Código de Ética",
+                descricao: "Aprovação e implementação do Código de Ética e Deontologia dos Despachantes Aduaneiros, estabelecendo padrões de conduta para os membros.",
+                categoria: "Crescimento",
+                imagem: "",
+                ordenacao: 7
+            },
+            {
+                id: 8,
+                ano: "2018",
+                titulo: "Parceria com Autoridades Aduaneiras",
+                descricao: "Assinatura de protocolo de cooperação entre a CDA e as autoridades aduaneiras, facilitando o diálogo e a colaboração.",
+                categoria: "Parceria",
+                imagem: "",
+                ordenacao: 8
+            },
+            {
+                id: 9,
+                ano: "2020",
+                titulo: "Lançamento do Portal CDA Digital V1",
+                descricao: "Lançamento da primeira versão do portal digital da CDA, disponibilizando informações e serviços online para os membros e o público em geral.",
+                categoria: "Crescimento",
+                imagem: "",
+                ordenacao: 9
+            },
+            {
+                id: 10,
+                ano: "2023",
+                titulo: "Eleição da Primeira Presidenta",
+                descricao: "Eleição histórica de Salmate Chuaibo Daud como a primeira mulher a presidir a CDA, marcando um novo capítulo na história da associação.",
+                categoria: "Fundação",
+                imagem: "",
+                ordenacao: 10
+            },
+            {
+                id: 11,
+                ano: "2024",
+                titulo: "Lançamento do Portal CDA Digital V4",
+                descricao: "Lançamento da quarta versão do portal digital da CDA, com design premium, funcionalidades avançadas e melhor experiência de utilizador.",
+                categoria: "Crescimento",
+                imagem: "",
+                ordenacao: 11
+            },
+            {
+                id: 12,
+                ano: "2024",
+                titulo: "Prémio de Excelência Aduaneira",
+                descricao: "A CDA recebe o Prémio de Excelência Aduaneira pela sua contribuição para o desenvolvimento do sector aduaneiro em Moçambique.",
+                categoria: "Prémio",
+                imagem: "",
+                ordenacao: 12
+            }
+        ];
+        
+        let currentEvento = null;
+        let currentPage = 1;
+        const itemsPerPage = 10;
+        
+        // Carregar eventos
+        function loadEventos() {
+            const tbody = document.getElementById('timeline-table-body');
+            const empty = document.getElementById('timeline-empty');
+            const showing = document.getElementById('timeline-showing');
+            const total = document.getElementById('timeline-total');
+            
+            // Filtrar eventos
+            const search = document.getElementById('timeline-search').value.toLowerCase();
+            const ano = document.getElementById('timeline-ano-filter').value;
+            const categoria = document.getElementById('timeline-categoria-filter').value;
+            
+            let filtered = eventos.filter(e => {
+                const matchSearch = !search || 
+                    e.titulo.toLowerCase().includes(search) ||
+                    e.descricao.toLowerCase().includes(search);
+                const matchAno = !ano || e.ano === ano;
+                const matchCategoria = !categoria || e.categoria === categoria;
+                return matchSearch && matchAno && matchCategoria;
+            });
+            
+            // Ordenar por ano e ordem
+            filtered.sort((a, b) => {
+                if (a.ano !== b.ano) return a.ano.localeCompare(b.ano);
+                return a.ordenacao - b.ordenacao;
+            });
+            
+            // Paginação
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageItems = filtered.slice(start, end);
+            
+            total.textContent = filtered.length;
+            showing.textContent = pageItems.length > 0 ? start + 1 : 0;
+            
+            if (pageItems.length === 0) {
+                tbody.innerHTML = '';
+                empty.hidden = false;
+                return;
+            }
+            
+            empty.hidden = true;
+            
+            tbody.innerHTML = pageItems.map(e => `
+                <tr>
+                    <td><span class="admin-table-status">${e.ano}</span></td>
+                    <td>
+                        <div class="admin-table-cell-content">
+                            <div class="admin-table-cell-title">${e.titulo}</div>
+                            <div class="admin-table-cell-subtitle">${e.descricao.substring(0, 80)}${e.descricao.length > 80 ? '...' : ''}</div>
+                        </div>
+                    </td>
+                    <td><span class="admin-table-status">${e.categoria}</span></td>
+                    <td>${e.ordenacao}</td>
+                    <td>
+                        <div class="admin-table-actions">
+                            <button class="admin-table-action edit" onclick="editEvento(${e.id})" title="Editar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                                </svg>
+                            </button>
+                            <button class="admin-table-action delete" onclick="deleteEvento(${e.id})" title="Eliminar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="3,6 5,6 21,6"/>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
+            
+            updatePagination(filtered.length);
+            loadTimelinePreview(filtered);
+        }
+        
+        function loadTimelinePreview(eventosList) {
+            const preview = document.getElementById('timeline-preview');
+            
+            // Agrupar por ano
+            const grouped = {};
+            eventosList.forEach(e => {
+                if (!grouped[e.ano]) {
+                    grouped[e.ano] = [];
+                }
+                grouped[e.ano].push(e);
+            });
+            
+            const years = Object.keys(grouped).sort();
+            
+            preview.innerHTML = years.map(year => `
+                <div class="admin-timeline-year">
+                    <div class="admin-timeline-year-title">${year}</div>
+                    <div class="admin-timeline-events">
+                        ${grouped[year].map(e => `
+                            <div class="admin-timeline-event">
+                                <div class="admin-timeline-event-dot"></div>
+                                <div class="admin-timeline-event-content">
+                                    <div class="admin-timeline-event-title">${e.titulo}</div>
+                                    <div class="admin-timeline-event-category">${e.categoria}</div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function updatePagination(totalItems) {
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            const prevBtn = document.getElementById('timeline-prev');
+            const nextBtn = document.getElementById('timeline-next');
+            
+            prevBtn.disabled = currentPage === 1;
+            nextBtn.disabled = currentPage >= totalPages;
+            
+            // Atualizar botões de página
+            for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById(`timeline-page-${i}`);
+                if (btn) {
+                    btn.textContent = currentPage === i ? currentPage : i;
+                    btn.classList.toggle('active', currentPage === i);
+                }
+            }
+            
+            // Atualizar botão last
+            const lastBtn = document.getElementById('timeline-page-last');
+            if (lastBtn) {
+                lastBtn.textContent = totalPages;
+                lastBtn.classList.toggle('active', currentPage === totalPages);
+            }
+        }
+        
+        function changePage(page) {
+            const totalItems = eventos.length;
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            
+            if (page < 1 || page > totalPages) return;
+            
+            currentPage = page;
+            loadEventos();
+        }
+        
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verificar se está logado
+            if (sessionStorage.getItem('cda_admin_logged') !== 'true') {
+                window.location.href = 'login.html';
+                return;
+            }
+            
+            // Carregar eventos
+            loadEventos();
+            
+            // Pesquisa em tempo real
+            document.getElementById('timeline-search').addEventListener('input', debounce(function() {
+                currentPage = 1;
+                loadEventos();
+            }, 300));
+            
+            // Filtros
+            document.getElementById('timeline-ano-filter').addEventListener('change', function() {
+                currentPage = 1;
+                loadEventos();
+            });
+            
+            document.getElementById('timeline-categoria-filter').addEventListener('change', function() {
+                currentPage = 1;
+                loadEventos();
+            });
+            
+            // Paginação
+            document.getElementById('timeline-prev').addEventListener('click', function() {
+                if (currentPage > 1) {
+                    changePage(currentPage - 1);
+                }
+            });
+            
+            document.getElementById('timeline-next').addEventListener('click', function() {
+                const totalItems = eventos.length;
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                if (currentPage < totalPages) {
+                    changePage(currentPage + 1);
+                }
+            });
+            
+            // Botões de página
+            for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById(`timeline-page-${i}`);
+                if (btn) {
+                    btn.addEventListener('click', function() {
+                        changePage(i);
+                    });
+                }
+            }
+            
+            // Botão last
+            document.getElementById('timeline-page-last').addEventListener('click', function() {
+                const totalItems = eventos.length;
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                changePage(totalPages);
+            });
+            
+            // Novo evento
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('action') === 'new') {
+                openEventoModal();
+            }
+            
+            // Atualizar nome do utilizador
+            const userName = sessionStorage.getItem('cda_admin_user') || 'Administrador';
+            document.getElementById('admin-user-name').textContent = userName;
+            
+            // File input change
+            document.getElementById('evento-imagem').addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                const fileName = document.getElementById('evento-imagem-name');
+                if (file) {
+                    fileName.textContent = file.name;
+                } else {
+                    fileName.textContent = 'Nenhum ficheiro seleccionado';
+                }
+            });
+        });
+        
+        function openEventoModal(evento = null) {
+            const modal = document.getElementById('evento-modal');
+            const form = document.getElementById('evento-form');
+            const title = document.getElementById('evento-modal-title');
+            
+            currentEvento = evento;
+            
+            if (evento) {
+                // Editar
+                title.textContent = 'Editar Evento';
+                document.getElementById('evento-id').value = evento.id;
+                document.getElementById('evento-ano').value = evento.ano;
+                document.getElementById('evento-categoria').value = evento.categoria;
+                document.getElementById('evento-titulo').value = evento.titulo;
+                document.getElementById('evento-descricao').value = evento.descricao || '';
+                document.getElementById('evento-ordenacao').value = evento.ordenacao || '';
+                document.getElementById('evento-imagem-name').textContent = evento.imagem ? evento.imagem : 'Nenhum ficheiro seleccionado';
+            } else {
+                // Novo
+                title.textContent = 'Novo Evento';
+                form.reset();
+                document.getElementById('evento-imagem-name').textContent = 'Nenhum ficheiro seleccionado';
+            }
+            
+            modal.hidden = false;
+        }
+        
+        function closeEventoModal() {
+            document.getElementById('evento-modal').hidden = true;
+            currentEvento = null;
+            // Limpar URL
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+        
+        function saveEvento() {
+            const form = document.getElementById('evento-form');
+            const formData = new FormData(form);
+            
+            // Validar
+            if (!formData.get('ano')) {
+                showError('evento-ano-error', 'O ano é obrigatório');
+                return;
+            } else {
+                hideError('evento-ano-error');
+            }
+            
+            if (!formData.get('categoria')) {
+                showError('evento-categoria-error', 'A categoria é obrigatória');
+                return;
+            } else {
+                hideError('evento-categoria-error');
+            }
+            
+            if (!formData.get('titulo')) {
+                showError('evento-titulo-error', 'O título é obrigatório');
+                return;
+            } else {
+                hideError('evento-titulo-error');
+            }
+            
+            // Salvar
+            const evento = {
+                id: formData.get('id') ? parseInt(formData.get('id')) : Date.now(),
+                ano: formData.get('ano'),
+                titulo: formData.get('titulo'),
+                descricao: formData.get('descricao'),
+                categoria: formData.get('categoria'),
+                imagem: currentEvento ? currentEvento.imagem : '',
+                ordenacao: formData.get('ordenacao') ? parseInt(formData.get('ordenacao')) : eventos.length + 1
+            };
+            
+            if (currentEvento) {
+                // Atualizar
+                const index = eventos.findIndex(e => e.id === currentEvento.id);
+                if (index !== -1) {
+                    eventos[index] = evento;
+                    showNotification('Evento actualizado com sucesso!', 'success');
+                }
+            } else {
+                // Adicionar
+                eventos.push(evento);
+                showNotification('Evento adicionado com sucesso!', 'success');
+            }
+            
+            closeEventoModal();
+            currentPage = 1;
+            loadEventos();
+        }
+        
+        function editEvento(id) {
+            const evento = eventos.find(e => e.id === id);
+            if (evento) {
+                openEventoModal(evento);
+            }
+        }
+        
+        function deleteEvento(id) {
+            currentEvento = eventos.find(e => e.id === id);
+            document.getElementById('delete-evento-modal').hidden = false;
+        }
+        
+        function closeDeleteModal() {
+            document.getElementById('delete-evento-modal').hidden = true;
+            currentEvento = null;
+        }
+        
+        function confirmDeleteEvento() {
+            if (!currentEvento) return;
+            
+            const index = eventos.findIndex(e => e.id === currentEvento.id);
+            if (index !== -1) {
+                eventos.splice(index, 1);
+                showNotification('Evento eliminado com sucesso!', 'success');
+            }
+            
+            closeDeleteModal();
+            loadEventos();
+        }
+        
+        function showError(id, message) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.textContent = message;
+                el.classList.add('show');
+            }
+        }
+        
+        function hideError(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.textContent = '';
+                el.classList.remove('show');
+            }
+        }
+        
+        function showNotification(message, type = 'info') {
+            const notifications = document.getElementById('notifications');
+            const notification = document.createElement('div');
+            notification.className = `admin-notification ${type}`;
+            notification.innerHTML = `
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    ${type === 'success' ? '<polyline points="20,6 9,17 4,12"/>' : ''}
+                    ${type === 'error' ? '<circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/>' : ''}
+                    ${type === 'warning' ? '<circle cx="12" cy="12" r="10"/><line x1="12" y1="6" x2="12" y2="12"/><line x1="12" y1="18" x2="12.01" y2="18"/>' : ''}
+                    ${type === 'info' ? '<circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>' : ''}
+                </svg>
+                <span class="admin-notification-message">${message}</span>
+                <button class="admin-notification-close" onclick="this.parentNode.remove()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            `;
+            notifications.appendChild(notification);
+            
+            // Remover após 5 segundos
+            setTimeout(() => {
+                notification.remove();
+            }, 5000);
+        }
+        
+        // Debounce function
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+    </script>
+    <style>
+        .admin-timeline-preview {
+            display: flex;
+            gap: var(--space-lg);
+            overflow-x: auto;
+            padding: var(--space-md) 0;
+            scrollbar-width: thin;
+            scrollbar-color: var(--color-neutral-300) transparent;
+        }
+        
+        .admin-timeline-preview::-webkit-scrollbar {
+            height: 8px;
+        }
+        
+        .admin-timeline-preview::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        
+        .admin-timeline-preview::-webkit-scrollbar-thumb {
+            background-color: var(--color-neutral-300);
+            border-radius: 4px;
+        }
+        
+        .admin-timeline-year {
+            flex-shrink: 0;
+            width: 200px;
+            background: var(--color-white);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--radius-md);
+            padding: var(--space-md);
+        }
+        
+        .admin-timeline-year-title {
+            font-size: var(--text-xl);
+            font-weight: var(--font-bold);
+            color: var(--color-primary);
+            margin-bottom: var(--space-sm);
+            padding-bottom: var(--space-sm);
+            border-bottom: 2px solid var(--color-primary);
+        }
+        
+        .admin-timeline-events {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+        }
+        
+        .admin-timeline-event {
+            display: flex;
+            gap: var(--space-sm);
+            padding: var(--space-xs) 0;
+            border-left: 2px solid var(--color-neutral-300);
+            padding-left: var(--space-sm);
+            position: relative;
+        }
+        
+        .admin-timeline-event:last-child {
+            border-left-color: transparent;
+        }
+        
+        .admin-timeline-event-dot {
+            width: 10px;
+            height: 10px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            position: absolute;
+            left: -5px;
+            top: 12px;
+        }
+        
+        .admin-timeline-event-content {
+            flex: 1;
+        }
+        
+        .admin-timeline-event-title {
+            font-size: var(--text-sm);
+            font-weight: var(--font-medium);
+            color: var(--color-neutral-800);
+            line-height: 1.4;
+        }
+        
+        .admin-timeline-event-category {
+            font-size: var(--text-xs);
+            color: var(--color-neutral-500);
+            margin-top: var(--space-xs);
+        }
+    </style>
+</body>
+</html>

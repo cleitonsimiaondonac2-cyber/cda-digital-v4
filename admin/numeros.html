@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gerenciar CDA em Números - Painel de Administração CDA Digital">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gellix:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>CDA em Números - Painel de Administração CDA</title>
+</head>
+<body class="admin-page">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" id="admin-sidebar">
+        <div class="admin-sidebar-header">
+            <div class="admin-sidebar-logo">
+                <img src="../img/logos/cda-logo-white.svg" alt="CDA Digital">
+                <span class="logo-text">
+                    <span class="logo-title">CDA</span>
+                    <span class="logo-subtitle">Admin</span>
+                </span>
+            </div>
+            <button class="admin-sidebar-toggle" id="sidebar-toggle" aria-label="Recolher sidebar">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9,6 15,12 9,18"/>
+                </svg>
+            </button>
+        </div>
+        
+        <nav class="admin-sidebar-menu">
+            <div class="admin-sidebar-menu-item">
+                <a href="index.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"/>
+                        <rect x="14" y="3" width="7" height="7"/>
+                        <rect x="14" y="14" width="7" height="7"/>
+                        <rect x="3" y="14" width="7" height="7"/>
+                    </svg>
+                    <span class="menu-label">Dashboard</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="noticias.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6 6 18"/>
+                        <path d="m6 6 12 12"/>
+                    </svg>
+                    <span class="menu-label">Notícias</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="documentos.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                    <span class="menu-label">Documentos</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="despachantes.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                    </svg>
+                    <span class="menu-label">Despachantes</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-dropdown">
+                <button class="admin-sidebar-menu-link dropdown-toggle active" id="content-dropdown">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                    <span class="menu-label">Conteúdo</span>
+                    <svg class="icon dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"/>
+                    </svg>
+                </button>
+                <div class="admin-sidebar-dropdown-menu">
+                    <div class="admin-sidebar-menu-item">
+                        <a href="presidentes.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <span class="menu-label">Presidentes</span>
+                        </a>
+                    </div>
+                    <div class="admin-sidebar-menu-item">
+                        <a href="timeline.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                            <span class="menu-label">Linha do Tempo</span>
+                        </a>
+                    </div>
+                    <div class="admin-sidebar-menu-item">
+                        <a href="numeros.html" class="admin-sidebar-menu-link active">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 20V10"/>
+                                <path d="M12 20V4"/>
+                                <path d="M6 20v-6"/>
+                            </svg>
+                            <span class="menu-label">CDA em Números</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="galeria.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="3" y1="9" x2="21" y2="9"/>
+                        <line x1="9" y1="21" x2="9" y2="9"/>
+                    </svg>
+                    <span class="menu-label">Galeria</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="users.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                    <span class="menu-label">Utilizadores</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="settings.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V7a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                    </svg>
+                    <span class="menu-label">Configurações</span>
+                </a>
+            </div>
+        </nav>
+        
+        <div class="admin-sidebar-footer">
+            <div class="admin-user">
+                <div class="admin-user-avatar">AD</div>
+                <div class="admin-user-info">
+                    <span class="admin-user-name" id="admin-user-name">Administrador</span>
+                    <span class="admin-user-role">Admin</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="admin-main">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <button class="admin-header-btn mobile-menu-toggle" id="mobile-menu-toggle">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+                <h1 class="admin-header-title">CDA em Números</h1>
+                <nav class="admin-breadcrumb">
+                    <a href="index.html" class="admin-breadcrumb-link">Início</a>
+                    <span class="admin-breadcrumb-separator">/</span>
+                    <span class="admin-breadcrumb-current">CDA em Números</span>
+                </nav>
+            </div>
+            <div class="admin-header-right">
+                <div class="admin-header-actions">
+                    <a href="numeros.html?action=new" class="admin-header-btn">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                        <span class="menu-label">Novo Número</span>
+                    </a>
+                </div>
+                <div class="admin-header-user">
+                    <div class="admin-header-user-avatar">AD</div>
+                    <span class="admin-header-user-name">Administrador</span>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Content -->
+        <div class="admin-content">
+            <!-- Preview -->
+            <section class="admin-section" style="margin-bottom: 24px;">
+                <h2 class="admin-section-title">Visualização</h2>
+                <div class="admin-numeros-preview" id="numeros-preview">
+                    <!-- Números serão carregados via JavaScript -->
+                </div>
+            </section>
+            
+            <!-- Table -->
+            <div class="admin-table-container">
+                <div class="admin-table-header">
+                    <h2 class="admin-table-title">Todos os Números</h2>
+                    <div class="admin-table-actions">
+                        <div class="admin-table-search">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                            </svg>
+                            <input type="text" id="numeros-search" placeholder="Pesquisar números...">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="admin-table-wrapper">
+                    <table class="admin-table" id="numeros-table">
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Valor</th>
+                                <th>Descrição</th>
+                                <th>Ícone</th>
+                                <th>Ordem</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="numeros-table-body">
+                            <!-- Números serão carregados via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Empty State -->
+                <div class="admin-table-empty" id="numeros-empty" hidden>
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 20V10"/>
+                        <path d="M12 20V4"/>
+                        <path d="M6 20v-6"/>
+                    </svg>
+                    <h3>Nenhum número encontrado</h3>
+                    <p>Adicione o primeiro número para começar.</p>
+                    <a href="numeros.html?action=new" class="btn btn-primary" style="margin-top: 16px; display: inline-block;">
+                        Adicionar Número
+                    </a>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="admin-table-pagination">
+                    <div class="admin-table-pagination-info">
+                        Mostrando <span id="numeros-showing">0</span> de <span id="numeros-total">0</span> números
+                    </div>
+                    <div class="admin-table-pagination-controls">
+                        <button class="admin-table-pagination-btn" id="numeros-prev" disabled>
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15,18 9,12 15,6"/>
+                            </svg>
+                        </button>
+                        <button class="admin-table-pagination-btn active" id="numeros-page-1">1</button>
+                        <button class="admin-table-pagination-btn" id="numeros-page-2">2</button>
+                        <button class="admin-table-pagination-btn" id="numeros-page-3">3</button>
+                        <span class="admin-table-pagination-btn">...</span>
+                        <button class="admin-table-pagination-btn" id="numeros-page-last">10</button>
+                        <button class="admin-table-pagination-btn" id="numeros-next">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Form Modal -->
+    <div class="admin-modal-overlay" id="numero-modal" hidden>
+        <div class="admin-modal">
+            <button class="admin-modal-close" onclick="closeNumeroModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title" id="numero-modal-title">Novo Número</h2>
+            </div>
+            <div class="admin-modal-body">
+                <form id="numero-form" class="admin-form">
+                    <input type="hidden" id="numero-id" name="id">
+                    <div class="admin-form-group">
+                        <label for="numero-titulo">Título *</label>
+                        <input type="text" id="numero-titulo" name="titulo" class="admin-form-control" placeholder="Ex: Membros Activos" required>
+                        <div class="admin-form-error" id="numero-titulo-error"></div>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="numero-valor">Valor *</label>
+                        <input type="text" id="numero-valor" name="valor" class="admin-form-control" placeholder="Ex: 221" required>
+                        <div class="admin-form-error" id="numero-valor-error"></div>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="numero-descricao">Descrição</label>
+                        <textarea id="numero-descricao" name="descricao" class="admin-form-control admin-form-textarea" placeholder="Descrição opcional..."></textarea>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="numero-icone">Ícone</label>
+                        <select id="numero-icone" name="icone" class="admin-form-control admin-form-select">
+                            <option value="users">Usuários</option>
+                            <option value="building">Edifícios</option>
+                            <option value="file">Documentos</option>
+                            <option value="calendar">Calendário</option>
+                            <option value="chart">Gráfico</option>
+                            <option value="globe">Globo</option>
+                            <option value="award">Prémio</option>
+                            <option value="briefcase">Pasta</option>
+                            <option value="clock">Relógio</option>
+                            <option value="star">Estrela</option>
+                        </select>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="numero-ordenacao">Ordem de Apresentação</label>
+                        <input type="number" id="numero-ordenacao" name="ordenacao" class="admin-form-control" placeholder="0" min="0">
+                        <div class="admin-form-hint">Número mais baixo aparece primeiro</div>
+                    </div>
+                </form>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeNumeroModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="saveNumero()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                    Guardar Número
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Delete Confirmation Modal -->
+    <div class="admin-modal-overlay admin-confirm-modal" id="delete-numero-modal" hidden>
+        <div class="admin-modal">
+            <button class="admin-modal-close" onclick="closeDeleteModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title">Confirmar Eliminar</h2>
+            </div>
+            <div class="admin-modal-body">
+                <div class="admin-confirm-modal">
+                    <div class="admin-modal-icon danger">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="15" y1="9" x2="9" y2="15"/>
+                            <line x1="9" y1="9" x2="15" y2="15"/>
+                        </svg>
+                    </div>
+                    <p class="admin-modal-message">Tem a certeza que deseja eliminar este número? Esta ação não pode ser desfeita.</p>
+                </div>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeDeleteModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-danger" onclick="confirmDeleteNumero()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="3,6 5,6 21,6"/>
+                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                    </svg>
+                    Eliminar
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Notifications -->
+    <div class="admin-notifications" id="notifications"></div>
+    
+    <script src="../js/main.js"></script>
+    <script src="js/admin.js"></script>
+    <script>
+        // Dados de exemplo
+        let numeros = [
+            {
+                id: 1,
+                titulo: "Membros Activos",
+                valor: "221",
+                descricao: "Despachantes aduaneiros registados e activos na CDA",
+                icone: "users",
+                ordenacao: 1
+            },
+            {
+                id: 2,
+                titulo: "Delegações",
+                valor: "5",
+                descricao: "Delegações regionais da CDA em Moçambique",
+                icone: "building",
+                ordenacao: 2
+            },
+            {
+                id: 3,
+                titulo: "Anos de Existência",
+                valor: "13",
+                descricao: "Anos desde a fundação da CDA em 2011",
+                icone: "calendar",
+                ordenacao: 3
+            },
+            {
+                id: 4,
+                titulo: "Documentos Publicados",
+                valor: "150+",
+                descricao: "Documentos oficiais disponíveis no centro documental",
+                icone: "file",
+                ordenacao: 4
+            },
+            {
+                id: 5,
+                titulo: "Parceiros",
+                valor: "25+",
+                descricao: "Instituições parceiras nacionais e internacionais",
+                icone: "globe",
+                ordenacao: 5
+            },
+            {
+                id: 6,
+                titulo: "Eventos Realizados",
+                valor: "50+",
+                descricao: "Workshops, seminários e conferências organizados",
+                icone: "award",
+                ordenacao: 6
+            }
+        ];
+        
+        let currentNumero = null;
+        let currentPage = 1;
+        const itemsPerPage = 10;
+        
+        // Ícones SVG
+        const icons = {
+            users: '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+            building: '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>',
+            file: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/>',
+            calendar: '<rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>',
+            chart: '<path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/>',
+            globe: '<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
+            award: '<circle cx="12" cy="12" r="10"/><path d="M12 8a2 2 0 0 0-2-2V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v2a2 2 0 0 0-2 2c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V8z"/><path d="M18 12a6 6 0 1 0-12 0"/>',
+            briefcase: '<rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M9 21V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v16"/>',
+            clock: '<circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/>',
+            star: '<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>'
+        };
+        
+        // Carregar números
+        function loadNumeros() {
+            const tbody = document.getElementById('numeros-table-body');
+            const empty = document.getElementById('numeros-empty');
+            const showing = document.getElementById('numeros-showing');
+            const total = document.getElementById('numeros-total');
+            
+            // Filtrar números
+            const search = document.getElementById('numeros-search').value.toLowerCase();
+            
+            let filtered = numeros.filter(n => {
+                const matchSearch = !search || 
+                    n.titulo.toLowerCase().includes(search) ||
+                    n.valor.includes(search) ||
+                    (n.descricao && n.descricao.toLowerCase().includes(search));
+                return matchSearch;
+            });
+            
+            // Ordenar por ordem
+            filtered.sort((a, b) => a.ordenacao - b.ordenacao);
+            
+            // Paginação
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageItems = filtered.slice(start, end);
+            
+            total.textContent = filtered.length;
+            showing.textContent = pageItems.length > 0 ? start + 1 : 0;
+            
+            if (pageItems.length === 0) {
+                tbody.innerHTML = '';
+                empty.hidden = false;
+                return;
+            }
+            
+            empty.hidden = true;
+            
+            tbody.innerHTML = pageItems.map(n => `
+                <tr>
+                    <td>${n.titulo}</td>
+                    <td><strong>${n.valor}</strong></td>
+                    <td>${n.descricao || '-'}</td>
+                    <td><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">${icons[n.icone] || icons.users}</svg></td>
+                    <td>${n.ordenacao}</td>
+                    <td>
+                        <div class="admin-table-actions">
+                            <button class="admin-table-action edit" onclick="editNumero(${n.id})" title="Editar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                                </svg>
+                            </button>
+                            <button class="admin-table-action delete" onclick="deleteNumero(${n.id})" title="Eliminar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="3,6 5,6 21,6"/>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
+            
+            updatePagination(filtered.length);
+            loadNumerosPreview(filtered);
+        }
+        
+        function loadNumerosPreview(numerosList) {
+            const preview = document.getElementById('numeros-preview');
+            
+            // Ordenar por ordem
+            numerosList.sort((a, b) => a.ordenacao - b.ordenacao);
+            
+            preview.innerHTML = numerosList.map(n => `
+                <div class="admin-numero-card">
+                    <div class="admin-numero-icon">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">${icons[n.icone] || icons.users}</svg>
+                    </div>
+                    <div class="admin-numero-value">${n.valor}</div>
+                    <div class="admin-numero-title">${n.titulo}</div>
+                    <div class="admin-numero-desc">${n.descricao || ''}</div>
+                </div>
+            `).join('');
+        }
+        
+        function updatePagination(totalItems) {
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            const prevBtn = document.getElementById('numeros-prev');
+            const nextBtn = document.getElementById('numeros-next');
+            
+            prevBtn.disabled = currentPage === 1;
+            nextBtn.disabled = currentPage >= totalPages;
+            
+            // Atualizar botões de página
+            for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById(`numeros-page-${i}`);
+                if (btn) {
+                    btn.textContent = currentPage === i ? currentPage : i;
+                    btn.classList.toggle('active', currentPage === i);
+                }
+            }
+            
+            // Atualizar botão last
+            const lastBtn = document.getElementById('numeros-page-last');
+            if (lastBtn) {
+                lastBtn.textContent = totalPages;
+                lastBtn.classList.toggle('active', currentPage === totalPages);
+            }
+        }
+        
+        function changePage(page) {
+            const totalItems = numeros.length;
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            
+            if (page < 1 || page > totalPages) return;
+            
+            currentPage = page;
+            loadNumeros();
+        }
+        
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verificar se está logado
+            if (sessionStorage.getItem('cda_admin_logged') !== 'true') {
+                window.location.href = 'login.html';
+                return;
+            }
+            
+            // Carregar números
+            loadNumeros();
+            
+            // Pesquisa em tempo real
+            document.getElementById('numeros-search').addEventListener('input', debounce(function() {
+                currentPage = 1;
+                loadNumeros();
+            }, 300));
+            
+            // Paginação
+            document.getElementById('numeros-prev').addEventListener('click', function() {
+                if (currentPage > 1) {
+                    changePage(currentPage - 1);
+                }
+            });
+            
+            document.getElementById('numeros-next').addEventListener('click', function() {
+                const totalItems = numeros.length;
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                if (currentPage < totalPages) {
+                    changePage(currentPage + 1);
+                }
+            });
+            
+            // Botões de página
+            for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById(`numeros-page-${i}`);
+                if (btn) {
+                    btn.addEventListener('click', function() {
+                        changePage(i);
+                    });
+                }
+            }
+            
+            // Botão last
+            document.getElementById('numeros-page-last').addEventListener('click', function() {
+                const totalItems = numeros.length;
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                changePage(totalPages);
+            });
+            
+            // Novo número
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('action') === 'new') {
+                openNumeroModal();
+            }
+            
+            // Atualizar nome do utilizador
+            const userName = sessionStorage.getItem('cda_admin_user') || 'Administrador';
+            document.getElementById('admin-user-name').textContent = userName;
+        });
+        
+        function openNumeroModal(numero = null) {
+            const modal = document.getElementById('numero-modal');
+            const form = document.getElementById('numero-form');
+            const title = document.getElementById('numero-modal-title');
+            
+            currentNumero = numero;
+            
+            if (numero) {
+                // Editar
+                title.textContent = 'Editar Número';
+                document.getElementById('numero-id').value = numero.id;
+                document.getElementById('numero-titulo').value = numero.titulo;
+                document.getElementById('numero-valor').value = numero.valor;
+                document.getElementById('numero-descricao').value = numero.descricao || '';
+                document.getElementById('numero-icone').value = numero.icone || 'users';
+                document.getElementById('numero-ordenacao').value = numero.ordenacao || '';
+            } else {
+                // Novo
+                title.textContent = 'Novo Número';
+                form.reset();
+            }
+            
+            modal.hidden = false;
+        }
+        
+        function closeNumeroModal() {
+            document.getElementById('numero-modal').hidden = true;
+            currentNumero = null;
+            // Limpar URL
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+        
+        function saveNumero() {
+            const form = document.getElementById('numero-form');
+            const formData = new FormData(form);
+            
+            // Validar
+            if (!formData.get('titulo')) {
+                showError('numero-titulo-error', 'O título é obrigatório');
+                return;
+            } else {
+                hideError('numero-titulo-error');
+            }
+            
+            if (!formData.get('valor')) {
+                showError('numero-valor-error', 'O valor é obrigatório');
+                return;
+            } else {
+                hideError('numero-valor-error');
+            }
+            
+            // Salvar
+            const numero = {
+                id: formData.get('id') ? parseInt(formData.get('id')) : Date.now(),
+                titulo: formData.get('titulo'),
+                valor: formData.get('valor'),
+                descricao: formData.get('descricao'),
+                icone: formData.get('icone'),
+                ordenacao: formData.get('ordenacao') ? parseInt(formData.get('ordenacao')) : numeros.length + 1
+            };
+            
+            if (currentNumero) {
+                // Atualizar
+                const index = numeros.findIndex(n => n.id === currentNumero.id);
+                if (index !== -1) {
+                    numeros[index] = numero;
+                    showNotification('Número actualizado com sucesso!', 'success');
+                }
+            } else {
+                // Adicionar
+                numeros.push(numero);
+                showNotification('Número adicionado com sucesso!', 'success');
+            }
+            
+            closeNumeroModal();
+            currentPage = 1;
+            loadNumeros();
+        }
+        
+        function editNumero(id) {
+            const numero = numeros.find(n => n.id === id);
+            if (numero) {
+                openNumeroModal(numero);
+            }
+        }
+        
+        function deleteNumero(id) {
+            currentNumero = numeros.find(n => n.id === id);
+            document.getElementById('delete-numero-modal').hidden = false;
+        }
+        
+        function closeDeleteModal() {
+            document.getElementById('delete-numero-modal').hidden = true;
+            currentNumero = null;
+        }
+        
+        function confirmDeleteNumero() {
+            if (!currentNumero) return;
+            
+            const index = numeros.findIndex(n => n.id === currentNumero.id);
+            if (index !== -1) {
+                numeros.splice(index, 1);
+                showNotification('Número eliminado com sucesso!', 'success');
+            }
+            
+            closeDeleteModal();
+            loadNumeros();
+        }
+        
+        function showError(id, message) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.textContent = message;
+                el.classList.add('show');
+            }
+        }
+        
+        function hideError(id) {
+            const el = document.getElementById(id);
+            if (el) {
+                el.textContent = '';
+                el.classList.remove('show');
+            }
+        }
+        
+        function showNotification(message, type = 'info') {
+            const notifications = document.getElementById('notifications');
+            const notification = document.createElement('div');
+            notification.className = `admin-notification ${type}`;
+            notification.innerHTML = `
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    ${type === 'success' ? '<polyline points="20,6 9,17 4,12"/>' : ''}
+                    ${type === 'error' ? '<circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/>' : ''}
+                    ${type === 'warning' ? '<circle cx="12" cy="12" r="10"/><line x1="12" y1="6" x2="12" y2="12"/><line x1="12" y1="18" x2="12.01" y2="18"/>' : ''}
+                    ${type === 'info' ? '<circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>' : ''}
+                </svg>
+                <span class="admin-notification-message">${message}</span>
+                <button class="admin-notification-close" onclick="this.parentNode.remove()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            `;
+            notifications.appendChild(notification);
+            
+            // Remover após 5 segundos
+            setTimeout(() => {
+                notification.remove();
+            }, 5000);
+        }
+        
+        // Debounce function
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+    </script>
+    <style>
+        .admin-numeros-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-md);
+        }
+        
+        .admin-numero-card {
+            background: var(--color-white);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+        
+        .admin-numero-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+        
+        .admin-numero-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto var(--space-sm);
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .admin-numero-icon svg {
+            width: 28px;
+            height: 28px;
+            stroke: var(--color-white);
+        }
+        
+        .admin-numero-value {
+            font-size: var(--text-3xl);
+            font-weight: var(--font-bold);
+            color: var(--color-primary);
+            margin-bottom: var(--space-xs);
+        }
+        
+        .admin-numero-title {
+            font-size: var(--text-sm);
+            font-weight: var(--font-medium);
+            color: var(--color-neutral-800);
+            margin-bottom: var(--space-xs);
+        }
+        
+        .admin-numero-desc {
+            font-size: var(--text-xs);
+            color: var(--color-neutral-500);
+        }
+    </style>
+</body>
+</html>
