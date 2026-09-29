@@ -1,0 +1,118 @@
+[
+  {
+    "ano": "1996",
+    "titulo": "Início do Processo",
+    "descricao": "Primeiras iniciativas para criação de uma associação que representasse os despachantes aduaneiros em Moçambique. Surgimento das primeiras discussões informais entre profissionais do sector.",
+    "icon": "📅",
+    "fotos": [],
+    "documentos": [],
+    "categoria": "processo"
+  },
+  {
+    "ano": "2006",
+    "titulo": "Retoma do Processo",
+    "descricao": "Retomada das discussões e iniciativas para formalização de uma entidade representativa dos despachantes aduaneiros. Período de mobilização e organização do sector.",
+    "icon": "🔄",
+    "fotos": [],
+    "documentos": [],
+    "categoria": "processo"
+  },
+  {
+    "ano": "2011",
+    "titulo": "Criação Legal da CDA",
+    "descricao": "Aprovação da Lei nº 4/2011 que cria oficialmente a Câmara dos Despachantes Aduaneiros de Moçambique. Este marco legal permitiu a constituição formal da instituição.",
+    "icon": "⚖️",
+    "fotos": ["img/timeline/2011-lei.jpg"],
+    "documentos": [
+      {"titulo": "Lei nº 4/2011", "url": "#"},
+      {"titulo": "Acta de Constituição", "url": "#"}
+    ],
+    "categoria": "marco"
+  },
+  {
+    "ano": "2011",
+    "titulo": "Primeiras Eleições",
+    "descricao": "Realização da primeira Assembleia Geral e eleição dos primeiros órgãos sociais da CDA. Gama Afonso foi eleito o primeiro Presidente da Câmara.",
+    "icon": "🗳️",
+    "data": "16 de Setembro de 2011",
+    "fotos": ["img/timeline/2011-eleicoes.jpg"],
+    "documentos": [
+      {"titulo": "Acta da Assembleia Geral", "url": "#"}
+    ],
+    "categoria": "marco"
+  },
+  {
+    "ano": "2012",
+    "titulo": "Estruturação Inicial",
+    "descricao": "Estabelecimento das primeiras estruturas administrativas e operacionais da CDA. Criação dos regulamentos internos e procedimentos.",
+    "icon": "🏗️",
+    "fotos": ["img/timeline/2012-estrutura.jpg"],
+    "documentos": [
+      {"titulo": "Primeiro Regulamento Interno", "url": "#"}
+    ],
+    "categoria": "iniciativa"
+  },
+  {
+    "ano": "2014",
+    "titulo": "Novo Ciclo Institucional",
+    "descricao": "Transição para novo mandato com Dixon Chongo como Presidente. Início de um período de consolidação e expansão da CDA.",
+    "icon": "🔄",
+    "data": "Março de 2014",
+    "fotos": ["img/timeline/2014-posse.jpg"],
+    "documentos": [
+      {"titulo": "Relatório de Transição", "url": "#"}
+    ],
+    "categoria": "marco"
+  },
+  {
+    "ano": "2015",
+    "titulo": "Expansão Regional",
+    "descricao": "Criação das primeiras delegações regionais da CDA em províncias estratégicas como Sofala (Beira) e Nampula.",
+    "icon": "🗺️",
+    "fotos": ["img/timeline/2015-delegacoes.jpg"],
+    "documentos": [],
+    "categoria": "iniciativa"
+  },
+  {
+    "ano": "2018",
+    "titulo": "Código de Ética",
+    "descricao": "Aprovação do Código de Ética e Deontologia dos Despachantes Aduaneiros, estabelecendo normas de conduta para os profissionais do sector.",
+    "icon": "📜",
+    "fotos": ["img/timeline/2018-etica.jpg"],
+    "documentos": [
+      {"titulo": "Código de Ética e Deontologia", "url": "#"}
+    ],
+    "categoria": "marco"
+  },
+  {
+    "ano": "2020",
+    "titulo": "Modernização Digital",
+    "descricao": "Início dos processos de modernização digital da CDA, com a implementação de sistemas de informação para gestão de membros e documentos.",
+    "icon": "💻",
+    "fotos": ["img/timeline/2020-digital.jpg"],
+    "documentos": [],
+    "categoria": "iniciativa"
+  },
+  {
+    "ano": "2024",
+    "titulo": "Novo Mandato",
+    "descricao": "Eleição de Salmate Chuaibo Daud como Presidente para o triénio 2024-2026. Lançamento do Portal Digital CDA V4.",
+    "icon": "🚀",
+    "data": "Janeiro de 2024",
+    "fotos": ["img/timeline/2024-posse.jpg"],
+    "documentos": [
+      {"titulo": "Plano de Actividades 2024-2026", "url": "#"}
+    ],
+    "categoria": "marco"
+  },
+  {
+    "ano": "2026",
+    "titulo": "Portal CDA Digital V4",
+    "descricao": "Lançamento oficial do Portal Digital CDA V4, com funcionalidades avançadas de verificação de despachantes, centro documental e linha do tempo interativa.",
+    "icon": "🌐",
+    "data": "Setembro de 2026",
+    "fotos": [],
+    "documentos": [],
+    "categoria": "marco"
+  }
+]

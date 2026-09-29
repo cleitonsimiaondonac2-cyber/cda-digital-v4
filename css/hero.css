@@ -1,0 +1,313 @@
+/* ===================================================================
+   CDA DIGITAL - HERO / SLIDESHOW
+   =================================================================== */
+
+/* ===================================================================
+   HERO SECTION
+   =================================================================== */
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 70vh;
+    max-height: 90vh;
+    overflow: hidden;
+    background-color: var(--color-neutral-100);
+}
+
+.hero-slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 10s ease;
+}
+
+.hero-slide.active .hero-image img {
+    transform: scale(1.05);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient-overlay);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: var(--space-3xl);
+    color: var(--color-white);
+    text-align: center;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-md);
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: var(--space-lg);
+}
+
+.hero-title {
+    font-family: var(--font-primary);
+    font-size: var(--text-5xl);
+    font-weight: var(--font-bold);
+    line-height: 1.2;
+    margin-bottom: var(--space-md);
+}
+
+.hero-subtitle {
+    font-size: var(--text-xl);
+    font-weight: var(--font-medium);
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--space-xl);
+}
+
+/* ===================================================================
+   HERO NAVIGATION
+   =================================================================== */
+
+.hero-navigation {
+    position: absolute;
+    bottom: var(--space-xl);
+    left: var(--space-xl);
+    right: var(--space-xl);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-nav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-white);
+    padding: var(--space-sm);
+    transition: all var(--transition-fast);
+    opacity: 0.8;
+}
+
+.hero-nav-btn:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.hero-nav-btn .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.hero-dots {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.hero-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: var(--radius-full);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all var(--transition-fast);
+}
+
+.hero-dot:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-dot.active {
+    background-color: var(--color-white);
+    transform: scale(1.2);
+}
+
+.hero-counter {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: var(--text-sm);
+    color: var(--color-white);
+    font-weight: var(--font-medium);
+}
+
+.hero-counter-current,
+.hero-counter-total {
+    font-family: var(--font-primary);
+    font-size: var(--text-xl);
+    font-weight: var(--font-bold);
+}
+
+.hero-counter-separator {
+    opacity: 0.6;
+}
+
+/* ===================================================================
+   SLIDESHOW ANIMATIONS
+   =================================================================== */
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+.hero-slide.slide-in {
+    animation: slideIn 0.8s ease forwards;
+}
+
+.hero-slide.slide-out {
+    animation: slideOut 0.8s ease forwards;
+}
+
+/* ===================================================================
+   RESPONSIVE HERO
+   =================================================================== */
+
+@media (max-width: 1200px) {
+    .hero-content {
+        padding: var(--space-2xl);
+    }
+    
+    .hero-title {
+        font-size: var(--text-4xl);
+    }
+    
+    .hero-subtitle {
+        font-size: var(--text-lg);
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        min-height: 60vh;
+    }
+    
+    .hero-content {
+        padding: var(--space-xl);
+    }
+    
+    .hero-title {
+        font-size: var(--text-3xl);
+    }
+    
+    .hero-subtitle {
+        font-size: var(--text-base);
+    }
+    
+    .hero-navigation {
+        bottom: var(--space-lg);
+        left: var(--space-md);
+        right: var(--space-md);
+    }
+    
+    .hero-dots {
+        display: none;
+    }
+    
+    .hero-counter {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        padding: var(--space-lg);
+    }
+    
+    .hero-title {
+        font-size: var(--text-2xl);
+    }
+    
+    .hero-subtitle {
+        font-size: var(--text-sm);
+    }
+    
+    .hero-badge {
+        font-size: var(--text-xs);
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        min-height: 50vh;
+    }
+    
+    .hero-content {
+        padding: var(--space-md);
+    }
+    
+    .hero-title {
+        font-size: var(--text-xl);
+    }
+    
+    .hero-subtitle {
+        display: none;
+    }
+    
+    .hero-navigation {
+        bottom: var(--space-md);
+    }
+}

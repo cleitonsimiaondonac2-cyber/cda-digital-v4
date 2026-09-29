@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "titulo": "CDA realiza Assembleia Geral Ordinária 2026",
+    "resumo": "A Câmara dos Despachantes Aduaneiros realizou a sua Assembleia Geral Ordinária em Maputo, com a presença de todos os órgãos sociais.",
+    "data": "2026-09-24",
+    "local": "Maputo",
+    "categoria": "assembleia",
+    "imagem": "img/noticias/assembleia-2026.jpg",
+    "destaque": true,
+    "tags": ["assembleia", "geral", "2026", "maputo"]
+  },
+  {
+    "id": 2,
+    "titulo": "CDA participa em reunião com autoridades aduaneiras",
+    "resumo": "Representantes da CDA participaram em reunião de trabalho com as autoridades aduaneiras para discussão de melhorias nos procedimentos.",
+    "data": "2026-09-15",
+    "local": "Maputo",
+    "categoria": "reuniao",
+    "imagem": "img/noticias/reuniao-2026.jpg",
+    "destaque": false,
+    "tags": ["reunião", "autoridades", "aduaneiras"]
+  },
+  {
+    "id": 3,
+    "titulo": "Novo comunicado sobre procedimentos de importação",
+    "resumo": "A CDA emitiu um novo comunicado com orientações sobre os procedimentos de importação para o último trimestre de 2026.",
+    "data": "2026-09-10",
+    "local": "Maputo",
+    "categoria": "comunicado",
+    "imagem": "img/noticias/comunicado-2026.jpg",
+    "destaque": false,
+    "tags": ["comunicado", "importação", "procedimentos"]
+  },
+  {
+    "id": 4,
+    "titulo": "Encontro de Despachantes Aduaneiros em Beira",
+    "resumo": "Realizou-se em Beira o primeiro encontro regional de despachantes aduaneiros de 2026, com forte adesão dos profissionais da região.",
+    "data": "2026-08-28",
+    "local": "Beira",
+    "categoria": "evento",
+    "imagem": "img/noticias/encontro-beira-2026.jpg",
+    "destaque": false,
+    "tags": ["encontro", "beira", "regional", "2026"]
+  },
+  {
+    "id": 5,
+    "titulo": "Formação em Novas Tecnologias Aduaneiras",
+    "resumo": "A CDA promoveu uma sessão de formação sobre as novas tecnologias aduaneiras para os seus membros.",
+    "data": "2026-08-15",
+    "local": "Maputo",
+    "categoria": "formacao",
+    "imagem": "img/noticias/formacao-2026.jpg",
+    "destaque": false,
+    "tags": ["formação", "tecnologias", "aduaneiras"]
+  },
+  {
+    "id": 6,
+    "titulo": "CDA lança Portal Digital V4",
+    "resumo": "Foi oficialmente lançado o novo Portal Digital da CDA, com funcionalidades avançadas de verificação e acesso a documentos.",
+    "data": "2026-07-01",
+    "local": "Maputo",
+    "categoria": "tecnologia",
+    "imagem": "img/noticias/portal-v4-2026.jpg",
+    "destaque": true,
+    "tags": ["portal", "digital", "v4", "lançamento"]
+  },
+  {
+    "id": 7,
+    "titulo": "Visita da CDA às instalações da Alfândega de Maputo",
+    "resumo": "Delegação da CDA visitou as instalações da Alfândega de Maputo para conhecer os novos processos implementados.",
+    "data": "2026-06-20",
+    "local": "Maputo",
+    "categoria": "visita",
+    "imagem": "img/noticias/visita-alfandega-2026.jpg",
+    "destaque": false,
+    "tags": ["visita", "alfândega", "maputo"]
+  },
+  {
+    "id": 8,
+    "titulo": "CDA assina protocolo com Câmaras de Comércio",
+    "resumo": "A Câmara dos Despachantes Aduaneiros assinou um protocolo de cooperação com as Câmaras de Comércio de Moçambique.",
+    "data": "2026-05-10",
+    "local": "Maputo",
+    "categoria": "protocolo",
+    "imagem": "img/noticias/protocolo-2026.jpg",
+    "destaque": true,
+    "tags": ["protocolo", "cooperação", "câmaras de comércio"]
+  }
+]
