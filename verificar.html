@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Verificar Despachante - Confirme se um profissional está registado na CDA">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gellix:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/editorial.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/components.css">
+    <title>Verificar Despachante - CDA Digital</title>
+</head>
+<body>
+    <a href="#main" class="skip-link">Ir para o conteúdo principal</a>
+    <div class="topbar"><div class="container"><div class="topbar-left"><span class="topbar-contact"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+258 82 000 0000</span></div><div class="topbar-right"><a href="area-membro.html" class="btn btn-primary btn-sm">Área do Membro</a></div></div></div>
+    <header class="header"><div class="container"><div class="header-content"><a href="index.html" class="logo"><img src="img/cda-logo.svg" alt="CDA" class="logo-img"><span class="logo-text"><span class="logo-title">CDA</span><span class="logo-subtitle">Digital</span></span></a>
+    <nav class="nav"><button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false"><span class="hamburger"></span></button>
+    <ul class="nav-list"><li class="nav-item"><a href="index.html" class="nav-link">Início</a></li><li class="nav-item"><a href="despachantes.html" class="nav-link">Despachantes</a></li><li class="nav-item"><a href="verificar.html" class="nav-link active">Verificar</a></li><li class="nav-item"><a href="contactos.html" class="nav-link">Contactos</a></li></ul></nav>
+    <div class="header-search"><form class="search-form" action="documentacao.html"><input type="search" class="search-input" placeholder="Pesquisar..." autocomplete="off"><button type="submit" class="search-submit"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button></form></div></div></div></header>
+    <main id="main" class="main">
+        <nav class="breadcrumb" aria-label="Localização"><div class="container"><ol class="breadcrumb-list"><li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Início</a></li><li class="breadcrumb-item"><span class="breadcrumb-separator">/</span></li><li class="breadcrumb-item"><span class="breadcrumb-current">Verificar Despachante</span></li></ol></div></nav>
+        <section class="page-header" style="background-image: linear-gradient(rgba(13, 26, 38, 0.9), rgba(13, 26, 38, 0.9)), url('img/backgrounds/verify-bg.webp');">
+            <div class="container"><div class="page-header-content">
+                <span class="page-header-badge">Verificação</span>
+                <h1 class="page-header-title">Verificar Despachante</h1>
+                <p class="page-header-subtitle">Confirme se um profissional, empresa ou documento está registado na CDA</p>
+            </div></div>
+        </section>
+        <section class="section verify-page-section"><div class="container">
+            <div class="verify-page-grid">
+                <div class="verify-page-form">
+                    <form id="verify-form" class="verify-form-full">
+                        <div class="verify-input-group-large">
+                            <label for="verify-code">Código, Nome ou Número da Cédula</label>
+                            <input type="text" id="verify-code" name="code" class="verify-input-large" placeholder="Introduza o código profissional, nome ou número da cédula" required autocomplete="off">
+                            <button type="submit" class="verify-submit-large">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                                VERIFICAR
+                            </button>
+                        </div>
+                        <div class="verify-options-full">
+                            <label class="verify-option-full">
+                                <input type="radio" name="verify-type" value="professional" checked>
+                                <span class="verify-option-label-full">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    <span class="verify-option-text">
+                                        <strong>Despachante</strong>
+                                        <small>Verificar um profissional individual</small>
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="verify-option-full">
+                                <input type="radio" name="verify-type" value="company">
+                                <span class="verify-option-label-full">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                    <span class="verify-option-text">
+                                        <strong>Empresa</strong>
+                                        <small>Verificar uma empresa ou sociedade</small>
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="verify-option-full">
+                                <input type="radio" name="verify-type" value="document">
+                                <span class="verify-option-label-full">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                                    <span class="verify-option-text">
+                                        <strong>Documento</strong>
+                                        <small>Verificar um documento oficial</small>
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+                    </form>
+                    <div class="verify-info-full">
+                        <h3>Informações sobre Verificação</h3>
+                        <ul class="info-list">
+                            <li><strong>Dados Públicos:</strong> Nome, código profissional, número da cédula, estado do registo e delegação.</li>
+                            <li><strong>Privacidade:</strong> Informações pessoais e confidenciais não são exibidas.</li>
+                            <li><strong>Actualização:</strong> Os dados são actualizados regularmente pela CDA.</li>
+                            <li><strong>Validade:</strong> Verifique sempre a data de validade do registo.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="verify-page-result">
+                    <div class="verify-result" id="verify-result" hidden>
+                        <div class="verify-result-header">
+                            <svg class="icon icon-success" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>
+                            <h3 id="verify-result-title">Registo Encontrado</h3>
+                        </div>
+                        <div class="verify-result-body" id="verify-result-body"></div>
+                        <div class="verify-result-footer">
+                            <p>Câmara dos Despachantes Aduaneiros de Moçambique</p>
+                            <p class="verify-date">Última actualização: <span id="verify-date">-</span></p>
+                        </div>
+                    </div>
+                    <div class="verify-empty" id="verify-empty" hidden>
+                        <div class="empty-state">
+                            <div class="empty-state-icon"><svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg></div>
+                            <h3>Nenhum Registo Encontrado</h3>
+                            <p>Nenhum registo foi encontrado com os critérios especificados.</p>
+                            <div class="empty-state-cta"><a href="#" class="btn btn-primary" onclick="document.getElementById('verify-code').focus(); return false;">Tentar Novamente</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></section>
+        <section class="section how-to-section" style="background: var(--color-neutral-50);"><div class="container">
+            <div class="how-to-grid">
+                <div class="how-to-content">
+                    <h2>Como Funciona a Verificação?</h2>
+                    <p>O sistema de verificação da CDA permite confirmar a autenticidade de despachantes, empresas e documentos registados.</p>
+                    <ul class="how-to-steps">
+                        <li><strong>Passo 1:</strong> Introduza o código, nome ou número da cédula</li>
+                        <li><strong>Passo 2:</strong> Seleccione o tipo de verificação (Despachante, Empresa ou Documento)</li>
+                        <li><strong>Passo 3:</strong> Clique em "Verificar"</li>
+                        <li><strong>Passo 4:</strong> Consulte os resultados</li>
+                    </ul>
+                </div>
+                <div class="how-to-visual">
+                    <div class="how-to-card">
+                        <div class="how-to-icon">1</div>
+                        <p>Introduza os dados</p>
+                    </div>
+                    <div class="how-to-arrow">&rarr;</div>
+                    <div class="how-to-card">
+                        <div class="how-to-icon">2</div>
+                        <p>Selecione o tipo</p>
+                    </div>
+                    <div class="how-to-arrow">&rarr;</div>
+                    <div class="how-to-card">
+                        <div class="how-to-icon">3</div>
+                        <p>Obtenha o resultado</p>
+                    </div>
+                </div>
+            </div>
+        </div></section>
+    </main>
+    <footer class="footer"><div class="footer-top"><div class="container"><div class="footer-grid"><div class="footer-column"><a href="index.html" class="footer-logo"><img src="img/cda-logo-white.svg" alt="CDA" class="footer-logo-img"></a><p class="footer-description">Câmara dos Despachantes Aduaneiros de Moçambique</p></div><div class="footer-column"><h4 class="footer-title">Navegação</h4><ul class="footer-links"><li><a href="index.html" class="footer-link">Início</a></li><li><a href="verificar.html" class="footer-link">Verificar</a></li><li><a href="contactos.html" class="footer-link">Contactos</a></li></ul></div><div class="footer-column"><h4 class="footer-title">Contactos</h4><ul class="footer-links"><li class="footer-contact-item"><svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Av. 25 de Setembro, 1138, Maputo</span></li></ul></div></div></div></div><div class="footer-bottom"><div class="container"><p class="footer-copyright">&copy; 2026 CDA. Todos os direitos reservados.</p></div></div></footer>
+    <button class="fab" aria-label="Assistente CDA"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></button>
+    <button class="back-to-top" aria-label="Voltar ao topo" hidden><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18,15 12,9 6,15"/></svg></button>
+    <script src="js/dados.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/verify.js"></script>
+</body>
+</html>

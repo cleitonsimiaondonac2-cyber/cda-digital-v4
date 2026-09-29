@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- CDA Favicon -->
+  <rect x="10" y="20" width="80" height="60" rx="5" fill="#0d1a26"/>
+  <rect x="30" y="30" width="40" height="20" fill="#c01818"/>
+  <text x="50" y="48" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">CDA</text>
+</svg>

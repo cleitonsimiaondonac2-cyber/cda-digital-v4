@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="200" height="80">
+  <!-- CDA Logo - Camera dos Despachantes Aduaneiros -->
+  
+  <!-- Shield Shape -->
+  <path d="M20 40 C20 20, 40 10, 60 10 L140 10 C160 10, 180 20, 180 40 L180 60 C180 70, 160 80, 140 80 L60 80 C40 80, 20 70, 20 60 Z" 
+        fill="#0d1a26" stroke="#0d1a26" stroke-width="2"/>
+  
+  <!-- Red stripe on shield -->
+  <path d="M60 10 L140 10 L140 25 C140 25, 100 35, 100 35 L100 45 C100 45, 140 55, 140 55 L140 70 C140 70, 100 75, 100 75 L100 80 L60 80 L60 75 C60 75, 20 70, 20 70 L20 55 C20 55, 60 45, 60 45 L60 35 C60 35, 20 25, 20 25 Z" 
+        fill="#c01818"/>
+  
+  <!-- Letters CDA -->
+  <text x="50" y="38" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">C</text>
+  <text x="80" y="38" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">D</text>
+  <text x="110" y="38" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">A</text>
+  
+  <!-- Full name below shield -->
+  <text x="100" y="95" font-family="Arial, sans-serif" font-size="10" font-weight="normal" fill="#0d1a26" text-anchor="middle">CÂMARA DOS DESPACHANTES ADUANEIROS</text>
+  <text x="100" y="105" font-family="Arial, sans-serif" font-size="8" font-weight="normal" fill="#666" text-anchor="middle">MOÇAMBIQUE</text>
+</svg>
