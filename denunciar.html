@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Denúncia de Fraude - Reporte irregularidades à CDA de forma confidencial">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gellix:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/editorial.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <title>Denúncia de Fraude - CDA Digital</title>
+</head>
+<body>
+    <a href="#main" class="skip-link">Ir para o conteúdo principal</a>
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar-content">
+                <div class="topbar-left">
+                    <span class="topbar-contact">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        +258 82 000 0000
+                    </span>
+                </div>
+                <div class="topbar-right">
+                    <a href="area-membro.html" class="btn btn-primary btn-sm">
+                        <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                        Área do Membro
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="img/logos/cda-logo.svg" alt="CDA - Câmara dos Despachantes Aduaneiros" class="logo-img">
+                    <span class="logo-text">
+                        <span class="logo-title">CDA</span>
+                        <span class="logo-subtitle">Digital</span>
+                    </span>
+                </a>
+
+                <nav class="nav">
+                    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                        <span class="hamburger"></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle" aria-expanded="false">
+                                Instituição
+                                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6,9 12,15 18,9"/>
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="instituicao.html" class="dropdown-link">Sobre a CDA</a></li>
+                                <li><a href="lideranca.html" class="dropdown-link">Liderança</a></li>
+                                <li><a href="orgãos.html" class="dropdown-link">Órgãos Sociais</a></li>
+                                <li><a href="historia.html" class="dropdown-link">História</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="despachantes.html" class="nav-link">Despachantes</a></li>
+                        <li class="nav-item"><a href="documentacao.html" class="nav-link">Centro Documental</a></li>
+                        <li class="nav-item"><a href="noticias.html" class="nav-link">Notícias</a></li>
+                        <li class="nav-item"><a href="contactos.html" class="nav-link">Contactos</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-search">
+                    <form class="search-form" action="documentacao.html">
+                        <input type="search" class="search-input" placeholder="Pesquisar documentos..." autocomplete="off">
+                        <button type="submit" class="search-submit">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="main">
+        <!-- BREADCRUMB -->
+        <nav class="breadcrumb" aria-label="Localização">
+            <div class="container">
+                <ol class="breadcrumb-list">
+                    <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Início</a></li>
+                    <li class="breadcrumb-item"><span class="breadcrumb-separator">/</span></li>
+                    <li class="breadcrumb-item"><span class="breadcrumb-current">Denúncia de Fraude</span></li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- PAGE HEADER -->
+        <section class="page-header" style="background-image: linear-gradient(rgba(13, 26, 38, 0.9), rgba(13, 26, 38, 0.9)), url('img/backgrounds/report-bg.webp');">
+            <div class="container">
+                <div class="page-header-content">
+                    <span class="page-header-badge">Confidencial</span>
+                    <h1 class="page-header-title">Denúncia de Fraude</h1>
+                    <p class="page-header-subtitle">Reporte irregularidades de forma segura e confidencial</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- REPORT SECTION -->
+        <section class="section report-section">
+            <div class="container">
+                <div class="report-container">
+                    <div class="report-info">
+                        <div class="report-info-icon">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="12" y1="6" x2="12" y2="12"/>
+                                <line x1="12" y1="18" x2="12.01" y2="18"/>
+                            </svg>
+                        </div>
+                        <div class="report-info-content">
+                            <h2>Denúncia Segura e Confidencial</h2>
+                            <p>O nosso sistema de denúncias garante o anonimato e a confidencialidade de todas as informações fornecidas. A sua identidade será protegida e todas as denúncias serão investigadas com a máxima seriedade.</p>
+                            <ul class="report-info-list">
+                                <li>
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    </svg>
+                                    <span>Proteção total da sua identidade</span>
+                                </li>
+                                <li>
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    </svg>
+                                    <span>Investigação rápida e eficiente</span>
+                                </li>
+                                <li>
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    </svg>
+                                    <span>Feedback sobre o andamento</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- REPORT FORM -->
+                    <form id="report-form" class="report-form">
+                        <div class="report-form-header">
+                            <h3>Formulário de Denúncia</h3>
+                            <p>Preencha todos os campos com a máxima precisão</p>
+                        </div>
+
+                        <div class="report-form-grid">
+                            <div class="report-form-group">
+                                <label for="report-tipo">Tipo de Denúncia *</label>
+                                <select id="report-tipo" name="tipo" class="report-form-select" required>
+                                    <option value="" disabled selected>Selecione o tipo</option>
+                                    <option value="fraude-documental">Fraude Documental</option>
+                                    <option value="despacho-ilegal">Despacho Ilegal</option>
+                                    <option value="suborno">Suborno</option>
+                                    <option value="falsificacao">Falsificação de Documentos</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            <div class="report-form-group">
+                                <label for="report-urgencia">Nível de Urgência *</label>
+                                <select id="report-urgencia" name="urgencia" class="report-form-select" required>
+                                    <option value="" disabled selected>Selecione a urgência</option>
+                                    <option value="baixa">Baixa</option>
+                                    <option value="media">Média</option>
+                                    <option value="alta">Alta</option>
+                                    <option value="critica">Crítica</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="report-form-group">
+                            <label for="report-titulo">Título da Denúncia *</label>
+                            <input type="text" id="report-titulo" name="titulo" class="report-form-input" placeholder="Resuma a denúncia em poucas palavras" required>
+                        </div>
+
+                        <div class="report-form-group">
+                            <label for="report-descricao">Descrição Detalhada *</label>
+                            <textarea id="report-descricao" name="descricao" class="report-form-textarea" placeholder="Descreva detalhadamente a situação, incluindo datas, locais, pessoas envolvidas e quaisquer outras informações relevantes..." rows="6" required></textarea>
+                        </div>
+
+                        <div class="report-form-grid">
+                            <div class="report-form-group">
+                                <label for="report-data">Data do Incidente</label>
+                                <input type="date" id="report-data" name="data" class="report-form-input">
+                            </div>
+                            <div class="report-form-group">
+                                <label for="report-local">Local do Incidente</label>
+                                <input type="text" id="report-local" name="local" class="report-form-input" placeholder="Local, cidade ou província">
+                            </div>
+                        </div>
+
+                        <div class="report-form-group">
+                            <label>Pessoas Envolvidas (se conhecido)</label>
+                            <div class="report-pessoas-container" id="report-pessoas-container">
+                                <div class="report-pessoa-item">
+                                    <input type="text" class="report-form-input" placeholder="Nome da pessoa ou entidade">
+                                    <button type="button" class="report-pessoa-remove" onclick="removePessoa(this)">
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="18" y1="6" x2="6" y2="18"/>
+                                            <line x1="6" y1="6" x2="18" y2="18"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <button type="button" class="report-pessoa-add" onclick="addPessoa()">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                                Adicionar Pessoa
+                            </button>
+                        </div>
+
+                        <div class="report-form-group">
+                            <label for="report-documentos">Documentos ou Provas (opcional)</label>
+                            <div class="report-documentos-container" id="report-documentos-container">
+                                <div class="report-documento-item">
+                                    <input type="file" class="report-form-file" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
+                                    <button type="button" class="report-documento-remove" onclick="removeDocumento(this)">
+                                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="18" y1="6" x2="6" y2="18"/>
+                                            <line x1="6" y1="6" x2="18" y2="18"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <button type="button" class="report-documento-add" onclick="addDocumento()">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="17,8 12,3 7,8"/>
+                                    <line x1="12" y1="3" x2="12" y2="15"/>
+                                </svg>
+                                Adicionar Documento
+                            </button>
+                            <p class="report-form-hint">Máximo 5 ficheiros, até 10MB cada</p>
+                        </div>
+
+                        <div class="report-form-group">
+                            <label for="report-contato">Informações de Contacto (opcional)</label>
+                            <p class="report-form-hint">Estas informações são opcionais e serão usadas apenas se precisarmos de entrar em contacto consigo para esclarecimentos adicionais.</p>
+                            <div class="report-form-grid">
+                                <div class="report-form-group">
+                                    <input type="text" id="report-contato-nome" name="contatoNome" class="report-form-input" placeholder="Nome">
+                                </div>
+                                <div class="report-form-group">
+                                    <input type="email" id="report-contato-email" name="contatoEmail" class="report-form-input" placeholder="Email">
+                                </div>
+                                <div class="report-form-group">
+                                    <input type="tel" id="report-contato-telefone" name="contatoTelefone" class="report-form-input" placeholder="Telefone">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="report-form-group">
+                            <label for="report-anonimato">
+                                <input type="checkbox" id="report-anonimato" name="anonimato" checked>
+                                <span class="report-checkbox-label">Desejo manter-me anónimo</span>
+                            </label>
+                            <p class="report-form-hint">Se seleccionar esta opção, as suas informações de contacto não serão associadas à denúncia.</p>
+                        </div>
+
+                        <div class="report-form-actions">
+                            <button type="reset" class="btn btn-outline btn-lg">
+                                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 6h18"/>
+                                    <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/>
+                                    <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>
+                                </svg>
+                                Limpar
+                            </button>
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 2L11 13"/>
+                                    <path d="m22 2-7 20-4-9-9-4 20-7z"/>
+                                </svg>
+                                Submeter Denúncia
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- INFO SECTION -->
+        <section class="section report-info-section">
+            <div class="container">
+                <div class="report-info-grid">
+                    <div class="report-info-card">
+                        <div class="report-info-card-icon">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h3>Proteção de Dados</h3>
+                        <p>Todas as informações fornecidas são tratadas com a máxima confidencialidade e estão protegidas pela Lei de Proteção de Dados de Moçambique.</p>
+                    </div>
+
+                    <div class="report-info-card">
+                        <div class="report-info-card-icon">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="12" y1="6" x2="12" y2="12"/>
+                                <line x1="12" y1="18" x2="12.01" y2="18"/>
+                            </svg>
+                        </div>
+                        <h3>Investigação</h3>
+                        <p>Todas as denúncias são investigadas pela Comissão de Ética da CDA em colaboração com as autoridades competentes quando necessário.</p>
+                    </div>
+
+                    <div class="report-info-card">
+                        <div class="report-info-card-icon">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3>Transparência</h3>
+                        <p>A CDA compromete-se a manter os seus membros informados sobre o resultado das investigações, sempre que possível.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section report-contact-section">
+            <div class="container">
+                <div class="report-contact-container">
+                    <div class="report-contact-info">
+                        <span class="report-contact-badge">Precisa de Ajuda?</span>
+                        <h2>Comissão de Ética da CDA</h2>
+                        <p>Para denúncias urgentes ou se preferir contactar directamente:</p>
+                        <div class="report-contact-details">
+                            <div class="report-contact-detail">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:etica@cda-mz.org">etica@cda-mz.org</a>
+                                </div>
+                            </div>
+                            <div class="report-contact-detail">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                <div>
+                                    <h4>Telefone</h4>
+                                    <a href="tel:+258820000000">+258 82 000 0000</a>
+                                </div>
+                            </div>
+                            <div class="report-contact-detail">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                                <div>
+                                    <h4>Atendimento</h4>
+                                    <p>Segunda a Sexta: 8h00 - 17h00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="report-contact-legal">
+                        <h3>Enquadramento Legal</h3>
+                        <p>A CDA actua de acordo com a legislação moçambicana, nomeadamente:</p>
+                        <ul>
+                            <li>Lei nº 4/2011 - Criação da CDA</li>
+                            <li>Regulamento Interno da CDA</li>
+                            <li>Código de Ética e Deontologia dos Despachantes Aduaneiros</li>
+                            <li>Lei de Combate à Corrupção</li>
+                            <li>Outra legislação aplicável</li>
+                        </ul>
+                        <p><small>Todas as denúncias são tratadas em conformidade com os princípios de justiça, imparcialidade e confidencialidade.</small></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-about">
+                        <a href="index.html" class="footer-logo">
+                            <img src="img/logos/cda-logo-white.svg" alt="CDA Digital" class="footer-logo-img">
+                            <span class="footer-logo-text">CDA Digital</span>
+                        </a>
+                        <p class="footer-about-text">
+                            Câmara dos Despachantes Aduaneiros de Moçambique. Representamos e defendemos os interesses dos despachantes aduaneiros, promovendo a excelência e a ética na profissão.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="footer-social-link" aria-label="Facebook">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="footer-social-link" aria-label="Twitter">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="footer-social-link" aria-label="LinkedIn">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="footer-social-link" aria-label="Instagram">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <h3 class="footer-links-title">Links Rápidos</h3>
+                        <ul class="footer-links-list">
+                            <li><a href="index.html" class="footer-links-link">Início</a></li>
+                            <li><a href="instituicao.html" class="footer-links-link">Sobre a CDA</a></li>
+                            <li><a href="despachantes.html" class="footer-links-link">Despachantes</a></li>
+                            <li><a href="verificar.html" class="footer-links-link">Verificar Despachante</a></li>
+                            <li><a href="documentacao.html" class="footer-links-link">Centro Documental</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h3 class="footer-links-title">Institucional</h3>
+                        <ul class="footer-links-list">
+                            <li><a href="lideranca.html" class="footer-links-link">Liderança</a></li>
+                            <li><a href="orgãos.html" class="footer-links-link">Órgãos Sociais</a></li>
+                            <li><a href="historia.html" class="footer-links-link">História</a></li>
+                            <li><a href="estatutos.html" class="footer-links-link">Estatutos</a></li>
+                            <li><a href="noticias.html" class="footer-links-link">Notícias</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h3 class="footer-links-title">Serviços</h3>
+                        <ul class="footer-links-list">
+                            <li><a href="verificar.html" class="footer-links-link">Verificação Online</a></li>
+                            <li><a href="pergunte.html" class="footer-links-link">Pergunte à CDA</a></li>
+                            <li><a href="denunciar.html" class="footer-links-link">Denúncia de Fraude</a></li>
+                            <li><a href="documentacao.html" class="footer-links-link">Documentação</a></li>
+                            <li><a href="contactos.html" class="footer-links-link">Contactos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-newsletter">
+                        <h3 class="footer-newsletter-title">Newsletter</h3>
+                        <p class="footer-newsletter-text">Receba as últimas notícias e actualizações</p>
+                        <form class="footer-newsletter-form">
+                            <input type="email" class="footer-newsletter-input" placeholder="seu@email.com" required>
+                            <button type="submit" class="footer-newsletter-btn">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 2L11 13"/>
+                                    <path d="m22 2-7 20-4-9-9-4 20-7z"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">
+                        &copy; 2024 Câmara dos Despachantes Aduaneiros de Moçambique. Todos os direitos reservados.
+                    </p>
+                    <div class="footer-bottom-links">
+                        <a href="#" class="footer-bottom-link">Política de Privacidade</a>
+                        <a href="#" class="footer-bottom-link">Termos de Uso</a>
+                        <a href="#" class="footer-bottom-link">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Add pessoa field
+        function addPessoa() {
+            const container = document.getElementById('report-pessoas-container');
+            const items = container.querySelectorAll('.report-pessoa-item');
+            
+            if (items.length >= 5) {
+                alert('Máximo de 5 pessoas por denúncia.');
+                return;
+            }
+            
+            const newItem = document.createElement('div');
+            newItem.className = 'report-pessoa-item';
+            newItem.innerHTML = `
+                <input type="text" class="report-form-input" placeholder="Nome da pessoa ou entidade">
+                <button type="button" class="report-pessoa-remove" onclick="removePessoa(this)">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            `;
+            container.appendChild(newItem);
+        }
+
+        // Remove pessoa field
+        function removePessoa(button) {
+            const item = button.parentNode;
+            const container = document.getElementById('report-pessoas-container');
+            
+            if (container.querySelectorAll('.report-pessoa-item').length > 1) {
+                container.removeChild(item);
+            } else {
+                item.querySelector('input').value = '';
+            }
+        }
+
+        // Add documento field
+        function addDocumento() {
+            const container = document.getElementById('report-documentos-container');
+            const items = container.querySelectorAll('.report-documento-item');
+            
+            if (items.length >= 5) {
+                alert('Máximo de 5 documentos por denúncia.');
+                return;
+            }
+            
+            const newItem = document.createElement('div');
+            newItem.className = 'report-documento-item';
+            newItem.innerHTML = `
+                <input type="file" class="report-form-file" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
+                <button type="button" class="report-documento-remove" onclick="removeDocumento(this)">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            `;
+            container.appendChild(newItem);
+        }
+
+        // Remove documento field
+        function removeDocumento(button) {
+            const item = button.parentNode;
+            const container = document.getElementById('report-documentos-container');
+            
+            if (container.querySelectorAll('.report-documento-item').length > 1) {
+                container.removeChild(item);
+            } else {
+                item.querySelector('input').value = '';
+            }
+        }
+
+        // Form submission
+        document.getElementById('report-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const formData = new FormData(form);
+            
+            // Validate
+            if (!formData.get('tipo') || !formData.get('urgencia') || !formData.get('titulo') || !formData.get('descricao')) {
+                alert('Por favor, preencha todos os campos obrigatórios!');
+                return;
+            }
+            
+            // Get pessoas
+            const pessoas = [];
+            document.querySelectorAll('#report-pessoas-container input').forEach(input => {
+                if (input.value.trim()) {
+                    pessoas.push(input.value.trim());
+                }
+            });
+            
+            // Get documentos
+            const documentos = [];
+            document.querySelectorAll('#report-documentos-container input').forEach(input => {
+                if (input.files.length > 0) {
+                    documentos.push(input.files[0].name);
+                }
+            });
+            
+            // Get contacto info
+            const contacto = {
+                nome: formData.get('contatoNome') || '',
+                email: formData.get('contatoEmail') || '',
+                telefone: formData.get('contatoTelefone') || ''
+            };
+            
+            // Create report object
+            const report = {
+                id: Date.now(),
+                tipo: formData.get('tipo'),
+                urgencia: formData.get('urgencia'),
+                titulo: formData.get('titulo'),
+                descricao: formData.get('descricao'),
+                data: formData.get('data'),
+                local: formData.get('local'),
+                pessoas: pessoas,
+                documentos: documentos,
+                contacto: contacto,
+                anonimato: formData.get('anonimato') === 'on',
+                dataSubmissao: new Date().toISOString()
+            };
+            
+            // Save to localStorage (simulating backend)
+            let reports = JSON.parse(localStorage.getItem('cda_reports') || '[]');
+            reports.push(report);
+            localStorage.setItem('cda_reports', JSON.stringify(reports));
+            
+            // Show success message
+            alert('Denúncia submetida com sucesso! O seu número de referência é: ' + report.id + '. Guarde este número para acompanhar o estado da sua denúncia.');
+            
+            // Reset form
+            form.reset();
+            
+            // Remove extra fields
+            document.querySelectorAll('#report-pessoas-container .report-pessoa-item:not(:first-child)').forEach(item => item.remove());
+            document.querySelectorAll('#report-documentos-container .report-documento-item:not(:first-child)').forEach(item => item.remove());
+        });
+    </script>
+</body>
+</html>

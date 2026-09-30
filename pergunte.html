@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pergunte à CDA - Assistente virtual para responder às suas dúvidas sobre despacho aduaneiro">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gellix:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/editorial.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <title>Pergunte à CDA - Assistente Virtual</title>
+</head>
+<body>
+    <a href="#main" class="skip-link">Ir para o conteúdo principal</a>
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar-content">
+                <div class="topbar-left">
+                    <span class="topbar-contact">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        +258 82 000 0000
+                    </span>
+                </div>
+                <div class="topbar-right">
+                    <a href="area-membro.html" class="btn btn-primary btn-sm">
+                        <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                        Área do Membro
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="img/logos/cda-logo.svg" alt="CDA - Câmara dos Despachantes Aduaneiros" class="logo-img">
+                    <span class="logo-text">
+                        <span class="logo-title">CDA</span>
+                        <span class="logo-subtitle">Digital</span>
+                    </span>
+                </a>
+
+                <nav class="nav">
+                    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                        <span class="hamburger"></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle" aria-expanded="false">
+                                Instituição
+                                <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6,9 12,15 18,9"/>
+                                </svg>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="instituicao.html" class="dropdown-link">Sobre a CDA</a></li>
+                                <li><a href="lideranca.html" class="dropdown-link">Liderança</a></li>
+                                <li><a href="orgãos.html" class="dropdown-link">Órgãos Sociais</a></li>
+                                <li><a href="historia.html" class="dropdown-link">História</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="despachantes.html" class="nav-link">Despachantes</a></li>
+                        <li class="nav-item"><a href="documentacao.html" class="nav-link">Centro Documental</a></li>
+                        <li class="nav-item"><a href="noticias.html" class="nav-link">Notícias</a></li>
+                        <li class="nav-item"><a href="contactos.html" class="nav-link">Contactos</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-search">
+                    <form class="search-form" action="documentacao.html">
+                        <input type="search" class="search-input" placeholder="Pesquisar documentos..." autocomplete="off">
+                        <button type="submit" class="search-submit">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"/>
+                                <path d="m21 21-4.35-4.35"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="main">
+        <!-- BREADCRUMB -->
+        <nav class="breadcrumb" aria-label="Localização">
+            <div class="container">
+                <ol class="breadcrumb-list">
+                    <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Início</a></li>
+                    <li class="breadcrumb-item"><span class="breadcrumb-separator">/</span></li>
+                    <li class="breadcrumb-item"><span class="breadcrumb-current">Pergunte à CDA</span></li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- PAGE HEADER -->
+        <section class="page-header" style="background-image: linear-gradient(rgba(13, 26, 38, 0.9), rgba(13, 26, 38, 0.9)), url('img/backgrounds/faq-bg.webp');">
+            <div class="container">
+                <div class="page-header-content">
+                    <span class="page-header-badge">Assistente Virtual</span>
+                    <h1 class="page-header-title">Pergunte à CDA</h1>
+                    <p class="page-header-subtitle">Obtenha respostas rápidas e precisas sobre despacho aduaneiro, legislação e procedimentos</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="section faq-section">
+            <div class="container">
+                <div class="faq-container">
+                    <!-- SEARCH -->
+                    <div class="faq-search">
+                        <form id="faq-search-form" class="faq-search-form">
+                            <div class="faq-search-input-group">
+                                <svg class="icon faq-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="m21 21-4.35-4.35"/>
+                                </svg>
+                                <input type="text" id="faq-search-input" class="faq-search-input" placeholder="Digite a sua pergunta..." autocomplete="off">
+                                <button type="submit" class="faq-search-btn">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- CHAT CONTAINER -->
+                    <div class="faq-chat-container">
+                        <div class="faq-chat" id="faq-chat">
+                            <!-- Welcome message -->
+                            <div class="faq-message faq-message-bot">
+                                <div class="faq-message-avatar">
+                                    <img src="img/logos/cda-logo.svg" alt="CDA">
+                                </div>
+                                <div class="faq-message-content">
+                                    <p>Olá! Sou o assistente virtual da CDA. Como posso ajudar?</p>
+                                    <div class="faq-quick-questions">
+                                        <button class="faq-quick-question" onclick="askQuestion('Como posso verificar se um despachante está registado?')">
+                                            Como verificar um despachante?
+                                        </button>
+                                        <button class="faq-quick-question" onclick="askQuestion('Quais são os requisitos para ser despachante aduaneiro?')">
+                                            Requisitos para despachante
+                                        </button>
+                                        <button class="faq-quick-question" onclick="askQuestion('Onde posso encontrar a legislação aduaneira?')">
+                                            Legislação aduaneira
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- INPUT -->
+                        <div class="faq-input-container">
+                            <form id="faq-form" class="faq-input-form">
+                                <input type="text" id="faq-input" class="faq-input" placeholder="Digite a sua pergunta..." autocomplete="off" required>
+                                <button type="submit" class="faq-input-btn">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 2L11 13"/>
+                                        <path d="m22 2-7 20-4-9-9-4 20-7z"/>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- CATEGORIES -->
+                    <div class="faq-categories">
+                        <h3 class="faq-categories-title">Ou explore por categoria</h3>
+                        <div class="faq-categories-grid">
+                            <button class="faq-category" onclick="filterByCategory('registos')">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14,2 14,8 20,8"/>
+                                </svg>
+                                <span>Registo de Despachantes</span>
+                            </button>
+                            <button class="faq-category" onclick="filterByCategory('legislacao')">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14,2 14,8 20,8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                </svg>
+                                <span>Legislação</span>
+                            </button>
+                            <button class="faq-category" onclick="filterByCategory('procedimentos')">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12,6 12,12 16,14"/>
+                                </svg>
+                                <span>Procedimentos Aduaneiros</span>
+                            </button>
+                            <button class="faq-category" onclick="filterByCategory('documentos')">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14,2 14,8 20,8"/>
+                                </svg>
+                                <span>Centro Documental</span>
+                            </button>
+                            <button class="faq-category" onclick="filterByCategory('membros')">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                </svg>
+                                <span>Membresia</span>
+                            </button>
+                            <button class="faq-category" onclick="filterByCategory('contactos')">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                <span>Contactos</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FREQUENT QUESTIONS -->
+        <section class="section faq-frequent-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">FAQ</span>
+                    <h2 class="section-title">Perguntas Frequentes</h2>
+                </div>
+
+                <div class="faq-accordion" id="faq-accordion">
+                    <div class="faq-accordion-item">
+                        <button class="faq-accordion-header" onclick="toggleAccordion(this)">
+                            <span class="faq-accordion-title">Como posso verificar se um despachante está registado na CDA?</span>
+                            <svg class="icon faq-accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-accordion-content">
+                            <p>Pode verificar o registo de um despachante através da nossa página de <a href="verificar.html">Verificar Despachante</a>. Basta introduzir o código profissional, nome ou número da cédula para obter informações detalhadas sobre o estado do registo.</p>
+                            <p>Alternativamente, pode consultar a lista completa de despachantes registados na página <a href="despachantes.html">Despachantes</a>.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <button class="faq-accordion-header" onclick="toggleAccordion(this)">
+                            <span class="faq-accordion-title">Quais são os requisitos para ser despachante aduaneiro?</span>
+                            <svg class="icon faq-accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-accordion-content">
+                            <p>Para ser despachante aduaneiro em Moçambique, é necessário:</p>
+                            <ol>
+                                <li>Ser cidadão moçambicano ou residente legal</li>
+                                <li>Ter o 12.º ano de escolaridade ou equivalente</li>
+                                <li>Frequentar e concluir com aproveitamento o Curso de Formação de Despachantes Aduaneiros</li>
+                                <li>Aprovação no exame de certificação</li>
+                                <li>Registo na Câmara dos Despachantes Aduaneiros (CDA)</li>
+                                <li>Pagamento das quotas anuais</li>
+                            </ol>
+                            <p>Para mais informações, consulte a página <a href="instituicao.html">Sobre a CDA</a>.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <button class="faq-accordion-header" onclick="toggleAccordion(this)">
+                            <span class="faq-accordion-title">Onde posso encontrar a legislação aduaneira actualizada?</span>
+                            <svg class="icon faq-accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-accordion-content">
+                            <p>Toda a legislação aduaneira actualizada está disponível no nosso <a href="documentacao.html">Centro Documental</a>. Pode encontrar:</p>
+                            <ul>
+                                <li>Leis e regulamentos</li>
+                                <li>Circulares e despachos</li>
+                                <li>Acordos internacionais</li>
+                                <li>Tarifas aduaneiras</li>
+                                <li>Outros documentos relevantes</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <button class="faq-accordion-header" onclick="toggleAccordion(this)">
+                            <span class="faq-accordion-title">Como posso tornar-me membro da CDA?</span>
+                            <svg class="icon faq-accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-accordion-content">
+                            <p>Para se tornar membro da CDA, é necessário:</p>
+                            <ol>
+                                <li>Ser despachante aduaneiro devidamente registado</li>
+                                <li>Preencher o formulário de adesão</li>
+                                <li>Pagar a quota de adesão e a anuidade</li>
+                                <li>Aprovação pelo Conselho Directivo</li>
+                            </ol>
+                            <p>Pode iniciar o processo através da <a href="area-membro.html">Área do Membro</a> ou contactando directamente a nossa sede.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <button class="faq-accordion-header" onclick="toggleAccordion(this)">
+                            <span class="faq-accordion-title">Quais são os benefícios de ser membro da CDA?</span>
+                            <svg class="icon faq-accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-accordion-content">
+                            <p>Os membros da CDA usufruem de vários benefícios, incluindo:</p>
+                            <ul>
+                                <li>Representação e defesa dos interesses junto das autoridades</li>
+                                <li>Acesso a formação contínua e especializada</li>
+                                <li>Informação privilegiada sobre alterações legislativas</li>
+                                <li>Participação em eventos e workshops</li>
+                                <li>Acesso ao Centro Documental exclusivo</li>
+                                <li>Networking com outros profissionais do sector</li>
+                                <li>Descontos em serviços e parcerias</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-accordion-item">
+                        <button class="faq-accordion-header" onclick="toggleAccordion(this)">
+                            <span class="faq-accordion-title">Como posso denunciar uma fraude ou irregularidade?</span>
+                            <svg class="icon faq-accordion-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"/>
+                            </svg>
+                        </button>
+                        <div class="faq-accordion-content">
+                            <p>Pode denunciar fraudes ou irregularidades através do nosso <a href="denunciar.html">Sistema de Denúncias</a>. Todas as denúncias são tratadas com a máxima confidencialidade.</p>
+                            <p>Alternativamente, pode contactar directamente a nossa Comissão de Ética através do email <a href="mailto:etica@cda-mz.org">etica@cda-mz.org</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section class="section faq-contact-section">
+            <div class="container">
+                <div class="faq-contact-container">
+                    <div class="faq-contact-info">
+                        <span class="faq-contact-badge">Precisa de Ajuda?</span>
+                        <h2 class="faq-contact-title">Não encontrou a resposta?</h2>
+                        <p class="faq-contact-subtitle">Envie-nos a sua pergunta e teremos todo o prazer em ajudar.</p>
+                        <div class="faq-contact-details">
+                            <div class="faq-contact-detail">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:pergunte@cda-mz.org">pergunte@cda-mz.org</a>
+                                </div>
+                            </div>
+                            <div class="faq-contact-detail">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                <div>
+                                    <h4>Telefone</h4>
+                                    <a href="tel:+258820000000">+258 82 000 0000</a>
+                                </div>
+                            </div>
+                            <div class="faq-contact-detail">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                                <div>
+                                    <h4>Atendimento</h4>
+                                    <p>Segunda a Sexta: 8h00 - 17h00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="faq-contact-form" class="faq-contact-form">
+                        <div class="faq-contact-form-grid">
+                            <div class="faq-contact-form-group">
+                                <label for="faq-contact-nome">Nome Completo *</label>
+                                <input type="text" id="faq-contact-nome" name="nome" class="faq-contact-input" placeholder="Seu nome" required>
+                            </div>
+                            <div class="faq-contact-form-group">
+                                <label for="faq-contact-email">Email *</label>
+                                <input type="email" id="faq-contact-email" name="email" class="faq-contact-input" placeholder="seu@email.com" required>
+                            </div>
+                        </div>
+                        <div class="faq-contact-form-group">
+                            <label for="faq-contact-assunto">Assunto *</label>
+                            <input type="text" id="faq-contact-assunto" name="assunto" class="faq-contact-input" placeholder="Assunto da sua pergunta" required>
+                        </div>
+                        <div class="faq-contact-form-group">
+                            <label for="faq-contact-mensagem">Mensagem *</label>
+                            <textarea id="faq-contact-mensagem" name="mensagem" class="faq-contact-textarea" placeholder="Digite a sua pergunta ou mensagem..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg faq-contact-btn">
+                            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13"/>
+                                <path d="m22 2-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                            Enviar Pergunta
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-about">
+                        <a href="index.html" class="footer-logo">
+                            <img src="img/logos/cda-logo-white.svg" alt="CDA Digital" class="footer-logo-img">
+                            <span class="footer-logo-text">CDA Digital</span>
+                        </a>
+                        <p class="footer-about-text">
+                            Câmara dos Despachantes Aduaneiros de Moçambique. Representamos e defendemos os interesses dos despachantes aduaneiros, promovendo a excelência e a ética na profissão.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="footer-social-link" aria-label="Facebook">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="footer-social-link" aria-label="Twitter">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="footer-social-link" aria-label="LinkedIn">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="footer-social-link" aria-label="Instagram">
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <h3 class="footer-links-title">Links Rápidos</h3>
+                        <ul class="footer-links-list">
+                            <li><a href="index.html" class="footer-links-link">Início</a></li>
+                            <li><a href="instituicao.html" class="footer-links-link">Sobre a CDA</a></li>
+                            <li><a href="despachantes.html" class="footer-links-link">Despachantes</a></li>
+                            <li><a href="verificar.html" class="footer-links-link">Verificar Despachante</a></li>
+                            <li><a href="documentacao.html" class="footer-links-link">Centro Documental</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h3 class="footer-links-title">Institucional</h3>
+                        <ul class="footer-links-list">
+                            <li><a href="lideranca.html" class="footer-links-link">Liderança</a></li>
+                            <li><a href="orgãos.html" class="footer-links-link">Órgãos Sociais</a></li>
+                            <li><a href="historia.html" class="footer-links-link">História</a></li>
+                            <li><a href="estatutos.html" class="footer-links-link">Estatutos</a></li>
+                            <li><a href="noticias.html" class="footer-links-link">Notícias</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h3 class="footer-links-title">Serviços</h3>
+                        <ul class="footer-links-list">
+                            <li><a href="verificar.html" class="footer-links-link">Verificação Online</a></li>
+                            <li><a href="pergunte.html" class="footer-links-link">Pergunte à CDA</a></li>
+                            <li><a href="denunciar.html" class="footer-links-link">Denúncia de Fraude</a></li>
+                            <li><a href="documentacao.html" class="footer-links-link">Documentação</a></li>
+                            <li><a href="contactos.html" class="footer-links-link">Contactos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-newsletter">
+                        <h3 class="footer-newsletter-title">Newsletter</h3>
+                        <p class="footer-newsletter-text">Receba as últimas notícias e actualizações</p>
+                        <form class="footer-newsletter-form">
+                            <input type="email" class="footer-newsletter-input" placeholder="seu@email.com" required>
+                            <button type="submit" class="footer-newsletter-btn">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 2L11 13"/>
+                                    <path d="m22 2-7 20-4-9-9-4 20-7z"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">
+                        &copy; 2024 Câmara dos Despachantes Aduaneiros de Moçambique. Todos os direitos reservados.
+                    </p>
+                    <div class="footer-bottom-links">
+                        <a href="#" class="footer-bottom-link">Política de Privacidade</a>
+                        <a href="#" class="footer-bottom-link">Termos de Uso</a>
+                        <a href="#" class="footer-bottom-link">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ Accordion
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('.faq-accordion-icon');
+            
+            // Close all other accordions
+            document.querySelectorAll('.faq-accordion-content').forEach(item => {
+                if (item !== content) {
+                    item.style.maxHeight = null;
+                    item.previousElementSibling.querySelector('.faq-accordion-icon').style.transform = 'rotate(0deg)';
+                }
+            });
+            
+            // Toggle current
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Ask question
+        function askQuestion(question) {
+            const input = document.getElementById('faq-input');
+            input.value = question;
+            document.getElementById('faq-form').submit();
+        }
+
+        // Filter by category
+        function filterByCategory(category) {
+            const input = document.getElementById('faq-search-input');
+            input.value = category;
+            document.getElementById('faq-search-form').submit();
+        }
+
+        // Form submissions
+        document.getElementById('faq-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const input = document.getElementById('faq-input');
+            const question = input.value.trim();
+            
+            if (question) {
+                addMessage(question, 'user');
+                input.value = '';
+                
+                // Simulate bot response
+                setTimeout(() => {
+                    const response = getResponse(question);
+                    addMessage(response, 'bot');
+                }, 1000);
+            }
+        });
+
+        document.getElementById('faq-search-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const input = document.getElementById('faq-search-input');
+            const question = input.value.trim();
+            
+            if (question) {
+                addMessage(question, 'user');
+                input.value = '';
+                
+                setTimeout(() => {
+                    const response = getResponse(question);
+                    addMessage(response, 'bot');
+                }, 1000);
+            }
+        });
+
+        document.getElementById('faq-contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+            
+            // Validate
+            if (!formData.get('nome') || !formData.get('email') || !formData.get('assunto') || !formData.get('mensagem')) {
+                alert('Por favor, preencha todos os campos obrigatórios!');
+                return;
+            }
+            
+            // Show success
+            alert('Pergunta enviada com sucesso! Entraremos em contacto consigo em breve.');
+            form.reset();
+        });
+
+        // Add message to chat
+        function addMessage(text, type) {
+            const chat = document.getElementById('faq-chat');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `faq-message faq-message-${type}`;
+            
+            if (type === 'user') {
+                messageDiv.innerHTML = `
+                    <div class="faq-message-content">
+                        <p>${text}</p>
+                    </div>
+                `;
+            } else {
+                messageDiv.innerHTML = `
+                    <div class="faq-message-avatar">
+                        <img src="img/logos/cda-logo.svg" alt="CDA">
+                    </div>
+                    <div class="faq-message-content">
+                        <p>${text}</p>
+                    </div>
+                `;
+            }
+            
+            chat.appendChild(messageDiv);
+            chat.scrollTop = chat.scrollHeight;
+        }
+
+        // Get response based on question
+        function getResponse(question) {
+            const responses = {
+                'como verificar despachante': 'Pode verificar um despachante na página <a href="verificar.html">Verificar Despachante</a>. Basta introduzir o código, nome ou número da cédula.',
+                'como posso verificar se um despachante está registado': 'Pode verificar o registo de um despachante através da nossa página de <a href="verificar.html">Verificar Despachante</a>. Basta introduzir o código profissional, nome ou número da cédula para obter informações detalhadas.',
+                'requisitos para ser despachante': 'Para ser despachante aduaneiro em Moçambique, é necessário: 1) Ser cidadão moçambicano ou residente legal, 2) Ter o 12.º ano de escolaridade, 3) Frequentar o Curso de Formação de Despachantes Aduaneiros, 4) Aprovação no exame de certificação, 5) Registo na CDA.',
+                'quais são os requisitos para ser despachante aduaneiro': 'Para ser despachante aduaneiro em Moçambique, é necessário: ser cidadão moçambicano ou residente legal, ter o 12.º ano de escolaridade ou equivalente, frequentar e concluir o Curso de Formação de Despachantes Aduaneiros, aprovação no exame de certificação, registo na CDA e pagamento das quotas anuais.',
+                'onde posso encontrar a legislação aduaneira': 'Toda a legislação aduaneira actualizada está disponível no nosso <a href="documentacao.html">Centro Documental</a>. Pode encontrar leis, regulamentos, circulares e outros documentos relevantes.',
+                'como posso tornar-me membro da cda': 'Para se tornar membro da CDA, é necessário: 1) Ser despachante aduaneiro devidamente registado, 2) Preencher o formulário de adesão, 3) Pagar a quota de adesão e a anuidade, 4) Aprovação pelo Conselho Directivo.',
+                'quais são os benefícios de ser membro da cda': 'Os membros da CDA usufruem de vários benefícios, incluindo representação junto das autoridades, acesso a formação contínua, informação privilegiada sobre alterações legislativas, participação em eventos, acesso ao Centro Documental exclusivo, networking e descontos em serviços.',
+                'como posso denunciar uma fraude': 'Pode denunciar fraudes ou irregularidades através do nosso <a href="denunciar.html">Sistema de Denúncias</a>. Todas as denúncias são tratadas com a máxima confidencialidade.',
+                'como posso denunciar uma fraude ou irregularidade': 'Pode denunciar fraudes ou irregularidades através do nosso <a href="denunciar.html">Sistema de Denúncias</a>. Todas as denúncias são tratadas com a máxima confidencialidade. Pode também contactar a Comissão de Ética através do email etica@cda-mz.org.',
+                '': 'Desculpe, não entendi a sua pergunta. Por favor, tente reformular ou explore as nossas perguntas frequentes.'
+            };
+            
+            const lowerQuestion = question.toLowerCase();
+            for (const [key, response] of Object.entries(responses)) {
+                if (lowerQuestion.includes(key)) {
+                    return response;
+                }
+            }
+            
+            return responses[''];
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            // Open first accordion by default
+            const firstAccordion = document.querySelector('.faq-accordion-header');
+            if (firstAccordion) {
+                toggleAccordion(firstAccordion);
+            }
+        });
+    </script>
+</body>
+</html>
