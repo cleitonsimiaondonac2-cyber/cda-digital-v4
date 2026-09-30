@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de Avaliações - Painel de Administração CDA Digital">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gellix:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Avaliações - Painel de Administração CDA</title>
+</head>
+<body class="admin-page">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" id="admin-sidebar">
+        <div class="admin-sidebar-header">
+            <div class="admin-sidebar-logo">
+                <img src="../img/logos/cda-logo-white.svg" alt="CDA Digital">
+                <span class="logo-text">
+                    <span class="logo-title">CDA</span>
+                    <span class="logo-subtitle">Admin</span>
+                </span>
+            </div>
+            <button class="admin-sidebar-toggle" id="sidebar-toggle" aria-label="Recolher sidebar">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9,6 15,12 9,18"/>
+                </svg>
+            </button>
+        </div>
+        
+        <nav class="admin-sidebar-menu">
+            <div class="admin-sidebar-menu-item">
+                <a href="index.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"/>
+                        <rect x="14" y="3" width="7" height="7"/>
+                        <rect x="14" y="14" width="7" height="7"/>
+                        <rect x="3" y="14" width="7" height="7"/>
+                    </svg>
+                    <span class="menu-label">Dashboard</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="noticias.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6 6 18"/>
+                        <path d="m6 6 12 12"/>
+                    </svg>
+                    <span class="menu-label">Notícias</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="documentos.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                    <span class="menu-label">Documentos</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="despachantes.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                    </svg>
+                    <span class="menu-label">Despachantes</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-dropdown">
+                <button class="admin-sidebar-menu-link dropdown-toggle" id="content-dropdown">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                    <span class="menu-label">Conteúdo</span>
+                    <svg class="icon dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"/>
+                    </svg>
+                </button>
+                <div class="admin-sidebar-dropdown-menu">
+                    <div class="admin-sidebar-menu-item">
+                        <a href="presidentes.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <span class="menu-label">Presidentes</span>
+                        </a>
+                    </div>
+                    <div class="admin-sidebar-menu-item">
+                        <a href="timeline.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                            <span class="menu-label">Linha do Tempo</span>
+                        </a>
+                    </div>
+                    <div class="admin-sidebar-menu-item">
+                        <a href="numeros.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 20V10"/>
+                                <path d="M12 20V4"/>
+                                <path d="M6 20v-6"/>
+                            </svg>
+                            <span class="menu-label">CDA em Números</span>
+                        </a>
+                    </div>
+                    <div class="admin-sidebar-menu-item">
+                        <a href="calendario.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                            <span class="menu-label">Calendário</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="galeria.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="3" y1="9" x2="21" y2="9"/>
+                        <line x1="9" y1="21" x2="9" y2="9"/>
+                    </svg>
+                    <span class="menu-label">Galeria</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="avaliacoes.html" class="admin-sidebar-menu-link active">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    <span class="menu-label">Avaliações</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="newsletter.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <span class="menu-label">Newsletter</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="users.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                    <span class="menu-label">Utilizadores</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="settings.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V7a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                    </svg>
+                    <span class="menu-label">Configurações</span>
+                </a>
+            </div>
+        </nav>
+        
+        <div class="admin-sidebar-footer">
+            <div class="admin-user">
+                <div class="admin-user-avatar">AD</div>
+                <div class="admin-user-info">
+                    <span class="admin-user-name" id="admin-user-name">Administrador</span>
+                    <span class="admin-user-role">Admin</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="admin-main">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <button class="admin-header-btn mobile-menu-toggle" id="mobile-menu-toggle">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+                <h1 class="admin-header-title">Sistema de Avaliações</h1>
+                <nav class="admin-breadcrumb">
+                    <a href="index.html" class="admin-breadcrumb-link">Início</a>
+                    <span class="admin-breadcrumb-separator">/</span>
+                    <span class="admin-breadcrumb-current">Avaliações</span>
+                </nav>
+            </div>
+            <div class="admin-header-right">
+                <div class="admin-header-actions">
+                    <select class="admin-header-select" id="avaliacoes-filter">
+                        <option value="">Todos os Tipos</option>
+                        <option value="Despachante">Despachantes</option>
+                        <option value="Servico">Serviços</option>
+                        <option value="Evento">Eventos</option>
+                    </select>
+                    <a href="avaliacoes.html?action=new" class="admin-header-btn">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                        <span class="menu-label">Nova Avaliação</span>
+                    </a>
+                </div>
+                <div class="admin-header-user">
+                    <div class="admin-header-user-avatar">AD</div>
+                    <span class="admin-header-user-name">Administrador</span>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Content -->
+        <div class="admin-content">
+            <!-- Stats -->
+            <section class="admin-stats" style="margin-bottom: 24px;">
+                <div class="admin-stat-card">
+                    <div class="admin-stat-header">
+                        <div class="admin-stat-icon gold">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="admin-stat-value" id="total-avaliacoes">45</div>
+                    <div class="admin-stat-label">Avaliações Totais</div>
+                </div>
+                
+                <div class="admin-stat-card">
+                    <div class="admin-stat-header">
+                        <div class="admin-stat-icon green">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22,4 12,14.01 9,11.01"/>
+                            </svg>
+                        </div>
+                        <span class="admin-stat-change positive">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22,11 16,16 10,11 4,6"/>
+                            </svg>
+                            +8
+                        </span>
+                    </div>
+                    <div class="admin-stat-value" id="media-avaliacoes">4.7</div>
+                    <div class="admin-stat-label">Média de Avaliação</div>
+                </div>
+                
+                <div class="admin-stat-card">
+                    <div class="admin-stat-header">
+                        <div class="admin-stat-icon blue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="admin-stat-value" id="avaliadores-avaliacoes">221</div>
+                    <div class="admin-stat-label">Avaliadores Activos</div>
+                </div>
+                
+                <div class="admin-stat-card">
+                    <div class="admin-stat-header">
+                        <div class="admin-stat-icon purple">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="3" y1="9" x2="21" y2="9"/>
+                                <line x1="9" y1="21" x2="9" y2="9"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="admin-stat-value" id="categorias-avaliacoes">5</div>
+                    <div class="admin-stat-label">Categorias de Avaliação</div>
+                </div>
+            </section>
+            
+            <!-- Tabs -->
+            <div class="admin-tabs">
+                <button class="admin-tab active" onclick="switchTab('avaliacoes')">Avaliações</button>
+                <button class="admin-tab" onclick="switchTab('categorias')">Categorias</button>
+                <button class="admin-tab" onclick="switchTab('relatorios')">Relatórios</button>
+            </div>
+            
+            <!-- Tab: Avaliações -->
+            <div class="admin-tab-content active" id="tab-avaliacoes">
+                <!-- Table -->
+                <div class="admin-table-container">
+                    <div class="admin-table-header">
+                        <h2 class="admin-table-title">Todas as Avaliações</h2>
+                        <div class="admin-table-actions">
+                            <div class="admin-table-search">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="m21 21-4.35-4.35"/>
+                                </svg>
+                                <input type="text" id="avaliacoes-search" placeholder="Pesquisar avaliações...">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-table-wrapper">
+                        <table class="admin-table" id="avaliacoes-table">
+                            <thead>
+                                <tr>
+                                    <th>Item Avaliado</th>
+                                    <th>Tipo</th>
+                                    <th>Avaliação</th>
+                                    <th>Avaliador</th>
+                                    <th>Data</th>
+                                    <th>Estado</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody id="avaliacoes-table-body">
+                                <!-- Avaliações serão carregadas via JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- Empty State -->
+                    <div class="admin-table-empty" id="avaliacoes-empty" hidden>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <h3>Nenhuma avaliação encontrada</h3>
+                        <p>Adicione a primeira avaliação para começar.</p>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div class="admin-table-pagination">
+                        <div class="admin-table-pagination-info">
+                            Mostrando <span id="avaliacoes-showing">0</span> de <span id="avaliacoes-total">0</span> avaliações
+                        </div>
+                        <div class="admin-table-pagination-controls">
+                            <button class="admin-table-pagination-btn" id="avaliacoes-prev" disabled>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="15,18 9,12 15,6"/>
+                                </svg>
+                            </button>
+                            <button class="admin-table-pagination-btn active" id="avaliacoes-page-1">1</button>
+                            <button class="admin-table-pagination-btn" id="avaliacoes-page-2">2</button>
+                            <span class="admin-table-pagination-btn">...</span>
+                            <button class="admin-table-pagination-btn" id="avaliacoes-page-last">10</button>
+                            <button class="admin-table-pagination-btn" id="avaliacoes-next">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="9,18 15,12 9,6"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tab: Categorias -->
+            <div class="admin-tab-content" id="tab-categorias">
+                <div class="admin-table-container">
+                    <div class="admin-table-header">
+                        <h2 class="admin-table-title">Categorias de Avaliação</h2>
+                        <div class="admin-table-actions">
+                            <a href="avaliacoes.html?action=new-category" class="admin-header-btn">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"/>
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                </svg>
+                                <span class="menu-label">Nova Categoria</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-categories-grid" id="categories-grid">
+                        <!-- Categorias serão carregadas via JavaScript -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tab: Relatórios -->
+            <div class="admin-tab-content" id="tab-relatorios">
+                <div class="admin-reports">
+                    <div class="admin-reports-header">
+                        <h2 class="admin-reports-title">Relatórios de Avaliações</h2>
+                        <div class="admin-reports-filters">
+                            <select class="admin-form-select" id="report-period">
+                                <option value="7">Últimos 7 dias</option>
+                                <option value="30" selected>Últimos 30 dias</option>
+                                <option value="90">Últimos 90 dias</option>
+                                <option value="365">Último ano</option>
+                                <option value="all">Todo o período</option>
+                            </select>
+                            <button class="admin-form-btn admin-form-btn-primary" onclick="generateReport()">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14,2 14,8 20,8"/>
+                                </svg>
+                                Gerar Relatório
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-reports-grid">
+                        <div class="admin-report-card">
+                            <div class="admin-report-card-header">
+                                <h3>Média por Categoria</h3>
+                            </div>
+                            <div class="admin-report-chart" id="report-chart-categories">
+                                <!-- Gráfico será gerado via JavaScript -->
+                            </div>
+                        </div>
+                        
+                        <div class="admin-report-card">
+                            <div class="admin-report-card-header">
+                                <h3>Avaliações por Tipo</h3>
+                            </div>
+                            <div class="admin-report-chart" id="report-chart-types">
+                                <!-- Gráfico será gerado via JavaScript -->
+                            </div>
+                        </div>
+                        
+                        <div class="admin-report-card">
+                            <div class="admin-report-card-header">
+                                <h3>Evolução Temporal</h3>
+                            </div>
+                            <div class="admin-report-chart" id="report-chart-timeline">
+                                <!-- Gráfico será gerado via JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-reports-table">
+                        <h3>Detalhes das Avaliações</h3>
+                        <div class="admin-table-wrapper">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Média</th>
+                                        <th>Total de Avaliações</th>
+                                        <th>Melhor</th>
+                                        <th>Pior</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="report-table-body">
+                                    <!-- Dados serão carregados via JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Avaliação Form Modal -->
+    <div class="admin-modal-overlay" id="avaliacao-modal" hidden>
+        <div class="admin-modal admin-modal-lg">
+            <button class="admin-modal-close" onclick="closeAvaliacaoModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title" id="avaliacao-modal-title">Nova Avaliação</h2>
+            </div>
+            <div class="admin-modal-body">
+                <form id="avaliacao-form" class="admin-form">
+                    <input type="hidden" id="avaliacao-id" name="id">
+                    <div class="admin-form-section">
+                        <h3 class="admin-form-section-title">Informações Básicas</h3>
+                        <div class="admin-form-grid">
+                            <div class="admin-form-group">
+                                <label for="avaliacao-titulo">Título *</label>
+                                <input type="text" id="avaliacao-titulo" name="titulo" class="admin-form-control" placeholder="Título da avaliação" required>
+                                <div class="admin-form-error" id="avaliacao-titulo-error"></div>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="avaliacao-tipo">Tipo *</label>
+                                <select id="avaliacao-tipo" name="tipo" class="admin-form-control admin-form-select" required>
+                                    <option value="">Selecione o tipo</option>
+                                    <option value="Despachante">Despachante</option>
+                                    <option value="Servico">Serviço</option>
+                                    <option value="Evento">Evento</option>
+                                    <option value="Documento">Documento</option>
+                                    <option value="Outro">Outro</option>
+                                </select>
+                                <div class="admin-form-error" id="avaliacao-tipo-error"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="admin-form-group">
+                            <label for="avaliacao-categoria">Categoria *</label>
+                            <select id="avaliacao-categoria" name="categoria" class="admin-form-control admin-form-select" required>
+                                <option value="">Selecione a categoria</option>
+                                <option value="Qualidade">Qualidade do Serviço</option>
+                                <option value="Rapidez">Rapidez de Atendimento</option>
+                                <option value="Profissionalismo">Profissionalismo</option>
+                                <option value="Satisfacao">Satisfação Geral</option>
+                                <option value="Recomendacao">Recomendação</option>
+                            </select>
+                            <div class="admin-form-error" id="avaliacao-categoria-error"></div>
+                        </div>
+                        
+                        <div class="admin-form-group">
+                            <label for="avaliacao-item">Item a Avaliar *</label>
+                            <select id="avaliacao-item" name="item" class="admin-form-control admin-form-select" required>
+                                <option value="">Selecione o item</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-section">
+                        <h3 class="admin-form-section-title">Avaliação</h3>
+                        <div class="admin-rating-container">
+                            <label>Nota (1-5 Estrelas) *</label>
+                            <div class="admin-rating-stars" id="rating-stars">
+                                <button type="button" class="admin-rating-star" data-value="1" onclick="setRating(1)">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="admin-rating-star" data-value="2" onclick="setRating(2)">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="admin-rating-star" data-value="3" onclick="setRating(3)">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="admin-rating-star" data-value="4" onclick="setRating(4)">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="admin-rating-star" data-value="5" onclick="setRating(5)">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <input type="hidden" id="avaliacao-nota" name="nota" value="0" required>
+                            <div class="admin-rating-text" id="rating-text">Selecione uma nota</div>
+                        </div>
+                        
+                        <div class="admin-form-group">
+                            <label for="avaliacao-comentario">Comentário (Opcional)</label>
+                            <textarea id="avaliacao-comentario" name="comentario" class="admin-form-control admin-form-textarea" placeholder="Comentário sobre a avaliação..." rows="4"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-section">
+                        <h3 class="admin-form-section-title">Informações do Avaliador</h3>
+                        <div class="admin-form-grid">
+                            <div class="admin-form-group">
+                                <label for="avaliacao-nome">Nome *</label>
+                                <input type="text" id="avaliacao-nome" name="nome" class="admin-form-control" placeholder="Nome do avaliador" required>
+                                <div class="admin-form-error" id="avaliacao-nome-error"></div>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="avaliacao-email">Email *</label>
+                                <input type="email" id="avaliacao-email" name="email" class="admin-form-control" placeholder="email@exemplo.com" required>
+                                <div class="admin-form-error" id="avaliacao-email-error"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="admin-form-group">
+                            <label for="avaliacao-data">Data da Avaliação</label>
+                            <input type="datetime-local" id="avaliacao-data" name="data" class="admin-form-control">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeAvaliacaoModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="saveAvaliacao()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                    Guardar Avaliação
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Categoria Form Modal -->
+    <div class="admin-modal-overlay" id="categoria-modal" hidden>
+        <div class="admin-modal">
+            <button class="admin-modal-close" onclick="closeCategoriaModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title" id="categoria-modal-title">Nova Categoria</h2>
+            </div>
+            <div class="admin-modal-body">
+                <form id="categoria-form" class="admin-form">
+                    <input type="hidden" id="categoria-id" name="id">
+                    <div class="admin-form-group">
+                        <label for="categoria-nome">Nome *</label>
+                        <input type="text" id="categoria-nome" name="nome" class="admin-form-control" placeholder="Nome da categoria" required>
+                        <div class="admin-form-error" id="categoria-nome-error"></div>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="categoria-descricao">Descrição</label>
+                        <textarea id="categoria-descricao" name="descricao" class="admin-form-control admin-form-textarea" placeholder="Descrição da categoria..." rows="3"></textarea>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="categoria-cor">Cor</label>
+                        <div class="admin-form-color-picker">
+                            <input type="color" id="categoria-cor" name="cor" class="admin-form-color-input" value="#3B82F6">
+                            <input type="text" id="categoria-cor-text" name="corText" class="admin-form-control" placeholder="#3B82F6" value="#3B82F6">
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="categoria-icone">Ícone</label>
+                        <select id="categoria-icone" name="icone" class="admin-form-control admin-form-select">
+                            <option value="star">Estrela</option>
+                            <option value="heart">Coração</option>
+                            <option value="thumbs-up">Like</option>
+                            <option value="check">Check</option>
+                            <option value="smile">Sorriso</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeCategoriaModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="saveCategoria()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                    Guardar Categoria
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Delete Confirmation Modal -->
+    <div class="admin-modal-overlay admin-confirm-modal" id="delete-avaliacao-modal" hidden>
+        <div class="admin-modal">
+            <button class="admin-modal-close" onclick="closeDeleteModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title">Confirmar Eliminar</h2>
+            </div>
+            <div class="admin-modal-body">
+                <div class="admin-confirm-modal">
+                    <div class="admin-modal-icon danger">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="15" y1="9" x2="9" y2="15"/>
+                            <line x1="9" y1="9" x2="15" y2="15"/>
+                        </svg>
+                    </div>
+                    <p class="admin-modal-message">Tem a certeza que deseja eliminar esta avaliação? Esta ação não pode ser desfeita.</p>
+                </div>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeDeleteModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-danger" onclick="confirmDeleteAvaliacao()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="3,6 5,6 21,6"/>
+                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                    </svg>
+                    Eliminar
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Notifications -->
+    <div class="admin-notifications" id="notifications"></div>
+    
+    <script src="../js/main.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Dados de exemplo
+        let avaliacoes = [
+            {
+                id: 1,
+                titulo: "Avaliação de Despachante",
+                tipo: "Despachante",
+                categoria: "Qualidade do Serviço",
+                item: "Carlos F. Filomeno de Gama Afonso",
+                nota: 5,
+                comentario: "Excelente serviço, muito profissional e rápido.",
+                nome: "João Silva",
+                email: "joao.silva@exemplo.com",
+                data: new Date().toISOString(),
+                estado: "Aprovado"
+            },
+            {
+                id: 2,
+                titulo: "Avaliação de Workshop",
+                tipo: "Evento",
+                categoria: "Satisfação Geral",
+                item: "Workshop de Capacitação",
+                nota: 4,
+                comentario: "Muito bom, mas poderia ter mais exemplos práticos.",
+                nome: "Maria Santos",
+                email: "maria.santos@exemplo.com",
+                data: new Date(Date.now() - 86400000).toISOString(),
+                estado: "Aprovado"
+            },
+            {
+                id: 3,
+                titulo: "Avaliação de Serviço",
+                tipo: "Servico",
+                categoria: "Rapidez de Atendimento",
+                item: "Emissão de Cédula",
+                nota: 3,
+                comentario: "Demorou mais do que o esperado.",
+                nome: "Pedro Costa",
+                email: "pedro.costa@exemplo.com",
+                data: new Date(Date.now() - 172800000).toISOString(),
+                estado: "Aprovado"
+            },
+            {
+                id: 4,
+                titulo: "Avaliação de Documento",
+                tipo: "Documento",
+                categoria: "Qualidade",
+                item: "Guia de Procedimentos",
+                nota: 5,
+                comentario: "Muito claro e bem estruturado.",
+                nome: "Ana Ferreira",
+                email: "ana.ferreira@exemplo.com",
+                data: new Date(Date.now() - 259200000).toISOString(),
+                estado: "Aprovado"
+            },
+            {
+                id: 5,
+                titulo: "Avaliação de Atendimento",
+                tipo: "Servico",
+                categoria: "Profissionalismo",
+                item: "Atendimento Telefónico",
+                nota: 4,
+                comentario: "Atendimento cordial e eficiente.",
+                nome: "Rui Mendes",
+                email: "rui.mendes@exemplo.com",
+                data: new Date(Date.now() - 345600000).toISOString(),
+                estado: "Aprovado"
+            },
+            {
+                id: 6,
+                titulo: "Avaliação de Evento",
+                tipo: "Evento",
+                categoria: "Satisfação Geral",
+                item: "Conferência Anual",
+                nota: 5,
+                comentario: "Evento excepcional, palestrantes de alto nível.",
+                nome: "Sofia Rafael",
+                email: "sofia.rafael@exemplo.com",
+                data: new Date(Date.now() - 432000000).toISOString(),
+                estado: "Pendente"
+            }
+        ];
+        
+        let categorias = [
+            {
+                id: 1,
+                nome: "Qualidade do Serviço",
+                descricao: "Avaliação da qualidade dos serviços prestados",
+                cor: "#3B82F6",
+                icone: "star"
+            },
+            {
+                id: 2,
+                nome: "Rapidez de Atendimento",
+                descricao: "Avaliação do tempo de resposta e atendimento",
+                cor: "#10B981",
+                icone: "check"
+            },
+            {
+                id: 3,
+                nome: "Profissionalismo",
+                descricao: "Avaliação do profissionalismo dos colaboradores",
+                cor: "#F59E0B",
+                icone: "smile"
+            },
+            {
+                id: 4,
+                nome: "Satisfação Geral",
+                descricao: "Avaliação geral da satisfação do cliente",
+                cor: "#EF4444",
+                icone: "heart"
+            },
+            {
+                id: 5,
+                nome: "Recomendação",
+                descricao: "Probabilidade de recomendar os serviços",
+                cor: "#8B5CF6",
+                icone: "thumbs-up"
+            }
+        ];
+        
+        let currentAvaliacao = null;
+        let currentCategoria = null;
+        let currentTab = 'avaliacoes';
+        let currentPage = 1;
+        const itemsPerPage = 10;
+        
+        // Icons for categories
+        const categoryIcons = {
+            star: '<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>',
+            heart: '<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>',
+            'thumbs-up': '<path d="M7 10v12m7-7v7m-7-8h7m7-4a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/>',
+            check: '<path d="M20 6L9 17l-5-5"/>',
+            smile: '<circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/>'
+        };
+        
+        // Items for each type
+        const itemsByType = {
+            Despachante: ["Carlos F. Filomeno de Gama Afonso", "Maria da Graça João", "José Manuel da Silva", "Ana Paula Costa", "Pedro Henriques"],
+            Servico: ["Emissão de Cédula", "Renovação de Registo", "Consulta de Processos", "Atendimento Telefónico", "Atendimento Presencial"],
+            Evento: ["Workshop de Capacitação", "Seminário Internacional", "Conferência Anual", "Formação em Novas Tecnologias", "Jantar de Networking"],
+            Documento: ["Guia de Procedimentos", "Regulamento Interno", "Código de Ética", "Relatório Anual", "Estatutos da CDA"],
+            Outro: []
+        };
+        
+        // Switch tab
+        function switchTab(tab) {
+            currentTab = tab;
+            
+            // Update tab buttons
+            document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
+            document.querySelector(`[onclick="switchTab('${tab}')"]`).classList.add('active');
+            
+            // Update tab content
+            document.querySelectorAll('.admin-tab-content').forEach(c => c.classList.remove('active'));
+            document.getElementById(`tab-${tab}`).classList.add('active');
+            
+            // Load content
+            if (tab === 'avaliacoes') {
+                loadAvaliacoes();
+            } else if (tab === 'categorias') {
+                loadCategorias();
+            } else if (tab === 'relatorios') {
+                generateReport();
+            }
+        }
+        
+        // Carregar avaliações
+        function loadAvaliacoes() {
+            const tbody = document.getElementById('avaliacoes-table-body');
+            const empty = document.getElementById('avaliacoes-empty');
+            const showing = document.getElementById('avaliacoes-showing');
+            const total = document.getElementById('avaliacoes-total');
+            
+            // Filtrar avaliações
+            const search = document.getElementById('avaliacoes-search').value.toLowerCase();
+            const tipo = document.getElementById('avaliacoes-filter').value;
+            
+            let filtered = avaliacoes.filter(a => {
+                const matchSearch = !search || 
+                    a.titulo.toLowerCase().includes(search) ||
+                    a.item.toLowerCase().includes(search) ||
+                    a.nome.toLowerCase().includes(search) ||
+                    a.categoria.toLowerCase().includes(search);
+                const matchTipo = !tipo || a.tipo === tipo;
+                return matchSearch && matchTipo;
+            });
+            
+            // Ordenar por data
+            filtered.sort((a, b) => new Date(b.data) - new Date(a.data));
+            
+            // Paginação
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageItems = filtered.slice(start, end);
+            
+            total.textContent = filtered.length;
+            showing.textContent = pageItems.length > 0 ? start + 1 : 0;
+            
+            if (pageItems.length === 0) {
+                tbody.innerHTML = '';
+                empty.hidden = false;
+                return;
+            }
+            
+            empty.hidden = true;
+            
+            tbody.innerHTML = pageItems.map(a => `
+                <tr>
+                    <td>
+                        <div class="admin-table-cell-content">
+                            <div class="admin-table-cell-title">${a.item}</div>
+                            <div class="admin-table-cell-subtitle">${a.titulo}</div>
+                        </div>
+                    </td>
+                    <td><span class="admin-table-status">${a.tipo}</span></td>
+                    <td>
+                        <div class="admin-rating-display">
+                            ${generateStars(a.nota)}
+                            <span class="admin-rating-value">${a.nota}/5</span>
+                        </div>
+                    </td>
+                    <td>${a.nome}</td>
+                    <td>${formatDate(a.data)}</td>
+                    <td><span class="admin-table-status ${a.estado === 'Aprovado' ? 'active' : 'warning'}">${a.estado}</span></td>
+                    <td>
+                        <div class="admin-table-actions">
+                            <button class="admin-table-action" onclick="viewAvaliacao(${a.id})" title="Ver">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </button>
+                            <button class="admin-table-action edit" onclick="editAvaliacao(${a.id})" title="Editar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                                </svg>
+                            </button>
+                            <button class="admin-table-action delete" onclick="deleteAvaliacao(${a.id})" title="Eliminar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="3,6 5,6 21,6"/>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
+            
+            updatePagination(filtered.length);
+            updateStats();
+        }
+        
+        function updateStats() {
+            const total = avaliacoes.length;
+            const media = (avaliacoes.reduce((sum, a) => sum + a.nota, 0) / total).toFixed(1);
+            const avaliadores = new Set(avaliacoes.map(a => a.email)).size;
+            const categoriasCount = new Set(avaliacoes.map(a => a.categoria)).size;
+            
+            document.getElementById('total-avaliacoes').textContent = total;
+            document.getElementById('media-avaliacoes').textContent = media;
+            document.getElementById('avaliadores-avaliacoes').textContent = avaliadores;
+            document.getElementById('categorias-avaliacoes').textContent = categoriasCount;
+        }
+        
+        function updatePagination(totalItems) {
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            const prevBtn = document.getElementById('avaliacoes-prev');
+            const nextBtn = document.getElementById('avaliacoes-next');
+            
+            prevBtn.disabled = currentPage === 1;
+            nextBtn.disabled = currentPage >= totalPages;
+            
+            // Atualizar botões de página
+            for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById(`avaliacoes-page-${i}`);
+                if (btn) {
+                    btn.textContent = currentPage === i ? currentPage : i;
+                    btn.classList.toggle('active', currentPage === i);
+                }
+            }
+            
+            // Atualizar botão last
+            const lastBtn = document.getElementById('avaliacoes-page-last');
+            if (lastBtn) {
+                lastBtn.textContent = totalPages;
+                lastBtn.classList.toggle('active', currentPage === totalPages);
+            }
+        }
+        
+        function changePage(page) {
+            const totalItems = avaliacoes.length;
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            
+            if (page < 1 || page > totalPages) return;
+            
+            currentPage = page;
+            loadAvaliacoes();
+        }
+        
+        function generateStars(nota) {
+            let stars = '';
+            for (let i = 1; i <= 5; i++) {
+                stars += `<svg class="icon ${i <= nota ? 'filled' : ''}" viewBox="0 0 24 24" fill="${i <= nota ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>`;
+            }
+            return stars;
+        }
+        
+        // Carregar categorias
+        function loadCategorias() {
+            const grid = document.getElementById('categories-grid');
+            
+            grid.innerHTML = categorias.map(c => `
+                <div class="admin-category-card">
+                    <div class="admin-category-card-header" style="background-color: ${c.cor}">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            ${categoryIcons[c.icone] || categoryIcons.star}
+                        </svg>
+                        <div class="admin-category-card-actions">
+                            <button class="admin-category-card-action" onclick="editCategoria(${c.id})" title="Editar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                                </svg>
+                            </button>
+                            <button class="admin-category-card-action" onclick="deleteCategoria(${c.id})" title="Eliminar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="3,6 5,6 21,6"/>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="admin-category-card-body">
+                        <h3 class="admin-category-card-title">${c.nome}</h3>
+                        <p class="admin-category-card-desc">${c.descricao || 'Sem descrição'}</p>
+                        <div class="admin-category-card-stats">
+                            <span class="admin-category-card-stat">
+                                <span class="admin-category-card-stat-value">${avaliacoes.filter(a => a.categoria === c.nome).length}</span>
+                                <span class="admin-category-card-stat-label">Avaliações</span>
+                            </span>
+                            <span class="admin-category-card-stat">
+                                <span class="admin-category-card-stat-value">${(avaliacoes.filter(a => a.categoria === c.nome).reduce((sum, a) => sum + a.nota, 0) / avaliacoes.filter(a => a.categoria === c.nome).length).toFixed(1)}</span>
+                                <span class="admin-category-card-stat-label">Média</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        // Gerar relatório
+        function generateReport() {
+            const period = document.getElementById('report-period').value;
+            const today = new Date();
+            let startDate = new Date();
+            
+            switch (period) {
+                case '7':
+                    startDate.setDate(today.getDate() - 7);
+                    break;
+                case '30':
+                    startDate.setDate(today.getDate() - 30);
+                    break;
+                case '90':
+                    startDate.setDate(today.getDate() - 90);
+                    break;
+                case '365':
+                    startDate.setFullYear(today.getFullYear() - 1);
+                    break;
+            }
+            
+            const filtered = avaliacoes.filter(a => {
+                const eventDate = new Date(a.data);
+                return period === 'all' || eventDate >= startDate;
+            });
+            
+            // Gráfico por categoria
+            renderCategoriesChart(filtered);
+            renderTypesChart(filtered);
+            renderTimelineChart(filtered);
+            renderReportTable(filtered);
+        }
+        
+        function renderCategoriesChart(data) {
+            const ctx = document.getElementById('report-chart-categories');
+            if (!ctx) return;
+            
+            const categories = [...new Set(data.map(a => a.categoria))];
+            const averages = categories.map(c => {
+                const categoryData = data.filter(a => a.categoria === c);
+                return categoryData.reduce((sum, a) => sum + a.nota, 0) / categoryData.length;
+            });
+            
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: categories,
+                    datasets: [{
+                        label: 'Média por Categoria',
+                        data: averages,
+                        backgroundColor: categories.map((_, i) => categorias[i]?.cor || '#3B82F6'),
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 5,
+                            ticks: {
+                                stepSize: 1
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        
+        function renderTypesChart(data) {
+            const ctx = document.getElementById('report-chart-types');
+            if (!ctx) return;
+            
+            const types = [...new Set(data.map(a => a.tipo))];
+            const counts = types.map(t => data.filter(a => a.tipo === t).length);
+            
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: types,
+                    datasets: [{
+                        data: counts,
+                        backgroundColor: ['#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        }
+        
+        function renderTimelineChart(data) {
+            const ctx = document.getElementById('report-chart-timeline');
+            if (!ctx) return;
+            
+            // Agrupar por dia
+            const dates = [...new Set(data.map(a => formatDate(a.data)))];
+            const counts = dates.map(d => data.filter(a => formatDate(a.data) === d).length);
+            
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: dates,
+                    datasets: [{
+                        label: 'Avaliações por Dia',
+                        data: counts,
+                        borderColor: '#3B82F6',
+                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        fill: true,
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+        
+        function renderReportTable(data) {
+            const tbody = document.getElementById('report-table-body');
+            if (!tbody) return;
+            
+            const items = [...new Set(data.map(a => a.item))];
+            
+            tbody.innerHTML = items.map(item => {
+                const itemData = data.filter(a => a.item === item);
+                const avg = (itemData.reduce((sum, a) => sum + a.nota, 0) / itemData.length).toFixed(1);
+                const max = Math.max(...itemData.map(a => a.nota));
+                const min = Math.min(...itemData.map(a => a.nota));
+                
+                return `
+                    <tr>
+                        <td>${item}</td>
+                        <td>
+                            <div class="admin-rating-display">
+                                ${generateStars(Math.round(avg))}
+                                <span class="admin-rating-value">${avg}/5</span>
+                            </div>
+                        </td>
+                        <td>${itemData.length}</td>
+                        <td>${max}/5</td>
+                        <td>${min}/5</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+        
+        // Open modal
+        function openAvaliacaoModal(avaliacao = null) {
+            const modal = document.getElementById('avaliacao-modal');
+            const form = document.getElementById('avaliacao-form');
+            const title = document.getElementById('avaliacao-modal-title');
+            
+            currentAvaliacao = avaliacao;
+            
+            if (avaliacao) {
+                // Editar
+                title.textContent = 'Editar Avaliação';
+                document.getElementById('avaliacao-id').value = avaliacao.id;
+                document.getElementById('avaliacao-titulo').value = avaliacao.titulo;
+                document.getElementById('avaliacao-tipo').value = avaliacao.tipo;
+                document.getElementById('avaliacao-categoria').value = avaliacao.categoria;
+                document.getElementById('avaliacao-item').value = avaliacao.item;
+                setRating(avaliacao.nota);
+                document.getElementById('avaliacao-comentario').value = avaliacao.comentario || '';
+                document.getElementById('avaliacao-nome').value = avaliacao.nome;
+                document.getElementById('avaliacao-email').value = avaliacao.email;
+                document.getElementById('avaliacao-data').value = formatDateTimeLocal(avaliacao.data);
+            } else {
+                // Novo
+                title.textContent = 'Nova Avaliação';
+                form.reset();
+                setRating(0);
+                document.getElementById('avaliacao-data').value = formatDateTimeLocal(new Date().toISOString());
+            }
+            
+            // Carregar itens com base no tipo
+            updateItems();
+            
+            modal.hidden = false;
+        }
+        
+        function closeAvaliacaoModal() {
+            document.getElementById('avaliacao-modal').hidden = true;
+            currentAvaliacao = null;
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+        
+        function updateItems() {
+            const tipo = document.getElementById('avaliacao-tipo').value;
+            const select = document.getElementById('avaliacao-item');
+            
+            select.innerHTML = '<option value="">Selecione o item</option>';
+            
+            if (tipo && itemsByType[tipo]) {
+                itemsByType[tipo].forEach(item => {
+                    select.innerHTML += `<option value="${item}">${item}</option>`;
+                });
+            }
+        }
+        
+        function setRating(nota) {
+            document.getElementById('avaliacao-nota').value = nota;
+            
+            const stars = document.querySelectorAll('.admin-rating-star');
+            stars.forEach((star, index) => {
+                const svg = star.querySelector('svg');
+                if (index < nota) {
+                    svg.style.fill = 'currentColor';
+                    svg.style.stroke = 'currentColor';
+                } else {
+                    svg.style.fill = 'none';
+                    svg.style.stroke = 'currentColor';
+                }
+            });
+            
+            const text = document.getElementById('rating-text');
+            const labels = ['Péssimo', 'Fraco', 'Médio', 'Bom', 'Excelente'];
+            text.textContent = labels[nota - 1] || 'Selecione uma nota';
+            text.style.color = nota > 0 ? '#3B82F6' : '#9CA3AF';
+        }
+        
+        function saveAvaliacao() {
+            const form = document.getElementById('avaliacao-form');
+            const formData = new FormData(form);
+            
+            // Validar
+            if (!formData.get('titulo')) {
+                showNotification('O título é obrigatório!', 'error');
+                return;
+            }
+            
+            if (!formData.get('tipo')) {
+                showNotification('O tipo é obrigatório!', 'error');
+                return;
+            }
+            
+            if (!formData.get('categoria')) {
+                showNotification('A categoria é obrigatória!', 'error');
+                return;
+            }
+            
+            if (!formData.get('item')) {
+                showNotification('O item é obrigatório!', 'error');
+                return;
+            }
+            
+            if (!formData.get('nota') || parseInt(formData.get('nota')) === 0) {
+                showNotification('A nota é obrigatória!', 'error');
+                return;
+            }
+            
+            if (!formData.get('nome')) {
+                showNotification('O nome é obrigatório!', 'error');
+                return;
+            }
+            
+            if (!formData.get('email') || !validateEmail(formData.get('email'))) {
+                showNotification('Email inválido!', 'error');
+                return;
+            }
+            
+            // Salvar
+            const avaliacao = {
+                id: formData.get('id') ? parseInt(formData.get('id')) : Date.now(),
+                titulo: formData.get('titulo'),
+                tipo: formData.get('tipo'),
+                categoria: formData.get('categoria'),
+                item: formData.get('item'),
+                nota: parseInt(formData.get('nota')),
+                comentario: formData.get('comentario'),
+                nome: formData.get('nome'),
+                email: formData.get('email'),
+                data: formData.get('data'),
+                estado: currentAvaliacao ? currentAvaliacao.estado : 'Pendente'
+            };
+            
+            if (currentAvaliacao) {
+                // Atualizar
+                const index = avaliacoes.findIndex(a => a.id === currentAvaliacao.id);
+                if (index !== -1) {
+                    avaliacoes[index] = avaliacao;
+                    showNotification('Avaliação actualizada com sucesso!', 'success');
+                }
+            } else {
+                // Adicionar
+                avaliacoes.push(avaliacao);
+                showNotification('Avaliação adicionada com sucesso!', 'success');
+            }
+            
+            closeAvaliacaoModal();
+            currentPage = 1;
+            loadAvaliacoes();
+            if (currentTab === 'relatorios') {
+                generateReport();
+            }
+        }
+        
+        function viewAvaliacao(id) {
+            const avaliacao = avaliacoes.find(a => a.id === id);
+            if (avaliacao) {
+                openAvaliacaoModal(avaliacao);
+            }
+        }
+        
+        function editAvaliacao(id) {
+            const avaliacao = avaliacoes.find(a => a.id === id);
+            if (avaliacao) {
+                openAvaliacaoModal(avaliacao);
+            }
+        }
+        
+        function deleteAvaliacao(id) {
+            currentAvaliacao = avaliacoes.find(a => a.id === id);
+            document.getElementById('delete-avaliacao-modal').hidden = false;
+        }
+        
+        function closeDeleteModal() {
+            document.getElementById('delete-avaliacao-modal').hidden = true;
+            currentAvaliacao = null;
+        }
+        
+        function confirmDeleteAvaliacao() {
+            if (!currentAvaliacao) return;
+            
+            const index = avaliacoes.findIndex(a => a.id === currentAvaliacao.id);
+            if (index !== -1) {
+                avaliacoes.splice(index, 1);
+                showNotification('Avaliação eliminada com sucesso!', 'success');
+            }
+            
+            closeDeleteModal();
+            loadAvaliacoes();
+            if (currentTab === 'relatorios') {
+                generateReport();
+            }
+        }
+        
+        // Categoria functions
+        function openCategoriaModal(categoria = null) {
+            const modal = document.getElementById('categoria-modal');
+            const form = document.getElementById('categoria-form');
+            const title = document.getElementById('categoria-modal-title');
+            
+            currentCategoria = categoria;
+            
+            if (categoria) {
+                // Editar
+                title.textContent = 'Editar Categoria';
+                document.getElementById('categoria-id').value = categoria.id;
+                document.getElementById('categoria-nome').value = categoria.nome;
+                document.getElementById('categoria-descricao').value = categoria.descricao || '';
+                document.getElementById('categoria-cor').value = categoria.cor || '#3B82F6';
+                document.getElementById('categoria-cor-text').value = categoria.cor || '#3B82F6';
+                document.getElementById('categoria-icone').value = categoria.icone || 'star';
+            } else {
+                // Novo
+                title.textContent = 'Nova Categoria';
+                form.reset();
+                document.getElementById('categoria-cor').value = '#3B82F6';
+                document.getElementById('categoria-cor-text').value = '#3B82F6';
+            }
+            
+            modal.hidden = false;
+        }
+        
+        function closeCategoriaModal() {
+            document.getElementById('categoria-modal').hidden = true;
+            currentCategoria = null;
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+        
+        function saveCategoria() {
+            const form = document.getElementById('categoria-form');
+            const formData = new FormData(form);
+            
+            // Validar
+            if (!formData.get('nome')) {
+                showNotification('O nome é obrigatório!', 'error');
+                return;
+            }
+            
+            // Salvar
+            const categoria = {
+                id: formData.get('id') ? parseInt(formData.get('id')) : Date.now(),
+                nome: formData.get('nome'),
+                descricao: formData.get('descricao'),
+                cor: formData.get('cor'),
+                icone: formData.get('icone')
+            };
+            
+            if (currentCategoria) {
+                // Atualizar
+                const index = categorias.findIndex(c => c.id === currentCategoria.id);
+                if (index !== -1) {
+                    categorias[index] = categoria;
+                    showNotification('Categoria actualizada com sucesso!', 'success');
+                }
+            } else {
+                // Adicionar
+                categorias.push(categoria);
+                showNotification('Categoria adicionada com sucesso!', 'success');
+            }
+            
+            closeCategoriaModal();
+            loadCategorias();
+            
+            // Atualizar select de categorias
+            const categoriaSelect = document.getElementById('avaliacao-categoria');
+            if (categoriaSelect) {
+                const currentValue = categoriaSelect.value;
+                categoriaSelect.innerHTML = '<option value="">Selecione a categoria</option>';
+                categorias.forEach(c => {
+                    categoriaSelect.innerHTML += `<option value="${c.nome}">${c.nome}</option>`;
+                });
+                categoriaSelect.value = currentValue;
+            }
+        }
+        
+        function editCategoria(id) {
+            const categoria = categorias.find(c => c.id === id);
+            if (categoria) {
+                openCategoriaModal(categoria);
+            }
+        }
+        
+        function deleteCategoria(id) {
+            const categoria = categorias.find(c => c.id === id);
+            if (!categoria) return;
+            
+            // Verificar se tem avaliações
+            const hasAvaliacoes = avaliacoes.some(a => a.categoria === categoria.nome);
+            if (hasAvaliacoes) {
+                showNotification('Não pode eliminar uma categoria com avaliações!', 'error');
+                return;
+            }
+            
+            currentCategoria = categoria;
+            document.getElementById('delete-avaliacao-modal').hidden = false;
+            document.querySelector('.admin-modal-message').textContent = 'Tem a certeza que deseja eliminar esta categoria? Esta ação não pode ser desfeita.';
+        }
+        
+        function confirmDeleteCategoria() {
+            if (!currentCategoria) return;
+            
+            const index = categorias.findIndex(c => c.id === currentCategoria.id);
+            if (index !== -1) {
+                categorias.splice(index, 1);
+                showNotification('Categoria eliminada com sucesso!', 'success');
+            }
+            
+            closeDeleteModal();
+            loadCategorias();
+        }
+        
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verificar se está logado
+            if (sessionStorage.getItem('cda_admin_logged') !== 'true') {
+                window.location.href = 'login.html';
+                return;
+            }
+            
+            // Carregar avaliações
+            loadAvaliacoes();
+            loadCategorias();
+            
+            // Atualizar nome do utilizador
+            const userName = sessionStorage.getItem('cda_admin_user') || 'Administrador';
+            document.getElementById('admin-user-name').textContent = userName;
+            
+            // Filtros
+            document.getElementById('avaliacoes-filter').addEventListener('change', function() {
+                currentPage = 1;
+                loadAvaliacoes();
+            });
+            
+            // Pesquisa
+            document.getElementById('avaliacoes-search').addEventListener('input', debounce(function() {
+                currentPage = 1;
+                loadAvaliacoes();
+            }, 300));
+            
+            // Tipo change
+            document.getElementById('avaliacao-tipo').addEventListener('change', updateItems);
+            
+            // Novo
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('action') === 'new') {
+                openAvaliacaoModal();
+            } else if (urlParams.get('action') === 'new-category') {
+                openCategoriaModal();
+            }
+            
+            // Color picker sync
+            document.getElementById('categoria-cor').addEventListener('input', function() {
+                document.getElementById('categoria-cor-text').value = this.value;
+            });
+            
+            // Paginação
+            document.getElementById('avaliacoes-prev').addEventListener('click', function() {
+                if (currentPage > 1) {
+                    changePage(currentPage - 1);
+                }
+            });
+            
+            document.getElementById('avaliacoes-next').addEventListener('click', function() {
+                const totalItems = avaliacoes.length;
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                if (currentPage < totalPages) {
+                    changePage(currentPage + 1);
+                }
+            });
+            
+            // Botões de página
+            for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById(`avaliacoes-page-${i}`);
+                if (btn) {
+                    btn.addEventListener('click', function() {
+                        changePage(i);
+                    });
+                }
+            }
+            
+            // Botão last
+            document.getElementById('avaliacoes-page-last').addEventListener('click', function() {
+                const totalItems = avaliacoes.length;
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                changePage(totalPages);
+            });
+        });
+        
+        function formatDate(date) {
+            if (!date) return '-';
+            const d = new Date(date);
+            return d.toLocaleDateString('pt-PT');
+        }
+        
+        function formatDateTimeLocal(dateString) {
+            const date = new Date(dateString);
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            const hours = String(date.getHours()).padStart(2, '0');
+            const minutes = String(date.getMinutes()).padStart(2, '0');
+            return `${year}-${month}-${day}T${hours}:${minutes}`;
+        }
+    </script>
+    <style>
+        .admin-tabs {
+            display: flex;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-lg);
+            border-bottom: 1px solid var(--color-neutral-200);
+        }
+        
+        .admin-tab {
+            padding: var(--space-sm) var(--space-lg);
+            background: none;
+            border: none;
+            font-size: var(--text-sm);
+            font-weight: var(--font-medium);
+            color: var(--color-neutral-500);
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+        
+        .admin-tab:hover {
+            color: var(--color-primary);
+        }
+        
+        .admin-tab.active {
+            color: var(--color-primary);
+            border-bottom-color: var(--color-primary);
+        }
+        
+        .admin-tab-content {
+            display: none;
+        }
+        
+        .admin-tab-content.active {
+            display: block;
+        }
+        
+        .admin-rating-display {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+        }
+        
+        .admin-rating-display .icon {
+            width: 14px;
+            height: 14px;
+            stroke: var(--color-gold);
+        }
+        
+        .admin-rating-display .icon.filled {
+            fill: var(--color-gold);
+            stroke: var(--color-gold);
+        }
+        
+        .admin-rating-value {
+            font-size: var(--text-sm);
+            color: var(--color-neutral-500);
+        }
+        
+        .admin-rating-container {
+            margin-bottom: var(--space-md);
+        }
+        
+        .admin-rating-container > label {
+            display: block;
+            font-size: var(--text-sm);
+            font-weight: var(--font-medium);
+            color: var(--color-neutral-700);
+            margin-bottom: var(--space-xs);
+        }
+        
+        .admin-rating-stars {
+            display: flex;
+            gap: var(--space-xs);
+            margin-bottom: var(--space-xs);
+        }
+        
+        .admin-rating-star {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            color: var(--color-gold);
+            transition: all 0.2s ease;
+        }
+        
+        .admin-rating-star:hover {
+            transform: scale(1.2);
+        }
+        
+        .admin-rating-star .icon {
+            width: 24px;
+            height: 24px;
+            stroke: var(--color-gold);
+            transition: all 0.2s ease;
+        }
+        
+        .admin-rating-text {
+            font-size: var(--text-sm);
+            color: var(--color-neutral-500);
+        }
+        
+        .admin-categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: var(--space-md);
+        }
+        
+        .admin-category-card {
+            background: var(--color-white);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+        
+        .admin-category-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+        
+        .admin-category-card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--space-md);
+        }
+        
+        .admin-category-card-header .icon {
+            width: 24px;
+            height: 24px;
+            stroke: var(--color-white);
+        }
+        
+        .admin-category-card-actions {
+            display: flex;
+            gap: var(--space-xs);
+        }
+        
+        .admin-category-card-action {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            cursor: pointer;
+            padding: var(--space-xs);
+            border-radius: var(--radius-sm);
+            color: var(--color-white);
+            transition: all 0.2s ease;
+        }
+        
+        .admin-category-card-action:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .admin-category-card-action .icon {
+            width: 16px;
+            height: 16px;
+        }
+        
+        .admin-category-card-body {
+            padding: var(--space-md);
+        }
+        
+        .admin-category-card-title {
+            font-size: var(--text-lg);
+            font-weight: var(--font-bold);
+            color: var(--color-neutral-800);
+            margin-bottom: var(--space-xs);
+        }
+        
+        .admin-category-card-desc {
+            font-size: var(--text-sm);
+            color: var(--color-neutral-500);
+            margin-bottom: var(--space-md);
+            line-height: 1.5;
+        }
+        
+        .admin-category-card-stats {
+            display: flex;
+            gap: var(--space-md);
+        }
+        
+        .admin-category-card-stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .admin-category-card-stat-value {
+            font-size: var(--text-xl);
+            font-weight: var(--font-bold);
+            color: var(--color-neutral-800);
+        }
+        
+        .admin-category-card-stat-label {
+            font-size: var(--text-xs);
+            color: var(--color-neutral-500);
+        }
+        
+        .admin-reports {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+        
+        .admin-reports-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: var(--space-md);
+        }
+        
+        .admin-reports-title {
+            font-size: var(--text-xl);
+            font-weight: var(--font-bold);
+            color: var(--color-neutral-800);
+        }
+        
+        .admin-reports-filters {
+            display: flex;
+            gap: var(--space-sm);
+            align-items: center;
+        }
+        
+        .admin-reports-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-md);
+        }
+        
+        .admin-report-card {
+            background: var(--color-white);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--radius-lg);
+            padding: var(--space-md);
+        }
+        
+        .admin-report-card-header {
+            margin-bottom: var(--space-md);
+        }
+        
+        .admin-report-card-header h3 {
+            font-size: var(--text-lg);
+            font-weight: var(--font-bold);
+            color: var(--color-neutral-800);
+        }
+        
+        .admin-report-chart {
+            height: 250px;
+            position: relative;
+        }
+        
+        .admin-reports-table {
+            background: var(--color-white);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--radius-lg);
+            padding: var(--space-md);
+        }
+        
+        .admin-reports-table h3 {
+            font-size: var(--text-lg);
+            font-weight: var(--font-bold);
+            color: var(--color-neutral-800);
+            margin-bottom: var(--space-md);
+        }
+        
+        .admin-form-color-picker {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+        
+        .admin-form-color-input {
+            width: 48px;
+            height: 48px;
+            border: none;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            padding: 0;
+        }
+        
+        .admin-form-color-input::-webkit-color-swatch-wrapper {
+            padding: 0;
+        }
+        
+        .admin-form-color-input::-webkit-color-swatch {
+            border: 2px solid var(--color-neutral-300);
+            border-radius: var(--radius-sm);
+        }
+    </style>
+</body>
+</html>

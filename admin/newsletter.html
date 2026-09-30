@@ -1,0 +1,2090 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Newsletter - Painel de Administração CDA Digital">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gellix:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Newsletter - Painel de Administração CDA</title>
+</head>
+<body class="admin-page">
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" id="admin-sidebar">
+        <div class="admin-sidebar-header">
+            <div class="admin-sidebar-logo">
+                <img src="../img/logos/cda-logo-white.svg" alt="CDA Digital">
+                <span class="logo-text">
+                    <span class="logo-title">CDA</span>
+                    <span class="logo-subtitle">Admin</span>
+                </span>
+            </div>
+            <button class="admin-sidebar-toggle" id="sidebar-toggle" aria-label="Recolher sidebar">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9,6 15,12 9,18"/>
+                </svg>
+            </button>
+        </div>
+        
+        <nav class="admin-sidebar-menu">
+            <div class="admin-sidebar-menu-item">
+                <a href="index.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"/>
+                        <rect x="14" y="3" width="7" height="7"/>
+                        <rect x="14" y="14" width="7" height="7"/>
+                        <rect x="3" y="14" width="7" height="7"/>
+                    </svg>
+                    <span class="menu-label">Dashboard</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="noticias.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6 6 18"/>
+                        <path d="m6 6 12 12"/>
+                    </svg>
+                    <span class="menu-label">Notícias</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="documentos.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                    <span class="menu-label">Documentos</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="despachantes.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                    </svg>
+                    <span class="menu-label">Despachantes</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-dropdown">
+                <button class="admin-sidebar-menu-link dropdown-toggle" id="content-dropdown">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <polyline points="14,2 14,8 20,8"/>
+                    </svg>
+                    <span class="menu-label">Conteúdo</span>
+                    <svg class="icon dropdown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"/>
+                    </svg>
+                </button>
+                <div class="admin-sidebar-dropdown-menu">
+                    <div class="admin-sidebar-menu-item">
+                        <a href="presidentes.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <span class="menu-label">Presidentes</span>
+                        </a>
+                    </div>
+                    <div class="admin-sidebar-menu-item">
+                        <a href="timeline.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                            <span class="menu-label">Linha do Tempo</span>
+                        </a>
+                    </div>
+                    <div class="admin-sidebar-menu-item">
+                        <a href="numeros.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 20V10"/>
+                                <path d="M12 20V4"/>
+                                <path d="M6 20v-6"/>
+                            </svg>
+                            <span class="menu-label">CDA em Números</span>
+                        </a>
+                    </div>
+                    <div class="admin-sidebar-menu-item">
+                        <a href="calendario.html" class="admin-sidebar-menu-link">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="16" y1="2" x2="16" y2="6"/>
+                                <line x1="8" y1="2" x2="8" y2="6"/>
+                                <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                            <span class="menu-label">Calendário</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="galeria.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="3" y1="9" x2="21" y2="9"/>
+                        <line x1="9" y1="21" x2="9" y2="9"/>
+                    </svg>
+                    <span class="menu-label">Galeria</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="avaliacoes.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    <span class="menu-label">Avaliações</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="newsletter.html" class="admin-sidebar-menu-link active">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <span class="menu-label">Newsletter</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="users.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                    <span class="menu-label">Utilizadores</span>
+                </a>
+            </div>
+            
+            <div class="admin-sidebar-menu-item">
+                <a href="settings.html" class="admin-sidebar-menu-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V7a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                    </svg>
+                    <span class="menu-label">Configurações</span>
+                </a>
+            </div>
+        </nav>
+        
+        <div class="admin-sidebar-footer">
+            <div class="admin-user">
+                <div class="admin-user-avatar">AD</div>
+                <div class="admin-user-info">
+                    <span class="admin-user-name" id="admin-user-name">Administrador</span>
+                    <span class="admin-user-role">Admin</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="admin-main">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <button class="admin-header-btn mobile-menu-toggle" id="mobile-menu-toggle">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+                <h1 class="admin-header-title">Newsletter</h1>
+                <nav class="admin-breadcrumb">
+                    <a href="index.html" class="admin-breadcrumb-link">Início</a>
+                    <span class="admin-breadcrumb-separator">/</span>
+                    <span class="admin-breadcrumb-current">Newsletter</span>
+                </nav>
+            </div>
+            <div class="admin-header-right">
+                <div class="admin-header-actions">
+                    <a href="newsletter.html?action=new" class="admin-header-btn">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"/>
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                        </svg>
+                        <span class="menu-label">Nova Newsletter</span>
+                    </a>
+                </div>
+                <div class="admin-header-user">
+                    <div class="admin-header-user-avatar">AD</div>
+                    <span class="admin-header-user-name">Administrador</span>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Content -->
+        <div class="admin-content">
+            <!-- Stats -->
+            <section class="admin-stats" style="margin-bottom: 24px;">
+                <div class="admin-stat-card">
+                    <div class="admin-stat-header">
+                        <div class="admin-stat-icon blue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="admin-stat-value" id="total-newsletters">25</div>
+                    <div class="admin-stat-label">Newsletters Enviadas</div>
+                </div>
+                
+                <div class="admin-stat-card">
+                    <div class="admin-stat-header">
+                        <div class="admin-stat-icon green">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <span class="admin-stat-change positive">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22,11 16,16 10,11 4,6"/>
+                            </svg>
+                            +15%
+                        </span>
+                    </div>
+                    <div class="admin-stat-value" id="subscritores-newsletters">1250</div>
+                    <div class="admin-stat-label">Subscritores Activos</div>
+                </div>
+                
+                <div class="admin-stat-card">
+                    <div class="admin-stat-header">
+                        <div class="admin-stat-icon orange">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="admin-stat-value" id="abertos-newsletters">85%</div>
+                    <div class="admin-stat-label">Taxa de Abertura</div>
+                </div>
+                
+                <div class="admin-stat-card">
+                    <div class="admin-stat-header">
+                        <div class="admin-stat-icon purple">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="admin-stat-value" id="cliques-newsletters">25%</div>
+                    <div class="admin-stat-label">Taxa de Cliques</div>
+                </div>
+            </section>
+            
+            <!-- Tabs -->
+            <div class="admin-tabs">
+                <button class="admin-tab active" onclick="switchTab('newsletters')">Newsletters</button>
+                <button class="admin-tab" onclick="switchTab('subscritores')">Subscritores</button>
+                <button class="admin-tab" onclick="switchTab('templates')">Templates</button>
+                <button class="admin-tab" onclick="switchTab('estatisticas')">Estatísticas</button>
+            </div>
+            
+            <!-- Tab: Newsletters -->
+            <div class="admin-tab-content active" id="tab-newsletters">
+                <!-- Table -->
+                <div class="admin-table-container">
+                    <div class="admin-table-header">
+                        <h2 class="admin-table-title">Todas as Newsletters</h2>
+                        <div class="admin-table-actions">
+                            <div class="admin-table-search">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="m21 21-4.35-4.35"/>
+                                </svg>
+                                <input type="text" id="newsletters-search" placeholder="Pesquisar newsletters...">
+                            </div>
+                            <select class="admin-table-filter" id="newsletters-estado-filter">
+                                <option value="">Todos os Estados</option>
+                                <option value="Rascunho">Rascunho</option>
+                                <option value="Agendado">Agendado</option>
+                                <option value="Enviado">Enviado</option>
+                                <option value="Cancelado">Cancelado</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-table-wrapper">
+                        <table class="admin-table" id="newsletters-table">
+                            <thead>
+                                <tr>
+                                    <th>Título</th>
+                                    <th>Assunto</th>
+                                    <th>Subscritores</th>
+                                    <th>Data de Envío</th>
+                                    <th>Estado</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody id="newsletters-table-body">
+                                <!-- Newsletters serão carregadas via JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- Empty State -->
+                    <div class="admin-table-empty" id="newsletters-empty" hidden>
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <h3>Nenhuma newsletter encontrada</h3>
+                        <p>Adicione a primeira newsletter para começar.</p>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div class="admin-table-pagination">
+                        <div class="admin-table-pagination-info">
+                            Mostrando <span id="newsletters-showing">0</span> de <span id="newsletters-total">0</span> newsletters
+                        </div>
+                        <div class="admin-table-pagination-controls">
+                            <button class="admin-table-pagination-btn" id="newsletters-prev" disabled>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="15,18 9,12 15,6"/>
+                                </svg>
+                            </button>
+                            <button class="admin-table-pagination-btn active" id="newsletters-page-1">1</button>
+                            <button class="admin-table-pagination-btn" id="newsletters-page-2">2</button>
+                            <span class="admin-table-pagination-btn">...</span>
+                            <button class="admin-table-pagination-btn" id="newsletters-page-last">10</button>
+                            <button class="admin-table-pagination-btn" id="newsletters-next">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="9,18 15,12 9,6"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tab: Subscritores -->
+            <div class="admin-tab-content" id="tab-subscritores">
+                <div class="admin-table-container">
+                    <div class="admin-table-header">
+                        <h2 class="admin-table-title">Todos os Subscritores</h2>
+                        <div class="admin-table-actions">
+                            <div class="admin-table-search">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="m21 21-4.35-4.35"/>
+                                </svg>
+                                <input type="text" id="subscritores-search" placeholder="Pesquisar subscritores...">
+                            </div>
+                            <button class="admin-header-btn" onclick="exportSubscritores()">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7,10 12,15 17,10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                <span class="menu-label">Exportar</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-table-wrapper">
+                        <table class="admin-table" id="subscritores-table">
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Email</th>
+                                    <th>Data de Registo</th>
+                                    <th>Estado</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody id="subscritores-table-body">
+                                <!-- Subscritores serão carregados via JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tab: Templates -->
+            <div class="admin-tab-content" id="tab-templates">
+                <div class="admin-templates">
+                    <div class="admin-templates-header">
+                        <h2 class="admin-templates-title">Templates de Newsletter</h2>
+                        <a href="newsletter.html?action=new-template" class="admin-header-btn">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="5" x2="12" y2="19"/>
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                            </svg>
+                            <span class="menu-label">Novo Template</span>
+                        </a>
+                    </div>
+                    
+                    <div class="admin-templates-grid" id="templates-grid">
+                        <!-- Templates serão carregados via JavaScript -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tab: Estatísticas -->
+            <div class="admin-tab-content" id="tab-estatisticas">
+                <div class="admin-stats-detailed">
+                    <div class="admin-stats-chart-row">
+                        <div class="admin-stats-chart">
+                            <h3>Newsletters Enviadas por Mês</h3>
+                            <canvas id="newsletters-chart"></canvas>
+                        </div>
+                        <div class="admin-stats-chart">
+                            <h3>Taxa de Abertura</h3>
+                            <canvas id="abertura-chart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-stats-chart-row">
+                        <div class="admin-stats-chart">
+                            <h3>Taxa de Cliques</h3>
+                            <canvas id="cliques-chart"></canvas>
+                        </div>
+                        <div class="admin-stats-chart">
+                            <h3>Subscritores por Origem</h3>
+                            <canvas id="origem-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Newsletter Form Modal -->
+    <div class="admin-modal-overlay" id="newsletter-modal" hidden>
+        <div class="admin-modal admin-modal-xl">
+            <button class="admin-modal-close" onclick="closeNewsletterModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title" id="newsletter-modal-title">Nova Newsletter</h2>
+            </div>
+            <div class="admin-modal-body">
+                <form id="newsletter-form" class="admin-form">
+                    <input type="hidden" id="newsletter-id" name="id">
+                    <div class="admin-form-section">
+                        <h3 class="admin-form-section-title">Informações Básicas</h3>
+                        <div class="admin-form-grid">
+                            <div class="admin-form-group">
+                                <label for="newsletter-titulo">Título *</label>
+                                <input type="text" id="newsletter-titulo" name="titulo" class="admin-form-control" placeholder="Título da newsletter" required>
+                                <div class="admin-form-error" id="newsletter-titulo-error"></div>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="newsletter-assunto">Assunto *</label>
+                                <input type="text" id="newsletter-assunto" name="assunto" class="admin-form-control" placeholder="Assunto do email" required>
+                                <div class="admin-form-error" id="newsletter-assunto-error"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="admin-form-group">
+                            <label for="newsletter-remetente">Remetente *</label>
+                            <input type="email" id="newsletter-remetente" name="remetente" class="admin-form-control" placeholder="email@cda-mz.org" value="newsletter@cda-mz.org" required>
+                            <div class="admin-form-error" id="newsletter-remetente-error"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-section">
+                        <h3 class="admin-form-section-title">Conteúdo</h3>
+                        <div class="admin-form-group">
+                            <label for="newsletter-template">Template *</label>
+                            <select id="newsletter-template" name="template" class="admin-form-control admin-form-select" required>
+                                <option value="">Selecione um template</option>
+                                <option value="default">Padrão CDA</option>
+                                <option value="modern">Moderno</option>
+                                <option value="minimal">Minimalista</option>
+                            </select>
+                            <div class="admin-form-error" id="newsletter-template-error"></div>
+                        </div>
+                        
+                        <div class="admin-form-group">
+                            <label for="newsletter-conteudo">Conteúdo *</label>
+                            <div class="admin-editor-toolbar">
+                                <button type="button" class="admin-editor-btn" onclick="formatText('bold')" title="Negrito">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 4h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/>
+                                        <line x1="6" y1="1" x2="18" y2="1"/>
+                                        <line x1="6" y1="23" x2="18" y2="23"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="admin-editor-btn" onclick="formatText('italic')" title="Itálico">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="10" y1="1" x2="18" y2="1"/>
+                                        <line x1="10" y1="23" x2="18" y2="23"/>
+                                        <line x1="12" y1="1" x2="12" y2="23"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="admin-editor-btn" onclick="formatText('underline')" title="Sublinhado">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 3v7a6 6 0 0 0 6 6 6 6 0 0 0 6-6V3"/>
+                                        <line x1="4" y1="21" x2="20" y2="21"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="admin-editor-btn" onclick="insertLink()" title="Link">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="admin-editor-btn" onclick="insertImage()" title="Imagem">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                                        <polyline points="21,15 16,10 5,21"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <textarea id="newsletter-conteudo" name="conteudo" class="admin-form-control admin-form-textarea admin-form-textarea-lg" placeholder="Conteúdo da newsletter..." rows="10" required></textarea>
+                            <div class="admin-form-hint">Suporte a HTML básico</div>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-section">
+                        <h3 class="admin-form-section-title">Destinatários</h3>
+                        <div class="admin-form-group">
+                            <label>Seleccionar Destinatários</label>
+                            <div class="admin-destinatarios-options">
+                                <label class="admin-destinatario-option">
+                                    <input type="radio" name="destinatarios" value="todos" checked>
+                                    <span>Todos os subscritores</span>
+                                </label>
+                                <label class="admin-destinatario-option">
+                                    <input type="radio" name="destinatarios" value="segmento">
+                                    <span>Segmento específico</span>
+                                </label>
+                                <label class="admin-destinatario-option">
+                                    <input type="radio" name="destinatarios" value="manual">
+                                    <span>Emails manuais</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="admin-form-group" id="segmento-group" style="display: none;">
+                            <label for="newsletter-segmento">Segmento</label>
+                            <select id="newsletter-segmento" name="segmento" class="admin-form-control admin-form-select">
+                                <option value="">Selecione o segmento</option>
+                                <option value="despachantes">Despachantes</option>
+                                <option value="membros">Membros CDA</option>
+                                <option value="parceiros">Parceiros</option>
+                            </select>
+                        </div>
+                        
+                        <div class="admin-form-group" id="emails-group" style="display: none;">
+                            <label for="newsletter-emails">Emails (separados por vírgula)</label>
+                            <textarea id="newsletter-emails" name="emails" class="admin-form-control admin-form-textarea" placeholder="email1@exemplo.com, email2@exemplo.com" rows="3"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-form-section">
+                        <h3 class="admin-form-section-title">Agendamento</h3>
+                        <div class="admin-form-grid">
+                            <div class="admin-form-group">
+                                <label for="newsletter-data-envio">Data de Envío *</label>
+                                <input type="datetime-local" id="newsletter-data-envio" name="dataEnvio" class="admin-form-control" required>
+                                <div class="admin-form-error" id="newsletter-data-envio-error"></div>
+                            </div>
+                            <div class="admin-form-group">
+                                <label for="newsletter-estado">Estado *</label>
+                                <select id="newsletter-estado" name="estado" class="admin-form-control admin-form-select" required>
+                                    <option value="Rascunho">Rascunho</option>
+                                    <option value="Agendado">Agendado</option>
+                                    <option value="Enviado">Enviado</option>
+                                </select>
+                                <div class="admin-form-error" id="newsletter-estado-error"></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeNewsletterModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="saveNewsletter()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                    Guardar Newsletter
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-success" onclick="sendNewsletter()" id="send-btn" style="display: none;">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13"/>
+                        <path d="m22 2-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                    Enviar Agora
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Template Form Modal -->
+    <div class="admin-modal-overlay" id="template-modal" hidden>
+        <div class="admin-modal admin-modal-lg">
+            <button class="admin-modal-close" onclick="closeTemplateModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title" id="template-modal-title">Novo Template</h2>
+            </div>
+            <div class="admin-modal-body">
+                <form id="template-form" class="admin-form">
+                    <input type="hidden" id="template-id" name="id">
+                    <div class="admin-form-group">
+                        <label for="template-nome">Nome *</label>
+                        <input type="text" id="template-nome" name="nome" class="admin-form-control" placeholder="Nome do template" required>
+                        <div class="admin-form-error" id="template-nome-error"></div>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="template-descricao">Descrição</label>
+                        <textarea id="template-descricao" name="descricao" class="admin-form-control admin-form-textarea" placeholder="Descrição do template..." rows="2"></textarea>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="template-html">HTML *</label>
+                        <textarea id="template-html" name="html" class="admin-form-control admin-form-textarea admin-form-textarea-lg" placeholder="&lt;!DOCTYPE html&gt;..." rows="10" required></textarea>
+                        <div class="admin-form-hint">Código HTML do template</div>
+                    </div>
+                    
+                    <div class="admin-form-group">
+                        <label for="template-css">CSS (Opcional)</label>
+                        <textarea id="template-css" name="css" class="admin-form-control admin-form-textarea" placeholder=".class { ... }" rows="5"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeTemplateModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="saveTemplate()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                    Guardar Template
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Preview Modal -->
+    <div class="admin-modal-overlay" id="preview-modal" hidden>
+        <div class="admin-modal admin-modal-xl">
+            <button class="admin-modal-close" onclick="closePreviewModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title">Preview da Newsletter</h2>
+            </div>
+            <div class="admin-modal-body">
+                <div class="admin-preview-container" id="preview-container">
+                    <!-- Preview será carregado via JavaScript -->
+                </div>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closePreviewModal()">
+                    Fechar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-primary" onclick="sendNewsletter()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13"/>
+                        <path d="m22 2-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                    Enviar Newsletter
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Delete Confirmation Modal -->
+    <div class="admin-modal-overlay admin-confirm-modal" id="delete-newsletter-modal" hidden>
+        <div class="admin-modal">
+            <button class="admin-modal-close" onclick="closeDeleteModal()">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"/>
+                    <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+            </button>
+            <div class="admin-modal-header">
+                <h2 class="admin-modal-title">Confirmar Eliminar</h2>
+            </div>
+            <div class="admin-modal-body">
+                <div class="admin-confirm-modal">
+                    <div class="admin-modal-icon danger">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="15" y1="9" x2="9" y2="15"/>
+                            <line x1="9" y1="9" x2="15" y2="15"/>
+                        </svg>
+                    </div>
+                    <p class="admin-modal-message">Tem a certeza que deseja eliminar esta newsletter? Esta ação não pode ser desfeita.</p>
+                </div>
+            </div>
+            <div class="admin-modal-footer">
+                <button type="button" class="admin-form-btn admin-form-btn-outline" onclick="closeDeleteModal()">
+                    Cancelar
+                </button>
+                <button type="button" class="admin-form-btn admin-form-btn-danger" onclick="confirmDeleteNewsletter()">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="3,6 5,6 21,6"/>
+                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                    </svg>
+                    Eliminar
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Notifications -->
+    <div class="admin-notifications" id="notifications"></div>
+    
+    <script src="../js/main.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Dados de exemplo
+        let newsletters = [
+            {
+                id: 1,
+                titulo: "Boletim Mensal - Setembro 2024",
+                assunto: "CDA Digital: Novidades de Setembro",
+                remetente: "newsletter@cda-mz.org",
+                conteudo: "<h1>Boletim Mensal - Setembro 2024</h1><p>Prezados membros...</p>",
+                template: "default",
+                destinatarios: "todos",
+                segmento: "",
+                emails: "",
+                dataEnvio: new Date().toISOString(),
+                estado: "Enviado",
+                totalEnviados: 1250,
+                totalAbertos: 1062,
+                totalCliques: 312
+            },
+            {
+                id: 2,
+                titulo: "Convite: Workshop de Capacitação",
+                assunto: "Convite: Workshop de Capacitação para Despachantes",
+                remetente: "newsletter@cda-mz.org",
+                conteudo: "<h1>Convite: Workshop de Capacitação</h1><p>Caros despachantes...</p>",
+                template: "modern",
+                destinatarios: "segmento",
+                segmento: "despachantes",
+                emails: "",
+                dataEnvio: new Date(Date.now() - 86400000).toISOString(),
+                estado: "Enviado",
+                totalEnviados: 221,
+                totalAbertos: 188,
+                totalCliques: 55
+            },
+            {
+                id: 3,
+                titulo: "Lançamento Portal CDA V4",
+                assunto: "Novo Portal CDA Digital está online!",
+                remetente: "newsletter@cda-mz.org",
+                conteudo: "<h1>Lançamento Portal CDA V4</h1><p>É com grande satisfação que anunciamos...</p>",
+                template: "default",
+                destinatarios: "todos",
+                segmento: "",
+                emails: "",
+                dataEnvio: new Date(Date.now() - 172800000).toISOString(),
+                estado: "Enviado",
+                totalEnviados: 1250,
+                totalAbertos: 1125,
+                totalCliques: 437
+            },
+            {
+                id: 4,
+                titulo: "Newsletter Testes",
+                assunto: "Teste de Newsletter",
+                remetente: "newsletter@cda-mz.org",
+                conteudo: "<h1>Teste</h1><p>Isto é um teste...</p>",
+                template: "default",
+                destinatarios: "manual",
+                segmento: "",
+                emails: "teste@cda-mz.org, admin@cda-mz.org",
+                dataEnvio: new Date(Date.now() - 259200000).toISOString(),
+                estado: "Rascunho",
+                totalEnviados: 0,
+                totalAbertos: 0,
+                totalCliques: 0
+            },
+            {
+                id: 5,
+                titulo: "Próximos Eventos - Outubro",
+                assunto: "Calendário de Eventos para Outubro 2024",
+                remetente: "newsletter@cda-mz.org",
+                conteudo: "<h1>Próximos Eventos</h1><p>Veja os eventos agendados...</p>",
+                template: "minimal",
+                destinatarios: "todos",
+                segmento: "",
+                emails: "",
+                dataEnvio: new Date(Date.now() + 86400000).toISOString(),
+                estado: "Agendado",
+                totalEnviados: 0,
+                totalAbertos: 0,
+                totalCliques: 0
+            }
+        ];
+        
+        let subscritores = [
+            { id: 1, nome: "João Silva", email: "joao.silva@exemplo.com", dataRegisto: "2024-01-15", estado: "Activo", origem: "Site" },
+            { id: 2, nome: "Maria Santos", email: "maria.santos@exemplo.com", dataRegisto: "2024-02-20", estado: "Activo", origem: "Evento" },
+            { id: 3, nome: "Pedro Costa", email: "pedro.costa@exemplo.com", dataRegisto: "2024-03-10", estado: "Activo", origem: "Site" },
+            { id: 4, nome: "Ana Ferreira", email: "ana.ferreira@exemplo.com", dataRegisto: "2024-04-05", estado: "Inactivo", origem: "Parceiro" },
+            { id: 5, nome: "Rui Mendes", email: "rui.mendes@exemplo.com", dataRegisto: "2024-05-12", estado: "Activo", origem: "Site" },
+            { id: 6, nome: "Sofia Rafael", email: "sofia.rafael@exemplo.com", dataRegisto: "2024-06-18", estado: "Activo", origem: "Evento" },
+            { id: 7, nome: "Carlos Oliveira", email: "carlos.oliveira@exemplo.com", dataRegisto: "2024-07-22", estado: "Activo", origem: "Site" },
+            { id: 8, nome: "Laura Miguel", email: "laura.miguel@exemplo.com", dataRegisto: "2024-08-30", estado: "Activo", origem: "Parceiro" },
+            { id: 9, nome: "Ricardo Domingos", email: "ricardo.domingos@exemplo.com", dataRegisto: "2024-09-01", estado: "Activo", origem: "Site" },
+            { id: 10, nome: "Célia Fernando", email: "celia.fernando@exemplo.com", dataRegisto: "2024-09-15", estado: "Activo", origem: "Evento" }
+        ];
+        
+        let templates = [
+            {
+                id: 1,
+                nome: "Padrão CDA",
+                descricao: "Template padrão da CDA com header e footer",
+                html: `<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .header { background: #1E3A8A; color: white; padding: 20px; text-align: center; }
+        .content { padding: 20px; }
+        .footer { background: #F3F4F6; padding: 20px; text-align: center; font-size: 12px; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CDA Digital</h1>
+        <p>Câmara dos Despachantes Aduaneiros de Moçambique</p>
+    </div>
+    <div class="content">
+        {{CONTEUDO}}
+    </div>
+    <div class="footer">
+        <p>© 2024 CDA. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>`,
+                css: ""
+            },
+            {
+                id: 2,
+                nome: "Moderno",
+                descricao: "Template moderno com design clean",
+                html: `<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; }
+        .container { max-width: 600px; margin: 0 auto; }
+        .header { background: linear-gradient(135deg, #3B82F6, #1E40AF); color: white; padding: 30px; text-align: center; }
+        .content { padding: 30px; }
+        .footer { background: #F9FAFB; padding: 20px; text-align: center; font-size: 12px; color: #6B7280; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 style="margin: 0; font-size: 24px;">CDA Digital</h1>
+            <p style="margin: 10px 0 0 0; font-size: 14px; opacity: 0.9;">Câmara dos Despachantes Aduaneiros</p>
+        </div>
+        <div class="content">
+            {{CONTEUDO}}
+        </div>
+        <div class="footer">
+            <p>© 2024 CDA. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</body>
+</html>`,
+                css: ""
+            },
+            {
+                id: 3,
+                nome: "Minimalista",
+                descricao: "Template minimalista e simples",
+                html: `<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; padding: 20px; }
+    </style>
+</head>
+<body>
+    {{CONTEUDO}}
+    <hr style="margin: 20px 0; border: none; border-top: 1px solid #E5E7EB;">
+    <p style="font-size: 12px; color: #6B7280; text-align: center;">
+        © 2024 CDA - Câmara dos Despachantes Aduaneiros de Moçambique
+    </p>
+</body>
+</html>`,
+                css: ""
+            }
+        ];
+        
+        let currentNewsletter = null;
+        let currentTemplate = null;
+        let currentTab = 'newsletters';
+        let currentPage = 1;
+        const itemsPerPage = 10;
+        
+        // Switch tab
+        function switchTab(tab) {
+            currentTab = tab;
+            
+            // Update tab buttons
+            document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
+            document.querySelector(`[onclick="switchTab('${tab}')"]`).classList.add('active');
+            
+            // Update tab content
+            document.querySelectorAll('.admin-tab-content').forEach(c => c.classList.remove('active'));
+            document.getElementById(`tab-${tab}`).classList.add('active');
+            
+            // Load content
+            if (tab === 'newsletters') {
+                loadNewsletters();
+            } else if (tab === 'subscritores') {
+                loadSubscritores();
+            } else if (tab === 'templates') {
+                loadTemplates();
+            } else if (tab === 'estatisticas') {
+                loadEstatisticas();
+            }
+        }
+        
+        // Carregar newsletters
+        function loadNewsletters() {
+            const tbody = document.getElementById('newsletters-table-body');
+            const empty = document.getElementById('newsletters-empty');
+            const showing = document.getElementById('newsletters-showing');
+            const total = document.getElementById('newsletters-total');
+            
+            // Filtrar newsletters
+            const search = document.getElementById('newsletters-search').value.toLowerCase();
+            const estado = document.getElementById('newsletters-estado-filter').value;
+            
+            let filtered = newsletters.filter(n => {
+                const matchSearch = !search || 
+                    n.titulo.toLowerCase().includes(search) ||
+                    n.assunto.toLowerCase().includes(search);
+                const matchEstado = !estado || n.estado === estado;
+                return matchSearch && matchEstado;
+            });
+            
+            // Ordenar por data
+            filtered.sort((a, b) => new Date(b.dataEnvio) - new Date(a.dataEnvio));
+            
+            // Paginação
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageItems = filtered.slice(start, end);
+            
+            total.textContent = filtered.length;
+            showing.textContent = pageItems.length > 0 ? start + 1 : 0;
+            
+            if (pageItems.length === 0) {
+                tbody.innerHTML = '';
+                empty.hidden = false;
+                return;
+            }
+            
+            empty.hidden = true;
+            
+            tbody.innerHTML = pageItems.map(n => `
+                <tr>
+                    <td>
+                        <div class="admin-table-cell-content">
+                            <div class="admin-table-cell-title">${n.titulo}</div>
+                            <div class="admin-table-cell-subtitle">${n.assunto}</div>
+                        </div>
+                    </td>
+                    <td>${n.assunto}</td>
+                    <td>${n.totalEnviados}</td>
+                    <td>${formatDate(n.dataEnvio)}</td>
+                    <td><span class="admin-table-status ${n.estado === 'Enviado' ? 'active' : n.estado === 'Agendado' ? 'warning' : n.estado === 'Rascunho' ? 'inactive' : 'danger'}">${n.estado}</span></td>
+                    <td>
+                        <div class="admin-table-actions">
+                            <button class="admin-table-action" onclick="previewNewsletter(${n.id})" title="Preview">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </button>
+                            <button class="admin-table-action edit" onclick="editNewsletter(${n.id})" title="Editar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                                </svg>
+                            </button>
+                            <button class="admin-table-action delete" onclick="deleteNewsletter(${n.id})" title="Eliminar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="3,6 5,6 21,6"/>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
+            
+            updatePagination(filtered.length);
+            updateStats();
+        }
+        
+        function updateStats() {
+            const total = newsletters.length;
+            const subscritoresCount = subscritores.filter(s => s.estado === 'Activo').length;
+            const totalAbertos = newsletters.filter(n => n.estado === 'Enviado').reduce((sum, n) => sum + n.totalAbertos, 0);
+            const totalEnviados = newsletters.filter(n => n.estado === 'Enviado').reduce((sum, n) => sum + n.totalEnviados, 0);
+            const totalCliques = newsletters.filter(n => n.estado === 'Enviado').reduce((sum, n) => sum + n.totalCliques, 0);
+            
+            const taxaAbertura = totalEnviados > 0 ? Math.round((totalAbertos / totalEnviados) * 100) + '%' : '0%';
+            const taxaCliques = totalAbertos > 0 ? Math.round((totalCliques / totalAbertos) * 100) + '%' : '0%';
+            
+            document.getElementById('total-newsletters').textContent = total;
+            document.getElementById('subscritores-newsletters').textContent = subscritoresCount;
+            document.getElementById('abertos-newsletters').textContent = taxaAbertura;
+            document.getElementById('cliques-newsletters').textContent = taxaCliques;
+        }
+        
+        function updatePagination(totalItems) {
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            const prevBtn = document.getElementById('newsletters-prev');
+            const nextBtn = document.getElementById('newsletters-next');
+            
+            prevBtn.disabled = currentPage === 1;
+            nextBtn.disabled = currentPage >= totalPages;
+            
+            // Atualizar botões de página
+            for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById(`newsletters-page-${i}`);
+                if (btn) {
+                    btn.textContent = currentPage === i ? currentPage : i;
+                    btn.classList.toggle('active', currentPage === i);
+                }
+            }
+            
+            // Atualizar botão last
+            const lastBtn = document.getElementById('newsletters-page-last');
+            if (lastBtn) {
+                lastBtn.textContent = totalPages;
+                lastBtn.classList.toggle('active', currentPage === totalPages);
+            }
+        }
+        
+        function changePage(page) {
+            const totalItems = newsletters.length;
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+            
+            if (page < 1 || page > totalPages) return;
+            
+            currentPage = page;
+            loadNewsletters();
+        }
+        
+        // Carregar subscritores
+        function loadSubscritores() {
+            const tbody = document.getElementById('subscritores-table-body');
+            
+            const search = document.getElementById('subscritores-search').value.toLowerCase();
+            
+            let filtered = subscritores.filter(s => {
+                const matchSearch = !search || 
+                    s.nome.toLowerCase().includes(search) ||
+                    s.email.toLowerCase().includes(search);
+                return matchSearch;
+            });
+            
+            // Ordenar por nome
+            filtered.sort((a, b) => a.nome.localeCompare(b.nome));
+            
+            tbody.innerHTML = filtered.map(s => `
+                <tr>
+                    <td>${s.nome}</td>
+                    <td>${s.email}</td>
+                    <td>${formatDate(s.dataRegisto)}</td>
+                    <td><span class="admin-table-status ${s.estado === 'Activo' ? 'active' : 'inactive'}">${s.estado}</span></td>
+                    <td>
+                        <div class="admin-table-actions">
+                            <button class="admin-table-action edit" onclick="editSubscritor(${s.id})" title="Editar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                                </svg>
+                            </button>
+                            <button class="admin-table-action delete" onclick="deleteSubscritor(${s.id})" title="Eliminar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="3,6 5,6 21,6"/>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
+        }
+        
+        // Carregar templates
+        function loadTemplates() {
+            const grid = document.getElementById('templates-grid');
+            
+            grid.innerHTML = templates.map(t => `
+                <div class="admin-template-card">
+                    <div class="admin-template-card-header">
+                        <h3 class="admin-template-card-title">${t.nome}</h3>
+                        <div class="admin-template-card-actions">
+                            <button class="admin-template-card-action" onclick="previewTemplate(${t.id})" title="Preview">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </button>
+                            <button class="admin-template-card-action edit" onclick="editTemplate(${t.id})" title="Editar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                                </svg>
+                            </button>
+                            <button class="admin-template-card-action delete" onclick="deleteTemplate(${t.id})" title="Eliminar">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="3,6 5,6 21,6"/>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="admin-template-card-body">
+                        <p class="admin-template-card-desc">${t.descricao || 'Sem descrição'}</p>
+                        <div class="admin-template-card-preview" onclick="previewTemplate(${t.id})">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                            <span>Ver Preview</span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        // Carregar estatísticas
+        function loadEstatisticas() {
+            // Dados para gráficos
+            const meses = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
+            const enviados = [5, 8, 12, 10, 15, 18, 20, 22, 25, 28, 30, 35];
+            
+            // Gráfico de newsletters por mês
+            const ctx1 = document.getElementById('newsletters-chart');
+            if (ctx1) {
+                new Chart(ctx1, {
+                    type: 'bar',
+                    data: {
+                        labels: meses,
+                        datasets: [{
+                            label: 'Newsletters Enviadas',
+                            data: enviados,
+                            backgroundColor: '#3B82F6',
+                            borderRadius: 4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        }
+                    }
+                });
+            }
+            
+            // Taxa de abertura
+            const ctx2 = document.getElementById('abertura-chart');
+            if (ctx2) {
+                new Chart(ctx2, {
+                    type: 'line',
+                    data: {
+                        labels: meses,
+                        datasets: [{
+                            label: 'Taxa de Abertura (%)',
+                            data: [75, 80, 82, 78, 85, 88, 90, 87, 85, 88, 90, 92],
+                            borderColor: '#10B981',
+                            backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                            fill: true,
+                            tension: 0.4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 100
+                            }
+                        }
+                    }
+                });
+            }
+            
+            // Taxa de cliques
+            const ctx3 = document.getElementById('cliques-chart');
+            if (ctx3) {
+                new Chart(ctx3, {
+                    type: 'line',
+                    data: {
+                        labels: meses,
+                        datasets: [{
+                            label: 'Taxa de Cliques (%)',
+                            data: [15, 18, 20, 18, 22, 25, 28, 26, 25, 28, 30, 32],
+                            borderColor: '#F59E0B',
+                            backgroundColor: 'rgba(245, 158, 11, 0.1)',
+                            fill: true,
+                            tension: 0.4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 100
+                            }
+                        }
+                    }
+                });
+            }
+            
+            // Subscritores por origem
+            const ctx4 = document.getElementById('origem-chart');
+            if (ctx4) {
+                const origens = [...new Set(subscritores.map(s => s.origem))];
+                const counts = origens.map(o => subscritores.filter(s => s.origem === o).length);
+                
+                new Chart(ctx4, {
+                    type: 'doughnut',
+                    data: {
+                        labels: origens,
+                        datasets: [{
+                            data: counts,
+                            backgroundColor: ['#3B82F6', '#10B981', '#F59E0B', '#EF4444']
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        plugins: {
+                            legend: {
+                                position: 'bottom'
+                            }
+                        }
+                    }
+                });
+            }
+        }
+        
+        // Open modal
+        function openNewsletterModal(newsletter = null) {
+            const modal = document.getElementById('newsletter-modal');
+            const form = document.getElementById('newsletter-form');
+            const title = document.getElementById('newsletter-modal-title');
+            const sendBtn = document.getElementById('send-btn');
+            
+            currentNewsletter = newsletter;
+            
+            if (newsletter) {
+                // Editar
+                title.textContent = 'Editar Newsletter';
+                document.getElementById('newsletter-id').value = newsletter.id;
+                document.getElementById('newsletter-titulo').value = newsletter.titulo;
+                document.getElementById('newsletter-assunto').value = newsletter.assunto;
+                document.getElementById('newsletter-remetente').value = newsletter.remetente;
+                document.getElementById('newsletter-conteudo').value = newsletter.conteudo;
+                document.getElementById('newsletter-template').value = newsletter.template;
+                document.getElementById('newsletter-data-envio').value = formatDateTimeLocal(newsletter.dataEnvio);
+                document.getElementById('newsletter-estado').value = newsletter.estado;
+                
+                // Destinatários
+                document.querySelector('input[name="destinatarios"][value="' + newsletter.destinatarios + '"]').checked = true;
+                updateDestinatarios();
+                
+                if (newsletter.destinatarios === 'segmento') {
+                    document.getElementById('newsletter-segmento').value = newsletter.segmento;
+                } else if (newsletter.destinatarios === 'manual') {
+                    document.getElementById('newsletter-emails').value = newsletter.emails;
+                }
+                
+                sendBtn.style.display = newsletter.estado === 'Rascunho' ? 'inline-flex' : 'none';
+            } else {
+                // Novo
+                title.textContent = 'Nova Newsletter';
+                form.reset();
+                document.getElementById('newsletter-remetente').value = 'newsletter@cda-mz.org';
+                document.getElementById('newsletter-data-envio').value = formatDateTimeLocal(new Date().toISOString());
+                document.getElementById('newsletter-estado').value = 'Rascunho';
+                sendBtn.style.display = 'inline-flex';
+            }
+            
+            modal.hidden = false;
+        }
+        
+        function closeNewsletterModal() {
+            document.getElementById('newsletter-modal').hidden = true;
+            currentNewsletter = null;
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+        
+        function updateDestinatarios() {
+            const tipo = document.querySelector('input[name="destinatarios"]:checked').value;
+            
+            document.getElementById('segmento-group').style.display = tipo === 'segmento' ? 'block' : 'none';
+            document.getElementById('emails-group').style.display = tipo === 'manual' ? 'block' : 'none';
+        }
+        
+        function saveNewsletter() {
+            const form = document.getElementById('newsletter-form');
+            const formData = new FormData(form);
+            
+            // Validar
+            if (!formData.get('titulo')) {
+                showNotification('O título é obrigatório!', 'error');
+                return;
+            }
+            
+            if (!formData.get('assunto')) {
+                showNotification('O assunto é obrigatório!', 'error');
+                return;
+            }
+            
+            if (!formData.get('remetente') || !validateEmail(formData.get('remetente'))) {
+                showNotification('Email do remetente inválido!', 'error');
+                return;
+            }
+            
+            if (!formData.get('template')) {
+                showNotification('O template é obrigatório!', 'error');
+                return;
+            }
+            
+            if (!formData.get('conteudo')) {
+                showNotification('O conteúdo é obrigatório!', 'error');
+                return;
+            }
+            
+            if (!formData.get('dataEnvio')) {
+                showNotification('A data de envio é obrigatória!', 'error');
+                return;
+            }
+            
+            if (!formData.get('estado')) {
+                showNotification('O estado é obrigatório!', 'error');
+                return;
+            }
+            
+            // Salvar
+            const newsletter = {
+                id: formData.get('id') ? parseInt(formData.get('id')) : Date.now(),
+                titulo: formData.get('titulo'),
+                assunto: formData.get('assunto'),
+                remetente: formData.get('remetente'),
+                conteudo: formData.get('conteudo'),
+                template: formData.get('template'),
+                destinatarios: formData.get('destinatarios'),
+                segmento: formData.get('segmento') || '',
+                emails: formData.get('emails') || '',
+                dataEnvio: formData.get('dataEnvio'),
+                estado: formData.get('estado'),
+                totalEnviados: currentNewsletter ? currentNewsletter.totalEnviados : 0,
+                totalAbertos: currentNewsletter ? currentNewsletter.totalAbertos : 0,
+                totalCliques: currentNewsletter ? currentNewsletter.totalCliques : 0
+            };
+            
+            if (currentNewsletter) {
+                // Atualizar
+                const index = newsletters.findIndex(n => n.id === currentNewsletter.id);
+                if (index !== -1) {
+                    newsletters[index] = newsletter;
+                    showNotification('Newsletter actualizada com sucesso!', 'success');
+                }
+            } else {
+                // Adicionar
+                newsletters.push(newsletter);
+                showNotification('Newsletter adicionada com sucesso!', 'success');
+            }
+            
+            closeNewsletterModal();
+            currentPage = 1;
+            loadNewsletters();
+        }
+        
+        function sendNewsletter() {
+            if (!currentNewsletter) {
+                const form = document.getElementById('newsletter-form');
+                const formData = new FormData(form);
+                
+                // Validar
+                if (!formData.get('titulo') || !formData.get('assunto') || !formData.get('conteudo')) {
+                    showNotification('Por favor, preencha todos os campos obrigatórios!', 'error');
+                    return;
+                }
+                
+                // Salvar como enviado
+                const newsletter = {
+                    id: Date.now(),
+                    titulo: formData.get('titulo'),
+                    assunto: formData.get('assunto'),
+                    remetente: formData.get('remetente'),
+                    conteudo: formData.get('conteudo'),
+                    template: formData.get('template'),
+                    destinatarios: formData.get('destinatarios'),
+                    segmento: formData.get('segmento') || '',
+                    emails: formData.get('emails') || '',
+                    dataEnvio: new Date().toISOString(),
+                    estado: 'Enviado',
+                    totalEnviados: subscritores.filter(s => s.estado === 'Activo').length,
+                    totalAbertos: Math.floor(subscritores.filter(s => s.estado === 'Activo').length * 0.85),
+                    totalCliques: Math.floor(subscritores.filter(s => s.estado === 'Activo').length * 0.25)
+                };
+                
+                newsletters.push(newsletter);
+                showNotification('Newsletter enviada com sucesso!', 'success');
+                
+                closeNewsletterModal();
+                closePreviewModal();
+                currentPage = 1;
+                loadNewsletters();
+                updateStats();
+                return;
+            }
+            
+            // Enviar newsletter existente
+            const index = newsletters.findIndex(n => n.id === currentNewsletter.id);
+            if (index !== -1) {
+                newsletters[index].estado = 'Enviado';
+                newsletters[index].dataEnvio = new Date().toISOString();
+                newsletters[index].totalEnviados = subscritores.filter(s => s.estado === 'Activo').length;
+                newsletters[index].totalAbertos = Math.floor(subscritores.filter(s => s.estado === 'Activo').length * 0.85);
+                newsletters[index].totalCliques = Math.floor(subscritores.filter(s => s.estado === 'Activo').length * 0.25);
+                showNotification('Newsletter enviada com sucesso!', 'success');
+            }
+            
+            closeNewsletterModal();
+            closePreviewModal();
+            currentPage = 1;
+            loadNewsletters();
+            updateStats();
+        }
+        
+        function previewNewsletter(id) {
+            const newsletter = newsletters.find(n => n.id === id);
+            if (!newsletter) return;
+            
+            currentNewsletter = newsletter;
+            
+            const modal = document.getElementById('preview-modal');
+            const container = document.getElementById('preview-container');
+            
+            const template = templates.find(t => t.nome === newsletter.template);
+            let html = template ? template.html : templates[0].html;
+            
+            // Substituir conteúdo
+            html = html.replace('{{CONTEUDO}}', newsletter.conteudo);
+            
+            container.innerHTML = `<iframe srcdoc="${encodeURIComponent(html)}" style="width: 100%; height: 500px; border: 1px solid #E5E7EB; border-radius: 8px;"></iframe>`;
+            
+            modal.hidden = false;
+        }
+        
+        function closePreviewModal() {
+            document.getElementById('preview-modal').hidden = true;
+        }
+        
+        function editNewsletter(id) {
+            const newsletter = newsletters.find(n => n.id === id);
+            if (newsletter) {
+                openNewsletterModal(newsletter);
+            }
+        }
+        
+        function deleteNewsletter(id) {
+            currentNewsletter = newsletters.find(n => n.id === id);
+            document.getElementById('delete-newsletter-modal').hidden = false;
+        }
+        
+        function closeDeleteModal() {
+            document.getElementById('delete-newsletter-modal').hidden = true;
+            currentNewsletter = null;
+        }
+        
+        function confirmDeleteNewsletter() {
+            if (!currentNewsletter) return;
+            
+            const index = newsletters.findIndex(n => n.id === currentNewsletter.id);
+            if (index !== -1) {
+                newsletters.splice(index, 1);
+                showNotification('Newsletter eliminada com sucesso!', 'success');
+            }
+            
+            closeDeleteModal();
+            loadNewsletters();
+        }
+        
+        // Template functions
+        function openTemplateModal(template = null) {
+            const modal = document.getElementById('template-modal');
+            const form = document.getElementById('template-form');
+            const title = document.getElementById('template-modal-title');
+            
+            currentTemplate = template;
+            
+            if (template) {
+                // Editar
+                title.textContent = 'Editar Template';
+                document.getElementById('template-id').value = template.id;
+                document.getElementById('template-nome').value = template.nome;
+                document.getElementById('template-descricao').value = template.descricao || '';
+                document.getElementById('template-html').value = template.html;
+                document.getElementById('template-css').value = template.css || '';
+            } else {
+                // Novo
+                title.textContent = 'Novo Template';
+                form.reset();
+            }
+            
+            modal.hidden = false;
+        }
+        
+        function closeTemplateModal() {
+            document.getElementById('template-modal').hidden = true;
+            currentTemplate = null;
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+        
+        function saveTemplate() {
+            const form = document.getElementById('template-form');
+            const formData = new FormData(form);
+            
+            // Validar
+            if (!formData.get('nome')) {
+                showNotification('O nome é obrigatório!', 'error');
+                return;
+            }
+            
+            if (!formData.get('html')) {
+                showNotification('O HTML é obrigatório!', 'error');
+                return;
+            }
+            
+            // Salvar
+            const template = {
+                id: formData.get('id') ? parseInt(formData.get('id')) : Date.now(),
+                nome: formData.get('nome'),
+                descricao: formData.get('descricao'),
+                html: formData.get('html'),
+                css: formData.get('css')
+            };
+            
+            if (currentTemplate) {
+                // Atualizar
+                const index = templates.findIndex(t => t.id === currentTemplate.id);
+                if (index !== -1) {
+                    templates[index] = template;
+                    showNotification('Template actualizado com sucesso!', 'success');
+                }
+            } else {
+                // Adicionar
+                templates.push(template);
+                showNotification('Template adicionado com sucesso!', 'success');
+            }
+            
+            closeTemplateModal();
+            loadTemplates();
+            
+            // Atualizar select de templates
+            const templateSelect = document.getElementById('newsletter-template');
+            if (templateSelect) {
+                const currentValue = templateSelect.value;
+                templateSelect.innerHTML = '<option value="">Selecione um template</option>';
+                templates.forEach(t => {
+                    templateSelect.innerHTML += `<option value="${t.nome}">${t.nome}</option>`;
+                });
+                templateSelect.value = currentValue;
+            }
+        }
+        
+        function previewTemplate(id) {
+            const template = templates.find(t => t.id === id);
+            if (!template) return;
+            
+            const modal = document.getElementById('preview-modal');
+            const container = document.getElementById('preview-container');
+            
+            container.innerHTML = `<iframe srcdoc="${encodeURIComponent(template.html)}" style="width: 100%; height: 500px; border: 1px solid #E5E7EB; border-radius: 8px;"></iframe>`;
+            
+            modal.hidden = false;
+        }
+        
+        function editTemplate(id) {
+            const template = templates.find(t => t.id === id);
+            if (template) {
+                openTemplateModal(template);
+            }
+        }
+        
+        function deleteTemplate(id) {
+            const template = templates.find(t => t.id === id);
+            if (!template) return;
+            
+            // Verificar se está a ser usado
+            const inUse = newsletters.some(n => n.template === template.nome);
+            if (inUse) {
+                showNotification('Não pode eliminar um template que está a ser usado!', 'error');
+                return;
+            }
+            
+            currentTemplate = template;
+            document.getElementById('delete-newsletter-modal').hidden = false;
+            document.querySelector('.admin-modal-message').textContent = 'Tem a certeza que deseja eliminar este template? Esta ação não pode ser desfeita.';
+        }
+        
+        function confirmDeleteTemplate() {
+            if (!currentTemplate) return;
+            
+            const index = templates.findIndex(t => t.id === currentTemplate.id);
+            if (index !== -1) {
+                templates.splice(index, 1);
+                showNotification('Template eliminado com sucesso!', 'success');
+            }
+            
+            closeDeleteModal();
+            loadTemplates();
+        }
+        
+        // Subscritor functions
+        function editSubscritor(id) {
+            const subscritor = subscritores.find(s => s.id === id);
+            if (subscritor) {
+                // Poderia abrir um modal de edição
+                showNotification('Editar: ' + subscritor.nome, 'info');
+            }
+        }
+        
+        function deleteSubscritor(id) {
+            const subscritor = subscritores.find(s => s.id === id);
+            if (subscritor) {
+                const index = subscritores.findIndex(s => s.id === subscritor.id);
+                if (index !== -1) {
+                    subscritores.splice(index, 1);
+                    showNotification('Subscritor eliminado com sucesso!', 'success');
+                }
+                loadSubscritores();
+            }
+        }
+        
+        function exportSubscritores() {
+            const data = subscritores.map(s => ({
+                'Nome': s.nome,
+                'Email': s.email,
+                'Data de Registo': s.dataRegisto,
+                'Estado': s.estado,
+                'Origem': s.origem
+            }));
+            exportToCSV(data, 'subscritores.csv');
+        }
+        
+        // Format functions
+        function formatDate(date) {
+            if (!date) return '-';
+            const d = new Date(date);
+            return d.toLocaleDateString('pt-PT');
+        }
+        
+        function formatDateTimeLocal(dateString) {
+            const date = new Date(dateString);
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            const hours = String(date.getHours()).padStart(2, '0');
+            const minutes = String(date.getMinutes()).padStart(2, '0');
+            return `${year}-${month}-${day}T${hours}:${minutes}`;
+        }
+        
+        // Editor functions
+        function formatText(command) {
+            const editor = document.getElementById('newsletter-conteudo');
+            editor.focus();
+            document.execCommand(command, false, null);
+        }
+        
+        function insertLink() {
+            const url = prompt('Digite a URL:');
+            if (url) {
+                const editor = document.getElementById('newsletter-conteudo');
+                editor.focus();
+                const text = prompt('Digite o texto (opcional):', url);
+                document.execCommand('createLink', false, url);
+                if (text && text !== url) {
+                    const selection = window.getSelection();
+                    if (selection.rangeCount > 0) {
+                        const range = selection.getRangeAt(0);
+                        range.deleteContents();
+                        range.insertNode(document.createTextNode(text));
+                    }
+                }
+            }
+        }
+        
+        function insertImage() {
+            const url = prompt('Digite a URL da imagem:');
+            if (url) {
+                const editor = document.getElementById('newsletter-conteudo');
+                editor.focus();
+                document.execCommand('insertImage', false, url);
+            }
+        }
+        
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verificar se está logado
+            if (sessionStorage.getItem('cda_admin_logged') !== 'true') {
+                window.location.href = 'login.html';
+                return;
+            }
+            
+            // Carregar newsletters
+            loadNewsletters();
+            loadSubscritores();
+            loadTemplates();
+            
+            // Atualizar nome do utilizador
+            const userName = sessionStorage.getItem('cda_admin_user') || 'Administrador';
+            document.getElementById('admin-user-name').textContent = userName;
+            
+            // Filtros
+            document.getElementById('newsletters-filter').addEventListener('change', function() {
+                currentPage = 1;
+                loadNewsletters();
+            });
+            
+            // Pesquisa
+            document.getElementById('newsletters-search').addEventListener('input', debounce(function() {
+                currentPage = 1;
+                loadNewsletters();
+            }, 300));
+            
+            document.getElementById('subscritores-search').addEventListener('input', debounce(function() {
+                loadSubscritores();
+            }, 300));
+            
+            // Destinatários radio
+            document.querySelectorAll('input[name="destinatarios"]').forEach(radio => {
+                radio.addEventListener('change', updateDestinatarios);
+            });
+            
+            // Novo
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('action') === 'new') {
+                openNewsletterModal();
+            } else if (urlParams.get('action') === 'new-template') {
+                openTemplateModal();
+            }
+            
+            // Paginação
+            document.getElementById('newsletters-prev').addEventListener('click', function() {
+                if (currentPage > 1) {
+                    changePage(currentPage - 1);
+                }
+            });
+            
+            document.getElementById('newsletters-next').addEventListener('click', function() {
+                const totalItems = newsletters.length;
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                if (currentPage < totalPages) {
+                    changePage(currentPage + 1);
+                }
+            });
+            
+            // Botões de página
+            for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById(`newsletters-page-${i}`);
+                if (btn) {
+                    btn.addEventListener('click', function() {
+                        changePage(i);
+                    });
+                }
+            }
+            
+            // Botão last
+            document.getElementById('newsletters-page-last').addEventListener('click', function() {
+                const totalItems = newsletters.length;
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                changePage(totalPages);
+            });
+        });
+    </script>
+    <style>
+        .admin-tabs {
+            display: flex;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-lg);
+            border-bottom: 1px solid var(--color-neutral-200);
+        }
+        
+        .admin-tab {
+            padding: var(--space-sm) var(--space-lg);
+            background: none;
+            border: none;
+            font-size: var(--text-sm);
+            font-weight: var(--font-medium);
+            color: var(--color-neutral-500);
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+        
+        .admin-tab:hover {
+            color: var(--color-primary);
+        }
+        
+        .admin-tab.active {
+            color: var(--color-primary);
+            border-bottom-color: var(--color-primary);
+        }
+        
+        .admin-tab-content {
+            display: none;
+        }
+        
+        .admin-tab-content.active {
+            display: block;
+        }
+        
+        .admin-editor-toolbar {
+            display: flex;
+            gap: var(--space-xs);
+            margin-bottom: var(--space-sm);
+            flex-wrap: wrap;
+        }
+        
+        .admin-editor-btn {
+            background: var(--color-neutral-100);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--radius-sm);
+            padding: var(--space-xs) var(--space-sm);
+            cursor: pointer;
+            color: var(--color-neutral-600);
+            transition: all 0.2s ease;
+        }
+        
+        .admin-editor-btn:hover {
+            background: var(--color-neutral-200);
+            color: var(--color-neutral-800);
+        }
+        
+        .admin-editor-btn .icon {
+            width: 16px;
+            height: 16px;
+        }
+        
+        .admin-destinatarios-options {
+            display: flex;
+            gap: var(--space-lg);
+            margin-top: var(--space-sm);
+        }
+        
+        .admin-destinatario-option {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            cursor: pointer;
+        }
+        
+        .admin-destinatario-option input {
+            accent-color: var(--color-primary);
+        }
+        
+        .admin-destinatario-option span {
+            font-size: var(--text-sm);
+            color: var(--color-neutral-700);
+        }
+        
+        .admin-templates {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+        
+        .admin-templates-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .admin-templates-title {
+            font-size: var(--text-xl);
+            font-weight: var(--font-bold);
+            color: var(--color-neutral-800);
+        }
+        
+        .admin-templates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--space-md);
+        }
+        
+        .admin-template-card {
+            background: var(--color-white);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+        
+        .admin-template-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+        
+        .admin-template-card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--space-md);
+            border-bottom: 1px solid var(--color-neutral-200);
+        }
+        
+        .admin-template-card-title {
+            font-size: var(--text-lg);
+            font-weight: var(--font-bold);
+            color: var(--color-neutral-800);
+        }
+        
+        .admin-template-card-actions {
+            display: flex;
+            gap: var(--space-xs);
+        }
+        
+        .admin-template-card-action {
+            background: var(--color-neutral-100);
+            border: none;
+            cursor: pointer;
+            padding: var(--space-xs);
+            border-radius: var(--radius-sm);
+            color: var(--color-neutral-600);
+            transition: all 0.2s ease;
+        }
+        
+        .admin-template-card-action:hover {
+            background: var(--color-neutral-200);
+            color: var(--color-neutral-800);
+        }
+        
+        .admin-template-card-action .icon {
+            width: 16px;
+            height: 16px;
+        }
+        
+        .admin-template-card-body {
+            padding: var(--space-md);
+        }
+        
+        .admin-template-card-desc {
+            font-size: var(--text-sm);
+            color: var(--color-neutral-500);
+            margin-bottom: var(--space-md);
+            line-height: 1.5;
+        }
+        
+        .admin-template-card-preview {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            cursor: pointer;
+            color: var(--color-primary);
+            font-size: var(--text-sm);
+            transition: all 0.2s ease;
+        }
+        
+        .admin-template-card-preview:hover {
+            gap: var(--space-sm);
+        }
+        
+        .admin-template-card-preview .icon {
+            width: 16px;
+            height: 16px;
+        }
+        
+        .admin-stats-detailed {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+        
+        .admin-stats-chart-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: var(--space-lg);
+        }
+        
+        .admin-stats-chart {
+            background: var(--color-white);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+        }
+        
+        .admin-stats-chart h3 {
+            font-size: var(--text-lg);
+            font-weight: var(--font-bold);
+            color: var(--color-neutral-800);
+            margin-bottom: var(--space-md);
+        }
+        
+        .admin-stats-chart canvas {
+            max-height: 300px;
+        }
+        
+        .admin-form-textarea-lg {
+            min-height: 200px;
+        }
+    </style>
+</body>
+</html>
