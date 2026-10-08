@@ -4,6 +4,7 @@
  * 
  * Este arquivo contém os dados dinâmicos do portal CDA Digital V4
  * Inclui: notícias, documentos, membros, eventos, etc.
+ * Atualizado em: 2026-10-08
  */
 
 // ============================================
@@ -13,398 +14,213 @@
 const noticias = [
     {
         id: 1,
-        title: 'CDA lança novo portal digital para modernizar serviços aduaneiros',
-        excerpt: 'O novo portal CDA Digital V4 foi apresentado durante a XXVI.ª Sessão da Assembleia Geral Ordinária, marcando um passo importante na digitalização dos serviços da Câmara.',
-        content: `<p>A Câmara dos Despachantes Aduaneiros de Moçambique (CDA) apresentou oficialmente o seu novo portal digital, o CDA Digital V4, durante a XXVI.ª Sessão da Assembleia Geral Ordinária, realizada no dia 28 de Setembro de 2026, em Maputo.</p>
+        title: 'CTA participa na celebração do Dia dos Despachantes Aduaneiros',
+        excerpt: 'A CTA, representada pela Directora Executiva Teresa Muenda, participou no evento de celebração do Dia dos Despachantes Aduaneiros de Moçambique, efeméride assinalada a 14 de Setembro.',
+        content: `<p>A CTA, representada pela Directora Executiva Teresa Muenda, participou no evento de celebração do Dia dos Despachantes Aduaneiros de Moçambique, efeméride assinalada a 14 de Setembro.</p>
         
-        <p>O novo portal representa um investimento significativo na modernização dos serviços prestados pela CDA aos seus membros e à comunidade em geral. Com um design moderno e intuitivo, o portal oferece uma série de funcionalidades inovadoras que visam facilitar o acesso à informação aduaneira e melhorar a eficiência dos processos.</p>
+        <p>A cerimónia foi dirigida pela Presidente da CDA, Salmate Chuaibo, e juntou membros da classe, representantes do sector privado e parceiros institucionais ligados à cadeia logística e aduaneira.</p>
         
-        <h3>Principais funcionalidades do CDA Digital V4</h3>
-        
-        <ul>
-            <li><strong>Verificação de Despachantes:</strong> Ferramenta que permite verificar se um profissional está registado na CDA, com informações detalhadas sobre o seu estado e categoria.</li>
-            <li><strong>Centro Documental:</strong> Acesso centralizado a legislação, circulares, regulamentos e outras publicações relevantes para o sector aduaneiro.</li>
-            <li><strong>Pergunte à CDA:</strong> Assistente virtual que responde a perguntas com base na documentação oficial disponível.</li>
-            <li><strong>Presença Territorial:</strong> Informações detalhadas sobre as delegações da CDA em todo o território nacional.</li>
-            <li><strong>Notícias e Actualidades:</strong> Secção dedicada às últimas notícias e desenvolvimentos no sector aduaneiro.</li>
-        </ul>
-        
-        <p>O Presidente da CDA, Salmate Chuaibo Daud, destacou que "este portal é um reflexo do nosso compromisso em fornecer serviços de excelência e em manter os nossos membros informados sobre todas as alterações e desenvolvimentos no sector aduaneiro".</p>
-        
-        <p>O CDA Digital V4 está disponível em <a href="https://cleitonsimiaondonac2-cyber.github.io/cda-digital-v4/" target="_blank">https://cleitonsimiaondonac2-cyber.github.io/cda-digital-v4/</a> e é compatível com todos os dispositivos, desde computadores a smartphones e tablets.</p>
-        
-        <p><em>Data de publicação: 28 de Setembro de 2026</em></p>`,
-        date: '2026-09-28',
+        <p>Salmate Chuaibo destacou o papel estratégico dos despachantes aduaneiros na facilitação do comércio, na melhoria do ambiente de negócios e na competitividade das empresas.</p>`,
+        date: '2026-09-25',
         category: 'Institucional',
         author: 'CDA Comunicação',
-        image: 'img/news/featured-1.webp',
-        tags: ['portal', 'digital', 'lançamento', 'modernização']
+        image: 'img/noticias/cooperacao-at.jpg',
+        tags: ['CTA', 'dia-despachantes', '2026', 'institucional']
     },
     {
         id: 2,
-        title: 'Novo regulamento aduaneiro entra em vigor em Outubro de 2026',
-        excerpt: 'O Governo de Moçambique aprovou novo regulamento que simplifica procedimentos de despacho aduaneiro. CDA esteve envolvida nas discussões.',
-        content: `<p>O Governo de Moçambique, através do Ministério das Finanças e da Autoridade Tributária, aprovou um novo regulamento aduaneiro que entrará em vigor no dia 1 de Outubro de 2026. O novo regulamento visa simplificar e agilizar os procedimentos de despacho aduaneiro, reduzindo os tempos de espera e melhorando a eficiência nas operações de comércio exterior.</p>
+        title: 'Despachantes aduaneiros e Autoridade Tributária reforçam cooperação',
+        excerpt: 'A Autoridade Tributária e a Câmara dos Despachantes Aduaneiros reforçaram a cooperação para modernizar o sistema alfandegário e garantir maior eficiência na arrecadação de receitas.',
+        content: `<p>A Autoridade Tributária e a Câmara dos Despachantes Aduaneiros reforçaram a cooperação para modernizar o sistema alfandegário e garantir maior eficiência na arrecadação de receitas.</p>
         
-        <p>A Câmara dos Despachantes Aduaneiros (CDA) esteve activamente envolvida nas discussões e consultas públicas que precederam a aprovação deste regulamento. A CDA contribuiu com a sua experiência e conhecimento do sector para garantir que as novas normas são práticas e exequíveis.</p>
-        
-        <h3>Principais alterações</h3>
-        
-        <ul>
-            <li><strong>Redução de documentação:</strong> Menos documentos exigidos para o desembaraço aduaneiro.</li>
-            <li><strong>Processos digitalizados:</strong> Maior utilização de plataformas digitais para submissão de documentos.</li>
-            <li><strong>Prazos reduzidos:</strong> Diminuição dos prazos máximos para despacho.</li>
-            <li><strong>Transparência:</strong> Maior transparência nos critérios de avaliação e taxação.</li>
-        </ul>
-        
-        <p>A CDA está a organizar sessões de formação para os seus membros sobre as novas normas, garantindo que todos os despachantes estão devidamente preparados para a implementação do novo regulamento.</p>
-        
-        <p><em>Data de publicação: 25 de Setembro de 2026</em></p>`,
-        date: '2026-09-25',
-        category: 'Legislação',
+        <p>O Presidente da AT, Aníbal Mbalango, destacou o papel dos despachantes na conformidade e credibilidade das operações. O Presidente da CDA, Salmate Chuaibo, enalteceu o diálogo institucional e defendeu a co-responsabilidade na construção de um sistema transparente e previsível.</p>`,
+        date: '2026-03-30',
+        category: 'Cooperação',
         author: 'CDA Comunicação',
-        image: 'img/news/news-1.webp',
-        tags: ['regulamento', 'legislação', 'despacho aduaneiro']
+        image: 'img/noticias/cooperacao-at.jpg',
+        tags: ['AT', 'cooperação', 'modernização', '2026']
     },
     {
         id: 3,
-        title: 'Formação sobre despacho aduaneiro agendada para Novembro',
-        excerpt: 'A CDA em parceria com a AT está a organizar formação especializada para despachantes sobre as novas normas aduaneiras.',
-        content: `<p>A Câmara dos Despachantes Aduaneiros (CDA), em parceria com a Autoridade Tributária (AT), está a organizar uma série de sessões de formação especializada para despachantes aduaneiros. As formações decorrerão ao longo do mês de Novembro de 2026 e têm como objectivo preparar os profissionais para a implementação das novas normas aduaneiras.</p>
+        title: 'Visita de cortesia do Tribunal Aduaneiro de Sofala à CDA Beira',
+        excerpt: 'A CDA Região Centro recebeu uma visita de cortesia do Tribunal Aduaneiro de Sofala, reforçando os laços de cooperação entre as duas instituições.',
+        content: `<p>No dia 27 de Outubro de 2025, a CDA Região Centro recebeu uma visita de cortesia do Tribunal Aduaneiro de Sofala.</p>
         
-        <h3>Detalhes da Formação</h3>
-        
-        <ul>
-            <li><strong>Duração:</strong> 2 dias por sessão</li>
-            <li><strong>Local:</strong> Maputo, Beira e Nampula</li>
-            <li><strong>Data de Início:</strong> 3 de Novembro de 2026</li>
-            <li><strong>Número de Participantes:</strong> Limitado a 30 por sessão</li>
-        </ul>
-        
-        <h3>Tópicos a Abordar</h3>
-        
-        <ul>
-            <li>Novo Regulamento Aduaneiro 2026</li>
-            <li>Processos de Despacho Digital</li>
-            <li>Classificação Tarifária</li>
-            <li>Valoração Aduaneira</li>
-            <li>Infrações e Sanções</li>
-            <li>Ética e Deontologia Profissional</li>
-        </ul>
-        
-        <p><strong>Inscrições:</strong> As inscrições estão abertas e podem ser feitas através do portal CDA Digital ou directamente nas delegações da CDA.</p>
-        
-        <p><em>Data de publicação: 20 de Setembro de 2026</em></p>`,
-        date: '2026-09-20',
-        category: 'Formação',
+        <p>O encontro reforçou os laços de cooperação entre as duas instituições e abordou questões relevantes para o sector aduaneiro na região centro de Moçambique.</p>`,
+        date: '2025-10-27',
+        category: 'Institucional',
         author: 'CDA Comunicação',
-        image: 'img/news/news-2.webp',
-        tags: ['formação', 'despacho aduaneiro', 'novas normas']
+        image: 'img/noticias/justica-aduaneira.jpg',
+        tags: ['tribunal', 'sofala', 'beira', '2025']
     },
     {
         id: 4,
-        title: 'CDA estabelece parceria com Autoridade Tributária para capacitação',
-        excerpt: 'A parceria visa fortalecer a colaboração entre despachantes e a AT, melhorando a eficiência nos processos aduaneiros.',
-        content: `<p>A Câmara dos Despachantes Aduaneiros (CDA) e a Autoridade Tributária (AT) assinaram um protocolo de parceria que visa fortalecer a colaboração entre as duas instituições. O objectivo principal desta parceria é melhorar a eficiência nos processos aduaneiros e promover a transparência nas operações de comércio exterior.</p>
+        title: 'Semana destacada para líderes femininas aduaneiras — ASAPRA',
+        excerpt: 'A Presidente da CDA, Salmate Chuaibo, participou na semana destacada para líderes femininas aduaneiras organizada pela ASAPRA.',
+        content: `<p>A Presidente da CDA, Salmate Chuaibo, participou na semana destacada para líderes femininas aduaneiras organizada pela ASAPRA.</p>
         
-        <p>O protocolo foi assinado em cerimónia realizada na sede da AT, em Maputo, e contou com a presença do Presidente da CDA, Salmate Chuaibo Daud, e do Director-Geral da AT, Amélia Nakhare.</p>
-        
-        <h3>Áreas de Colaboração</h3>
-        
-        <ul>
-            <li><strong>Capacitação:</strong> Organização conjunta de sessões de formação e workshops.</li>
-            <li><strong>Consultas:</strong> Participação da CDA em consultas públicas sobre legislação aduaneira.</li>
-            <li><strong>Inovação:</strong> Desenvolvimento conjunto de soluções tecnológicas para o sector.</li>
-            <li><strong>Fiscalização:</strong> Colaboração em acções de fiscalização e combate à fraude.</li>
-        </ul>
-        
-        <p>A parceria também prevê a criação de um grupo de trabalho conjunto que se reunirá trimestralmente para avaliar o progresso e identificar novas oportunidades de colaboração.</p>
-        
-        <p><em>Data de publicação: 15 de Setembro de 2026</em></p>`,
-        date: '2026-09-15',
-        category: 'Parcerias',
-        author: 'CDA Comunicação',
-        image: 'img/news/news-3.webp',
-        tags: ['parceria', 'Autoridade Tributária', 'colaboração']
-    },
-    {
-        id: 5,
-        title: 'XXVI.ª Sessão da Assembleia Geral Ordinária da CDA',
-        excerpt: 'A CDA reuniu os seus membros para discutir o futuro da profissão aduaneira em Moçambique.',
-        content: `<p>A Câmara dos Despachantes Aduaneiros (CDA) realizou a sua XXVI.ª Sessão da Assembleia Geral Ordinária no dia 10 de Setembro de 2026, em Maputo. O evento reuniu mais de 150 membros da CDA de todo o país e contou com a presença de representantes do Governo, da Autoridade Tributária e de outras instituições parceiras.</p>
-        
-        <h3>Ordem de Trabalhos</h3>
-        
-        <ul>
-            <li><strong>Abertura:</strong> Discurso do Presidente da CDA, Salmate Chuaibo Daud.</li>
-            <li><strong>Relatório de Actividades:</strong> Apresentação do relatório de actividades do mandato 2024-2026.</li>
-            <li><strong>Relatório Financeiro:</strong> Apresentação e aprovação do relatório financeiro.</li>
-            <li><strong>Eleições:</strong> Eleição dos novos órgãos sociais para o mandato 2026-2028.</li>
-            <li><strong>Palestras:</strong> Sessões temáticas sobre o futuro do sector aduaneiro.</li>
-        </ul>
-        
-        <h3>Resultados das Eleições</h3>
-        
-        <p>Foram eleitos os seguintes órgãos sociais para o mandato 2026-2028:</p>
-        
-        <ul>
-            <li><strong>Presidente:</strong> Salmate Chuaibo Daud (reeleito)</li>
-            <li><strong>Vice-Presidente:</strong> Maria Santos</li>
-            <li><strong>Secretário-Geral:</strong> João Silva</li>
-            <li><strong>Tesoureiro:</strong> Carlos Afonso</li>
-        </ul>
-        
-        <p><em>Data de publicação: 12 de Setembro de 2026</em></p>`,
-        date: '2026-09-12',
-        category: 'Institucional',
-        author: 'CDA Comunicação',
-        image: 'img/news/news-4.webp',
-        tags: ['Assembleia Geral', 'eleições', 'mandato']
-    },
-    {
-        id: 6,
-        title: 'CDA participa em conferência internacional sobre comércio exterior',
-        excerpt: 'Representantes da CDA participaram na Conferência Internacional sobre Comércio Exterior, realizada em Joanesburgo.',
-        content: `<p>Uma delegação da Câmara dos Despachantes Aduaneiros (CDA) de Moçambique participou na Conferência Internacional sobre Comércio Exterior, realizada em Joanesburgo, África do Sul, entre os dias 5 e 7 de Setembro de 2026. O evento reuniu representantes de câmaras de comércio e despachantes aduaneiros de mais de 30 países.</p>
-        
-        <p>A delegação da CDA foi liderada pelo Presidente, Salmate Chuaibo Daud, e incluiu também o Vice-Presidente, Maria Santos, e o Secretário-Geral, João Silva.</p>
-        
-        <h3>Temas Abordados</h3>
-        
-        <ul>
-            <li><strong>Digitalização:</strong> O impacto da digitalização nos processos aduaneiros.</li>
-            <li><strong>Integração Regional:</strong> Facilitação do comércio na África Austral.</li>
-            <li><strong>Sustentabilidade:</strong> Práticas sustentáveis no comércio exterior.</li>
-            <li><strong>Inovação:</strong> Novas tecnologias no sector aduaneiro.</li>
-        </ul>
-        
-        <p>Durante o evento, a CDA teve a oportunidade de partilhar a sua experiência na implementação de soluções digitais e de apresentar os progressos alcançados no âmbito da modernização dos serviços aduaneiros em Moçambique.</p>
-        
-        <p><em>Data de publicação: 8 de Setembro de 2026</em></p>`,
-        date: '2026-09-08',
+        <p>O evento reforçou o papel da mulher no sector aduaneiro e a importância da diversidade na governação das instituições do comércio externo.</p>`,
+        date: '2026-07-15',
         category: 'Internacional',
         author: 'CDA Comunicação',
-        image: 'img/news/news-5.webp',
-        tags: ['conferência', 'comércio exterior', 'internacional']
-    }
-];
-
-// ============================================
-// Documentos
-// ============================================
-
-const documentos = [
-    {
-        id: 1,
-        title: 'Lei nº 4/2011 - Criação da Câmara dos Despachantes Aduaneiros',
-        type: 'Legislação',
-        category: 'Leis',
-        date: '2011-09-16',
-        file: '/documentos/lei-4-2011.pdf',
-        size: '2.4 MB',
-        pages: 15,
-        description: 'Lei que cria a Câmara dos Despachantes Aduaneiros de Moçambique e define as suas atribuições e competências.',
-        reference: 'Boletim da República, I Série, nº 37',
-        status: 'Vigente'
-    },
-    {
-        id: 2,
-        title: 'Regulamento da CDA',
-        type: 'Regulamentos',
-        category: 'Regulamentos Internos',
-        date: '2012-03-01',
-        file: '/documentos/regulamento-cda.pdf',
-        size: '1.8 MB',
-        pages: 25,
-        description: 'Regulamento interno da Câmara dos Despachantes Aduaneiros que define os procedimentos e normas de funcionamento.',
-        reference: 'Aprovado em Assembleia Geral',
-        status: 'Vigente'
-    },
-    {
-        id: 3,
-        title: 'Estatutos da CDA',
-        type: 'Legislação',
-        category: 'Estatutos',
-        date: '2011-12-15',
-        file: '/documentos/estatutos-cda.pdf',
-        size: '1.2 MB',
-        pages: 18,
-        description: 'Estatutos da Câmara dos Despachantes Aduaneiros de Moçambique.',
-        reference: 'Aprovado em Assembleia Geral',
-        status: 'Vigente'
-    },
-    {
-        id: 4,
-        title: 'Circular nº 001/2026 - Novas Normas de Despacho Aduaneiro',
-        type: 'Circulares',
-        category: 'Normas',
-        date: '2026-01-15',
-        file: '/documentos/circular-001-2026.pdf',
-        size: '512 KB',
-        pages: 8,
-        description: 'Circular com as novas normas de despacho aduaneiro a entrar em vigor em 2026.',
-        reference: 'AT/CIRC/001/2026',
-        status: 'Vigente'
+        image: 'img/noticias/asapra-brasil.jpg',
+        tags: ['ASAPRA', 'mulheres', 'internacional', '2026']
     },
     {
         id: 5,
-        title: 'Circular nº 002/2026 - Procedimentos para Importação de Veículos',
-        type: 'Circulares',
-        category: 'Procedimentos',
-        date: '2026-02-20',
-        file: '/documentos/circular-002-2026.pdf',
-        size: '384 KB',
-        pages: 6,
-        description: 'Circular com os procedimentos específicos para importação de veículos.',
-        reference: 'AT/CIRC/002/2026',
-        status: 'Vigente'
+        title: 'O Despachante regressa: Unidade, Modernização e Projecção Global',
+        excerpt: 'Após um período fora de circulação, a revista oficial da CDA volta a chegar aos associados com um compromisso intransigente com a legalidade.',
+        content: `<p>Após um período fora de circulação, a revista oficial da CDA volta a chegar aos associados com um compromisso intransigente com a legalidade e o combate ao exercício ilegal da profissão.</p>
+        
+        <p>A revista reflecte a modernização e a projecção global da instituição, com artigos sobre formação, cooperação internacional e os desafios do sector aduaneiro.</p>`,
+        date: '2026-07-15',
+        category: 'Editorial',
+        author: 'CDA Comunicação',
+        image: 'img/noticias/capa-julho-2026.jpg',
+        tags: ['revista', 'editorial', 'modernização', '2026']
     },
     {
         id: 6,
-        title: 'Regulamento Aduaneiro 2026',
-        type: 'Regulamentos',
-        category: 'Regulamentos Externos',
-        date: '2026-03-01',
-        file: '/documentos/regulamento-aduaneiro-2026.pdf',
-        size: '3.1 MB',
-        pages: 45,
-        description: 'Novo regulamento aduaneiro que entra em vigor em Outubro de 2026.',
-        reference: 'Decreto nº 12/2026',
-        status: 'Vigente'
+        title: 'CDA assume Vice-Presidência da ASAPRA durante Fórum no Brasil',
+        excerpt: 'A Câmara dos Despachantes Aduaneiros de Moçambique alcançou um marco histórico ao assumir a Vice-Presidência da ASAPRA.',
+        content: `<p>A Câmara dos Despachantes Aduaneiros de Moçambique alcançou um marco histórico ao assumir a Vice-Presidência da ASAPRA.</p>
+        
+        <p>Este acontecimento reforça a presença da CDA nos principais fóruns de discussão e tomada de decisão do sector aduaneiro internacional.</p>`,
+        date: '2026-07-15',
+        category: 'Internacional',
+        author: 'CDA Comunicação',
+        image: 'img/noticias/asapra-brasil.jpg',
+        tags: ['ASAPRA', 'vice-presidência', 'internacional', '2026']
     },
     {
         id: 7,
-        title: 'Código Aduaneiro de Moçambique',
-        type: 'Legislação',
-        category: 'Códigos',
-        date: '2015-06-10',
-        file: '/documentos/codigo-aduaneiro.pdf',
-        size: '4.2 MB',
-        pages: 120,
-        description: 'Código Aduaneiro de Moçambique com todas as normas e procedimentos aduaneiros.',
-        reference: 'Lei nº 10/2015',
-        status: 'Vigente'
+        title: 'Quadros da CDA assumem cargos de relevo na CTA e na CCM',
+        excerpt: 'A CDA vê os seus quadros reforçar a participação na CTA e CCM, com a Presidente Salmate Chuaibo a exercer funções de Vice-Presidente do Conselho Fiscal da CTA.',
+        content: `<p>Enquanto membro da Confederação das Associações Económicas de Moçambique (CTA) e da Câmara de Comércio de Moçambique (CCM), a CDA vê os seus quadros reforçar a participação.</p>
+        
+        <p>A Presidente Salmate Chuaibo exerce funções de Vice-Presidente do Conselho Fiscal da CTA, demonstrando o reconhecimento da classe aduaneira no panorama empresarial moçambicano.</p>`,
+        date: '2026-07-15',
+        category: 'Representação',
+        author: 'CDA Comunicação',
+        image: 'img/noticias/representacao-privado.jpg',
+        tags: ['CTA', 'CCM', 'representação', '2026']
     },
     {
         id: 8,
-        title: 'Tabela de Taxas e Emolumentos 2026',
-        type: 'Documentos',
-        category: 'Tabelas',
-        date: '2026-01-01',
-        file: '/documentos/tabela-taxas-2026.pdf',
-        size: '896 KB',
-        pages: 12,
-        description: 'Tabela actualizada de taxas e emolumentos aduaneiros para 2026.',
-        reference: 'Portaria nº 5/2026',
-        status: 'Vigente'
+        title: 'CDA contribui para a facilitação do comércio e a competitividade',
+        excerpt: 'A CDA participa activamente na simplificação de procedimentos e na remoção de barreiras, integrando as reuniões da Comissão Técnica do Comité Nacional de Facilitação do Comércio.',
+        content: `<p>A CDA participa activamente na simplificação de procedimentos e na remoção de barreiras.</p>
+        
+        <p>A instituição integra as reuniões da Comissão Técnica e da Comissão Directiva do Comité Nacional de Facilitação do Comércio, contribuindo para a competitividade do país.</p>`,
+        date: '2026-07-15',
+        category: 'Facilitação do Comércio',
+        author: 'CDA Comunicação',
+        image: 'img/noticias/facilitacao-comercio.jpg',
+        tags: ['facilitação', 'comércio', 'competitividade', '2026']
     },
     {
         id: 9,
-        title: 'Guia de Procedimentos para Despachantes Aduaneiros',
-        type: 'Publicações',
-        category: 'Guias',
-        date: '2025-11-15',
-        file: '/documentos/guia-procedimentos.pdf',
-        size: '2.1 MB',
-        pages: 35,
-        description: 'Guia prático com todos os procedimentos para despachantes aduaneiros.',
-        reference: 'CDA/PUB/001/2025',
-        status: 'Vigente'
+        title: 'CDA assina convénio com despachantes de São Paulo nos Emirados Árabes Unidos',
+        excerpt: 'A CDA celebrou um Convénio de Parceria com o Sindicato dos Despachantes Aduaneiros de São Paulo, reforçando a estratégia de cooperação internacional.',
+        content: `<p>A CDA celebrou um Convénio de Parceria com o Sindicato dos Despachantes Aduaneiros de São Paulo.</p>
+        
+        <p>O convénio reforça a estratégia de cooperação internacional e a aposta no desenvolvimento de competências técnicas para o exercício da profissão.</p>`,
+        date: '2026-07-15',
+        category: 'Cooperação',
+        author: 'CDA Comunicação',
+        image: 'img/noticias/convenio-sao-paulo.jpg',
+        tags: ['convénio', 'São Paulo', 'cooperação', '2026']
     },
     {
         id: 10,
-        title: 'Boletim Informativo CDA - Janeiro 2026',
-        type: 'Publicações',
-        category: 'Boletins',
-        date: '2026-01-31',
-        file: '/documentos/boletim-jan-2026.pdf',
-        size: '1.5 MB',
-        pages: 20,
-        description: 'Boletim informativo com as principais notícias e actualizações do sector aduaneiro.',
-        reference: 'CDA/BOLETIM/01/2026',
-        status: 'Vigente'
-    }
-];
-
-// ============================================
-// Membros (amostra)
-// ============================================
-
-const membros = [
-    {
-        id: 1,
-        code: '000100010912',
-        name: 'Carlos F. Filomeno de Gama Afonso',
-        cedula: 'DESP / 001 / DGA / 03',
-        category: 'Despachante Aduaneiro',
-        delegation: 'Sul - Maputo',
-        email: 'carlos.afonso@cda-mz.org',
-        phone: '+258 82 123 4567',
-        address: 'Av. 25 de Setembro, 1138, 1º Andar, Maputo',
-        registrationDate: '2011-09-16',
-        expiryDate: '2027-09-16',
-        status: 'ACTIVO',
-        company: 'Gama Afonso Despachos, Lda'
+        title: 'Capacitação sobre Regras de Origem reforça competências à escala nacional',
+        excerpt: 'Em parceria com a Autoridade Tributária e o programa PROMOVE Comércio, a CDA promoveu uma capacitação que contribui para a harmonização de procedimentos.',
+        content: `<p>Em parceria com a Autoridade Tributária e o programa PROMOVE Comércio, a CDA promoveu uma capacitação sobre Regras de Origem.</p>
+        
+        <p>A formação contribui para a harmonização de procedimentos e o fortalecimento das capacidades técnicas dos profissionais do sector.</p>`,
+        date: '2025-04-15',
+        category: 'Formação',
+        author: 'CDA Comunicação',
+        image: 'img/noticias/formacao-regras-origem.jpg',
+        tags: ['formação', 'regras-de-origem', 'AT', '2025']
     },
     {
-        id: 2,
-        code: '000100010913',
-        name: 'Maria dos Santos',
-        cedula: 'DESP / 002 / MS / 03',
-        category: 'Despachante Aduaneiro',
-        delegation: 'Sul - Maputo',
-        email: 'maria.santos@cda-mz.org',
-        phone: '+258 82 234 5678',
-        address: 'Rua da República, 456, Maputo',
-        registrationDate: '2011-10-01',
-        expiryDate: '2027-10-01',
-        status: 'ACTIVO',
-        company: 'Santos & Associados, Lda'
+        id: 11,
+        title: 'CDA participa na Conferência e Feira de Tecnologias da OMA nos Emirados Árabes Unidos',
+        excerpt: 'Na qualidade de membro da ASAPRA, a CDA marcou presença na Conferência e Feira de Tecnologias da Organização Mundial das Alfândegas.',
+        content: `<p>Na qualidade de membro da ASAPRA, a CDA marcou presença na Conferência e Feira de Tecnologias da Organização Mundial das Alfândegas.</p>
+        
+        <p>O evento reuniu administrações aduaneiras, especialistas e representantes de organizações internacionais para discutir o futuro digital do sector.</p>`,
+        date: '2026-07-15',
+        category: 'Internacional',
+        author: 'CDA Comunicação',
+        image: 'img/noticias/futuro-digital.jpg',
+        tags: ['OMA', 'tecnologia', 'internacional', '2026']
     },
     {
-        id: 3,
-        code: '000100010914',
-        name: 'João Silva',
-        cedula: 'DESP / 003 / JS / 02',
-        category: 'Despachante Aduaneiro',
-        delegation: 'Centro - Beira',
-        email: 'joao.silva@cda-mz.org',
-        phone: '+258 82 345 6789',
-        address: 'Av. Samora Machel, 789, Beira',
-        registrationDate: '2012-01-15',
-        expiryDate: '2028-01-15',
-        status: 'ACTIVO',
-        company: 'Silva Despachos Aduaneiros'
+        id: 12,
+        title: 'Workshop sobre branqueamento de capitais e financiamento do terrorismo',
+        excerpt: 'A CDA promoveu um workshop dedicado ao branqueamento de capitais, financiamento do terrorismo e da proliferação de armas.',
+        content: `<p>A CDA promoveu um workshop dedicado ao branqueamento de capitais, financiamento do terrorismo e da proliferação de armas.</p>
+        
+        <p>O evento reuniu representantes de instituições públicas e privadas ligadas ao comércio externo e ao sistema financeiro nacional.</p>`,
+        date: '2024-06-15',
+        category: 'Conformidade',
+        author: 'CDA Comunicação',
+        image: 'img/noticias/conformidade-integridade.jpg',
+        tags: ['workshop', 'branqueamento', 'conformidade', '2024']
     },
     {
-        id: 4,
-        code: '000100010915',
-        name: 'Ana Ferreira',
-        cedula: 'DESP / 004 / AF / 01',
-        category: 'Despachante Aduaneiro',
-        delegation: 'Norte - Nampula',
-        email: 'ana.ferreira@cda-mz.org',
-        phone: '+258 82 456 7890',
-        address: 'Rua Pedro Massavana, 123, Nampula',
-        registrationDate: '2012-03-20',
-        expiryDate: '2028-03-20',
-        status: 'ACTIVO',
-        company: 'Ferreira & Filhos, Lda'
+        id: 13,
+        title: 'Na Cúpula Mundial dos Despachantes: CDA expande influência na IFCBA no Japão',
+        excerpt: 'Como membro da International Federation of Customs Brokers Associations (IFCBA), a CDA participou na conferência internacional da organização no Japão.',
+        content: `<p>Como membro da International Federation of Customs Brokers Associations (IFCBA), a CDA participou na conferência internacional da organização.</p>
+        
+        <p>O evento, um dos mais relevantes do sector, reforçou o compromisso da CDA com a projecção global e a troca de melhores práticas.</p>`,
+        date: '2026-07-15',
+        category: 'Internacional',
+        author: 'CDA Comunicação',
+        image: 'img/noticias/cupula-mundial-japao.jpg',
+        tags: ['IFCBA', 'Japão', 'internacional', '2026']
     },
     {
-        id: 5,
-        code: '000100010916',
-        name: 'Pedro Costa',
-        cedula: 'DESP / 005 / PC / 03',
-        category: 'Despachante Aduaneiro',
-        delegation: 'Sul - Maputo',
-        email: 'pedro.costa@cda-mz.org',
-        phone: '+258 82 567 8901',
-        address: 'Av. Eduardo Mondlane, 234, Maputo',
-        registrationDate: '2013-05-10',
-        expiryDate: '2029-05-10',
-        status: 'ACTIVO',
-        company: 'Costa Despachos Internacionais'
+        id: 14,
+        title: 'Intercâmbio de experiências com as Alfândegas de São Tomé e Príncipe',
+        excerpt: 'A CDA manteve um encontro de trabalho com as Alfândegas de São Tomé e Príncipe, no âmbito da cooperação entre países de língua portuguesa.',
+        content: `<p>A CDA manteve um encontro de trabalho com as Alfândegas de São Tomé e Príncipe.</p>
+        
+        <p>O encontro inscreve-se no âmbito da cooperação e intercâmbio de experiências entre instituições ligadas ao sector aduaneiro nos países de língua portuguesa.</p>`,
+        date: '2026-07-15',
+        category: 'Lusofonia',
+        author: 'CDA Comunicação',
+        image: 'img/noticias/lusofonia.jpg',
+        tags: ['lusofonia', 'São Tomé', 'cooperação', '2026']
+    },
+    {
+        id: 15,
+        title: 'Solidariedade em Acção: CDA apoia vítimas das cheias em Marracuene',
+        excerpt: 'Na sequência das cheias que afectaram o Muthini, no Município de Marracuene, a CDA promoveu acções de assistência que beneficiaram centenas de pessoas.',
+        content: `<p>Na sequência das cheias que afectaram o Muthini, no Município de Marracuene, a CDA promoveu acções de assistência.</p>
+        
+        <p>As acções beneficiaram centenas de pessoas, reafirmando o compromisso da CDA com a responsabilidade social.</p>`,
+        date: '2026-07-15',
+        category: 'Responsabilidade Social',
+        author: 'CDA Comunicação',
+        image: 'img/noticias/solidariedade-cheias.jpg',
+        tags: ['solidariedade', 'Marracuene', 'responsabilidade-social', '2026']
+    },
+    {
+        id: 16,
+        title: 'Entrevista: Sábito Romeu — "Esta casa não é de quem a preside"',
+        excerpt: 'O Presidente da Mesa da Assembleia Geral da CDA fala sobre o papel colectivo dos órgãos sociais, a unidade da classe e os desafios do triénio 2024-2026.',
+        content: `<p>O Presidente da Mesa da Assembleia Geral da CDA fala sobre o papel colectivo dos órgãos sociais, a unidade da classe e os desafios do triénio 2024-2026.</p>
+        
+        <p>Na entrevista, Sábito Romeu destaca que "esta casa não é de quem a preside, é de todos os despachantes aduaneiros de Moçambique".</p>`,
+        date: '2026-07-15',
+        category: 'Entrevista',
+        author: 'CDA Comunicação',
+        image: 'img/noticias/entrevista-sabito-romeu.jpg',
+        tags: ['entrevista', 'Sábito Romeu', 'assembleia-geral', '2026']
     }
 ];
 
@@ -412,432 +228,185 @@ const membros = [
 // Eventos / Actividades
 // ============================================
 
-const eventos = [
+const actividades = [
     {
-        id: 1,
-        title: 'XXVI.ª Sessão da Assembleia Geral Ordinária',
-        date: '2026-09-10',
-        endDate: '2026-09-10',
-        time: '09:00 - 17:00',
-        location: 'Hotel Polana Serena, Maputo',
-        description: 'Sessão da Assembleia Geral Ordinária para apresentação de relatórios e eleição de novos órgãos sociais.',
-        category: 'Institucional',
-        image: 'img/activities/assembleia-geral.webp',
-        status: 'Realizado'
+        id: 'act-6',
+        titulo: 'Celebração do Dia dos Despachantes Aduaneiros 2026',
+        categoria: 'Eventos',
+        data: '2026-09-14',
+        local: 'Maputo',
+        descricao: 'Cerimónia de celebração do Dia dos Despachantes Aduaneiros de Moçambique, com a presença da Presidente da CDA Salmate Chuaibo, representantes da CTA, sector privado e parceiros institucionais ligados à cadeia logística e aduaneira.',
+        destaque: true,
+        capas: ['img/galeria/hd/22-whatsapp-image-2024-12-16-at-15.57.08.jpg']
     },
     {
-        id: 2,
-        title: 'Formação sobre Novo Regulamento Aduaneiro',
-        date: '2026-11-03',
-        endDate: '2026-11-04',
-        time: '08:30 - 16:30',
-        location: 'Sede da CDA, Maputo',
-        description: 'Formação intensiva sobre o novo regulamento aduaneiro que entra em vigor em Outubro de 2026.',
-        category: 'Formação',
-        image: 'img/activities/formacao.webp',
-        status: 'Agendado',
-        seatsAvailable: 30,
-        seatsTotal: 30
+        id: 'act-7',
+        titulo: 'Reunião CDA e Autoridade Tributária — Cooperação institucional',
+        categoria: 'Reuniões',
+        data: '2026-03-30',
+        local: 'Maputo',
+        descricao: 'Reunião entre a CDA e a Autoridade Tributária para reforçar a cooperação na modernização do sistema alfandegário, com destaque para a participação activa da CDA na Reforma Legislativa em curso.',
+        destaque: true,
+        capas: ['img/galeria/hd/09-01-359_thumb.jpg']
     },
     {
-        id: 3,
-        title: 'Workshop sobre Digitalização Aduaneira',
-        date: '2026-11-15',
-        endDate: '2026-11-15',
-        time: '09:00 - 13:00',
-        location: 'Hotel Avani, Maputo',
-        description: 'Workshop para discutir as últimas tendências em digitalização de processos aduaneiros.',
-        category: 'Workshop',
-        image: 'img/activities/workshop-digital.webp',
-        status: 'Agendado',
-        seatsAvailable: 25,
-        seatsTotal: 25
+        id: 'act-8',
+        titulo: 'Visita do Tribunal Aduaneiro de Sofala à CDA Beira',
+        categoria: 'Institucional',
+        data: '2025-10-27',
+        local: 'Beira',
+        descricao: 'Visita de cortesia do Tribunal Aduaneiro de Sofala aos escritórios da CDA Região Centro, reforçando os laços de cooperação entre as duas instituições.',
+        destaque: false,
+        capas: ['img/galeria/hd/13-whatsapp-image-2024-11-11-at-15.21.14-1.jpg']
     },
     {
-        id: 4,
-        title: 'Reunião com Autoridade Tributária',
-        date: '2026-10-05',
-        endDate: '2026-10-05',
-        time: '10:00 - 12:00',
-        location: 'Sede da AT, Maputo',
-        description: 'Reunião de trabalho entre a CDA e a Autoridade Tributária para discussão de assuntos de interesse mútuo.',
-        category: 'Reunião',
-        image: 'img/activities/reuniao-at.webp',
-        status: 'Agendado'
+        id: 'act-1',
+        titulo: 'XXVI.ª Sessão da Assembleia Geral Ordinária',
+        categoria: 'Reuniões',
+        data: '2024-11-17',
+        local: 'Maputo',
+        descricao: 'Momentos da XXVI.ª Sessão da Assembleia Geral Ordinária da CDA, que reuniu os membros da classe para debate dos assuntos da profissão aduaneira e eleição dos novos órgãos sociais para o triénio 2024-2026.',
+        destaque: true,
+        capas: [
+            'img/galeria/hd/01-01-100_thumb.jpg',
+            'img/galeria/hd/02-01-156_thumb.jpg',
+            'img/galeria/hd/03-01-184_thumb.jpg',
+            'img/galeria/hd/04-01-216_thumb.jpg',
+            'img/galeria/hd/05-01-227_thumb.jpg',
+            'img/galeria/hd/06-01-238_thumb.jpg',
+            'img/galeria/hd/07-01-242_thumb.jpg',
+            'img/galeria/hd/08-01-311_thumb.jpg',
+            'img/galeria/hd/09-01-359_thumb.jpg',
+            'img/galeria/hd/10-01-99_thumb.jpg'
+        ]
     },
     {
-        id: 5,
-        title: 'Conferência Internacional sobre Comércio Exterior',
-        date: '2026-09-05',
-        endDate: '2026-09-07',
-        time: '09:00 - 18:00',
-        location: 'Joanesburgo, África do Sul',
-        description: 'Participação da CDA na Conferência Internacional sobre Comércio Exterior.',
-        category: 'Conferência',
-        image: 'img/activities/conferencia.webp',
-        status: 'Realizado'
+        id: 'act-2',
+        titulo: 'Tomada de posse dos órgãos sociais 2024–2026',
+        categoria: 'Institucional',
+        data: '2024-10-29',
+        local: 'Maputo',
+        descricao: 'Cerimónia de tomada de posse dos órgãos sociais da CDA para o triénio 2024-2026, com a Presidente Salmate Chuaibo Daud.',
+        destaque: false,
+        capas: [
+            'img/galeria/hd/11-screenshot-2024-10-29-130534_thumb.jpg',
+            'img/galeria/hd/12-screenshot-2024-10-29-130947_thumb.jpg'
+        ]
+    },
+    {
+        id: 'act-3',
+        titulo: 'Actividades e encontros institucionais',
+        categoria: 'Eventos',
+        data: '2024-12-16',
+        local: 'Moçambique',
+        descricao: 'Registo de actividades e encontros institucionais da CDA no último trimestre de 2024.',
+        destaque: false,
+        capas: [
+            'img/galeria/hd/13-whatsapp-image-2024-11-11-at-15.21.14-1.jpg',
+            'img/galeria/hd/14-whatsapp-image-2024-11-11-at-15.21.14-2.jpg',
+            'img/galeria/hd/15-whatsapp-image-2024-11-13-at-11.40.32.jpg',
+            'img/galeria/hd/16-whatsapp-image-2024-11-17-at-11.34.52.jpg',
+            'img/galeria/hd/17-whatsapp-image-2024-11-17-at-11.34.57.jpg',
+            'img/galeria/hd/18-whatsapp-image-2024-12-16-at-15.50.57-1.jpg',
+            'img/galeria/hd/19-whatsapp-image-2024-12-16-at-15.50.57.jpg',
+            'img/galeria/hd/20-whatsapp-image-2024-12-16-at-15.56.29.jpg',
+            'img/galeria/hd/21-whatsapp-image-2024-12-16-at-15.56.44.jpg',
+            'img/galeria/hd/22-whatsapp-image-2024-12-16-at-15.57.08.jpg'
+        ]
     }
 ];
 
 // ============================================
-// Parceiros
+// Órgãos Sociais
 // ============================================
 
-const parceiros = [
+const orgaos = [
     {
-        id: 1,
-        name: 'Autoridade Tributária',
-        shortName: 'AT',
-        type: 'Instituição Pública',
-        logo: 'img/partners/at.svg',
-        website: 'https://www.at.gov.mz',
-        description: 'Autoridade Tributária de Moçambique é a instituição responsável pela administração tributária e aduaneira no país.',
-        category: 'Autoridades'
+        cargo: 'Presidente da CDA',
+        nome: 'Salmate Chuaibo Daud',
+        orgao: 'Direcção',
+        foto: 'img/orgaos/salmate-chuaibo.jpg'
     },
     {
-        id: 2,
-        name: 'Ministério das Finanças',
-        shortName: 'MINFIN',
-        type: 'Ministério',
-        logo: 'img/partners/ministrio-financas.svg',
-        website: 'https://www.minfin.gov.mz',
-        description: 'Ministério das Finanças de Moçambique é o órgão do Governo responsável pela política financeira e orçamental.',
-        category: 'Autoridades'
+        cargo: 'Vice-Presidente da CDA para a Zona Norte',
+        nome: 'Albino Sebastião Grumor Dimene',
+        orgao: 'Direcção'
     },
     {
-        id: 3,
-        name: 'Ministério do Comércio e Indústria',
-        shortName: 'MCI',
-        type: 'Ministério',
-        logo: 'img/partners/ministrio-comercio.svg',
-        website: 'https://www.mic.gov.mz',
-        description: 'Ministério do Comércio e Indústria de Moçambique é o órgão do Governo responsável pela promoção do comércio e da indústria.',
-        category: 'Autoridades'
+        cargo: 'Vice-Presidente da CDA para a Zona Centro',
+        nome: 'Nelson Caetano Coutinho Luís',
+        orgao: 'Direcção'
     },
     {
-        id: 4,
-        name: 'Ordem dos Contabilistas e Auditores de Moçambique',
-        shortName: 'OCAM',
-        type: 'Ordem Profissional',
-        logo: 'img/partners/ocam.svg',
-        website: 'https://www.ocam.org.mz',
-        description: 'Ordem dos Contabilistas e Auditores de Moçambique é a instituição que regula a profissão de contabilista e auditor no país.',
-        category: 'Ordem Profissional'
+        cargo: 'Presidente da Mesa da Assembleia Geral',
+        nome: 'Sabito Joaquim Romeu',
+        orgao: 'Mesa da AG',
+        foto: 'img/orgaos/sabito-romeu.jpg'
     },
     {
-        id: 5,
-        name: 'Confederação das Associações Económicas de Moçambique',
-        shortName: 'CTA',
-        type: 'Confederação',
-        logo: 'img/partners/cta.svg',
-        website: 'https://www.cta.org.mz',
-        description: 'Confederação das Associações Económicas de Moçambique é a principal organização patronal do país.',
-        category: 'Associação'
+        cargo: 'Vice-Presidente da Mesa da Assembleia Geral',
+        nome: 'Júlia Carrilho Almeida da Silva',
+        orgao: 'Mesa da AG'
     },
     {
-        id: 6,
-        name: 'Associação Industrial de Moçambique',
-        shortName: 'API',
-        type: 'Associação',
-        logo: 'img/partners/api.svg',
-        website: 'https://www.api.org.mz',
-        description: 'Associação Industrial de Moçambique é a organização que representa os interesses do sector industrial.',
-        category: 'Associação'
+        cargo: 'Secretário da Mesa da Assembleia Geral',
+        nome: 'Nelson Joaquim José Rede',
+        orgao: 'Mesa da AG'
+    },
+    {
+        cargo: 'Presidente do Conselho Deontológico',
+        nome: 'Pedro Armando S. Chissico',
+        orgao: 'Conselho Deontológico'
+    },
+    {
+        cargo: 'Conselho Deontológico — Zona Norte',
+        nome: 'Deca Fernando Tito',
+        orgao: 'Conselho Deontológico'
+    },
+    {
+        cargo: 'Conselho Deontológico — Zona Centro',
+        nome: 'Joaquim M. Mateus Manguaiana',
+        orgao: 'Conselho Deontológico'
+    },
+    {
+        cargo: 'Conselho Deontológico — Zona Sul',
+        nome: 'Flora Macuvele',
+        orgao: 'Conselho Deontológico'
+    },
+    {
+        cargo: 'Conselho Deontológico — Zona Sul',
+        nome: 'Humberto Benavides A. Guibunda',
+        orgao: 'Conselho Deontológico'
+    },
+    {
+        cargo: 'Conselho Directivo — Zona Norte',
+        nome: 'José Mateus Manuel',
+        orgao: 'Conselho Directivo'
+    },
+    {
+        cargo: 'Conselho Directivo — Zona Centro',
+        nome: 'Zacarias Miguel Mabunda',
+        orgao: 'Conselho Directivo'
+    },
+    {
+        cargo: 'Conselho Directivo — Zona Sul',
+        nome: 'Madalena dos Anjos Chambule',
+        orgao: 'Conselho Directivo'
+    },
+    {
+        cargo: 'Tesoureiro',
+        nome: 'Pedro Ausêncio Bonifácio Saulosse',
+        orgao: 'Conselho Directivo'
     }
 ];
-
 // ============================================
-// Delegações
-// ============================================
-
-const delegacoes = [
-    {
-        id: 1,
-        name: 'Delegação Sul',
-        region: 'Sul',
-        city: 'Maputo',
-        address: 'Av. 25 de Setembro, 1138, 1º Andar',
-        phone: '+258 82 000 0000',
-        email: 'sul@cda-mz.org',
-        responsible: 'Carlos Afonso',
-        responsiblePosition: 'Delegado Regional',
-        image: 'img/delegations/sul.webp',
-        latitude: -25.9686,
-        longitude: 32.5801
-    },
-    {
-        id: 2,
-        name: 'Delegação Centro',
-        region: 'Centro',
-        city: 'Beira',
-        address: 'Av. Samora Machel, 789',
-        phone: '+258 82 000 0000',
-        email: 'centro@cda-mz.org',
-        responsible: 'Maria Santos',
-        responsiblePosition: 'Delegada Regional',
-        image: 'img/delegations/centro.webp',
-        latitude: -19.8434,
-        longitude: 34.8358
-    },
-    {
-        id: 3,
-        name: 'Delegação Norte',
-        region: 'Norte',
-        city: 'Nampula',
-        address: 'Rua Pedro Massavana, 123',
-        phone: '+258 82 000 0000',
-        email: 'norte@cda-mz.org',
-        responsible: 'João Silva',
-        responsiblePosition: 'Delegado Regional',
-        image: 'img/delegations/norte.webp',
-        latitude: -15.1128,
-        longitude: 39.2622
-    }
-];
-
-// ============================================
-// Estatísticas
+// CDA Data Object (for compatibility with V4 HTML)
 // ============================================
 
-const estatisticas = {
-    membros: {
-        total: 221,
-        ativos: 215,
-        suspensos: 6,
-        porDelegacao: {
-            'Sul': 120,
-            'Centro': 60,
-            'Norte': 41
-        }
-    },
-    documentos: {
-        total: 261,
-        porTipo: {
-            'Legislação': 50,
-            'Circulares': 89,
-            'Regulamentos': 30,
-            'Publicações': 25,
-            'Outros': 67
-        }
-    },
-    empresas: {
-        total: 150,
-        ativas: 145
-    },
-    formacoes: {
-        total: 45,
-        anoCorrente: 12
+window.CDA = {
+    Data: {
+        noticias: noticias,
+        actividades: actividades,
+        orgaos: orgaos
     }
 };
-
-// ============================================
-// Linha do Tempo (História da CDA)
-// ============================================
-
-const historia = [
-    {
-        year: '1996',
-        title: 'Início do Processo',
-        description: 'Início do processo de criação de uma associação de despachantes aduaneiros em Moçambique.',
-        image: null,
-        documents: []
-    },
-    {
-        year: '2006',
-        title: 'Retoma do Processo',
-        description: 'Retoma do processo de constituição da Câmara dos Despachantes Aduaneiros com novo impulso.',
-        image: null,
-        documents: []
-    },
-    {
-        year: '2011',
-        title: 'Criação Legal',
-        description: 'Aprovação da Lei nº 4/2011 que cria oficialmente a Câmara dos Despachantes Aduaneiros de Moçambique.',
-        image: null,
-        documents: ['Lei nº 4/2011']
-    },
-    {
-        year: '2011',
-        title: 'Primeiros Órgãos Sociais',
-        description: 'Eleição dos primeiros órgãos sociais da CDA em 16 de Setembro de 2011. Dixon Chongo foi eleito o primeiro Presidente.',
-        image: null,
-        documents: ['Acta da Assembleia Geral Constitutiva']
-    },
-    {
-        year: '2014',
-        title: 'Novo Ciclo Institucional',
-        description: 'Início de um novo ciclo institucional com a eleição de novos órgãos sociais.',
-        image: null,
-        documents: []
-    },
-    {
-        year: '2024',
-        title: 'Actual Mandato',
-        description: 'Eleição dos órgãos sociais para o mandato 2024-2026. Salmate Chuaibo Daud assumiu a presidência.',
-        image: null,
-        documents: []
-    },
-    {
-        year: '2026',
-        title: 'Lançamento do CDA Digital V4',
-        description: 'Lançamento oficial do novo portal digital CDA Digital V4, marcando um passo significativo na modernização dos serviços da CDA.',
-        image: null,
-        documents: []
-    }
-];
-
-// ============================================
-// Liderança (Presidentes)
-// ============================================
-
-const lideranca = [
-    {
-        id: 1,
-        name: 'Dixon Chongo',
-        position: 'Presidente',
-        mandate: '2011-2014',
-        image: 'img/leadership/dixon-chongo.webp',
-        bio: 'Primeiro Presidente da Câmara dos Despachantes Aduaneiros de Moçambique. Liderou o processo de constituição e os primeiros anos da instituição.',
-        achievements: [
-            'Constituição formal da CDA',
-            'Primeiras estruturas administrativas',
-            'Primeiros órgãos sociais',
-            'Estabelecimento de parcerias iniciais'
-        ]
-    },
-    {
-        id: 2,
-        name: 'Outro Presidente',
-        position: 'Presidente',
-        mandate: '2014-2023',
-        image: 'img/leadership/presidente-2.webp',
-        bio: 'Segundo Presidente da CDA, liderou a instituição durante um período de crescimento e consolidação.',
-        achievements: [
-            'Expansão da base de membros',
-            'Criação de delegações regionais',
-            'Modernização de processos',
-            'Fortalecimento de parcerias'
-        ]
-    },
-    {
-        id: 3,
-        name: 'Salmate Chuaibo Daud',
-        position: 'Presidente',
-        mandate: '2024-2026',
-        image: 'img/leadership/salmate-chuaibo.webp',
-        bio: 'Actual Presidente da Câmara dos Despachantes Aduaneiros de Moçambique. Lidera a instituição no actual mandato com foco na digitalização e modernização.',
-        achievements: [
-            'Lançamento do CDA Digital V4',
-            'Fortalecimento da parceria com a AT',
-            'Organização de formações especializadas',
-            'Participação em eventos internacionais'
-        ]
-    }
-];
-
-// ============================================
-// FAQ (Perguntas Frequentes)
-// ============================================
-
-const faq = [
-    {
-        id: 1,
-        question: 'O que é a CDA?',
-        answer: 'A Câmara dos Despachantes Aduaneiros (CDA) de Moçambique é uma pessoa colectiva de direito público que representa, regula e promove o exercício da actividade de despachante aduaneiro no país.',
-        category: 'Geral'
-    },
-    {
-        id: 2,
-        question: 'Quais são as atribuições da CDA?',
-        answer: 'A CDA tem como principais atribuições: emitir carteira profissional, manter o registo de membros, fiscalizar o exercício da actividade, representar os interesses dos despachantes, e promover a formação contínua dos profissionais.',
-        category: 'Geral'
-    },
-    {
-        id: 3,
-        question: 'Como posso tornar-me membro da CDA?',
-        answer: 'Para se tornar membro da CDA, é necessário preencher os requisitos legais, submeter a documentação exigida e pagar as taxas de registo. O processo está detalhado na página "Tornar-se Membro" do nosso portal.',
-        category: 'Membros'
-    },
-    {
-        id: 4,
-        question: 'Como verifico se um despachante está registado?',
-        answer: 'Pode verificar se um despachante está registado na CDA através da ferramenta de verificação disponível na homepage do nosso portal. Basta introduzir o código profissional, nome ou número da cédula.',
-        category: 'Verificação'
-    },
-    {
-        id: 5,
-        question: 'Onde posso encontrar a legislação aduaneira?',
-        answer: 'Toda a legislação aduaneira relevante está disponível no Centro Documental do nosso portal. Pode pesquisar por palavras-chave ou navegar pelas categorias.',
-        category: 'Documentação'
-    },
-    {
-        id: 6,
-        question: 'A CDA oferece formações?',
-        answer: 'Sim, a CDA organiza regularmente sessões de formação e workshops para os seus membros e outros interessados. As formações abrangem diversos tópicos relacionados com o despacho aduaneiro.',
-        category: 'Formação'
-    },
-    {
-        id: 7,
-        question: 'Como contacto a CDA?',
-        answer: 'Pode contactar a CDA através do formulário de contacto disponível no nosso portal, por email para secretaria@cda-mz.org, ou directamente nas nossas delegações em Maputo, Beira e Nampula.',
-        category: 'Contactos'
-    }
-];
-
-// ============================================
-// Mensagens do Sistema
-// ============================================
-
-const mensagens = {
-    sucesso: {
-        verificacao: 'Verificação realizada com sucesso!',
-        envio: 'Mensagem enviada com sucesso!',
-        subscrição: 'Subscrição realizada com sucesso!'
-    },
-    erro: {
-        verificacao: 'Nenhum registo encontrado com os critérios especificados.',
-        envio: 'Ocorreu um erro ao enviar a sua mensagem. Por favor, tente novamente.',
-        subscrição: 'Ocorreu um erro ao processar a sua subscrição. Por favor, tente novamente.',
-        geral: 'Ocorreu um erro. Por favor, tente novamente mais tarde.'
-    },
-    aviso: {
-        campoObrigatorio: 'Este campo é obrigatório.',
-        emailInvalido: 'Por favor, introduza um endereço de email válido.',
-        telefoneInvalido: 'Por favor, introduza um número de telefone válido.'
-    }
-};
-
-// ============================================
-// Exportar Dados
-// ============================================
-
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = {
-        noticias,
-        documentos,
-        membros,
-        eventos,
-        parceiros,
-        delegacoes,
-        estatisticas,
-        historia,
-        lideranca,
-        faq,
-        mensagens
-    };
-} else {
-    window.CDA = window.CDA || {};
-    window.CDA.Data = {
-        noticias,
-        documentos,
-        membros,
-        eventos,
-        parceiros,
-        delegacoes,
-        estatisticas,
-        historia,
-        lideranca,
-        faq,
-        mensagens
-    };
-}

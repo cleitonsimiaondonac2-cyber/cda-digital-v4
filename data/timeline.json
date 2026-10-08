@@ -1,118 +1,93 @@
 [
   {
-    "ano": "1996",
-    "titulo": "Início do Processo",
-    "descricao": "Primeiras iniciativas para criação de uma associação que representasse os despachantes aduaneiros em Moçambique. Surgimento das primeiras discussões informais entre profissionais do sector.",
-    "icon": "📅",
-    "fotos": [],
-    "documentos": [],
-    "categoria": "processo"
-  },
-  {
-    "ano": "2006",
-    "titulo": "Retoma do Processo",
-    "descricao": "Retomada das discussões e iniciativas para formalização de uma entidade representativa dos despachantes aduaneiros. Período de mobilização e organização do sector.",
-    "icon": "🔄",
-    "fotos": [],
-    "documentos": [],
-    "categoria": "processo"
-  },
-  {
-    "ano": "2011",
-    "titulo": "Criação Legal da CDA",
-    "descricao": "Aprovação da Lei nº 4/2011 que cria oficialmente a Câmara dos Despachantes Aduaneiros de Moçambique. Este marco legal permitiu a constituição formal da instituição.",
-    "icon": "⚖️",
-    "fotos": ["img/timeline/2011-lei.jpg"],
-    "documentos": [
-      {"titulo": "Lei nº 4/2011", "url": "#"},
-      {"titulo": "Acta de Constituição", "url": "#"}
+    "id": 1,
+    "titulo": "XXVI.ª Sessão da Assembleia Geral Ordinária",
+    "data": "2024-11-17",
+    "local": "Maputo",
+    "categoria": "assembleia",
+    "descricao": "Momentos da XXVI.ª Sessão da Assembleia Geral Ordinária da CDA, que reuniu os membros da classe para debate dos assuntos da profissão aduaneira e eleição dos novos órgãos sociais para o triénio 2024-2026.",
+    "imagens": [
+      "img/galeria/hd/01-01-100_thumb.jpg",
+      "img/galeria/hd/02-01-156_thumb.jpg",
+      "img/galeria/hd/03-01-184_thumb.jpg",
+      "img/galeria/hd/04-01-216_thumb.jpg",
+      "img/galeria/hd/05-01-227_thumb.jpg",
+      "img/galeria/hd/06-01-238_thumb.jpg",
+      "img/galeria/hd/07-01-242_thumb.jpg",
+      "img/galeria/hd/08-01-311_thumb.jpg",
+      "img/galeria/hd/09-01-359_thumb.jpg",
+      "img/galeria/hd/10-01-99_thumb.jpg"
     ],
-    "categoria": "marco"
+    "destaque": true
   },
   {
-    "ano": "2011",
-    "titulo": "Primeiras Eleições",
-    "descricao": "Realização da primeira Assembleia Geral e eleição dos primeiros órgãos sociais da CDA. Gama Afonso foi eleito o primeiro Presidente da Câmara.",
-    "icon": "🗳️",
-    "data": "16 de Setembro de 2011",
-    "fotos": ["img/timeline/2011-eleicoes.jpg"],
-    "documentos": [
-      {"titulo": "Acta da Assembleia Geral", "url": "#"}
+    "id": 2,
+    "titulo": "Tomada de posse dos órgãos sociais 2024–2026",
+    "data": "2024-10-29",
+    "local": "Maputo",
+    "categoria": "institucional",
+    "descricao": "Cerimónia de tomada de posse dos órgãos sociais da CDA para o triénio 2024-2026, com a Presidente Salmate Chuaibo Daud.",
+    "imagens": [
+      "img/galeria/hd/11-screenshot-2024-10-29-130534_thumb.jpg",
+      "img/galeria/hd/12-screenshot-2024-10-29-130947_thumb.jpg"
     ],
-    "categoria": "marco"
+    "destaque": false
   },
   {
-    "ano": "2012",
-    "titulo": "Estruturação Inicial",
-    "descricao": "Estabelecimento das primeiras estruturas administrativas e operacionais da CDA. Criação dos regulamentos internos e procedimentos.",
-    "icon": "🏗️",
-    "fotos": ["img/timeline/2012-estrutura.jpg"],
-    "documentos": [
-      {"titulo": "Primeiro Regulamento Interno", "url": "#"}
+    "id": 3,
+    "titulo": "Actividades e encontros institucionais Q4 2024",
+    "data": "2024-12-16",
+    "local": "Moçambique",
+    "categoria": "eventos",
+    "descricao": "Registo de actividades e encontros institucionais da CDA no último trimestre de 2024.",
+    "imagens": [
+      "img/galeria/hd/13-whatsapp-image-2024-11-11-at-15.21.14-1.jpg",
+      "img/galeria/hd/14-whatsapp-image-2024-11-11-at-15.21.14-2.jpg",
+      "img/galeria/hd/15-whatsapp-image-2024-11-13-at-11.40.32.jpg",
+      "img/galeria/hd/16-whatsapp-image-2024-11-17-at-11.34.52.jpg",
+      "img/galeria/hd/17-whatsapp-image-2024-11-17-at-11.34.57.jpg",
+      "img/galeria/hd/18-whatsapp-image-2024-12-16-at-15.50.57-1.jpg",
+      "img/galeria/hd/19-whatsapp-image-2024-12-16-at-15.50.57.jpg",
+      "img/galeria/hd/20-whatsapp-image-2024-12-16-at-15.56.29.jpg",
+      "img/galeria/hd/21-whatsapp-image-2024-12-16-at-15.56.44.jpg",
+      "img/galeria/hd/22-whatsapp-image-2024-12-16-at-15.57.08.jpg"
     ],
-    "categoria": "iniciativa"
+    "destaque": false
   },
   {
-    "ano": "2014",
-    "titulo": "Novo Ciclo Institucional",
-    "descricao": "Transição para novo mandato com Dixon Chongo como Presidente. Início de um período de consolidação e expansão da CDA.",
-    "icon": "🔄",
-    "data": "Março de 2014",
-    "fotos": ["img/timeline/2014-posse.jpg"],
-    "documentos": [
-      {"titulo": "Relatório de Transição", "url": "#"}
+    "id": 4,
+    "titulo": "Visita do Tribunal Aduaneiro de Sofala à CDA Beira",
+    "data": "2025-10-27",
+    "local": "Beira",
+    "categoria": "institucional",
+    "descricao": "Visita de cortesia do Tribunal Aduaneiro de Sofala aos escritórios da CDA Região Centro, reforçando os laços de cooperação entre as duas instituições.",
+    "imagens": [
+      "img/galeria/hd/13-whatsapp-image-2024-11-11-at-15.21.14-1.jpg"
     ],
-    "categoria": "marco"
+    "destaque": false
   },
   {
-    "ano": "2015",
-    "titulo": "Expansão Regional",
-    "descricao": "Criação das primeiras delegações regionais da CDA em províncias estratégicas como Sofala (Beira) e Nampula.",
-    "icon": "🗺️",
-    "fotos": ["img/timeline/2015-delegacoes.jpg"],
-    "documentos": [],
-    "categoria": "iniciativa"
-  },
-  {
-    "ano": "2018",
-    "titulo": "Código de Ética",
-    "descricao": "Aprovação do Código de Ética e Deontologia dos Despachantes Aduaneiros, estabelecendo normas de conduta para os profissionais do sector.",
-    "icon": "📜",
-    "fotos": ["img/timeline/2018-etica.jpg"],
-    "documentos": [
-      {"titulo": "Código de Ética e Deontologia", "url": "#"}
+    "id": 5,
+    "titulo": "Reunião CDA e Autoridade Tributária — Cooperação institucional",
+    "data": "2026-03-30",
+    "local": "Maputo",
+    "categoria": "reuniao",
+    "descricao": "Reunião entre a CDA e a Autoridade Tributária para reforçar a cooperação na modernização do sistema alfandegário, com destaque para a participação activa da CDA na Reforma Legislativa em curso.",
+    "imagens": [
+      "img/galeria/hd/09-01-359_thumb.jpg"
     ],
-    "categoria": "marco"
+    "destaque": true
   },
   {
-    "ano": "2020",
-    "titulo": "Modernização Digital",
-    "descricao": "Início dos processos de modernização digital da CDA, com a implementação de sistemas de informação para gestão de membros e documentos.",
-    "icon": "💻",
-    "fotos": ["img/timeline/2020-digital.jpg"],
-    "documentos": [],
-    "categoria": "iniciativa"
-  },
-  {
-    "ano": "2024",
-    "titulo": "Novo Mandato",
-    "descricao": "Eleição de Salmate Chuaibo Daud como Presidente para o triénio 2024-2026. Lançamento do Portal Digital CDA V4.",
-    "icon": "🚀",
-    "data": "Janeiro de 2024",
-    "fotos": ["img/timeline/2024-posse.jpg"],
-    "documentos": [
-      {"titulo": "Plano de Actividades 2024-2026", "url": "#"}
+    "id": 6,
+    "titulo": "Celebração do Dia dos Despachantes Aduaneiros 2026",
+    "data": "2026-09-14",
+    "local": "Maputo",
+    "categoria": "eventos",
+    "descricao": "Cerimónia de celebração do Dia dos Despachantes Aduaneiros de Moçambique, com a presença da Presidente da CDA Salmate Chuaibo, representantes da CTA, sector privado e parceiros institucionais ligados à cadeia logística e aduaneira.",
+    "imagens": [
+      "img/galeria/hd/22-whatsapp-image-2024-12-16-at-15.57.08.jpg"
     ],
-    "categoria": "marco"
-  },
-  {
-    "ano": "2026",
-    "titulo": "Portal CDA Digital V4",
-    "descricao": "Lançamento oficial do Portal Digital CDA V4, com funcionalidades avançadas de verificação de despachantes, centro documental e linha do tempo interativa.",
-    "icon": "🌐",
-    "data": "Setembro de 2026",
-    "fotos": [],
-    "documentos": [],
-    "categoria": "marco"
+    "destaque": true
   }
 ]
