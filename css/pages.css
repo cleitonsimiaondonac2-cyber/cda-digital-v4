@@ -1130,7 +1130,178 @@
         padding: var(--space-lg);
     }
 
-    .report-info-card {
-        padding: var(--space-lg);
-    }
+      .report-info-card {
+          padding: var(--space-lg);
+      }
+  }
+
+/* ===================================================================
+   LIDERANÇA — cartões de presidentes (v4)
+   =================================================================== */
+.president-card {
+    background-color: var(--color-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+    text-align: center;
+}
+.president-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-6px);
+}
+.president-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background: var(--color-neutral-100, #f3f4f6);
+}
+.president-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.president-image--empty::after {
+    content: attr(data-initials);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: var(--font-bold);
+    color: var(--color-primary, #0b5e2e);
+    background: var(--color-neutral-100, #f3f4f6);
+}
+.president-info { padding: var(--space-lg); }
+.president-name {
+    font-size: var(--text-xl);
+    font-weight: var(--font-bold);
+    color: var(--color-neutral-900);
+    margin-bottom: var(--space-xs);
+}
+.president-name a { color: inherit; text-decoration: none; }
+.president-name a:hover { text-decoration: underline; }
+.president-position,
+.president-mandate {
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    color: var(--color-secondary);
+    margin-bottom: var(--space-xs);
+}
+.president-bio {
+    font-size: var(--text-sm);
+    color: var(--color-neutral-500);
+    margin-bottom: var(--space-md);
+    text-align: left;
+}
+.president-achievements { text-align: left; margin-bottom: var(--space-md); }
+.president-achievements summary {
+    cursor: pointer;
+    font-weight: var(--font-semibold);
+    color: var(--color-neutral-900);
+}
+.president-achievements ul {
+    margin: var(--space-sm) 0 0 var(--space-md);
+    padding-left: var(--space-md);
+}
+
+/* ===================================================================
+   ÓRGÃOS SOCIAIS — quadro nominativo (instituicao.html#orgaos)
+   =================================================================== */
+.orgaos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-xl);
+}
+.orgao-grupo {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-neutral-200, #e5e7eb);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-sm);
+}
+.orgao-grupo__titulo {
+    font-size: var(--text-lg);
+    font-weight: var(--font-bold);
+    color: var(--color-primary, #0b5e2e);
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid var(--color-neutral-200, #e5e7eb);
+}
+.orgao-grupo__lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.orgao-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--color-neutral-100, #f3f4f6);
+}
+.orgao-item:last-child { border-bottom: 0; }
+.orgao-item__foto {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: 0 0 auto;
+}
+.orgao-item__cargo {
+    flex: 1 1 100%;
+    font-size: var(--text-sm);
+    color: var(--color-neutral-500);
+}
+.orgao-item__nome {
+    flex: 1 1 auto;
+    font-weight: var(--font-semibold);
+    color: var(--color-neutral-900);
+}
+.orgaos-vazio { color: var(--color-neutral-500); }
+
+/* ===================================================================
+   CRONOLOGIA — componente dinâmico (data/timeline.json)
+   =================================================================== */
+.timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 var(--space-lg);
+    border-left: 2px solid var(--color-neutral-200, #e5e7eb);
+}
+.timeline__item {
+    position: relative;
+    margin-bottom: var(--space-lg);
+}
+.timeline__item::before {
+    content: "";
+    position: absolute;
+    left: calc(-1 * var(--space-lg) - 6px);
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-primary, #0b5e2e);
+}
+.timeline__title {
+    cursor: pointer;
+    font-weight: var(--font-semibold);
+    color: var(--color-neutral-900);
+}
+.timeline__date {
+    display: block;
+    font-size: var(--text-sm);
+    font-weight: var(--font-bold);
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: var(--space-xs);
+}
+.timeline__body {
+    font-size: var(--text-sm);
+    color: var(--color-neutral-500);
+    margin-top: var(--space-sm);
 }

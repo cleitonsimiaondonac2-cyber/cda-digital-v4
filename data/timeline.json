@@ -1,93 +1,135 @@
 [
   {
-    "id": 1,
-    "titulo": "XXVI.ª Sessão da Assembleia Geral Ordinária",
-    "data": "2024-11-17",
-    "local": "Maputo",
-    "categoria": "assembleia",
-    "descricao": "Momentos da XXVI.ª Sessão da Assembleia Geral Ordinária da CDA, que reuniu os membros da classe para debate dos assuntos da profissão aduaneira e eleição dos novos órgãos sociais para o triénio 2024-2026.",
-    "imagens": [
-      "img/galeria/hd/01-01-100_thumb.jpg",
-      "img/galeria/hd/02-01-156_thumb.jpg",
-      "img/galeria/hd/03-01-184_thumb.jpg",
-      "img/galeria/hd/04-01-216_thumb.jpg",
-      "img/galeria/hd/05-01-227_thumb.jpg",
-      "img/galeria/hd/06-01-238_thumb.jpg",
-      "img/galeria/hd/07-01-242_thumb.jpg",
-      "img/galeria/hd/08-01-311_thumb.jpg",
-      "img/galeria/hd/09-01-359_thumb.jpg",
-      "img/galeria/hd/10-01-99_thumb.jpg"
-    ],
-    "destaque": true
+    "ano": 1960,
+    "data": "1960-09-29",
+    "titulo": "Decreto 43.199/60",
+    "descricao": "Criação da figura de Despachante Oficial (era colonial)",
+    "categoria": "legal"
   },
   {
-    "id": 2,
-    "titulo": "Tomada de posse dos órgãos sociais 2024–2026",
-    "data": "2024-10-29",
-    "local": "Maputo",
-    "categoria": "institucional",
-    "descricao": "Cerimónia de tomada de posse dos órgãos sociais da CDA para o triénio 2024-2026, com a Presidente Salmate Chuaibo Daud.",
-    "imagens": [
-      "img/galeria/hd/11-screenshot-2024-10-29-130534_thumb.jpg",
-      "img/galeria/hd/12-screenshot-2024-10-29-130947_thumb.jpg"
-    ],
-    "destaque": false
+    "ano": 1977,
+    "data": "1977-04-26",
+    "titulo": "Decreto 14/77",
+    "descricao": "Criação da ADENA, E.E.",
+    "categoria": "legal"
   },
   {
-    "id": 3,
-    "titulo": "Actividades e encontros institucionais Q4 2024",
-    "data": "2024-12-16",
-    "local": "Moçambique",
-    "categoria": "eventos",
-    "descricao": "Registo de actividades e encontros institucionais da CDA no último trimestre de 2024.",
-    "imagens": [
-      "img/galeria/hd/13-whatsapp-image-2024-11-11-at-15.21.14-1.jpg",
-      "img/galeria/hd/14-whatsapp-image-2024-11-11-at-15.21.14-2.jpg",
-      "img/galeria/hd/15-whatsapp-image-2024-11-13-at-11.40.32.jpg",
-      "img/galeria/hd/16-whatsapp-image-2024-11-17-at-11.34.52.jpg",
-      "img/galeria/hd/17-whatsapp-image-2024-11-17-at-11.34.57.jpg",
-      "img/galeria/hd/18-whatsapp-image-2024-12-16-at-15.50.57-1.jpg",
-      "img/galeria/hd/19-whatsapp-image-2024-12-16-at-15.50.57.jpg",
-      "img/galeria/hd/20-whatsapp-image-2024-12-16-at-15.56.29.jpg",
-      "img/galeria/hd/21-whatsapp-image-2024-12-16-at-15.56.44.jpg",
-      "img/galeria/hd/22-whatsapp-image-2024-12-16-at-15.57.08.jpg"
-    ],
-    "destaque": false
+    "ano": 1993,
+    "data": "1993-12-30",
+    "titulo": "Decreto 35/93",
+    "descricao": "Reconhecimento do Despachante Aduaneiro a título privado",
+    "categoria": "legal"
   },
   {
-    "id": 4,
-    "titulo": "Visita do Tribunal Aduaneiro de Sofala à CDA Beira",
-    "data": "2025-10-27",
-    "local": "Beira",
-    "categoria": "institucional",
-    "descricao": "Visita de cortesia do Tribunal Aduaneiro de Sofala aos escritórios da CDA Região Centro, reforçando os laços de cooperação entre as duas instituições.",
-    "imagens": [
-      "img/galeria/hd/13-whatsapp-image-2024-11-11-at-15.21.14-1.jpg"
-    ],
-    "destaque": false
+    "ano": 2000,
+    "data": null,
+    "titulo": "Decreto Presidencial 4/2000",
+    "descricao": "Estatuto do Funcionário da AT/AFANDEGA",
+    "categoria": "legal"
   },
   {
-    "id": 5,
-    "titulo": "Reunião CDA e Autoridade Tributária — Cooperação institucional",
-    "data": "2026-03-30",
-    "local": "Maputo",
-    "categoria": "reuniao",
-    "descricao": "Reunião entre a CDA e a Autoridade Tributária para reforçar a cooperação na modernização do sistema alfandegário, com destaque para a participação activa da CDA na Reforma Legislativa em curso.",
-    "imagens": [
-      "img/galeria/hd/09-01-359_thumb.jpg"
-    ],
-    "destaque": true
+    "ano": 2006,
+    "data": "2006-05-29",
+    "titulo": "Decreto 29/2006",
+    "descricao": "Estrutura Orgânica da AT (revogado)",
+    "categoria": "legal"
   },
   {
-    "id": 6,
-    "titulo": "Celebração do Dia dos Despachantes Aduaneiros 2026",
-    "data": "2026-09-14",
-    "local": "Maputo",
-    "categoria": "eventos",
-    "descricao": "Cerimónia de celebração do Dia dos Despachantes Aduaneiros de Moçambique, com a presença da Presidente da CDA Salmate Chuaibo, representantes da CTA, sector privado e parceiros institucionais ligados à cadeia logística e aduaneira.",
-    "imagens": [
-      "img/galeria/hd/22-whatsapp-image-2024-12-16-at-15.57.08.jpg"
-    ],
-    "destaque": true
+    "ano": 2010,
+    "data": "2010-01-11",
+    "titulo": "Decreto 9/2010",
+    "descricao": "Estrutura Orgânica da AT (revoga o 29/2006)",
+    "categoria": "legal"
+  },
+  {
+    "ano": 2011,
+    "data": "2011-01-11",
+    "titulo": "Lei 4/2011",
+    "descricao": "Cria a CDA",
+    "categoria": "legal"
+  },
+  {
+    "ano": 2011,
+    "data": "2011-05-26",
+    "titulo": "Decreto 16/2011",
+    "descricao": "Aprova o Estatuto da CDA",
+    "categoria": "legal"
+  },
+  {
+    "ano": 2011,
+    "data": "2011-12-10",
+    "titulo": "2.ª Sessão da AG",
+    "descricao": "Primeira acta do acervo (Matala)",
+    "categoria": "organizacional"
+  },
+  {
+    "ano": 2013,
+    "data": null,
+    "titulo": "Circular 001/CDA",
+    "descricao": "Circular fundacional",
+    "categoria": "actividade"
+  },
+  {
+    "ano": 2015,
+    "data": "2015-12-11",
+    "titulo": "10.ª AG",
+    "descricao": "Taxa de 77 MT/despacho",
+    "categoria": "organizacional"
+  },
+  {
+    "ano": 2017,
+    "data": "2017-08-18",
+    "titulo": "Regulamento Interno da CDA",
+    "descricao": "Código de ética + estrutura orgânica",
+    "categoria": "legal"
+  },
+  {
+    "ano": 2019,
+    "data": null,
+    "titulo": "Circular 003/CDA",
+    "descricao": "Crachás",
+    "categoria": "actividade"
+  },
+  {
+    "ano": 2020,
+    "data": null,
+    "titulo": "Nota de imprensa 14-09",
+    "descricao": "Única nota de imprensa isolada",
+    "categoria": "actividade"
+  },
+  {
+    "ano": 2022,
+    "data": null,
+    "titulo": "Circular 001/CDA",
+    "descricao": "Subsídio funerário",
+    "categoria": "actividade"
+  },
+  {
+    "ano": 2023,
+    "data": "2023-12-29",
+    "titulo": "Decreto 90/2023",
+    "descricao": "Regulamento de exercício da actividade de despacho",
+    "categoria": "legal"
+  },
+  {
+    "ano": 2024,
+    "data": null,
+    "titulo": "Série de AG (27.ª, 37.ª AGE, 28.ª, 38.ª SES)",
+    "descricao": "Ciclo assemblear completo",
+    "categoria": "organizacional"
+  },
+  {
+    "ano": 2025,
+    "data": null,
+    "titulo": "29.ª AGO (07-03) · Dia do Despachante · 30.ª AG (12-12)",
+    "descricao": "Ano de mandato e eleições",
+    "categoria": "organizacional"
+  },
+  {
+    "ano": 2026,
+    "data": null,
+    "titulo": "Revisão dos Estatutos · PAC · CPLP · 31.ª AG",
+    "descricao": "Reforma estatutária e internacionalização",
+    "categoria": "organizacional"
   }
 ]

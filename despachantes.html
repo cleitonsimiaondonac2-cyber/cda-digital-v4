@@ -571,6 +571,7 @@
 
     <!-- Scripts -->
     <script src="js/dados.js"></script>
+    <script src="js/dados-carregados.js"></script>
     <script src="js/main.js"></script>
     <script src="js/search.js"></script>
     <script src="js/verify.js"></script>
@@ -635,6 +636,34 @@
                     
                     membersGrid.appendChild(card);
                 });
+
+                // Contagem dinâmica
+                const countEl = document.querySelector('.members-count strong');
+                if (countEl) countEl.textContent = members.length;
+
+                // Filtragem (pesquisa + delegação + estado)
+                const searchInput = document.getElementById('members-search');
+                const delegationFilter = document.getElementById('delegation-filter');
+                const statusFilter = document.getElementById('status-filter');
+                const applyFilters = () => {
+                    const termo = ((searchInput && searchInput.value) || '').trim().toLowerCase();
+                    const deleg = delegationFilter ? delegationFilter.value : '';
+                    const estado = statusFilter ? statusFilter.value : '';
+                    membersGrid.querySelectorAll('.member-card').forEach(card => {
+                        const texto = card.textContent.toLowerCase();
+                        const mostraTermo = !termo || texto.indexOf(termo) !== -1;
+                        const mostraDeleg = !deleg || texto.indexOf('delegação ' + deleg.toLowerCase()) !== -1;
+                        const mostraEstado = !estado || texto.indexOf(estado.toLowerCase()) !== -1;
+                        card.hidden = !(mostraTermo && mostraDeleg && mostraEstado);
+                    });
+                };
+                if (searchInput) {
+                    searchInput.addEventListener('input', applyFilters);
+                    const form = searchInput.closest('form');
+                    if (form) form.addEventListener('submit', e => { e.preventDefault(); applyFilters(); });
+                }
+                if (delegationFilter) delegationFilter.addEventListener('change', applyFilters);
+                if (statusFilter) statusFilter.addEventListener('change', applyFilters);
             }
         });
     </script>

@@ -90,6 +90,7 @@
     <button class="fab" aria-label="Assistente CDA"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></button>
     <button class="back-to-top" aria-label="Voltar ao topo" hidden><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18,15 12,9 6,15"/></svg></button>
     <script src="js/dados.js"></script>
+    <script src="js/dados-carregados.js"></script>
     <script src="js/main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -97,15 +98,20 @@
             if (presidentsGrid) {
                 const lideranca = window.CDA.Data.lideranca;
                 presidentsGrid.innerHTML = '';
+                const perfilUrl = (id) => `presidente-single.html?id=${id}`;
                 lideranca.forEach(president => {
+                    const initials = (president.name || '').split(' ')
+                        .filter(Boolean).slice(0, 2)
+                        .map(w => w[0]).join('').toUpperCase();
                     const card = document.createElement('article');
                     card.className = 'president-card';
                     card.innerHTML = `
                         <div class="president-image">
-                            <img src="${president.image}" alt="${president.name}" loading="lazy" width="400" height="500">
+                            <img src="${president.image}" alt="${president.name}" loading="lazy" width="400" height="500"
+                                 onerror="this.style.display='none';var p=this.parentNode;p.classList.add('president-image--empty');p.setAttribute('data-initials','${initials}')">
                         </div>
                         <div class="president-info">
-                            <h3 class="president-name">${president.name}</h3>
+                            <h3 class="president-name"><a href="${perfilUrl(president.id)}">${president.name}</a></h3>
                             <p class="president-position">${president.position}</p>
                             <p class="president-mandate">Mandato: ${president.mandate}</p>
                             <p class="president-bio">${president.bio}</p>
@@ -115,6 +121,7 @@
                                     ${president.achievements.map(a => `<li>${a}</li>`).join('')}
                                 </ul>
                             </details>
+                            <a class="btn btn-primary btn-sm" href="${perfilUrl(president.id)}">Ver perfil</a>
                         </div>
                     `;
                     presidentsGrid.appendChild(card);
