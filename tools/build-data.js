@@ -31,6 +31,40 @@ const lideranca = read('data/presidentes.json').map((p) => ({
 
 const orgaos = read('data/orgaos.json');
 
+/* Categoria canonica (slug) -> rotulo de apresentacao com acentuacao. */
+const CAT_LABEL = {
+  eventos: 'Eventos',
+  cooperacao: 'Cooperação',
+  institucional: 'Institucional',
+  internacional: 'Internacional',
+  representacao: 'Representação',
+  facilitacao: 'Facilitação',
+  formacao: 'Formação',
+  conformidade: 'Conformidade',
+  lusofonia: 'Lusofonia',
+  'responsabilidade-social': 'Responsabilidade Social',
+  entrevista: 'Entrevista',
+  editorial: 'Editorial'
+};
+
+/* Fonte unica das noticias: data/noticias.json. Normalizado para os campos
+   que os templates (home e noticias.html) consomem, ordenado por data desc. */
+const noticias = read('data/noticias.json')
+  .map((n) => ({
+    id: n.id,
+    title: n.titulo || '',
+    excerpt: n.resumo || '',
+    date: n.data || '',
+    local: n.local || '',
+    category: CAT_LABEL[n.categoria] ||
+      (n.categoria ? n.categoria.charAt(0).toUpperCase() + n.categoria.slice(1).replace(/-/g, ' ') : 'Actualidade'),
+    categoryKey: n.categoria || '',
+    image: n.imagem || '',
+    destaque: !!n.destaque,
+    tags: Array.isArray(n.tags) ? n.tags : []
+  }))
+  .sort((a, b) => String(b.date).localeCompare(String(a.date)));
+
 const documentos = read('data/documentos.json').map((d) => ({
   id: d.id,
   title: d.titulo || '',
@@ -49,6 +83,7 @@ const out =
   Data.lideranca = ${JSON.stringify(lideranca, null, 2)};
   Data.orgaos = ${JSON.stringify(orgaos, null, 2)};
   Data.documentos = ${JSON.stringify(documentos, null, 2)};
+  Data.noticias = ${JSON.stringify(noticias, null, 2)};
   Data.eventos = Data.eventos || Data.actividades || [];
 
   CDA.Utils = CDA.Utils || {};
@@ -67,4 +102,4 @@ const out =
 fs.writeFileSync(path.join(root, 'js/dados-carregados.js'), out);
 console.log('js/dados-carregados.js: ' + membros.length + ' membros, ' +
   lideranca.length + ' lideranca, ' + orgaos.length + ' orgaos, ' +
-  documentos.length + ' documentos');
+  documentos.length + ' documentos, ' + noticias.length + ' noticias');

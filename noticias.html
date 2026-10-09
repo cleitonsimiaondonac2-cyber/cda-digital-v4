@@ -41,7 +41,7 @@
     <div class="header-search"><form class="search-form" action="documentacao.html" method="GET"><input type="search" class="search-input" placeholder="Pesquisar..." autocomplete="off"><button type="submit" class="search-submit"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button></form></div></div></div></header>
     <main id="main" class="main">
         <nav class="breadcrumb" aria-label="Localização"><div class="container"><ol class="breadcrumb-list"><li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Início</a></li><li class="breadcrumb-item"><span class="breadcrumb-separator">/</span></li><li class="breadcrumb-item"><span class="breadcrumb-current">Notícias</span></li></ol></div></nav>
-        <section class="page-header" style="background-image: linear-gradient(rgba(13, 26, 38, 0.9), rgba(13, 26, 38, 0.9)), url('img/backgrounds/noticias-bg.webp');"><div class="container"><div class="page-header-content"><span class="page-header-badge">Actualidade</span><h1 class="page-header-title">Notícias</h1><p class="page-header-subtitle">As últimas notícias e actualizações da Câmara dos Despachantes Aduaneiros</p></div></div></section>
+        <section class="page-header" style="background-image: linear-gradient(rgba(13, 26, 38, 0.9), rgba(13, 26, 38, 0.9)), url('img/backgrounds/noticias-bg.jpg');"><div class="container"><div class="page-header-content"><span class="page-header-badge">Actualidade</span><h1 class="page-header-title">Notícias</h1><p class="page-header-subtitle">As últimas notícias e actualizações da Câmara dos Despachantes Aduaneiros</p></div></div></section>
         <section class="section news-list-section"><div class="container">
             <div class="news-list-header"><div class="news-list-filters"><a href="noticias.html" class="filter-active">Todas</a><a href="noticias.html?category=Institucional">Institucional</a><a href="noticias.html?category=Legislação">Legislação</a><a href="noticias.html?category=Formação">Formação</a><a href="noticias.html?category=Parcerias">Parcerias</a><a href="noticias.html?category=Internacional">Internacional</a></div></div>
             <div class="news-list" id="news-list"><div class="loading"></div></div>
@@ -72,7 +72,7 @@
                     
                     article.innerHTML = `
                         <div class="news-image">
-                            <img src="${news.image || 'img/news/featured-1.webp'}" alt="${news.title}" loading="lazy" width="400" height="225">
+                            <img src="${news.image || 'img/placeholder-16x9.svg'}" alt="${news.title}" loading="lazy" width="400" height="225">
                             <span class="news-category">${news.category}</span>
                         </div>
                         <div class="news-content">
@@ -88,7 +88,9 @@
             }
             
             // Initialize newsletter
-            window.CDA.Home.initNewsletter();
+            if (window.CDA && window.CDA.Home && window.CDA.Home.initNewsletter) {
+                window.CDA.Home.initNewsletter();
+            }
         });
     </script>
     <script src="js/config.js"></script>

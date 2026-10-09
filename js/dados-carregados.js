@@ -2409,7 +2409,7 @@
     "position": "Presidente da CDA",
     "mandate": "2011–2014",
     "bio": "Primeiro Presidente da CDA. Liderou o processo de constituição formal da Câmara dos Despachantes Aduaneiros de Moçambique.",
-    "image": "img/presidentes/gama-afonso.jpg",
+    "image": "img/placeholder-1x1.svg",
     "achievements": [
       "Constituição formal da CDA",
       "Primeiras estruturas administrativas",
@@ -2423,7 +2423,7 @@
     "position": "Presidente da CDA",
     "mandate": "2014–2023",
     "bio": "Presidente durante o período de consolidação da CDA. Liderou a instituição por quase uma década.",
-    "image": "img/presidentes/dixon-chongo.jpg",
+    "image": "img/placeholder-1x1.svg",
     "achievements": [
       "Consolidação da CDA como instituição",
       "Expansão do número de membros",
@@ -2438,7 +2438,7 @@
     "position": "Presidente da CDA",
     "mandate": "2024–2026",
     "bio": "Presidente actual da CDA. Eleita para o triénio 2024-2026.",
-    "image": "img/presidentes/salmate-chuaibo.jpg",
+    "image": "img/orgaos/salmate-chuaibo.jpg",
     "achievements": [
       "Modernização dos processos internos",
       "Lançamento do Portal Digital CDA V4",
@@ -2606,6 +2606,365 @@
     "category": "publicacoes",
     "date": "2023-01-01",
     "type": "documento"
+  }
+];
+  Data.noticias = [
+  {
+    "id": 19,
+    "title": "CDA e Embaixada do Brasil reforçam cooperação institucional",
+    "excerpt": "A CDA reuniu-se com a Embaixada do Brasil em Moçambique para reforçar a cooperação e apoiar diplomatas, missões e empresários brasileiros nas operações de importação e exportação.",
+    "date": "2026-10-05",
+    "local": "Maputo",
+    "category": "Cooperação",
+    "categoryKey": "cooperacao",
+    "image": "img/noticias/ev-2026-embaixada-brasil.jpg",
+    "destaque": true,
+    "tags": [
+      "brasil",
+      "cooperação",
+      "internacional",
+      "2026"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "CDA reforça cooperação com a Agência Nacional de Energia Atómica (ANEA)",
+    "excerpt": "Numa visita de cortesia à ANEA, a CDA aprofundou os procedimentos aplicáveis à importação, exportação e transporte de materiais e produtos sujeitos a controlo.",
+    "date": "2026-10-01",
+    "local": "Maputo",
+    "category": "Cooperação",
+    "categoryKey": "cooperacao",
+    "image": "img/noticias/ev-2026-anea.jpg",
+    "destaque": false,
+    "tags": [
+      "anea",
+      "cooperação",
+      "energia-atómica",
+      "2026"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "CDA e ITRANSMAR discutem constrangimentos com agentes de navegação",
+    "excerpt": "A CDA recebeu o presidente do conselho de administração da ITRANSMAR para apresentar constrangimentos dos despachantes junto dos agentes de navegação, incluindo taxas e devolução de cauções.",
+    "date": "2026-09-29",
+    "local": "Maputo",
+    "category": "Cooperação",
+    "categoryKey": "cooperacao",
+    "image": "img/noticias/ev-2026-itransmar.jpg",
+    "destaque": false,
+    "tags": [
+      "itransmar",
+      "transporte-marítimo",
+      "cooperação",
+      "2026"
+    ]
+  },
+  {
+    "id": 1,
+    "title": "CTA participa na celebração do Dia dos Despachantes Aduaneiros",
+    "excerpt": "A CTA, representada pela Directora Executiva Teresa Muenda, participou no evento de celebração do Dia dos Despachantes Aduaneiros de Moçambique, reforçando o compromisso com a facilitação do comércio.",
+    "date": "2026-09-25",
+    "local": "Maputo",
+    "category": "Institucional",
+    "categoryKey": "institucional",
+    "image": "img/noticias/cooperacao-at.jpg",
+    "destaque": true,
+    "tags": [
+      "CTA",
+      "dia-despachantes",
+      "2026",
+      "institucional"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "CDA e Alfândegas reforçam coordenação operacional nos terminais de Maputo",
+    "excerpt": "A CDA recebeu uma delegação das Alfândegas, chefiada pelo Director para a Cidade de Maputo e pelos gestores dos terminais, para reforçar a coordenação e a comunicação institucional no desembaraço aduaneiro.",
+    "date": "2026-09-15",
+    "local": "Maputo",
+    "category": "Cooperação",
+    "categoryKey": "cooperacao",
+    "image": "img/noticias/ev-2026-alfandegas.jpg",
+    "destaque": true,
+    "tags": [
+      "alfândegas",
+      "cooperação",
+      "maputo",
+      "2026"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Dia do Despachante Aduaneiro 2026 celebrado com unidade e reconhecimento da classe",
+    "excerpt": "A CDA reuniu membros e convidados para celebrar o Dia do Despachante Aduaneiro, assinalado a 14 de Setembro, numa data que representa a identidade e a união da classe.",
+    "date": "2026-09-14",
+    "local": "Maputo",
+    "category": "Eventos",
+    "categoryKey": "eventos",
+    "image": "img/noticias/ev-2026-dia-despachante.jpg",
+    "destaque": true,
+    "tags": [
+      "dia-despachantes",
+      "eventos",
+      "institucional",
+      "2026"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Semana destacada para líderes femininas aduaneiras — ASAPRA",
+    "excerpt": "A Presidente da CDA, Salmate Chuaibo, participou na semana destacada para líderes femininas aduaneiras organizada pela ASAPRA.",
+    "date": "2026-07-15",
+    "local": "Brasil",
+    "category": "Internacional",
+    "categoryKey": "internacional",
+    "image": "img/noticias/asapra-brasil.jpg",
+    "destaque": false,
+    "tags": [
+      "ASAPRA",
+      "mulheres",
+      "internacional",
+      "2026"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "O Despachante regressa: Unidade, Modernização e Projecção Global",
+    "excerpt": "Após um período fora de circulação, a revista oficial da CDA volta a chegar aos associados com um compromisso intransigente com a legalidade.",
+    "date": "2026-07-15",
+    "local": "Maputo",
+    "category": "Editorial",
+    "categoryKey": "editorial",
+    "image": "img/noticias/capa-julho-2026.jpg",
+    "destaque": true,
+    "tags": [
+      "revista",
+      "editorial",
+      "modernização",
+      "2026"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "CDA assume Vice-Presidência da ASAPRA durante Fórum no Brasil",
+    "excerpt": "A Câmara dos Despachantes Aduaneiros de Moçambique alcançou um marco histórico ao assumir a Vice-Presidência da ASAPRA.",
+    "date": "2026-07-15",
+    "local": "Brasil",
+    "category": "Internacional",
+    "categoryKey": "internacional",
+    "image": "img/noticias/asapra-brasil.jpg",
+    "destaque": true,
+    "tags": [
+      "ASAPRA",
+      "vice-presidência",
+      "internacional",
+      "2026"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Quadros da CDA assumem cargos de relevo na CTA e na CCM",
+    "excerpt": "A CDA vê os seus quadros reforçar a participação na CTA e CCM, com a Presidente Salmate Chuaibo a exercer funções de Vice-Presidente do Conselho Fiscal da CTA.",
+    "date": "2026-07-15",
+    "local": "Maputo",
+    "category": "Representação",
+    "categoryKey": "representacao",
+    "image": "img/noticias/representacao-privado.jpg",
+    "destaque": false,
+    "tags": [
+      "CTA",
+      "CCM",
+      "representação",
+      "2026"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "CDA contribui para a facilitação do comércio e a competitividade",
+    "excerpt": "A CDA participa activamente na simplificação de procedimentos e na remoção de barreiras, integrando as reuniões da Comissão Técnica do Comité Nacional de Facilitação do Comércio.",
+    "date": "2026-07-15",
+    "local": "Maputo",
+    "category": "Facilitação",
+    "categoryKey": "facilitacao",
+    "image": "img/noticias/facilitacao-comercio.jpg",
+    "destaque": false,
+    "tags": [
+      "facilitação",
+      "comércio",
+      "competitividade",
+      "2026"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "CDA assina convénio com despachantes de São Paulo nos Emirados Árabes Unidos",
+    "excerpt": "A CDA celebrou um Convénio de Parceria com o Sindicato dos Despachantes Aduaneiros de São Paulo, reforçando a estratégia de cooperação internacional.",
+    "date": "2026-07-15",
+    "local": "Emirados Árabes Unidos",
+    "category": "Cooperação",
+    "categoryKey": "cooperacao",
+    "image": "img/noticias/convenio-sao-paulo.jpg",
+    "destaque": false,
+    "tags": [
+      "convénio",
+      "São Paulo",
+      "cooperação",
+      "2026"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "CDA participa na Conferência e Feira de Tecnologias da OMA nos Emirados Árabes Unidos",
+    "excerpt": "Na qualidade de membro da ASAPRA, a CDA marcou presença na Conferência e Feira de Tecnologias da Organização Mundial das Alfândegas.",
+    "date": "2026-07-15",
+    "local": "Emirados Árabes Unidos",
+    "category": "Internacional",
+    "categoryKey": "internacional",
+    "image": "img/noticias/futuro-digital.jpg",
+    "destaque": false,
+    "tags": [
+      "OMA",
+      "tecnologia",
+      "internacional",
+      "2026"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Na Cúpula Mundial dos Despachantes: CDA expande influência na IFCBA no Japão",
+    "excerpt": "Como membro da International Federation of Customs Brokers Associations (IFCBA), a CDA participou na conferência internacional da organização no Japão.",
+    "date": "2026-07-15",
+    "local": "Japão",
+    "category": "Internacional",
+    "categoryKey": "internacional",
+    "image": "img/noticias/cupula-mundial-japao.jpg",
+    "destaque": false,
+    "tags": [
+      "IFCBA",
+      "Japão",
+      "internacional",
+      "2026"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Intercâmbio de experiências com as Alfândegas de São Tomé e Príncipe",
+    "excerpt": "A CDA manteve um encontro de trabalho com as Alfândegas de São Tomé e Príncipe, no âmbito da cooperação entre países de língua portuguesa.",
+    "date": "2026-07-15",
+    "local": "São Tomé e Príncipe",
+    "category": "Lusofonia",
+    "categoryKey": "lusofonia",
+    "image": "img/noticias/lusofonia.jpg",
+    "destaque": false,
+    "tags": [
+      "lusofonia",
+      "São Tomé",
+      "cooperação",
+      "2026"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Solidariedade em Acção: CDA apoia vítimas das cheias em Marracuene",
+    "excerpt": "Na sequência das cheias que afectaram o Muthini, no Município de Marracuene, a CDA promoveu acções de assistência que beneficiaram centenas de pessoas.",
+    "date": "2026-07-15",
+    "local": "Marracuene",
+    "category": "Responsabilidade Social",
+    "categoryKey": "responsabilidade-social",
+    "image": "img/noticias/solidariedade-cheias.jpg",
+    "destaque": false,
+    "tags": [
+      "solidariedade",
+      "Marracuene",
+      "responsabilidade-social",
+      "2026"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Entrevista: Sábito Romeu — \"Esta casa não é de quem a preside\"",
+    "excerpt": "O Presidente da Mesa da Assembleia Geral da CDA fala sobre o papel colectivo dos órgãos sociais, a unidade da classe e os desafios do triénio 2024-2026.",
+    "date": "2026-07-15",
+    "local": "Maputo",
+    "category": "Entrevista",
+    "categoryKey": "entrevista",
+    "image": "img/noticias/entrevista-sabito-romeu.jpg",
+    "destaque": false,
+    "tags": [
+      "entrevista",
+      "Sábito Romeu",
+      "assembleia-geral",
+      "2026"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Despachantes aduaneiros e Autoridade Tributária reforçam cooperação",
+    "excerpt": "A Autoridade Tributária e a Câmara dos Despachantes Aduaneiros reforçaram a cooperação para modernizar o sistema alfandegário e garantir maior eficiência na arrecadação de receitas.",
+    "date": "2026-03-30",
+    "local": "Maputo",
+    "category": "Cooperação",
+    "categoryKey": "cooperacao",
+    "image": "img/noticias/cooperacao-at.jpg",
+    "destaque": true,
+    "tags": [
+      "AT",
+      "cooperação",
+      "modernização",
+      "2026"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Visita de cortesia do Tribunal Aduaneiro de Sofala à CDA Beira",
+    "excerpt": "A CDA Região Centro recebeu uma visita de cortesia do Tribunal Aduaneiro de Sofala, reforçando os laços de cooperação entre as duas instituições.",
+    "date": "2025-10-27",
+    "local": "Beira",
+    "category": "Institucional",
+    "categoryKey": "institucional",
+    "image": "img/noticias/justica-aduaneira.jpg",
+    "destaque": false,
+    "tags": [
+      "tribunal",
+      "sofala",
+      "beira",
+      "2025"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Capacitação sobre Regras de Origem reforça competências à escala nacional",
+    "excerpt": "Em parceria com a Autoridade Tributária e o programa PROMOVE Comércio, a CDA promoveu uma capacitação que contribui para a harmonização de procedimentos.",
+    "date": "2025-04-15",
+    "local": "Maputo",
+    "category": "Formação",
+    "categoryKey": "formacao",
+    "image": "img/noticias/formacao-regras-origem.jpg",
+    "destaque": false,
+    "tags": [
+      "formação",
+      "regras-de-origem",
+      "AT",
+      "2025"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Workshop sobre branqueamento de capitais e financiamento do terrorismo",
+    "excerpt": "A CDA promoveu um workshop dedicado ao branqueamento de capitais, financiamento do terrorismo e da proliferação de armas.",
+    "date": "2024-06-15",
+    "local": "Maputo",
+    "category": "Conformidade",
+    "categoryKey": "conformidade",
+    "image": "img/noticias/conformidade-integridade.jpg",
+    "destaque": false,
+    "tags": [
+      "workshop",
+      "branqueamento",
+      "conformidade",
+      "2024"
+    ]
   }
 ];
   Data.eventos = Data.eventos || Data.actividades || [];

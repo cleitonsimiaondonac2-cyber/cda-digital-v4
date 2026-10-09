@@ -3,7 +3,7 @@
     "id": 1,
     "nome": "Gama Afonso",
     "mandato": "2011–2014",
-    "foto": "img/presidentes/gama-afonso.jpg",
+    "foto": "img/placeholder-1x1.svg",
     "descricao": "Primeiro Presidente da CDA. Liderou o processo de constituição formal da Câmara dos Despachantes Aduaneiros de Moçambique.",
     "feitos": [
       "Constituição formal da CDA",
@@ -17,15 +17,14 @@
       {"titulo": "Relatório de Actividades 2011-2014", "url": "#"}
     ],
     "fotos": [
-      "img/actividades/2011-eleicao.jpg",
-      "img/actividades/2012-assembleia.jpg"
+      "img/noticias/assembleia-geral.jpg"
     ]
   },
   {
     "id": 2,
     "nome": "Dixon Chongo",
     "mandato": "2014–2023",
-    "foto": "img/presidentes/dixon-chongo.jpg",
+    "foto": "img/placeholder-1x1.svg",
     "descricao": "Presidente durante o período de consolidação da CDA. Liderou a instituição por quase uma década.",
     "feitos": [
       "Consolidação da CDA como instituição",
@@ -40,16 +39,15 @@
       {"titulo": "Relatórios Anuais 2014-2023", "url": "#"}
     ],
     "fotos": [
-      "img/actividades/2015-reuniao.jpg",
-      "img/actividades/2018-formacao.jpg",
-      "img/actividades/2020-assembleia.jpg"
+      "img/noticias/cooperacao-at.jpg",
+      "img/noticias/formacao-regras-origem.jpg"
     ]
   },
   {
     "id": 3,
     "nome": "Salmate Chuaibo Daud",
     "mandato": "2024–2026",
-    "foto": "img/presidentes/salmate-chuaibo.jpg",
+    "foto": "img/orgaos/salmate-chuaibo.jpg",
     "descricao": "Presidente actual da CDA. Eleita para o triénio 2024-2026.",
     "feitos": [
       "Modernização dos processos internos",
@@ -62,8 +60,8 @@
       {"titulo": "Relatório de Gestão 2024", "url": "#"}
     ],
     "fotos": [
-      "img/actividades/2024-posse.jpg",
-      "img/actividades/2025-reuniao.jpg"
+      "img/noticias/ev-2026-dia-despachante.jpg",
+      "img/noticias/ev-2026-alfandegas.jpg"
     ]
   }
 ]

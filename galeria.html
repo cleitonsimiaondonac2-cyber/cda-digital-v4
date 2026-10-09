@@ -41,9 +41,9 @@
     <div class="header-search"><form class="search-form" action="documentacao.html"><input type="search" class="search-input" placeholder="Pesquisar..." autocomplete="off"><button type="submit" class="search-submit"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></button></form></div></div></div></header>
     <main id="main" class="main">
         <nav class="breadcrumb" aria-label="Localização"><div class="container"><ol class="breadcrumb-list"><li class="breadcrumb-item"><a href="index.html" class="breadcrumb-link">Início</a></li><li class="breadcrumb-item"><span class="breadcrumb-separator">/</span></li><li class="breadcrumb-item"><span class="breadcrumb-current">Galeria</span></li></ol></div></nav>
-        <section class="page-header" style="background-image: linear-gradient(rgba(13, 26, 38, 0.9), rgba(13, 26, 38, 0.9)), url('img/backgrounds/galeria-bg.webp');"><div class="container"><div class="page-header-content"><span class="page-header-badge">Multimédia</span><h1 class="page-header-title">Galeria</h1><p class="page-header-subtitle">Eventos, actividades e momentos importantes da CDA</p></div></div></section>
+        <section class="page-header" style="background-image: linear-gradient(rgba(13, 26, 38, 0.9), rgba(13, 26, 38, 0.9)), url('img/backgrounds/galeria-bg.jpg');"><div class="container"><div class="page-header-content"><span class="page-header-badge">Multimédia</span><h1 class="page-header-title">Galeria</h1><p class="page-header-subtitle">Eventos, actividades e momentos importantes da CDA</p></div></div></section>
         <section class="section gallery-section"><div class="container">
-            <div class="gallery-filters"><a href="galeria.html" class="chip chip-outline">Todos</a><a href="galeria.html?type=eventos" class="chip chip-outline">Eventos</a><a href="galeria.html?type=formacoes" class="chip chip-outline">Formações</a><a href="galeria.html?type=reunioes" class="chip chip-outline">Reuniões</a><a href="galeria.html?type=visitas" class="chip chip-outline">Visitas</a></div>
+            <div class="gallery-filters"><a href="galeria.html" class="chip chip-outline">Todos</a><a href="galeria.html?type=eventos" class="chip chip-outline">Eventos</a><a href="galeria.html?type=cooperacao" class="chip chip-outline">Cooperação</a><a href="galeria.html?type=reunioes" class="chip chip-outline">Reuniões</a><a href="galeria.html?type=institucional" class="chip chip-outline">Institucional</a></div>
             <div class="gallery-grid" id="gallery-grid"><div class="loading"></div></div>
         </div></section>
     </main>
@@ -60,21 +60,24 @@
                 const eventos = window.CDA.Data.eventos;
                 const urlParams = new URLSearchParams(window.location.search);
                 const type = urlParams.get('type') || '';
-                
-                const filteredEvents = type ? eventos.filter(e => e.category.toLowerCase() === type) : eventos;
-                
+                const norm = function (s) {
+                    return String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+                };
+
+                const filteredEvents = type ? eventos.filter(e => norm(e.categoria) === norm(type)) : eventos;
+
                 filteredEvents.forEach(event => {
                     const card = document.createElement('article');
                     card.className = 'gallery-card';
                     card.innerHTML = `
                         <div class="gallery-image">
-                            <img src="${event.image || 'img/activities/assembleia-geral.webp'}" alt="${event.title}" loading="lazy" width="600" height="400">
-                            <span class="gallery-category">${event.category}</span>
+                            <img src="${(event.capas && event.capas[0]) || 'img/placeholder-16x9.svg'}" alt="${event.titulo || ''}" loading="lazy" width="600" height="400">
+                            <span class="gallery-category">${event.categoria || ''}</span>
                         </div>
                         <div class="gallery-content">
-                            <h3 class="gallery-title">${event.title}</h3>
-                            <p class="gallery-date">${window.CDA.Utils.formatDate(event.date)}</p>
-                            <p class="gallery-location">${event.location}</p>
+                            <h3 class="gallery-title">${event.titulo || ''}</h3>
+                            <p class="gallery-date">${window.CDA.Utils.formatDate(event.data)}</p>
+                            <p class="gallery-location">${event.local || ''}</p>
                             <a href="#" class="btn btn-outline btn-sm">Ver detalhes</a>
                         </div>
                     `;
