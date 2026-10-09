@@ -512,3 +512,16 @@ a:hover {
         font-size: var(--text-lg);
     }
 }
+
+/* ============================================================
+   AJUSTE — Foco vertical das imagens de pessoas (rostos
+   ligeiramente acima do centro), evitando cortes. Não afeta
+   logos (object-fit: contain).
+   ============================================================ */
+.hero-image img,
+.noticia-image img,
+.actividade-image img,
+.presidente-image img,
+.president-image img,
+.orgao-item__foto,
+.avatar { object-position: center 28%; }

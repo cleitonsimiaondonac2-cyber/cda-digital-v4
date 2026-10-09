@@ -311,3 +311,12 @@
         bottom: var(--space-md);
     }
 }
+
+/* ============================================================
+   AJUSTE — Banner com transparência mínima: as imagens ficam bem
+   visíveis. A legibilidade do texto é garantida por sombra própria
+   (em vez de escurecer a fotografia).
+   ============================================================ */
+.hero-title,
+.hero-subtitle,
+.hero-badge { text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7), 0 3px 22px rgba(0, 0, 0, 0.5); }
