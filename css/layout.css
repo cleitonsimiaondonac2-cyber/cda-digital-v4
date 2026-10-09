@@ -148,7 +148,8 @@
 .noticia-image img {
     width: 100%;
     height: 400px;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     transition: transform var(--transition-slow);
 }
 
@@ -317,7 +318,8 @@
 .actividade-image img {
     width: 100%;
     height: 250px;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     transition: transform var(--transition-slow);
 }
 
@@ -646,7 +648,8 @@
 .presidente-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     transition: transform var(--transition-slow);
 }
 
