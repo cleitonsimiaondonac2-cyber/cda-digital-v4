@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://cleitonsimiaondonac2-cyber.github.io/cda-digital-v4/sitemap.xml

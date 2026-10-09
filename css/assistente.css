@@ -1,0 +1,127 @@
+/* Assistente CDA — botão flutuante + caixa de diálogo (extraído do v2). */
+.assist-btn {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 150;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  background: #16283e;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: .78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  cursor: pointer;
+  box-shadow: 0 6px 24px rgba(22, 40, 62, .28);
+}
+.assist-btn:hover { background: #b3202b; }
+.assist-btn svg { flex: none; }
+
+.assist-box {
+  position: fixed;
+  right: 22px;
+  bottom: 84px;
+  z-index: 150;
+  display: none;
+  flex-direction: column;
+  width: 390px;
+  max-width: calc(100vw - 28px);
+  height: 560px;
+  max-height: calc(100vh - 116px);
+  background: #fff;
+  border: 1px solid #e0e4ea;
+  border-top: 3px solid #b3202b;
+  border-radius: 10px;
+  box-shadow: 0 14px 48px rgba(22, 40, 62, .22);
+  overflow: hidden;
+}
+.assist-box.aberta { display: flex; }
+
+.assist-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 16px;
+  background: #16283e;
+  color: #fff;
+}
+.assist-topo h4 { margin: 0; font-size: .95rem; }
+.assist-topo-acoes { display: flex; align-items: center; gap: 8px; }
+.assist-topo-acoes button {
+  border: 1px solid rgba(255,255,255,.35);
+  background: transparent;
+  color: #fff;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font: inherit;
+  font-size: .75rem;
+  cursor: pointer;
+}
+.assist-topo-acoes button:hover { background: rgba(255,255,255,.15); }
+
+.assist-msgs {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f6f8fb;
+}
+.assist-msg {
+  max-width: 85%;
+  padding: 9px 12px;
+  border-radius: 10px;
+  font-size: .88rem;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.assist-msg.bot { align-self: flex-start; background: #fff; border: 1px solid #e0e4ea; color: #1d2733; }
+.assist-msg.usr { align-self: flex-end; background: #16283e; color: #fff; }
+.assist-fontes { margin-top: 8px; padding-top: 6px; border-top: 1px dashed #e0e4ea; font-size: .8rem; }
+.assist-fontes a { color: #b3202b; }
+.assist-status { margin-top: 6px; color: #6b7787; font-size: .76rem; font-style: italic; }
+.assist-docfoco { padding: 6px 14px; background: #fdf3de; color: #7a5a12; font-size: .82rem; }
+
+.assist-entrada {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  border-top: 1px solid #e0e4ea;
+  background: #fff;
+}
+.assist-entrada input {
+  flex: 1;
+  min-height: 40px;
+  padding: 0 12px;
+  border: 1px solid #d7dde5;
+  border-radius: 8px;
+  font: inherit;
+  font-size: .9rem;
+  outline: none;
+}
+.assist-entrada input:focus { border-color: #16283e; }
+.assist-entrada button {
+  padding: 0 16px;
+  border: 0;
+  border-radius: 8px;
+  background: #b3202b;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.assist-entrada button:hover { background: #8f1a23; }
+
+@media (max-width: 480px) {
+  .assist-box { left: 10px; right: 10px; bottom: 10px; width: auto; height: auto; max-height: calc(100vh - 96px); }
+  .assist-btn { right: 14px; bottom: 14px; padding: 11px 16px; }
+  .assist-btn span { display: none; }
+}
