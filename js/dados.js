@@ -4,7 +4,7 @@
  * 
  * Este arquivo contém os dados dinâmicos do portal CDA Digital V4
  * Inclui: notícias, documentos, membros, eventos, etc.
- * Atualizado em: 2026-10-08
+ * Atualizado em: 2026-10-09
  */
 
 // ============================================
@@ -12,6 +12,94 @@
 // ============================================
 
 const noticias = [
+    {
+        id: 17,
+        title: 'Dia do Despachante Aduaneiro 2026 celebrado com unidade e reconhecimento da classe',
+        excerpt: 'A CDA reuniu membros e convidados para celebrar o Dia do Despachante Aduaneiro, assinalado a 14 de Setembro, numa data que representa a identidade e a união da classe.',
+        content: `<p>A Câmara dos Despachantes Aduaneiros de Moçambique reuniu membros e convidados para celebrar o Dia do Despachante Aduaneiro, assinalado a 14 de Setembro — uma data que representa a identidade e a união da classe, bem como o reconhecimento da profissão.</p>
+        
+        <p>A celebração foi um momento de confraternização e de reconhecimento do trabalho dos profissionais que têm contribuído para o percurso da classe.</p>
+        
+        <p>No seu discurso, a Presidente da CDA, Salmate Chuaibo, destacou o contributo do Despachante Aduaneiro para a facilitação do comércio e o cumprimento da legislação aduaneira, sublinhando a importância de acompanhar a evolução dos procedimentos e da tecnologia, preservando a ética, o rigor e a responsabilidade no exercício da profissão.</p>
+        
+        <p>A CDA reafirmou o compromisso de representar a classe, promover o diálogo com as instituições do sector e continuar a trabalhar pela valorização do Despachante Aduaneiro.</p>`,
+        date: '2026-09-14',
+        category: 'Eventos',
+        author: 'CDA Comunicação',
+        image: 'img/noticias/ev-2026-dia-despachante.jpg',
+        relevancia: 100,
+        tags: ['dia-despachantes', 'eventos', 'institucional', '2026']
+    },
+    {
+        id: 18,
+        title: 'CDA e Alfândegas reforçam coordenação operacional nos terminais de Maputo',
+        excerpt: 'A CDA recebeu uma delegação das Alfândegas, chefiada pelo Director para a Cidade de Maputo e pelos gestores dos terminais, para reforçar a coordenação e a comunicação institucional nas operações de desembaraço aduaneiro.',
+        content: `<p>A Câmara dos Despachantes Aduaneiros de Moçambique recebeu, a 15 de Setembro de 2026, na sua sede, uma delegação das Alfândegas, constituída pelo Director das Alfândegas ao nível da Cidade de Maputo e pelos gestores dos respectivos terminais, numa visita de cortesia com o objectivo de reforçar a coordenação, a comunicação institucional e a articulação entre as partes.</p>
+        
+        <p>Durante o encontro foram abordadas diversas matérias de interesse para a actividade de desembaraço aduaneiro, com particular destaque para questões de natureza operacional e para a necessidade de maior articulação com os responsáveis dos terminais.</p>
+        
+        <p>Os gestores demonstraram abertura para atender e responder directamente às questões que possam surgir ao longo do processo de desembaraço, incluindo eventuais demoras, solicitando que sejam contactados sempre que necessário. Apelou-se igualmente a maior colaboração e celeridade nos processos que aguardam pagamento.</p>
+        
+        <p>O encontro permitiu reforçar o diálogo e a aproximação entre a CDA e as Alfândegas, consolidando mecanismos de comunicação mais directa e eficaz em benefício da eficiência dos procedimentos aduaneiros, da facilitação do comércio e da arrecadação de receitas do Estado.</p>`,
+        date: '2026-09-15',
+        category: 'Cooperação',
+        author: 'CDA Comunicação',
+        image: 'img/noticias/ev-2026-alfandegas.jpg',
+        relevancia: 95,
+        tags: ['alfândegas', 'cooperação', 'maputo', '2026']
+    },
+    {
+        id: 19,
+        title: 'CDA e Embaixada do Brasil reforçam cooperação institucional',
+        excerpt: 'A CDA reuniu-se com a Embaixada do Brasil em Moçambique para reforçar a cooperação e apoiar diplomatas, missões e empresários brasileiros nas operações de importação e exportação.',
+        content: `<p>A Câmara dos Despachantes Aduaneiros de Moçambique realizou um encontro com a Embaixada do Brasil em Moçambique, com o objectivo de reforçar a cooperação institucional e promover maior articulação no apoio a diplomatas, missões e empresários brasileiros que realizam operações de importação, exportação e outras actividades sujeitas a procedimentos aduaneiros em Moçambique.</p>
+        
+        <p>A CDA apresentou a sua missão, forma de funcionamento e âmbito de actuação, destacando a importância de assegurar que os serviços de despacho aduaneiro sejam realizados por profissionais devidamente habilitados e identificados pela Câmara. Foram igualmente abordadas as diferentes categorias de Despachantes Aduaneiros e os mecanismos de acompanhamento e controlo da actividade profissional.</p>
+        
+        <p>As partes destacaram a necessidade de prevenir situações envolvendo intermediários ou entidades que se apresentem como prestadores de serviços aduaneiros sem a devida habilitação, considerando os riscos para importadores e exportadores. Neste âmbito, a CDA disponibilizou-se a prestar orientações gerais sobre os procedimentos aduaneiros e sobre os mecanismos para localização de Despachantes devidamente habilitados.</p>
+        
+        <p>Foi ainda manifestado interesse em fortalecer a colaboração, incluindo a possibilidade de realização de um encontro conjunto dirigido a empresários brasileiros interessados em importar, exportar ou investir em Moçambique.</p>`,
+        date: '2026-10-05',
+        category: 'Cooperação',
+        author: 'CDA Comunicação',
+        image: 'img/noticias/ev-2026-embaixada-brasil.jpg',
+        relevancia: 90,
+        tags: ['brasil', 'cooperação', 'internacional', '2026']
+    },
+    {
+        id: 20,
+        title: 'CDA reforça cooperação com a Agência Nacional de Energia Atómica (ANEA)',
+        excerpt: 'Numa visita de cortesia à ANEA, a CDA aprofundou os procedimentos aplicáveis à importação, exportação e transporte de materiais e produtos sujeitos a controlo.',
+        content: `<p>A Câmara dos Despachantes Aduaneiros de Moçambique realizou, a 1 de Outubro de 2026, uma visita de cortesia à Agência Nacional de Energia Atómica (ANEA), destinada a reforçar a cooperação entre as duas instituições.</p>
+        
+        <p>A visita permitiu a apresentação da missão, atribuições e forma de funcionamento da CDA, bem como aprofundar o conhecimento sobre os procedimentos aplicáveis à importação, exportação e ao transporte de materiais, equipamentos e produtos sujeitos ao controlo da ANEA.</p>
+        
+        <p>A CDA e a ANEA reiteraram o compromisso de manter uma comunicação permanente e uma articulação institucional eficaz, contribuindo para o esclarecimento de dúvidas em tempo útil e para o cumprimento integral dos procedimentos para importação, exportação, trânsito, transporte e manuseio de produtos radioactivos, incluindo o reporte e denúncia de acidentes e incidentes.</p>`,
+        date: '2026-10-01',
+        category: 'Cooperação',
+        author: 'CDA Comunicação',
+        image: 'img/noticias/ev-2026-anea.jpg',
+        relevancia: 85,
+        tags: ['anea', 'cooperação', 'energia-atómica', '2026']
+    },
+    {
+        id: 21,
+        title: 'CDA e ITRANSMAR discutem constrangimentos com agentes de navegação',
+        excerpt: 'A CDA recebeu o presidente do conselho de administração da ITRANSMAR para apresentar constrangimentos dos despachantes junto dos agentes de navegação, incluindo taxas e devolução de cauções.',
+        content: `<p>No dia 29 de Setembro de 2026, a Câmara dos Despachantes Aduaneiros de Moçambique recebeu, na sua sede, o Presidente do Conselho de Administração da Autoridade Reguladora de Transporte Marítimo (ITRANSMAR, IP), acompanhado de quadros daquela instituição.</p>
+        
+        <p>A visita teve como objectivo reforçar o diálogo institucional e apresentar matérias que envolvem a actividade dos Despachantes Aduaneiros, para devida análise e posterior acompanhamento, nos termos das competências da Câmara.</p>
+        
+        <p>A CDA aproveitou a oportunidade para apresentar alguns dos constrangimentos enfrentados pelos Despachantes Aduaneiros junto dos agentes de navegação, com destaque para questões relacionadas com os procedimentos das linhas e agentes de navegação, custos e taxas, bem como a devolução de cauções.</p>
+        
+        <p>As duas instituições acordaram em manter o diálogo e a articulação institucional, com vista ao acompanhamento das matérias abordadas e à procura de soluções para os constrangimentos apresentados.</p>`,
+        date: '2026-09-29',
+        category: 'Cooperação',
+        author: 'CDA Comunicação',
+        image: 'img/noticias/ev-2026-itransmar.jpg',
+        relevancia: 80,
+        tags: ['itransmar', 'transporte-marítimo', 'cooperação', '2026']
+    },
     {
         id: 1,
         title: 'CTA participa na celebração do Dia dos Despachantes Aduaneiros',
@@ -229,6 +317,61 @@ const noticias = [
 // ============================================
 
 const actividades = [
+    {
+        id: 'act-9',
+        titulo: 'Dia do Despachante Aduaneiro 2026',
+        categoria: 'Eventos',
+        data: '2026-09-14',
+        local: 'Maputo',
+        descricao: 'Celebração do Dia do Despachante Aduaneiro, assinalado a 14 de Setembro, com a Presidente da CDA Salmate Chuaibo e membros da classe. Uma data de identidade, união e reconhecimento da profissão.',
+        destaque: true,
+        relevancia: 100,
+        capas: ['img/noticias/ev-2026-dia-despachante.jpg']
+    },
+    {
+        id: 'act-10',
+        titulo: 'CDA e Alfândegas — Coordenação operacional nos terminais de Maputo',
+        categoria: 'Cooperação',
+        data: '2026-09-15',
+        local: 'Maputo',
+        descricao: 'Visita de cortesia da delegação das Alfândegas, chefiada pelo Director para a Cidade de Maputo e pelos gestores dos terminais, para reforçar a coordenação e a comunicação institucional no desembaraço aduaneiro.',
+        destaque: true,
+        relevancia: 95,
+        capas: ['img/noticias/ev-2026-alfandegas.jpg']
+    },
+    {
+        id: 'act-11',
+        titulo: 'CDA e Embaixada do Brasil reforçam cooperação institucional',
+        categoria: 'Cooperação',
+        data: '2026-10-05',
+        local: 'Maputo',
+        descricao: 'Encontro com a Embaixada do Brasil em Moçambique para reforçar a cooperação e apoiar diplomatas, missões e empresários brasileiros nas operações de importação e exportação.',
+        destaque: true,
+        relevancia: 90,
+        capas: ['img/noticias/ev-2026-embaixada-brasil.jpg']
+    },
+    {
+        id: 'act-12',
+        titulo: 'CDA reforça cooperação com a ANEA',
+        categoria: 'Cooperação',
+        data: '2026-10-01',
+        local: 'Maputo',
+        descricao: 'Visita de cortesia à Agência Nacional de Energia Atómica (ANEA) para aprofundar os procedimentos aplicáveis à importação, exportação e transporte de materiais e produtos sujeitos a controlo.',
+        destaque: false,
+        relevancia: 85,
+        capas: ['img/noticias/ev-2026-anea.jpg']
+    },
+    {
+        id: 'act-13',
+        titulo: 'CDA e ITRANSMAR — Constrangimentos com agentes de navegação',
+        categoria: 'Reuniões',
+        data: '2026-09-29',
+        local: 'Maputo',
+        descricao: 'Reunião com o presidente do conselho de administração da ITRANSMAR para apresentar constrangimentos dos despachantes junto dos agentes de navegação, incluindo taxas e devolução de cauções.',
+        destaque: false,
+        relevancia: 80,
+        capas: ['img/noticias/ev-2026-itransmar.jpg']
+    },
     {
         id: 'act-6',
         titulo: 'Celebração do Dia dos Despachantes Aduaneiros 2026',

@@ -1,5 +1,60 @@
 [
   {
+    "id": 17,
+    "titulo": "Dia do Despachante Aduaneiro 2026 celebrado com unidade e reconhecimento da classe",
+    "resumo": "A CDA reuniu membros e convidados para celebrar o Dia do Despachante Aduaneiro, assinalado a 14 de Setembro, numa data que representa a identidade e a união da classe.",
+    "data": "2026-09-14",
+    "local": "Maputo",
+    "categoria": "eventos",
+    "imagem": "img/noticias/ev-2026-dia-despachante.jpg",
+    "destaque": true,
+    "tags": ["dia-despachantes", "eventos", "institucional", "2026"]
+  },
+  {
+    "id": 18,
+    "titulo": "CDA e Alfândegas reforçam coordenação operacional nos terminais de Maputo",
+    "resumo": "A CDA recebeu uma delegação das Alfândegas, chefiada pelo Director para a Cidade de Maputo e pelos gestores dos terminais, para reforçar a coordenação e a comunicação institucional no desembaraço aduaneiro.",
+    "data": "2026-09-15",
+    "local": "Maputo",
+    "categoria": "cooperacao",
+    "imagem": "img/noticias/ev-2026-alfandegas.jpg",
+    "destaque": true,
+    "tags": ["alfândegas", "cooperação", "maputo", "2026"]
+  },
+  {
+    "id": 19,
+    "titulo": "CDA e Embaixada do Brasil reforçam cooperação institucional",
+    "resumo": "A CDA reuniu-se com a Embaixada do Brasil em Moçambique para reforçar a cooperação e apoiar diplomatas, missões e empresários brasileiros nas operações de importação e exportação.",
+    "data": "2026-10-05",
+    "local": "Maputo",
+    "categoria": "cooperacao",
+    "imagem": "img/noticias/ev-2026-embaixada-brasil.jpg",
+    "destaque": true,
+    "tags": ["brasil", "cooperação", "internacional", "2026"]
+  },
+  {
+    "id": 20,
+    "titulo": "CDA reforça cooperação com a Agência Nacional de Energia Atómica (ANEA)",
+    "resumo": "Numa visita de cortesia à ANEA, a CDA aprofundou os procedimentos aplicáveis à importação, exportação e transporte de materiais e produtos sujeitos a controlo.",
+    "data": "2026-10-01",
+    "local": "Maputo",
+    "categoria": "cooperacao",
+    "imagem": "img/noticias/ev-2026-anea.jpg",
+    "destaque": false,
+    "tags": ["anea", "cooperação", "energia-atómica", "2026"]
+  },
+  {
+    "id": 21,
+    "titulo": "CDA e ITRANSMAR discutem constrangimentos com agentes de navegação",
+    "resumo": "A CDA recebeu o presidente do conselho de administração da ITRANSMAR para apresentar constrangimentos dos despachantes junto dos agentes de navegação, incluindo taxas e devolução de cauções.",
+    "data": "2026-09-29",
+    "local": "Maputo",
+    "categoria": "cooperacao",
+    "imagem": "img/noticias/ev-2026-itransmar.jpg",
+    "destaque": false,
+    "tags": ["itransmar", "transporte-marítimo", "cooperação", "2026"]
+  },
+  {
     "id": 1,
     "titulo": "CTA participa na celebração do Dia dos Despachantes Aduaneiros",
     "resumo": "A CTA, representada pela Directora Executiva Teresa Muenda, participou no evento de celebração do Dia dos Despachantes Aduaneiros de Moçambique, reforçando o compromisso com a facilitação do comércio.",
